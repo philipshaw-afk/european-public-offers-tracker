@@ -182,7 +182,7 @@ def update_html(deals, template_path, output_path):
     html = re.sub(pattern, new_js, html, flags=re.DOTALL)
     
     # Update the timestamp in the footer
-    now = datetime.now().strftime('%-d %b %Y, %H:%M')
+    now = datetime.now().strftime('%#d %b %Y, %H:%M')
     html = re.sub(
         r'Data as at .*? · Source',
         f'Data as at {now} GMT · Source',
