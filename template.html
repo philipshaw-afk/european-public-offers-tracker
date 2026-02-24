@@ -350,7 +350,7 @@ function buildFilters(){
   ts.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;t.appendChild(o)});
 }
 
-function isNew(d){const ann=new Date(d);const now=new Date('2026-02-23');return(now-ann)/(864e5)<=14}
+function isNew(d){const ann=new Date(d);const now=new Date();return(now-ann)/(864e5)<=10}
 
 function fv(v){return v>=1000?`<span class="c">€</span>${(v/1000).toFixed(1)}bn`:`<span class="c">€</span>${v.toFixed(0)}m`}
 function fd(s){if(!s)return'—';const d=new Date(s);const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return d.getDate()+' '+m[d.getMonth()]+' '+String(d.getFullYear()).slice(2)}
