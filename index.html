@@ -56,7 +56,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 
 .main{max-width:1520px;margin:18px auto 50px;padding:0 40px;display:flex;gap:18px;align-items:flex-start}
 .tc{flex:1;min-width:0}
-.sb{width:270px;flex-shrink:0;position:sticky;top:76px}
+.sb{width:300px;flex-shrink:0;position:sticky;top:76px}
 
 .ctrl{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .sbox{position:relative;flex:0 1 260px}
@@ -95,7 +95,7 @@ tbody tr:last-child td{border-bottom:0}
 .rk{font-weight:700;color:var(--t3);font-size:11.5px;min-width:20px;display:inline-block}
 .rk.t3{color:var(--a)}
 .tn{font-weight:600;white-space:nowrap}
-.new-tag{display:inline-block;background:#FF6B35;color:#fff;font-size:8px;font-weight:700;padding:1px 4px;border-radius:3px;margin-left:5px;vertical-align:middle;letter-spacing:.03em;text-transform:uppercase}
+.new-tag{display:inline-block;background:var(--a);color:#fff;font-size:8px;font-weight:700;padding:1px 4px;border-radius:3px;margin-left:5px;vertical-align:middle;letter-spacing:.03em;text-transform:uppercase}
 .cc{display:flex;align-items:center;gap:4px;white-space:nowrap}
 .fg{width:20px;height:14px;border-radius:2px;display:inline-block;overflow:hidden;box-shadow:0 0 0 .5px rgba(0,0,0,.1);flex-shrink:0}
 .fg svg{display:block;width:100%;height:100%}
@@ -165,8 +165,8 @@ tbody tr:last-child td{border-bottom:0}
 .sb-bar-row{padding:6px 14px;border-bottom:1px solid var(--bl);display:flex;align-items:center;gap:8px}
 .sb-bar-row:last-child{border-bottom:0}
 .sb-bar-label{font-size:10.5px;font-weight:600;color:var(--t2);min-width:52px}
-.sb-bar-track{flex:1;height:6px;background:var(--bl);border-radius:3px;overflow:hidden}
-.sb-bar-fill{height:100%;border-radius:3px;transition:width .4s ease}
+.sb-bar-track{flex:1;height:8px;background:var(--bl);border-radius:4px;overflow:hidden}
+.sb-bar-fill{height:100%;border-radius:4px;transition:width .4s ease}
 .sb-bar-count{font-size:10.5px;font-weight:700;color:var(--t);min-width:24px;text-align:right}
 .sb-bar-pct{font-size:9.5px;color:var(--t3);min-width:30px;text-align:right}
 .sb-stat-row{padding:7px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bl)}
@@ -246,6 +246,7 @@ tbody tr:last-child td{border-bottom:0}
             <th data-c="premium" onclick="sort('premium')">Premium <span class="ar">▲</span></th>
             <th data-c="type" onclick="sort('type')">Offer Type <span class="ar">▲</span></th>
             <th data-c="date" onclick="sort('date')">Announced <span class="ar">▲</span></th>
+            <th class="ns">Exp. Completion</th>
             <th class="ns">Target Advisers</th>
             <th class="ns">Bidder Advisers</th>
           </tr></thead>
@@ -284,68 +285,68 @@ CH:`<svg viewBox="0 0 32 32"><rect width="32" height="32" fill="#F00"/><rect x="
 const fg=(c,cl)=>`<span class="${cl||'fg'}">${F[c]||''}</span>`;
 
 const deals=[
-{t:"JDE PEETS NV",co:"Netherlands",c:"NL",b:"KEURIG DR PEPPER INC",v:13398.1,p:20.0,tp:"Divestiture",at:"Friendly",d:"2025-08-25",tfa:"Bank of America",bfa:"Lazard"},
-{t:"SCHRODERS PLC",co:"United Kingdom",c:"UK",b:"TEACHERS INSURANCE AND ANNUITY ASSOCIATION",v:9503.2,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-02-12",tfa:"Wells Fargo Securities / JPMorgan Cazenove / Barclays",bfa:"BNP Paribas"},
-{t:"INPOST SA",co:"Luxembourg",c:"LU",b:"ADVENT INTERNATIONAL/FEDEX/A&R INVESTMENTS/PPF",v:6782.6,p:50,tp:"MBO/MBI",at:"Friendly",d:"2026-02-09",tfa:"JP Morgan / Santander",bfa:""},
-{t:"MERUS NV",co:"Netherlands",c:"NL",b:"GENMAB A/S",v:6020.0,p:40.8,tp:"Public Offer",at:"Friendly",d:"2025-09-29",tfa:"Jefferies LLC",bfa:"Morgan Stanley / PJT Partners"},
-{t:"BANCA POPOLARE DI SONDRIO SPA",co:"Italy",c:"IT",b:"BPER BANCA SPA",v:5930.5,p:68.8,tp:"Public Offer",at:"Friendly",d:"2025-11-05",tfa:"",bfa:""},
-{t:"JANUS HENDERSON GROUP PLC",co:"United Kingdom",c:"UK",b:"TRIAN FUND MANAGEMENT LP/GENERAL CATALYST GROUP",v:5634.9,p:18.9,tp:"MBO/MBI",at:"Friendly",d:"2025-12-22",tfa:"Centerview Partners LLC / Goldman Sachs",bfa:"Jefferies LLC / Citi"},
-{t:"IVECO GROUP NV",co:"Italy",c:"IT",b:"TATA MOTORS LIMITED",v:4682.0,p:29.7,tp:"Public Offer",at:"Friendly",d:"2025-07-30",tfa:"Goldman Sachs",bfa:"Morgan Stanley"},
-{t:"ALLFUNDS GROUP PLC",co:"United Kingdom",c:"UK",b:"DEUTSCHE BORSE AG",v:4498.5,p:29.9,tp:"Scheme",at:"Friendly",d:"2026-01-21",tfa:"Goldman Sachs / Citi",bfa:"Barclays"},
-{t:"SUBSEA 7 SA",co:"Luxembourg",c:"LU",b:"SAIPEM SPA",v:4168.8,p:9.3,tp:"Merger",at:"Friendly",d:"2025-02-23",tfa:"Deloitte Corporate Finance / Kirk Lovegrove & Company",bfa:"Goldman Sachs International / Deutsche Bank"},
-{t:"JUST GROUP PLC",co:"United Kingdom",c:"UK",b:"BROOKFIELD WEALTH SOLUTIONS LIMITED",v:2355.7,p:73.9,tp:"Scheme",at:"Friendly",d:"2025-07-31",tfa:"JPMorgan Cazenove / Evercore Partners",bfa:"RBC Capital Markets"},
-{t:"JTC PLC",co:"United Kingdom",c:"UK",b:"PERMIRA ADVISERS LLP",v:2340.2,p:37.4,tp:"Scheme",at:"Friendly",d:"2025-11-10",tfa:"Deutsche Numis / Robert W Baird / Berenberg Bank",bfa:"Jefferies International"},
-{t:"IHS HOLDING LIMITED",co:"United Kingdom",c:"UK",b:"MTN GROUP LIMITED",v:2212.2,p:3.3,tp:"Public Offer",at:"Friendly",d:"2026-02-17",tfa:"JP Morgan",bfa:"Citigroup Global Markets Limited / Bank of America"},
-{t:"AVADEL PHARMACEUTICALS PLC",co:"Ireland (Republic of)",c:"IE",b:"ALKERMES PLC",v:1731.1,p:17.5,tp:"Scheme",at:"Friendly",d:"2025-10-22",tfa:"Morgan Stanley / Goldman Sachs",bfa:"JP Morgan"},
-{t:"NURNBERGER BETEILIGUNGS AG",co:"Germany",c:"DE",b:"VIENNA INSURANCE GROUP AG",v:1202.1,p:154.2,tp:"Public Offer",at:"Friendly",d:"2025-10-16",tfa:"ParkView Partners GmbH",bfa:"Deutsche Bank"},
-{t:"FERRETTI S.P.A.",co:"Italy",c:"IT",b:"KKCG AG",v:1030.2,p:-4.9,tp:"Partial",at:"Friendly",d:"2026-01-19",tfa:"",bfa:"Somerley Capital Limited / Unicredit"},
-{t:"KLOCKNER & CO SE",co:"Germany",c:"DE",b:"WORTHINGTON STEEL INC",v:963.9,p:81.2,tp:"Public Offer",at:"Friendly",d:"2026-01-15",tfa:"Goldman Sachs",bfa:"Bank of America / Andina Partners"},
-{t:"FNAC DARTY SA",co:"France",c:"FR",b:"EP CORPORATE GROUP AS",v:929.2,p:19.0,tp:"MBO/MBI",at:"Friendly",d:"2026-01-26",tfa:"Ledouble SAS / Rothschild",bfa:"Crédit Agricole CIB / Société Générale / BNP Paribas"},
-{t:"COINSHARES INTERNATIONAL LIMITED",co:"Sweden",c:"SE",b:"VINE HILL CAPITAL INVESTMENT CORP",v:921.8,p:30.6,tp:"Scheme",at:"Friendly",d:"2025-09-08",tfa:"Keefe, Bruyette & Woods / Stifel",bfa:""},
-{t:"SOLGOLD PLC",co:"United Kingdom",c:"UK",b:"JIANGXI COPPER COMPANY LIMITED",v:866.8,p:7.1,tp:"Scheme",at:"Friendly",d:"2025-12-24",tfa:"RBC Capital Markets / Maxit Capital LP",bfa:"Admiralty Harbour Capital / Peel Hunt LLP"},
-{t:"OCI NV",co:"Netherlands",c:"NL",b:"ORASCOM CONSTRUCTION PLC",v:765.2,p:-14.1,tp:"Merger",at:"Friendly",d:"2025-12-09",tfa:"Rothschild / Rabobank",bfa:"First Abu Dhabi Bank / EFG Hermes"},
-{t:"CITYCON OYJ",co:"Finland",c:"FI",b:"G CITY LTD",v:644.4,p:35.8,tp:"Mandatory",at:"Neutral",d:"2025-11-03",tfa:"",bfa:"Evli Corporate Finance"},
-{t:"TINEXTA SPA",co:"Italy",c:"IT",b:"ADVENT INTERNATIONAL LP / NEXTALIA SGR SPA",v:604.2,p:39.7,tp:"Mandatory",at:"Friendly",d:"2025-08-05",tfa:"Lazard",bfa:""},
-{t:"NORTHERN DATA AG",co:"Germany",c:"DE",b:"RUMBLE INC",v:581.1,p:-55.2,tp:"Divestiture",at:"Friendly",d:"2025-11-10",tfa:"Jefferies & Company",bfa:"Guggenheim Securities LLC / ParkView Partners GmbH"},
-{t:"EUROGROUP LAMINATIONS SPA",co:"Italy",c:"IT",b:"FOUNTAINVEST PARTNERS (ASIA) LIMITED",v:549.3,p:65.2,tp:"Mandatory",at:"Friendly",d:"2025-07-28",tfa:"",bfa:"Morgan Stanley / BNP Paribas / Rothschild"},
-{t:"INTERNATIONAL PERSONAL FINANCE PLC",co:"United Kingdom",c:"UK",b:"BASEPOINT CAPITAL LLC",v:542.5,p:34.0,tp:"Scheme",at:"Friendly",d:"2025-12-29",tfa:"Stephens Inc",bfa:"Jefferies International / Deutsche Bank"},
-{t:"NILFISK HOLDING A/S",co:"Denmark",c:"DK",b:"FREUDENBERG & CO KG",v:460.0,p:35.9,tp:"Public Offer",at:"Friendly",d:"2025-12-11",tfa:"Guggenheim Securities LLC",bfa:"JP Morgan"},
-{t:"IDOX PLC",co:"United Kingdom",c:"UK",b:"LONG PATH PARTNERS LLC",v:339.5,p:26.8,tp:"MBO/MBI",at:"Friendly",d:"2025-10-28",tfa:"Peel Hunt LLP / Rothschild",bfa:"Canaccord Genuity Limited"},
-{t:"ANTARES VISION S.P.A.",co:"Italy",c:"IT",b:"CRANE NXT, CO.",v:306.0,p:3.9,tp:"Mandatory",at:"Friendly",d:"2025-09-12",tfa:"JP Morgan",bfa:"Goldman Sachs"},
-{t:"ESSO SOCIETE ANONYME FRANCAISE SA",co:"France",c:"FR",b:"NORTH ATLANTIC REFINING CORP",v:288.0,p:-19.5,tp:"Mandatory",at:"Friendly",d:"2025-05-28",tfa:"",bfa:""},
-{t:"ERCROS SA",co:"Spain",c:"ES",b:"JOSE DE MELLO SGPS SA",v:281.3,p:40.4,tp:"Public Offer",at:"Hostile",d:"2024-03-04",tfa:"Evercore Partners",bfa:"Banco Santander Central Hispano"},
-{t:"SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA",co:"France",c:"FR",b:"SOCIETE DE PARTICIPATION DEAUVILLAISE SAS",v:262.4,p:27.3,tp:"Public Offer",at:"Friendly",d:"2025-12-08",tfa:"",bfa:""},
-{t:"DIGITAL VALUE SPA",co:"Italy",c:"IT",b:"OEP CAPITAL ADVISORS LP",v:255.9,p:-2.4,tp:"Mandatory",at:"Friendly",d:"2025-10-21",tfa:"D.G.P.A",bfa:"Equita Corporate Finance"},
-{t:"KITWAVE GROUP PLC",co:"United Kingdom",c:"UK",b:"OEP CAPITAL ADVISORS LP",v:250.6,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-01-22",tfa:"Canaccord Genuity Limited",bfa:"Moelis & Co LLC"},
-{t:"SKAGI HF",co:"Iceland",c:"IS",b:"ISLANDSBANKI HF",v:246.4,p:null,tp:"Public Offer",at:"Friendly",d:"2025-10-06",tfa:"",bfa:""},
-{t:"BREDBAND2 I SKANDINAVIEN AB",co:"Sweden",c:"SE",b:"TELIA COMPANY AB",v:237.4,p:34.9,tp:"Public Offer",at:"Friendly",d:"2025-07-18",tfa:"Ernst & Young",bfa:"Nordea Corporate Finance / Avanza Bank AB"},
-{t:"RANA GRUBER ASA",co:"Norway",c:"NO",b:"CHAMPION IRON LIMITED",v:216.1,p:12.9,tp:"Public Offer",at:"Friendly",d:"2025-12-21",tfa:"DNB Carnegie",bfa:"Clarksons Securities"},
-{t:"JOHN WOOD GROUP PLC",co:"United Kingdom",c:"UK",b:"DAR AL-HANDASAH CONSULTANTS SHAIR & PARTNERS HLDGS",v:215.8,p:13.6,tp:"Scheme",at:"Friendly",d:"2025-08-29",tfa:"JPMorgan Cazenove / Europa Partners / Morgan Stanley / Rothschild",bfa:"Greenhill & Co / Goldman Sachs"},
-{t:"GROUPE PIZZORNO ENVIRONNEMENT SA",co:"France",c:"FR",b:"PAPREC GROUP SA",v:210.0,p:11.6,tp:"Mandatory",at:"Friendly",d:"2026-01-19",tfa:"",bfa:""},
-{t:"MARTIFER SGPS SA",co:"Portugal",c:"PT",b:"FERNANDO CAMPOS NUNES",v:174.9,p:-6.5,tp:"Public Offer",at:"Friendly",d:"2025-08-05",tfa:"",bfa:""},
-{t:"BANCA SISTEMA SPA",co:"Italy",c:"IT",b:"ELLIOTT INVESTMENT MANAGEMENT LP",v:158.6,p:null,tp:"MBO/MBI",at:"Friendly",d:"2025-06-30",tfa:"",bfa:"Unicredit"},
-{t:"LIFE SCIENCE REIT PLC",co:"United Kingdom",c:"UK",b:"BRITISH LAND COMPANY PLC, THE",v:149.8,p:20.9,tp:"Scheme",at:"Friendly",d:"2026-01-28",tfa:"Panmure Liberum",bfa:"UBS"},
-{t:"FALCON OIL & GAS LTD",co:"Ireland (Republic of)",c:"IE",b:"TAMBORAN RESOURCES CORPORATION",v:129.0,p:17.4,tp:"Scheme",at:"Friendly",d:"2025-09-30",tfa:"Cavendish Corporate Finance Ltd",bfa:""},
-{t:"1SPATIAL PLC",co:"United Kingdom",c:"UK",b:"BATTERY VENTURES",v:87.1,p:57.0,tp:"Scheme",at:"Friendly",d:"2026-01-21",tfa:"Panmure Liberum",bfa:"Raymond James"},
-{t:"ADDVISE GROUP AB (PUBL)",co:"Sweden",c:"SE",b:"AMPLEX AB",v:85.8,p:43.4,tp:"MBO/MBI",at:"Friendly",d:"2025-12-10",tfa:"Mangold Fondkommission AB",bfa:"Nordea Corporate Finance"},
-{t:"INSPECS GROUP PLC",co:"United Kingdom",c:"UK",b:"LUKE JOHNSON AND IAN LIVINGSTONE",v:85.4,p:107.4,tp:"Scheme",at:"Friendly",d:"2025-12-10",tfa:"Peel Hunt LLP",bfa:"Cavendish Corporate Finance Ltd"},
-{t:"SPIR GROUP ASA",co:"Norway",c:"NO",b:"KARBON INVEST AS/CARUCEL FINANCE AS/STELLA IND.",v:84.5,p:37.7,tp:"Public Offer",at:"Friendly",d:"2025-11-27",tfa:"",bfa:"Nordea Corporate Finance"},
-{t:"TECNOTREE OYJ",co:"Finland",c:"FI",b:"HELIOS INVESTMENT PARTNERS LLP",v:84.4,p:42.5,tp:"MBO/MBI",at:"Friendly",d:"2026-01-27",tfa:"Ernst & Young / Bridewell",bfa:"DNB Carnegie"},
-{t:"ASETEK A/S",co:"Denmark",c:"DK",b:"SUZHOU CHUNQIU ELECTRONIC TECHNOLOGY CO LTD",v:68.0,p:109.8,tp:"Public Offer",at:"Friendly",d:"2025-11-25",tfa:"ABG Sundal Collier",bfa:""},
-{t:"SPINDOX SPA",co:"Italy",c:"IT",b:"PROGRESSIO SGR SPA",v:67.2,p:null,tp:"Mandatory",at:"Friendly",d:"2025-07-31",tfa:"Klecha & Co.",bfa:"Banco BPM"},
-{t:"FRENKEL TOPPING GROUP PLC",co:"United Kingdom",c:"UK",b:"HARWOOD PRIVATE EQUITY LLP",v:64.0,p:20.1,tp:"Scheme",at:"Friendly",d:"2025-09-30",tfa:"Cavendish Corporate Finance Ltd",bfa:"Strand Hanson Limited"},
-{t:"HEALTH ITALIA SPA",co:"Italy",c:"IT",b:"SALUTIA SPA",v:49.9,p:null,tp:"Mandatory",at:"Friendly",d:"2025-05-21",tfa:"",bfa:"Banca Akros SA"},
-{t:"CULTI MILANO SPA",co:"Italy",c:"IT",b:"BERGER INTERNATIONAL SAS",v:45.8,p:null,tp:"Mandatory",at:"Friendly",d:"2025-12-19",tfa:"",bfa:""},
-{t:"ELES SEMICONDUCTOR EQUIPMENT SPA",co:"Italy",c:"IT",b:"XENON AIFM SA",v:45.1,p:null,tp:"MBO/MBI",at:"White Knight",d:"2025-10-23",tfa:"Pirola Corporate Finance",bfa:"PricewaterhouseCoopers / Rothschild"},
-{t:"KRONA PUBLIC REAL ESTATE AB",co:"Sweden",c:"SE",b:"STENHUS FASTIGHETER I NORDEN AB",v:32.2,p:1.0,tp:"Public Offer",at:"Friendly",d:"2026-01-15",tfa:"",bfa:""},
-{t:"MURAL ONCOLOGY PLC",co:"Ireland (Republic of)",c:"IE",b:"XOMA ROYALTY CORPORATION",v:26.8,p:97.6,tp:"Scheme",at:"Friendly",d:"2025-08-20",tfa:"Lucid Capital Markets",bfa:"Davy Corporate Finance"},
-{t:"LIPUM AB",co:"Sweden",c:"SE",b:"FLERIE AB",v:26.8,p:33.2,tp:"Public Offer",at:"Friendly",d:"2025-11-18",tfa:"Vastra Hamnen",bfa:""},
-{t:"CONSENSUS ASSET MANAGEMENT AB (PUBL) LAURE VERSION",co:"Sweden",c:"SE",b:"NORION BANK AB (PUBL)",v:13.7,p:116.3,tp:"Public Offer",at:"Friendly",d:"2025-11-21",tfa:"KPMG",bfa:"Skandinaviska Enskilda Banken AB"},
-{t:"WH IRELAND GROUP PLC",co:"United Kingdom",c:"UK",b:"TEAM PLC",v:13.2,p:257.5,tp:"Scheme",at:"Friendly",d:"2025-11-27",tfa:"Shore Capital & Corporate Ltd",bfa:"Hannam & Partners"},
-{t:"ESSENSYS PLC",co:"United Kingdom",c:"UK",b:"MR MARK FURNESS/TERRY & DAVID LEAH/WILLIAM CURRIE",v:11.3,p:9.7,tp:"MBO/MBI",at:"Friendly",d:"2026-02-24",tfa:"Canaccord Genuity Limited",bfa:"Kroll Securities"},
-{t:"VINPAI SA",co:"France",c:"FR",b:"CAMLIN FINE SCIENCES LIMITED",v:10.3,p:13.2,tp:"Public Offer",at:"Friendly",d:"2025-02-24",tfa:"",bfa:""},
-{t:"DELTIC ENERGY PLC",co:"United Kingdom",c:"UK",b:"VIARO INVESTMENT LIMITED",v:6.9,p:35.6,tp:"Scheme",at:"Friendly",d:"2025-06-30",tfa:"Allenby Capital",bfa:"Hannam & Partners"},
-{t:"WALKER CRIPS GROUP PLC",co:"United Kingdom",c:"UK",b:"PHILLIP BROKERAGE PTE LTD",v:6.0,p:86.7,tp:"Scheme",at:"Friendly",d:"2025-11-24",tfa:"Singer Capital Markets Limited",bfa:"Cavendish Corporate Finance Ltd"}
+{t:"JDE PEETS NV",co:"Netherlands",c:"NL",b:"KEURIG DR PEPPER INC",v:13398.1,p:20.0,tp:"Divestiture",at:"Friendly",d:"2025-08-25",ec:"2026-07-31",tfa:"Bank of America",bfa:"Lazard"},
+{t:"SCHRODERS PLC",co:"United Kingdom",c:"UK",b:"TEACHERS INSURANCE AND ANNUITY ASSOCIATION",v:9503.2,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-02-12",ec:"2026-06-30",tfa:"Wells Fargo Securities / JPMorgan Cazenove / Barclays",bfa:"BNP Paribas"},
+{t:"INPOST SA",co:"Luxembourg",c:"LU",b:"ADVENT INTERNATIONAL/FEDEX/A&R INVESTMENTS/PPF",v:6782.6,p:50,tp:"MBO/MBI",at:"Friendly",d:"2026-02-09",ec:"2026-08-31",tfa:"JP Morgan / Santander",bfa:""},
+{t:"MERUS NV",co:"Netherlands",c:"NL",b:"GENMAB A/S",v:6020.0,p:40.8,tp:"Public Offer",at:"Friendly",d:"2025-09-29",ec:"2026-04-30",tfa:"Jefferies LLC",bfa:"Morgan Stanley / PJT Partners"},
+{t:"BANCA POPOLARE DI SONDRIO SPA",co:"Italy",c:"IT",b:"BPER BANCA SPA",v:5930.5,p:68.8,tp:"Public Offer",at:"Friendly",d:"2025-11-05",ec:"2026-06-30",tfa:"",bfa:""},
+{t:"JANUS HENDERSON GROUP PLC",co:"United Kingdom",c:"UK",b:"TRIAN FUND MANAGEMENT LP/GENERAL CATALYST GROUP",v:5634.9,p:18.9,tp:"MBO/MBI",at:"Friendly",d:"2025-12-22",ec:"2026-07-31",tfa:"Centerview Partners LLC / Goldman Sachs",bfa:"Jefferies LLC / Citi"},
+{t:"IVECO GROUP NV",co:"Italy",c:"IT",b:"TATA MOTORS LIMITED",v:4682.0,p:29.7,tp:"Public Offer",at:"Friendly",d:"2025-07-30",ec:"2026-05-31",tfa:"Goldman Sachs",bfa:"Morgan Stanley"},
+{t:"ALLFUNDS GROUP PLC",co:"United Kingdom",c:"UK",b:"DEUTSCHE BORSE AG",v:4498.5,p:29.9,tp:"Scheme",at:"Friendly",d:"2026-01-21",ec:"2026-06-30",tfa:"Goldman Sachs / Citi",bfa:"Barclays"},
+{t:"SUBSEA 7 SA",co:"Luxembourg",c:"LU",b:"SAIPEM SPA",v:4168.8,p:9.3,tp:"Merger",at:"Friendly",d:"2025-02-23",ec:"2026-09-30",tfa:"Deloitte Corporate Finance / Kirk Lovegrove & Company",bfa:"Goldman Sachs International / Deutsche Bank"},
+{t:"JUST GROUP PLC",co:"United Kingdom",c:"UK",b:"BROOKFIELD WEALTH SOLUTIONS LIMITED",v:2355.7,p:73.9,tp:"Scheme",at:"Friendly",d:"2025-07-31",ec:"2026-04-30",tfa:"JPMorgan Cazenove / Evercore Partners",bfa:"RBC Capital Markets"},
+{t:"JTC PLC",co:"United Kingdom",c:"UK",b:"PERMIRA ADVISERS LLP",v:2340.2,p:37.4,tp:"Scheme",at:"Friendly",d:"2025-11-10",ec:"2026-04-30",tfa:"Deutsche Numis / Robert W Baird / Berenberg Bank",bfa:"Jefferies International"},
+{t:"IHS HOLDING LIMITED",co:"United Kingdom",c:"UK",b:"MTN GROUP LIMITED",v:2212.2,p:3.3,tp:"Public Offer",at:"Friendly",d:"2026-02-17",ec:"2026-06-30",tfa:"JP Morgan",bfa:"Citigroup Global Markets Limited / Bank of America"},
+{t:"AVADEL PHARMACEUTICALS PLC",co:"Ireland (Republic of)",c:"IE",b:"ALKERMES PLC",v:1731.1,p:17.5,tp:"Scheme",at:"Friendly",d:"2025-10-22",ec:"2026-05-31",tfa:"Morgan Stanley / Goldman Sachs",bfa:"JP Morgan"},
+{t:"NURNBERGER BETEILIGUNGS AG",co:"Germany",c:"DE",b:"VIENNA INSURANCE GROUP AG",v:1202.1,p:154.2,tp:"Public Offer",at:"Friendly",d:"2025-10-16",ec:"2026-04-30",tfa:"ParkView Partners GmbH",bfa:"Deutsche Bank"},
+{t:"FERRETTI S.P.A.",co:"Italy",c:"IT",b:"KKCG AG",v:1030.2,p:-4.9,tp:"Partial",at:"Friendly",d:"2026-01-19",ec:"2026-04-30",tfa:"",bfa:"Somerley Capital Limited / Unicredit"},
+{t:"KLOCKNER & CO SE",co:"Germany",c:"DE",b:"WORTHINGTON STEEL INC",v:963.9,p:81.2,tp:"Public Offer",at:"Friendly",d:"2026-01-15",ec:"2026-05-31",tfa:"Goldman Sachs",bfa:"Bank of America / Andina Partners"},
+{t:"FNAC DARTY SA",co:"France",c:"FR",b:"EP CORPORATE GROUP AS",v:929.2,p:19.0,tp:"MBO/MBI",at:"Friendly",d:"2026-01-26",ec:"2026-05-31",tfa:"Ledouble SAS / Rothschild",bfa:"Crédit Agricole CIB / Société Générale / BNP Paribas"},
+{t:"COINSHARES INTERNATIONAL LIMITED",co:"Sweden",c:"SE",b:"VINE HILL CAPITAL INVESTMENT CORP",v:921.8,p:30.6,tp:"Scheme",at:"Friendly",d:"2025-09-08",ec:"2026-04-30",tfa:"Keefe, Bruyette & Woods / Stifel",bfa:""},
+{t:"SOLGOLD PLC",co:"United Kingdom",c:"UK",b:"JIANGXI COPPER COMPANY LIMITED",v:866.8,p:7.1,tp:"Scheme",at:"Friendly",d:"2025-12-24",ec:"2026-05-31",tfa:"RBC Capital Markets / Maxit Capital LP",bfa:"Admiralty Harbour Capital / Peel Hunt LLP"},
+{t:"OCI NV",co:"Netherlands",c:"NL",b:"ORASCOM CONSTRUCTION PLC",v:765.2,p:-14.1,tp:"Merger",at:"Friendly",d:"2025-12-09",ec:"2026-07-31",tfa:"Rothschild / Rabobank",bfa:"First Abu Dhabi Bank / EFG Hermes"},
+{t:"CITYCON OYJ",co:"Finland",c:"FI",b:"G CITY LTD",v:644.4,p:35.8,tp:"Mandatory",at:"Neutral",d:"2025-11-03",ec:"2026-04-30",tfa:"",bfa:"Evli Corporate Finance"},
+{t:"TINEXTA SPA",co:"Italy",c:"IT",b:"ADVENT INTERNATIONAL LP / NEXTALIA SGR SPA",v:604.2,p:39.7,tp:"Mandatory",at:"Friendly",d:"2025-08-05",ec:"2026-05-31",tfa:"Lazard",bfa:""},
+{t:"NORTHERN DATA AG",co:"Germany",c:"DE",b:"RUMBLE INC",v:581.1,p:-55.2,tp:"Divestiture",at:"Friendly",d:"2025-11-10",ec:"2026-06-30",tfa:"Jefferies & Company",bfa:"Guggenheim Securities LLC / ParkView Partners GmbH"},
+{t:"EUROGROUP LAMINATIONS SPA",co:"Italy",c:"IT",b:"FOUNTAINVEST PARTNERS (ASIA) LIMITED",v:549.3,p:65.2,tp:"Mandatory",at:"Friendly",d:"2025-07-28",ec:"2026-04-30",tfa:"",bfa:"Morgan Stanley / BNP Paribas / Rothschild"},
+{t:"INTERNATIONAL PERSONAL FINANCE PLC",co:"United Kingdom",c:"UK",b:"BASEPOINT CAPITAL LLC",v:542.5,p:34.0,tp:"Scheme",at:"Friendly",d:"2025-12-29",ec:"2026-05-31",tfa:"Stephens Inc",bfa:"Jefferies International / Deutsche Bank"},
+{t:"NILFISK HOLDING A/S",co:"Denmark",c:"DK",b:"FREUDENBERG & CO KG",v:460.0,p:35.9,tp:"Public Offer",at:"Friendly",d:"2025-12-11",ec:"2026-04-30",tfa:"Guggenheim Securities LLC",bfa:"JP Morgan"},
+{t:"IDOX PLC",co:"United Kingdom",c:"UK",b:"LONG PATH PARTNERS LLC",v:339.5,p:26.8,tp:"MBO/MBI",at:"Friendly",d:"2025-10-28",ec:"2026-04-30",tfa:"Peel Hunt LLP / Rothschild",bfa:"Canaccord Genuity Limited"},
+{t:"ANTARES VISION S.P.A.",co:"Italy",c:"IT",b:"CRANE NXT, CO.",v:306.0,p:3.9,tp:"Mandatory",at:"Friendly",d:"2025-09-12",ec:"2026-04-30",tfa:"JP Morgan",bfa:"Goldman Sachs"},
+{t:"ESSO SOCIETE ANONYME FRANCAISE SA",co:"France",c:"FR",b:"NORTH ATLANTIC REFINING CORP",v:288.0,p:-19.5,tp:"Mandatory",at:"Friendly",d:"2025-05-28",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"ERCROS SA",co:"Spain",c:"ES",b:"JOSE DE MELLO SGPS SA",v:281.3,p:40.4,tp:"Public Offer",at:"Hostile",d:"2024-03-04",ec:"2026-06-30",tfa:"Evercore Partners",bfa:"Banco Santander Central Hispano"},
+{t:"SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA",co:"France",c:"FR",b:"SOCIETE DE PARTICIPATION DEAUVILLAISE SAS",v:262.4,p:27.3,tp:"Public Offer",at:"Friendly",d:"2025-12-08",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"DIGITAL VALUE SPA",co:"Italy",c:"IT",b:"OEP CAPITAL ADVISORS LP",v:255.9,p:-2.4,tp:"Mandatory",at:"Friendly",d:"2025-10-21",ec:"2026-04-30",tfa:"D.G.P.A",bfa:"Equita Corporate Finance"},
+{t:"KITWAVE GROUP PLC",co:"United Kingdom",c:"UK",b:"OEP CAPITAL ADVISORS LP",v:250.6,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-01-22",ec:"2026-05-31",tfa:"Canaccord Genuity Limited",bfa:"Moelis & Co LLC"},
+{t:"SKAGI HF",co:"Iceland",c:"IS",b:"ISLANDSBANKI HF",v:246.4,p:null,tp:"Public Offer",at:"Friendly",d:"2025-10-06",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"BREDBAND2 I SKANDINAVIEN AB",co:"Sweden",c:"SE",b:"TELIA COMPANY AB",v:237.4,p:34.9,tp:"Public Offer",at:"Friendly",d:"2025-07-18",ec:"2026-04-30",tfa:"Ernst & Young",bfa:"Nordea Corporate Finance / Avanza Bank AB"},
+{t:"RANA GRUBER ASA",co:"Norway",c:"NO",b:"CHAMPION IRON LIMITED",v:216.1,p:12.9,tp:"Public Offer",at:"Friendly",d:"2025-12-21",ec:"2026-04-30",tfa:"DNB Carnegie",bfa:"Clarksons Securities"},
+{t:"JOHN WOOD GROUP PLC",co:"United Kingdom",c:"UK",b:"DAR AL-HANDASAH CONSULTANTS SHAIR & PARTNERS HLDGS",v:215.8,p:13.6,tp:"Scheme",at:"Friendly",d:"2025-08-29",ec:"2026-05-31",tfa:"JPMorgan Cazenove / Europa Partners / Morgan Stanley / Rothschild",bfa:"Greenhill & Co / Goldman Sachs"},
+{t:"GROUPE PIZZORNO ENVIRONNEMENT SA",co:"France",c:"FR",b:"PAPREC GROUP SA",v:210.0,p:11.6,tp:"Mandatory",at:"Friendly",d:"2026-01-19",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"MARTIFER SGPS SA",co:"Portugal",c:"PT",b:"FERNANDO CAMPOS NUNES",v:174.9,p:-6.5,tp:"Public Offer",at:"Friendly",d:"2025-08-05",ec:"2026-05-31",tfa:"",bfa:""},
+{t:"BANCA SISTEMA SPA",co:"Italy",c:"IT",b:"ELLIOTT INVESTMENT MANAGEMENT LP",v:158.6,p:null,tp:"MBO/MBI",at:"Friendly",d:"2025-06-30",ec:"2026-07-31",tfa:"",bfa:"Unicredit"},
+{t:"LIFE SCIENCE REIT PLC",co:"United Kingdom",c:"UK",b:"BRITISH LAND COMPANY PLC, THE",v:149.8,p:20.9,tp:"Scheme",at:"Friendly",d:"2026-01-28",ec:"2026-06-30",tfa:"Panmure Liberum",bfa:"UBS"},
+{t:"FALCON OIL & GAS LTD",co:"Ireland (Republic of)",c:"IE",b:"TAMBORAN RESOURCES CORPORATION",v:129.0,p:17.4,tp:"Scheme",at:"Friendly",d:"2025-09-30",ec:"2026-04-30",tfa:"Cavendish Corporate Finance Ltd",bfa:""},
+{t:"1SPATIAL PLC",co:"United Kingdom",c:"UK",b:"BATTERY VENTURES",v:87.1,p:57.0,tp:"Scheme",at:"Friendly",d:"2026-01-21",ec:"2026-05-31",tfa:"Panmure Liberum",bfa:"Raymond James"},
+{t:"ADDVISE GROUP AB (PUBL)",co:"Sweden",c:"SE",b:"AMPLEX AB",v:85.8,p:43.4,tp:"MBO/MBI",at:"Friendly",d:"2025-12-10",ec:"2026-04-30",tfa:"Mangold Fondkommission AB",bfa:"Nordea Corporate Finance"},
+{t:"INSPECS GROUP PLC",co:"United Kingdom",c:"UK",b:"LUKE JOHNSON AND IAN LIVINGSTONE",v:85.4,p:107.4,tp:"Scheme",at:"Friendly",d:"2025-12-10",ec:"2026-05-31",tfa:"Peel Hunt LLP",bfa:"Cavendish Corporate Finance Ltd"},
+{t:"SPIR GROUP ASA",co:"Norway",c:"NO",b:"KARBON INVEST AS/CARUCEL FINANCE AS/STELLA IND.",v:84.5,p:37.7,tp:"Public Offer",at:"Friendly",d:"2025-11-27",ec:"2026-04-30",tfa:"",bfa:"Nordea Corporate Finance"},
+{t:"TECNOTREE OYJ",co:"Finland",c:"FI",b:"HELIOS INVESTMENT PARTNERS LLP",v:84.4,p:42.5,tp:"MBO/MBI",at:"Friendly",d:"2026-01-27",ec:"2026-05-31",tfa:"Ernst & Young / Bridewell",bfa:"DNB Carnegie"},
+{t:"ASETEK A/S",co:"Denmark",c:"DK",b:"SUZHOU CHUNQIU ELECTRONIC TECHNOLOGY CO LTD",v:68.0,p:109.8,tp:"Public Offer",at:"Friendly",d:"2025-11-25",ec:"2026-04-30",tfa:"ABG Sundal Collier",bfa:""},
+{t:"SPINDOX SPA",co:"Italy",c:"IT",b:"PROGRESSIO SGR SPA",v:67.2,p:null,tp:"Mandatory",at:"Friendly",d:"2025-07-31",ec:"2026-04-30",tfa:"Klecha & Co.",bfa:"Banco BPM"},
+{t:"FRENKEL TOPPING GROUP PLC",co:"United Kingdom",c:"UK",b:"HARWOOD PRIVATE EQUITY LLP",v:64.0,p:20.1,tp:"Scheme",at:"Friendly",d:"2025-09-30",ec:"2026-04-30",tfa:"Cavendish Corporate Finance Ltd",bfa:"Strand Hanson Limited"},
+{t:"HEALTH ITALIA SPA",co:"Italy",c:"IT",b:"SALUTIA SPA",v:49.9,p:null,tp:"Mandatory",at:"Friendly",d:"2025-05-21",ec:"2026-04-30",tfa:"",bfa:"Banca Akros SA"},
+{t:"CULTI MILANO SPA",co:"Italy",c:"IT",b:"BERGER INTERNATIONAL SAS",v:45.8,p:null,tp:"Mandatory",at:"Friendly",d:"2025-12-19",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"ELES SEMICONDUCTOR EQUIPMENT SPA",co:"Italy",c:"IT",b:"XENON AIFM SA",v:45.1,p:null,tp:"MBO/MBI",at:"White Knight",d:"2025-10-23",ec:"2026-05-31",tfa:"Pirola Corporate Finance",bfa:"PricewaterhouseCoopers / Rothschild"},
+{t:"KRONA PUBLIC REAL ESTATE AB",co:"Sweden",c:"SE",b:"STENHUS FASTIGHETER I NORDEN AB",v:32.2,p:1.0,tp:"Public Offer",at:"Friendly",d:"2026-01-15",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"MURAL ONCOLOGY PLC",co:"Ireland (Republic of)",c:"IE",b:"XOMA ROYALTY CORPORATION",v:26.8,p:97.6,tp:"Scheme",at:"Friendly",d:"2025-08-20",ec:"2026-04-30",tfa:"Lucid Capital Markets",bfa:"Davy Corporate Finance"},
+{t:"LIPUM AB",co:"Sweden",c:"SE",b:"FLERIE AB",v:26.8,p:33.2,tp:"Public Offer",at:"Friendly",d:"2025-11-18",ec:"2026-04-30",tfa:"Vastra Hamnen",bfa:""},
+{t:"CONSENSUS ASSET MANAGEMENT AB (PUBL) LAURE VERSION",co:"Sweden",c:"SE",b:"NORION BANK AB (PUBL)",v:13.7,p:116.3,tp:"Public Offer",at:"Friendly",d:"2025-11-21",ec:"2026-04-30",tfa:"KPMG",bfa:"Skandinaviska Enskilda Banken AB"},
+{t:"WH IRELAND GROUP PLC",co:"United Kingdom",c:"UK",b:"TEAM PLC",v:13.2,p:257.5,tp:"Scheme",at:"Friendly",d:"2025-11-27",ec:"2026-04-30",tfa:"Shore Capital & Corporate Ltd",bfa:"Hannam & Partners"},
+{t:"ESSENSYS PLC",co:"United Kingdom",c:"UK",b:"MR MARK FURNESS/TERRY & DAVID LEAH/WILLIAM CURRIE",v:11.3,p:9.7,tp:"MBO/MBI",at:"Friendly",d:"2026-02-24",ec:"2026-06-30",tfa:"Canaccord Genuity Limited",bfa:"Kroll Securities"},
+{t:"VINPAI SA",co:"France",c:"FR",b:"CAMLIN FINE SCIENCES LIMITED",v:10.3,p:13.2,tp:"Public Offer",at:"Friendly",d:"2025-02-24",ec:"2026-04-30",tfa:"",bfa:""},
+{t:"DELTIC ENERGY PLC",co:"United Kingdom",c:"UK",b:"VIARO INVESTMENT LIMITED",v:6.9,p:35.6,tp:"Scheme",at:"Friendly",d:"2025-06-30",ec:"2026-04-30",tfa:"Allenby Capital",bfa:"Hannam & Partners"},
+{t:"WALKER CRIPS GROUP PLC",co:"United Kingdom",c:"UK",b:"PHILLIP BROKERAGE PTE LTD",v:6.0,p:86.7,tp:"Scheme",at:"Friendly",d:"2025-11-24",ec:"2026-05-31",tfa:"Singer Capital Markets Limited",bfa:"Cavendish Corporate Finance Ltd"}
 ];
 
 const updates=[
@@ -484,6 +485,7 @@ function render(data){
       <td>${ph(d.p)}</td>
       <td><span class="tp ${tpc(d.tp)}">${d.tp}</span>${atBadge}</td>
       <td class="dt">${fd(d.d)}</td>
+      <td class="dt">${fd(d.ec)}</td>
       <td class="adv" title="${d.tfa}">${d.tfa||'—'}</td>
       <td class="adv" title="${d.bfa}">${d.bfa||'—'}</td>
     </tr>`}).join('');
@@ -533,18 +535,16 @@ function updateSidebar(data){
   const avgP=withP.length?(withP.reduce((s,d)=>s+d.p,0)/withP.length):null;
 
   // ── 2. CONSIDERATION TYPE ─────────────────────────────────────
-  const considMap={Cash:{n:0,v:0},Shares:{n:0,v:0},Mixed:{n:0,v:0},Unknown:{n:0,v:0}};
+  const considMap={Cash:{n:0,v:0},Shares:{n:0,v:0},Mixed:{n:0,v:0}};
   data.forEach(d=>{
     const m=multData[d.t];
-    const cat=m?m.consid:'Unknown';
-    const key=considMap[cat]?cat:'Unknown';
-    considMap[key].n++;
-    considMap[key].v+=d.v;
+    if(!m)return;
+    const cat=m.consid;
+    if(considMap[cat]){considMap[cat].n++;considMap[cat].v+=d.v;}
   });
   const totalConsidV=Object.values(considMap).reduce((s,c)=>s+c.v,0);
-  const considOrder=['Cash','Shares','Mixed','Unknown'];
-  const considColors={Cash:'#0B7A55',Shares:'#4338CA',Mixed:'#A85D00',Unknown:'#8992A8'};
-  const considBg={Cash:'var(--gb)',Shares:'var(--ib)',Mixed:'var(--ab)',Unknown:'var(--bl)'};
+  const considOrder=['Cash','Shares','Mixed'];
+  const considColors={Cash:'#0B7A55',Shares:'#4338CA',Mixed:'#A85D00'};
   const maxConsidV=Math.max(...considOrder.map(k=>considMap[k].v),1);
 
   // ── 3. TRANSACTION MULTIPLES ──────────────────────────────────
@@ -580,34 +580,41 @@ function updateSidebar(data){
 
   document.getElementById('sidebar').innerHTML=`
     <div class="sb-card">
-      <div class="sb-hd">
-        <span class="sb-title">Premium Distribution</span>
-        <span class="sb-sub">${withP.length} deals with data</span>
+      <div class="sb-hd" style="display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;border-bottom:1px solid var(--b)">
+        <div style="padding:10px 14px;border-right:1px solid var(--b)">
+          <div class="sb-title">Premium Distribution</div>
+          <div class="sb-sub">${withP.length} deals with data</div>
+        </div>
+        <div style="padding:10px 14px">
+          <div class="sb-title">Consideration</div>
+          <div class="sb-sub">By deal value</div>
+        </div>
       </div>
-      <div style="padding:8px 14px 4px;display:flex;gap:16px;border-bottom:1px solid var(--bl)">
-        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${medP!==null?medP.toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Median</div></div>
-        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${avgP!==null?avgP.toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Mean</div></div>
-        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${withP.length?Math.max(...withP.map(d=>d.p)).toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">High</div></div>
-        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${withP.length?Math.min(...withP.map(d=>d.p)).toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Low</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+        <div style="border-right:1px solid var(--b)">
+          <div style="padding:7px 14px 5px;display:flex;gap:12px;border-bottom:1px solid var(--bl)">
+            <div><div style="font-size:14px;font-weight:700;font-variant-numeric:tabular-nums">${medP!==null?medP.toFixed(1)+'%':'—'}</div><div style="font-size:8.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Median</div></div>
+            <div><div style="font-size:14px;font-weight:700;font-variant-numeric:tabular-nums">${avgP!==null?avgP.toFixed(1)+'%':'—'}</div><div style="font-size:8.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Mean</div></div>
+            <div><div style="font-size:14px;font-weight:700;font-variant-numeric:tabular-nums">${withP.length?Math.max(...withP.map(d=>d.p)).toFixed(0)+'%':'—'}</div><div style="font-size:8.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">High</div></div>
+          </div>
+          ${bandCounts.map(b=>`<div style="padding:4px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--bl)">
+            <span style="font-size:9.5px;font-weight:600;color:var(--t2);min-width:42px">${b.label}</span>
+            <div style="flex:1;height:8px;background:var(--bl);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${b.n?Math.round(b.n/maxN*100):0}%;background:${b.color}"></div></div>
+            <span style="font-size:10px;font-weight:700;color:var(--t);min-width:14px;text-align:right">${b.n}</span>
+          </div>`).join('')}
+        </div>
+        <div>
+          ${considOrder.filter(k=>considMap[k].n>0).map(k=>`<div style="padding:6px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid var(--bl)">
+            <span style="font-size:9.5px;font-weight:600;color:var(--t2);min-width:40px">${k}</span>
+            <div style="flex:1;height:8px;background:var(--bl);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${Math.round(considMap[k].v/maxConsidV*100)}%;background:${considColors[k]}"></div></div>
+            <span style="font-size:9.5px;font-weight:700;color:${considColors[k]};min-width:26px;text-align:right">${totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'—'}</span>
+          </div>`).join('')}
+          <div style="padding:8px 12px;border-bottom:1px solid var(--bl)">
+            <div style="font-size:8.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-bottom:4px">Largest cash deal</div>
+            <div style="font-size:10px;font-weight:600;color:var(--t);line-height:1.3">${(()=>{const cashDeals=data.filter(d=>{const m=multData[d.t];return m&&m.consid==='Cash';});cashDeals.sort((a,b)=>b.v-a.v);return cashDeals.length?cashDeals[0].t.split(' ').slice(0,3).join(' ')+'…':'—';})()}</div>
+          </div>
+        </div>
       </div>
-      ${bandCounts.map(b=>`<div class="sb-bar-row">
-        <span class="sb-bar-label">${b.label}</span>
-        <div class="sb-bar-track"><div class="sb-bar-fill" style="width:${b.n?Math.round(b.n/maxN*100):0}%;background:${b.color}"></div></div>
-        <span class="sb-bar-count">${b.n}</span>
-      </div>`).join('')}
-    </div>
-
-    <div class="sb-card">
-      <div class="sb-hd">
-        <span class="sb-title">Consideration Type</span>
-        <span class="sb-sub">By deal value</span>
-      </div>
-      ${considOrder.filter(k=>considMap[k].n>0).map(k=>`<div class="sb-bar-row">
-        <span class="sb-bar-label" style="min-width:58px">${k}</span>
-        <div class="sb-bar-track"><div class="sb-bar-fill" style="width:${Math.round(considMap[k].v/maxConsidV*100)}%;background:${considColors[k]}"></div></div>
-        <span class="sb-bar-count">${considMap[k].n}</span>
-        <span class="sb-bar-pct" style="color:${considColors[k]}">${totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'—'}</span>
-      </div>`).join('')}
     </div>
 
     <div class="sb-card">
@@ -620,11 +627,15 @@ function updateSidebar(data){
         <div class="sb-kpi"><div class="sb-kpi-v">${medEVSales?medEVSales.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">EV/Sales</div></div>
         <div class="sb-kpi"><div class="sb-kpi-v">${medPE?medPE.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">P/E</div></div>
       </div>
-      ${sectorRows.length?`<div style="padding:6px 14px 2px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);border-top:1px solid var(--bl)">By Sector · EV/EBITDA</div>
-      ${sectorRows.map(r=>`<div class="sb-mult-row">
+      ${sectorRows.length?`<div style="display:grid;grid-template-columns:1fr auto auto;gap:0;padding:5px 14px 3px;border-top:1px solid var(--bl)">
+        <span style="font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3)">Sector</span>
+        <span style="font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);text-align:right;padding-right:8px">EV/EBITDA</span>
+        <span style="font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);text-align:right">EV/Sales</span>
+      </div>
+      ${sectorRows.map(r=>`<div class="sb-mult-row" style="display:grid;grid-template-columns:1fr auto auto;gap:0">
         <span class="sb-mult-sector">${r.sector}</span>
-        <span class="sb-mult-v">${r.ebitda?r.ebitda.toFixed(1)+'x':'—'}</span>
-        <span class="sb-mult-l">${r.sales?r.sales.toFixed(1)+'x':''}</span>
+        <span class="sb-mult-v" style="padding-right:8px">${r.ebitda?r.ebitda.toFixed(1)+'x':'—'}</span>
+        <span class="sb-mult-v">${r.sales?r.sales.toFixed(1)+'x':'—'}</span>
       </div>`).join('')}`:''}
     </div>
 
