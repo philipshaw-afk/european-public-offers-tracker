@@ -160,6 +160,34 @@ tbody tr:last-child td{border-bottom:0}
 @keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .ai{animation:fu .4s ease-out both}
 .d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}
+
+/* New sidebar panels */
+.sb-bar-row{padding:6px 14px;border-bottom:1px solid var(--bl);display:flex;align-items:center;gap:8px}
+.sb-bar-row:last-child{border-bottom:0}
+.sb-bar-label{font-size:10.5px;font-weight:600;color:var(--t2);min-width:52px}
+.sb-bar-track{flex:1;height:6px;background:var(--bl);border-radius:3px;overflow:hidden}
+.sb-bar-fill{height:100%;border-radius:3px;transition:width .4s ease}
+.sb-bar-count{font-size:10.5px;font-weight:700;color:var(--t);min-width:24px;text-align:right}
+.sb-bar-pct{font-size:9.5px;color:var(--t3);min-width:30px;text-align:right}
+.sb-stat-row{padding:7px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--bl)}
+.sb-stat-row:last-child{border-bottom:0}
+.sb-stat-label{font-size:10.5px;color:var(--t2);font-weight:500}
+.sb-stat-val{font-size:11.5px;font-weight:700;color:var(--t);font-variant-numeric:tabular-nums}
+.sb-kpi-row{display:flex;border-bottom:1px solid var(--bl)}
+.sb-kpi-row:last-child{border-bottom:0}
+.sb-kpi{flex:1;padding:9px 10px;text-align:center;border-right:1px solid var(--bl)}
+.sb-kpi:last-child{border-right:0}
+.sb-kpi-v{font-size:15px;font-weight:700;color:var(--t);font-variant-numeric:tabular-nums}
+.sb-kpi-l{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px}
+.sb-mult-row{padding:5px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--bl)}
+.sb-mult-row:last-child{border-bottom:0}
+.sb-mult-sector{font-size:10px;font-weight:600;color:var(--t2);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-mult-v{font-size:10.5px;font-weight:700;color:var(--t);min-width:36px;text-align:right;font-variant-numeric:tabular-nums}
+.sb-mult-l{font-size:9px;color:var(--t3);min-width:28px;text-align:right}
+.chip-cash{background:#EAFAF4;color:#0B7A55}
+.chip-shares{background:#EEF2FF;color:#4338CA}
+.chip-mixed{background:#FFF7E6;color:#A85D00}
+.chip-other{background:#F0F0F0;color:var(--t3)}
 </style>
 </head>
 <body>
@@ -333,6 +361,57 @@ const updates=[
 {d:"19 Feb",c:"ES",t:"Ercros",x:"José de Mello extends acceptance deadline to 14 Mar; 41.2% tendered"},
 ];
 
+const multData = {
+  "JDE PEETS NV": {"consid": "Cash", "sector": "Food Manufacturers", "ev_ebitda": 12.3, "ev_sales": 2.0, "pe": 15.3},
+  "SCHRODERS PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 9.6, "ev_sales": 2.6, "pe": 16.4},
+  "INPOST SA": {"consid": "Cash", "sector": "Transport", "ev_ebitda": 10.0, "ev_sales": 3.0, "pe": 23.0},
+  "BANCA POPOLARE DI SONDRIO SPA": {"consid": "Shares", "sector": "Banking", "ev_ebitda": null, "ev_sales": null, "pe": null},
+  "JANUS HENDERSON GROUP PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 11.7, "ev_sales": 4.2, "pe": 12.9},
+  "IVECO GROUP NV": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.5, "ev_sales": 0.6, "pe": 14.4},
+  "ALLFUNDS GROUP PLC": {"consid": "Mixed", "sector": "Financial Services", "ev_ebitda": 12.3, "ev_sales": 8.3, "pe": 19.6},
+  "SUBSEA 7 SA": {"consid": "Shares", "sector": "Engineering", "ev_ebitda": 6.0, "ev_sales": 0.9, "pe": 32.4},
+  "JUST GROUP PLC": {"consid": "Cash", "sector": "Insurance", "ev_ebitda": null, "ev_sales": null, "pe": 29.4},
+  "JTC PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 24.9, "ev_sales": 8.2, "pe": null},
+  "IHS HOLDING LIMITED": {"consid": "Cash", "sector": "Telecoms", "ev_ebitda": 6.4, "ev_sales": 3.6, "pe": 6.5},
+  "NURNBERGER BETEILIGUNGS AG": {"consid": "Cash", "sector": "Insurance", "ev_ebitda": null, "ev_sales": null, "pe": null},
+  "FERRETTI S.P.A.": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.5, "ev_sales": 0.9, "pe": 13.5},
+  "KLOCKNER & CO SE": {"consid": "Cash", "sector": "Distribution", "ev_ebitda": 11.7, "ev_sales": 0.3, "pe": null},
+  "FNAC DARTY SA": {"consid": "Cash", "sector": "Retail", "ev_ebitda": 5.2, "ev_sales": 0.3, "pe": 13.7},
+  "COINSHARES INTERNATIONAL LIMITED": {"consid": "Shares", "sector": "Financial Services", "ev_ebitda": 10.7, "ev_sales": 10.5, "pe": 10.8},
+  "OCI NV": {"consid": "Shares", "sector": "Chemicals", "ev_ebitda": null, "ev_sales": 1.1, "pe": null},
+  "TINEXTA SPA": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 9.0, "ev_sales": 2.1, "pe": 14.6},
+  "NORTHERN DATA AG": {"consid": "Shares", "sector": "Technology", "ev_ebitda": 24.2, "ev_sales": 5.0, "pe": null},
+  "EUROGROUP LAMINATIONS SPA": {"consid": "Cash", "sector": "Electronics", "ev_ebitda": 8.3, "ev_sales": 1.1, "pe": 29.9},
+  "INTERNATIONAL PERSONAL FINANCE PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 6.3, "ev_sales": 1.6, "pe": 10.0},
+  "NILFISK HOLDING A/S": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.6, "ev_sales": 0.8, "pe": null},
+  "IDOX PLC": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 13.0, "ev_sales": 3.9, "pe": 54.4},
+  "ANTARES VISION S.P.A.": {"consid": "Cash", "sector": "Electronics", "ev_ebitda": 12.6, "ev_sales": 2.1, "pe": null},
+  "ESSO SOCIETE ANONYME FRANCAISE SA": {"consid": "Cash", "sector": "Energy", "ev_ebitda": 4.3, "ev_sales": 0.02, "pe": null},
+  "ERCROS SA": {"consid": "Cash", "sector": "Chemicals", "ev_ebitda": 8.8, "ev_sales": 0.6, "pe": 11.4},
+  "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA": {"consid": "Cash", "sector": "Leisure", "ev_ebitda": 5.5, "ev_sales": 1.6, "pe": 12.1},
+  "DIGITAL VALUE SPA": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 2.6, "ev_sales": 0.3, "pe": 15.7},
+  "GROUPE PIZZORNO ENVIRONNEMENT SA": {"consid": "Cash", "sector": "Support Services", "ev_ebitda": 6.3, "ev_sales": 1.0, "pe": 11.0},
+  "MARTIFER SGPS SA": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.4, "ev_sales": 0.8, "pe": 8.8},
+  "BANCA SISTEMA SPA": {"consid": "Cash", "sector": "Banking", "ev_ebitda": null, "ev_sales": null, "pe": null},
+  "LIFE SCIENCE REIT PLC": {"consid": "Mixed", "sector": "Real Estate", "ev_ebitda": 26.3, "ev_sales": 13.1, "pe": 25.5},
+  "FALCON OIL & GAS LTD": {"consid": "Shares", "sector": "Energy", "ev_ebitda": null, "ev_sales": null, "pe": null},
+  "1SPATIAL PLC": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 15.9, "ev_sales": 2.6, "pe": null},
+  "TECNOTREE OYJ": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 3.9, "ev_sales": 1.6, "pe": 14.9},
+  "ASETEK A/S": {"consid": "Cash", "sector": "Technology", "ev_ebitda": null, "ev_sales": 2.1, "pe": null},
+  "SPINDOX SPA": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 7.6, "ev_sales": 0.7, "pe": null},
+  "FRENKEL TOPPING GROUP PLC": {"consid": "Mixed", "sector": "Financial Services", "ev_ebitda": 8.2, "ev_sales": 1.7, "pe": 15.1},
+  "HEALTH ITALIA SPA": {"consid": "Cash", "sector": "Healthcare", "ev_ebitda": 7.5, "ev_sales": 1.5, "pe": 18.5},
+  "CULTI MILANO SPA": {"consid": "Cash", "sector": "Consumer", "ev_ebitda": 11.0, "ev_sales": 2.4, "pe": 14.5},
+  "ELES SEMICONDUCTOR EQUIPMENT SPA": {"consid": "Cash", "sector": "Electronics", "ev_ebitda": 11.7, "ev_sales": 1.7, "pe": null},
+  "KRONA PUBLIC REAL ESTATE AB": {"consid": "Cash", "sector": "Real Estate", "ev_ebitda": 26.5, "ev_sales": 14.5, "pe": 10.9},
+  "LIPUM AB": {"consid": "Shares", "sector": "Pharma", "ev_ebitda": null, "ev_sales": null, "pe": null},
+  "CONSENSUS ASSET MANAGEMENT AB (PUBL) LAURE VERSION": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": null, "ev_sales": null, "pe": null},
+  "WH IRELAND GROUP PLC": {"consid": "Shares", "sector": "Financial Services", "ev_ebitda": null, "ev_sales": 0.8, "pe": null},
+  "ESSENSYS PLC": {"consid": "Mixed", "sector": "Technology", "ev_ebitda": 8.2, "ev_sales": 0.5, "pe": null},
+  "VINPAI SA": {"consid": "Mixed", "sector": "Chemicals", "ev_ebitda": null, "ev_sales": 2.2, "pe": null},
+  "DELTIC ENERGY PLC": {"consid": "Cash", "sector": "Energy", "ev_ebitda": null, "ev_sales": null, "pe": null}
+};
+
 let bigOnly=false;
 let cs={col:'value',asc:false};
 
@@ -430,26 +509,67 @@ function updateKpis(data){
     <div class="kpi"><div class="kv">${nc}</div><div class="kl">Countries</div></div>`;
 }
 
+function median(arr){
+  if(!arr.length)return null;
+  const s=[...arr].sort((a,b)=>a-b);
+  const m=Math.floor(s.length/2);
+  return s.length%2?s[m]:(s[m-1]+s[m])/2;
+}
+
 function updateSidebar(data){
-  // Adviser league table
-  const advMap={};
+
+  // ── 1. PREMIUM DISTRIBUTION ──────────────────────────────────
+  const withP=data.filter(d=>d.p!==null);
+  const bands=[
+    {label:'< 0%',   min:-Infinity, max:0,  color:'#C13A1B'},
+    {label:'0–20%',  min:0,  max:20, color:'#F59E0B'},
+    {label:'20–40%', min:20, max:40, color:'#1751D0'},
+    {label:'40–60%', min:40, max:60, color:'#0B7A55'},
+    {label:'> 60%',  min:60, max:Infinity, color:'#6941C6'},
+  ];
+  const bandCounts=bands.map(b=>({...b,n:withP.filter(d=>d.p>=b.min&&d.p<b.max).length}));
+  const maxN=Math.max(...bandCounts.map(b=>b.n),1);
+  const medP=median(withP.map(d=>d.p));
+  const avgP=withP.length?(withP.reduce((s,d)=>s+d.p,0)/withP.length):null;
+
+  // ── 2. CONSIDERATION TYPE ─────────────────────────────────────
+  const considMap={Cash:{n:0,v:0},Shares:{n:0,v:0},Mixed:{n:0,v:0},Unknown:{n:0,v:0}};
   data.forEach(d=>{
-    [d.tfa,d.bfa].forEach(raw=>{
-      if(!raw)return;
-      // Split on " / " delimiter we used in cleaned data
-      raw.split(' / ').forEach(name=>{
-        name=name.trim();
-        if(!name||name==='—')return;
-        if(!advMap[name])advMap[name]={count:0,value:0};
-        advMap[name].count++;
-        advMap[name].value+=d.v;
-      });
-    });
+    const m=multData[d.t];
+    const cat=m?m.consid:'Unknown';
+    const key=considMap[cat]?cat:'Unknown';
+    considMap[key].n++;
+    considMap[key].v+=d.v;
   });
+  const totalConsidV=Object.values(considMap).reduce((s,c)=>s+c.v,0);
+  const considOrder=['Cash','Shares','Mixed','Unknown'];
+  const considColors={Cash:'#0B7A55',Shares:'#4338CA',Mixed:'#A85D00',Unknown:'#8992A8'};
+  const considBg={Cash:'var(--gb)',Shares:'var(--ib)',Mixed:'var(--ab)',Unknown:'var(--bl)'};
+  const maxConsidV=Math.max(...considOrder.map(k=>considMap[k].v),1);
 
-  const sorted=Object.entries(advMap).sort((a,b)=>b[1].value-a[1].value).slice(0,12);
+  // ── 3. TRANSACTION MULTIPLES ──────────────────────────────────
+  const allEVEBITDA=data.map(d=>{const m=multData[d.t];return m&&m.ev_ebitda&&m.ev_ebitda>0&&m.ev_ebitda<100?m.ev_ebitda:null;}).filter(v=>v!==null);
+  const allEVSales=data.map(d=>{const m=multData[d.t];return m&&m.ev_sales&&m.ev_sales>0&&m.ev_sales<50?m.ev_sales:null;}).filter(v=>v!==null);
+  const allPE=data.map(d=>{const m=multData[d.t];return m&&m.pe&&m.pe>0&&m.pe<80?m.pe:null;}).filter(v=>v!==null);
+  const medEVEBITDA=median(allEVEBITDA);
+  const medEVSales=median(allEVSales);
+  const medPE=median(allPE);
 
-  // Country breakdown
+  // Sector multiples (EV/EBITDA) for top sectors by deal count
+  const sectorMap={};
+  data.forEach(d=>{
+    const m=multData[d.t];
+    if(!m)return;
+    if(!sectorMap[m.sector])sectorMap[m.sector]={ebitda:[],sales:[]};
+    if(m.ev_ebitda&&m.ev_ebitda>0&&m.ev_ebitda<100)sectorMap[m.sector].ebitda.push(m.ev_ebitda);
+    if(m.ev_sales&&m.ev_sales>0&&m.ev_sales<50)sectorMap[m.sector].sales.push(m.ev_sales);
+  });
+  const sectorRows=Object.entries(sectorMap)
+    .filter(([,v])=>v.ebitda.length>=2)
+    .map(([k,v])=>({sector:k,ebitda:median(v.ebitda),sales:median(v.sales),n:v.ebitda.length}))
+    .sort((a,b)=>b.n-a.n).slice(0,5);
+
+  // ── 4. COUNTRY BREAKDOWN ──────────────────────────────────────
   const coMap={};
   data.forEach(d=>{
     if(!coMap[d.c])coMap[d.c]={count:0,value:0};
@@ -460,14 +580,54 @@ function updateSidebar(data){
 
   document.getElementById('sidebar').innerHTML=`
     <div class="sb-card">
-      <div class="sb-hd"><span class="sb-title">Financial Adviser Rankings</span><span class="sb-sub">By deal value</span></div>
-      ${sorted.map((a,i)=>`<div class="sb-row">
-        <span class="sb-rk${i<3?' top':''}">${i+1}</span>
-        <span class="sb-name" title="${a[0]}">${a[0]}</span>
-        <span class="sb-cnt">${a[1].count}</span>
-        <span class="sb-val">€${a[1].value>=1000?(a[1].value/1000).toFixed(1)+'bn':a[1].value.toFixed(0)+'m'}</span>
+      <div class="sb-hd">
+        <span class="sb-title">Premium Distribution</span>
+        <span class="sb-sub">${withP.length} deals with data</span>
+      </div>
+      <div style="padding:8px 14px 4px;display:flex;gap:16px;border-bottom:1px solid var(--bl)">
+        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${medP!==null?medP.toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Median</div></div>
+        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${avgP!==null?avgP.toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Mean</div></div>
+        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${withP.length?Math.max(...withP.map(d=>d.p)).toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">High</div></div>
+        <div><div style="font-size:16px;font-weight:700;font-variant-numeric:tabular-nums">${withP.length?Math.min(...withP.map(d=>d.p)).toFixed(1)+'%':'—'}</div><div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--t3);margin-top:1px">Low</div></div>
+      </div>
+      ${bandCounts.map(b=>`<div class="sb-bar-row">
+        <span class="sb-bar-label">${b.label}</span>
+        <div class="sb-bar-track"><div class="sb-bar-fill" style="width:${b.n?Math.round(b.n/maxN*100):0}%;background:${b.color}"></div></div>
+        <span class="sb-bar-count">${b.n}</span>
       </div>`).join('')}
     </div>
+
+    <div class="sb-card">
+      <div class="sb-hd">
+        <span class="sb-title">Consideration Type</span>
+        <span class="sb-sub">By deal value</span>
+      </div>
+      ${considOrder.filter(k=>considMap[k].n>0).map(k=>`<div class="sb-bar-row">
+        <span class="sb-bar-label" style="min-width:58px">${k}</span>
+        <div class="sb-bar-track"><div class="sb-bar-fill" style="width:${Math.round(considMap[k].v/maxConsidV*100)}%;background:${considColors[k]}"></div></div>
+        <span class="sb-bar-count">${considMap[k].n}</span>
+        <span class="sb-bar-pct" style="color:${considColors[k]}">${totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'—'}</span>
+      </div>`).join('')}
+    </div>
+
+    <div class="sb-card">
+      <div class="sb-hd">
+        <span class="sb-title">Transaction Multiples</span>
+        <span class="sb-sub">Medians · M&A Monitor data</span>
+      </div>
+      <div class="sb-kpi-row">
+        <div class="sb-kpi"><div class="sb-kpi-v">${medEVEBITDA?medEVEBITDA.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">EV/EBITDA</div></div>
+        <div class="sb-kpi"><div class="sb-kpi-v">${medEVSales?medEVSales.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">EV/Sales</div></div>
+        <div class="sb-kpi"><div class="sb-kpi-v">${medPE?medPE.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">P/E</div></div>
+      </div>
+      ${sectorRows.length?`<div style="padding:6px 14px 2px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);border-top:1px solid var(--bl)">By Sector · EV/EBITDA</div>
+      ${sectorRows.map(r=>`<div class="sb-mult-row">
+        <span class="sb-mult-sector">${r.sector}</span>
+        <span class="sb-mult-v">${r.ebitda?r.ebitda.toFixed(1)+'x':'—'}</span>
+        <span class="sb-mult-l">${r.sales?r.sales.toFixed(1)+'x':''}</span>
+      </div>`).join('')}`:''}
+    </div>
+
     <div class="sb-card2">
       <div class="sb-hd"><span class="sb-title">By Country</span><span class="sb-sub">Deal count & value</span></div>
       ${coSorted.map(e=>`<div class="sb-stat" style="padding:7px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--bl)">
