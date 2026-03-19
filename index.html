@@ -261,7 +261,7 @@ tbody tr:last-child td{border-bottom:0}
             <th data-c="type" onclick="sort('type')">Offer Type <span class="ar">▲</span></th>
             <th data-c="date" onclick="sort('date')">Announced <span class="ar">▲</span></th>
             <th class="ns">Exp. Completion</th>
-            <th class="ns" style="white-space:normal;max-width:55px;line-height:1.3">Time in Play</th>
+            <th class="ns" style="white-space:normal;max-width:55px;line-height:1.3">Days in Play</th>
             <th class="ns">Regulatory</th>
             <th class="ns" style="white-space:normal;max-width:70px;line-height:1.3">Acceptance Threshold</th>
             <th class="ns">Target Advisers</th>
@@ -503,9 +503,9 @@ function render(data){
       <td><span class="tp ${tpc(d.tp)}">${d.tp}</span>${atBadge}</td>
       <td class="dt">${fd(d.d)}</td>
       <td class="dt">${fd(d.ec)}</td>
-      <td>${(()=>{const days=Math.floor((new Date()-new Date(d.d))/864e5);const cls=days>180?'days-r':days>90?'days-a':'days-g';return`<span class="days ${cls}">${days}d</span>`;})()}</td>
+      <td>${(()=>{const days=Math.floor((new Date()-new Date(d.d))/864e5);const cls=days>180?'days-r':days>90?'days-a':'days-g';return`<span class="days ${cls}">${days}</span>`;})()}</td>
       <td><span class="reg reg-${({'Cleared':'cleared','Under Review':'review','Conditions':'cond','No Referral':'none'})[d.reg]||'none'}">${d.reg}</span></td>
-      <td class="own-cell">${(()=>{const total=d.irr>d.own?d.irr:d.own;const pct=d.acc>0?Math.min(100,Math.round(total/d.acc*100)):0;const ownPct=d.acc>0?Math.min(100,Math.round(d.own/d.acc*100)):0;const irrPct=d.acc>0?Math.min(100,Math.round(Math.max(0,d.irr-d.own)/d.acc*100)):0;const ownLabel=d.own>0?d.own+'% owned':'';const irrLabel=d.irr>d.own?'+ '+(d.irr-d.own).toFixed(1)+'% irrev':'';const combined=d.irr>0?d.irr:d.own;return`<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:${ownPct}%"></div><div class="own-fill own-irrev" style="width:${irrPct}%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">${pct}%</span></div><div class="tip">${combined>0?combined+'% / '+d.acc+'%':'0% / '+d.acc+'%'}</div>`;})()}</td>
+      <td class="own-cell">${(()=>{const total=d.irr>d.own?d.irr:d.own;const pct=d.acc>0?Math.min(100,Math.round(total/d.acc*100)):0;const ownPct=d.acc>0?Math.min(100,Math.round(d.own/d.acc*100)):0;const irrPct=d.acc>0?Math.min(100,Math.round(Math.max(0,d.irr-d.own)/d.acc*100)):0;const parts=[];if(d.own>0)parts.push(d.own+'% held');if(d.irr>d.own)parts.push((d.irr-d.own).toFixed(1)+'% irrev');const controlPct=total;return`<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:${ownPct}%"></div><div class="own-fill own-irrev" style="width:${irrPct}%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">${controlPct}%</span></div><div class="tip">${parts.length?parts.join(' + '):controlPct+'% control'} of ${d.acc+'%'} threshold</div>`;})()}</td>
       <td class="adv" title="${d.tfa}">${d.tfa||'—'}</td>
       <td class="adv" title="${d.bfa}">${d.bfa||'—'}</td>
     </tr>`}).join('');
