@@ -4,38 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>European Public M&A Monitor</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #F5F7FA;
-  --bg2: #EEF1F6;
-  --s: #FFFFFF;
-  --s2: #F8F9FC;
-  --b: #E2E6EF;
-  --b2: #F0F2F6;
-  --t: #131B2C;
-  --t2: #4F5B76;
-  --t3: #8992A8;
-  --a: #4F7DF3;
-  --al: rgba(79,125,243,0.08);
-  --ah: #3A66D9;
-  --g: #0B9B6A;
-  --gb: rgba(11,155,106,0.08);
-  --am: #B06D00;
-  --ab: rgba(176,109,0,0.06);
-  --r: #D03E1B;
-  --rb: rgba(208,62,27,0.06);
+  --bg: #F5F7FB;
+  --bg2: #ECEEF5;
+  --bg3: #E4E7F0;
+  --s: rgba(255,255,255,0.65);
+  --s2: rgba(255,255,255,0.8);
+  --s3: rgba(255,255,255,0.5);
+  --b: rgba(0,0,0,0.06);
+  --b2: rgba(0,0,0,0.04);
+  --t: #0F1729;
+  --t2: #4A5568;
+  --t3: #8594AD;
+  --a: #4F6EF7;
+  --al: rgba(79,110,247,0.08);
+  --ah: #3B5AE0;
+  --g: #0D9B6A;
+  --gb: rgba(13,155,106,0.08);
+  --gl: rgba(13,155,106,0.05);
+  --am: #B07D00;
+  --ab: rgba(176,125,0,0.07);
+  --r: #DC3E1B;
+  --rb: rgba(220,62,27,0.07);
   --hr: #D92D20;
   --hb: rgba(217,45,32,0.05);
   --p: #7C5CFC;
-  --pb: rgba(124,92,252,0.06);
+  --pb: rgba(124,92,252,0.07);
   --tl: #0D7490;
-  --tb: rgba(13,116,144,0.05);
+  --tb: rgba(13,116,144,0.06);
   --in: #4338CA;
-  --ib: rgba(67,56,202,0.05);
-  --h: rgba(0,0,0,0.015);
-  --ss: 0 1px 3px rgba(19,27,44,.05), 0 0 0 1px rgba(19,27,44,.04);
-  --sm: 0 8px 32px rgba(19,27,44,.08);
+  --ib: rgba(67,56,202,0.06);
+  --ss: 0 1px 3px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.03);
+  --sm: 0 8px 32px rgba(0,0,0,.08);
+  --glass: rgba(255,255,255,0.6);
+  --glass2: rgba(255,255,255,0.8);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
@@ -45,34 +49,91 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   position: relative;
-}
-body::before {
-  content: '';
-  position: fixed;
-  top: -20%;
-  left: -10%;
-  width: 60%;
-  height: 60%;
-  background: radial-gradient(ellipse, rgba(79,125,243,0.04) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-}
-body::after {
-  content: '';
-  position: fixed;
-  bottom: -20%;
-  right: -10%;
-  width: 50%;
-  height: 50%;
-  background: radial-gradient(ellipse, rgba(124,92,252,0.03) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
+  overflow-x: hidden;
 }
 
+/* === ANIMATED MESH GRADIENT BACKGROUND === */
+.mesh-bg {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+}
+.mesh-bg::before {
+  content: '';
+  position: absolute;
+  top: -30%; left: -20%;
+  width: 70%; height: 70%;
+  background: radial-gradient(ellipse, rgba(79,110,247,0.08) 0%, transparent 65%);
+  animation: meshFloat1 20s ease-in-out infinite;
+}
+.mesh-bg::after {
+  content: '';
+  position: absolute;
+  bottom: -30%; right: -15%;
+  width: 60%; height: 60%;
+  background: radial-gradient(ellipse, rgba(124,92,252,0.06) 0%, transparent 65%);
+  animation: meshFloat2 25s ease-in-out infinite;
+}
+@keyframes meshFloat1 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(5%,8%) scale(1.05); }
+  66% { transform: translate(-3%,3%) scale(0.97); }
+}
+@keyframes meshFloat2 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(-6%,-5%) scale(1.03); }
+  66% { transform: translate(4%,-3%) scale(0.98); }
+}
+/* extra mesh orb */
+.mesh-orb {
+  position: fixed;
+  top: 30%; left: 50%;
+  width: 40vw; height: 40vw;
+  background: radial-gradient(circle, rgba(13,155,106,0.05) 0%, transparent 60%);
+  pointer-events: none; z-index: 0;
+  animation: meshFloat3 30s ease-in-out infinite;
+}
+@keyframes meshFloat3 {
+  0%,100% { transform: translate(-50%,-50%) scale(1); }
+  50% { transform: translate(-45%,-45%) scale(1.08); }
+}
+
+/* subtle grid overlay */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.018) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* === FLAGS BANNER === */
+.flags-banner {
+  position: relative;
+  z-index: 101;
+  height: 48px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #7CB4D8 0%, #A0CCE8 100%);
+}
+.flags-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+.flags-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(245,247,251,0.4) 100%);
+  pointer-events: none;
+}
+
+/* === HEADER === */
 .hdr {
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(20px) saturate(1.2);
-  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border-bottom: 1px solid var(--b);
   padding: 0 40px;
   height: 56px;
@@ -87,62 +148,91 @@ body::after {
 .logo img { height:30px; width:auto; display:block; border-radius:5px; }
 .logo-t { font-weight:700; font-size:15px; letter-spacing:-.3px; }
 .logo-t span { color:var(--t3); font-weight:400; }
-.nav { display:flex; gap:4px; list-style:none; }
+.nav { display:flex; gap:2px; list-style:none; }
 .nav a {
   text-decoration:none; color:var(--t2); font-size:13px; font-weight:500;
-  padding: 6px 14px; border-radius: 6px; transition: all .2s;
+  padding: 7px 14px; border-radius: 8px; transition: all .2s;
 }
 .nav a:hover { color:var(--t); background: rgba(0,0,0,0.03); }
-.nav a.on { color:var(--a); background: var(--al); }
+.nav a.on {
+  color: var(--a);
+  background: var(--al);
+  box-shadow: inset 0 0 0 1px rgba(79,110,247,0.12);
+}
 .cta {
-  background: linear-gradient(135deg, var(--a), #7C5CFC);
+  background: var(--a);
   color: #fff; border:0; padding:8px 18px; border-radius:8px;
   font-size:13px; font-weight:600; cursor:pointer;
-  transition: all .2s; text-decoration:none;
-  box-shadow: 0 2px 12px rgba(79,125,243,0.25);
+  transition: all .25s; text-decoration:none;
+  box-shadow: 0 2px 16px rgba(79,110,247,0.3);
 }
-.cta:hover { transform:translateY(-1px); box-shadow: 0 4px 20px rgba(79,125,243,0.35); }
+.cta:hover {
+  background: var(--ah);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 24px rgba(79,110,247,0.4);
+}
 
+/* === HERO === */
 .hero { padding:32px 40px 0; max-width:1520px; margin:0 auto; position:relative; z-index:1; }
 .hero-r { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap; }
 .bdg {
   display:inline-flex; align-items:center; gap:6px;
-  background: linear-gradient(135deg, rgba(11,155,106,0.1), rgba(11,155,106,0.04));
-  border: 1px solid rgba(11,155,106,0.15);
+  background: var(--gl);
+  border: 1px solid rgba(52,211,153,0.15);
   color:var(--g); padding:5px 13px; border-radius:20px;
   font-size:11px; font-weight:600; margin-bottom:12px; letter-spacing:.02em;
 }
-.bdg::before { content:''; width:6px; height:6px; background:var(--g); border-radius:50%; animation:p 2s infinite; box-shadow: 0 0 6px rgba(11,155,106,0.4); }
+.bdg::before {
+  content:''; width:6px; height:6px; background:var(--g); border-radius:50%;
+  animation:p 2s infinite;
+  box-shadow: 0 0 8px rgba(13,155,106,0.5);
+}
 @keyframes p { 0%,100%{opacity:1} 50%{opacity:.3} }
 .hero h1 {
   font-family: 'Inter', -apple-system, sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 800;
   letter-spacing: -0.045em;
   line-height: 1.05;
   margin-bottom: 8px;
-  color: var(--t);
+  background: linear-gradient(135deg, #0F1729 20%, var(--a) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .hero .sub { color:var(--t2); font-size:14px; line-height:1.5; max-width:480px; }
+
+/* === KPI CARDS === */
 .kpis { display:flex; gap:6px; }
 .kpi {
   text-align:center; padding: 10px 16px;
-  background: var(--s); border: 1px solid var(--b);
+  background: var(--glass);
+  border: 1px solid var(--b);
   border-radius: 10px; min-width:90px;
-  transition: all .2s;
+  transition: all .25s;
+  backdrop-filter: blur(12px);
 }
-.kpi:hover { border-color: rgba(79,125,243,0.25); background: #F8F9FF; }
-.kv { font-size:24px; font-weight:800; letter-spacing:-.5px; font-variant-numeric:tabular-nums; line-height:1.1; }
-.kv .u { font-size:14px; font-weight:500; color:var(--t2); }
+.kpi:hover {
+  border-color: rgba(79,110,247,0.2);
+  background: rgba(79,110,247,0.04);
+  box-shadow: 0 0 20px rgba(79,110,247,0.06);
+}
+.kv {
+  font-family: 'JetBrains Mono', 'Inter', monospace;
+  font-size:22px; font-weight:700; letter-spacing:-.5px;
+  font-variant-numeric:tabular-nums; line-height:1.1;
+}
+.kv .u { font-size:13px; font-weight:500; color:var(--t2); font-family:'Inter',sans-serif; }
 .kl { font-size:9.5px; font-weight:600; color:var(--t3); text-transform:uppercase; letter-spacing:.06em; margin-top:3px; }
 
+/* === TICKER === */
 .tk-w { max-width:1520px; margin:20px auto 0; padding:0 40px; position:relative; z-index:1; }
 .tk-h { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
 .tk-t { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--t3); }
 .tk-l { flex:1; height:1px; background:var(--b); }
 .tk {
-  background: var(--s); border:1px solid var(--b); border-radius:10px;
+  background: var(--glass); border:1px solid var(--b); border-radius:10px;
   overflow:hidden; position:relative; box-shadow:var(--ss);
+  backdrop-filter: blur(12px);
 }
 .tk-tr { display:flex; animation:sc 90s linear infinite; width:max-content; }
 .tk-tr:hover { animation-play-state:paused; }
@@ -150,7 +240,7 @@ body::after {
 .ti {
   display:flex; align-items:center; gap:8px; padding:10px 20px;
   white-space:nowrap; border-right:1px solid var(--b);
-  transition:background .15s; cursor:default;
+  transition: background .15s; cursor:default;
 }
 .ti:hover { background:rgba(0,0,0,0.015); }
 .ti-d {
@@ -163,62 +253,73 @@ body::after {
 .ti-n { font-weight:700; font-size:12px; color:var(--t); }
 .ti-x { font-size:12px; color:var(--t2); }
 .fl,.fr { position:absolute; top:0; bottom:0; width:48px; z-index:2; pointer-events:none; }
-.fl { left:0; background:linear-gradient(to right,var(--s),transparent); }
-.fr { right:0; background:linear-gradient(to left,var(--s),transparent); }
+.fl { left:0; background:linear-gradient(to right, rgba(255,255,255,0.9), transparent); }
+.fr { right:0; background:linear-gradient(to left, rgba(255,255,255,0.9), transparent); }
 
+/* === MAIN LAYOUT === */
 .main { max-width:1520px; margin:18px auto 50px; padding:0 40px; display:flex; gap:16px; align-items:flex-start; position:relative; z-index:1; }
 .tc { flex:1; min-width:0; }
 .sb { width:296px; flex-shrink:0; position:sticky; top:74px; }
 
+/* === CONTROLS === */
 .ctrl { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px; flex-wrap:wrap; }
 .sbox { position:relative; flex:0 1 260px; }
 .sbox input {
   width:100%; padding:9px 10px 9px 34px;
   border:1px solid var(--b); border-radius:8px;
   font-size:12.5px; font-family:inherit; color:var(--t);
-  background:var(--s); transition:all .2s; outline:0;
+  background: var(--glass); transition:all .25s; outline:0;
 }
-.sbox input:focus { border-color:rgba(79,125,243,0.5); box-shadow:0 0 0 3px rgba(79,125,243,0.07); }
+.sbox input:focus {
+  border-color: rgba(108,138,255,0.4);
+  box-shadow: 0 0 0 3px rgba(79,110,247,0.08), 0 0 16px rgba(79,110,247,0.05);
+  background: var(--glass2);
+}
 .sbox input::placeholder { color:var(--t3); }
 .si { position:absolute; left:10px; top:50%; transform:translateY(-50%); color:var(--t3); pointer-events:none; }
 .flt-g { display:flex; gap:5px; align-items:center; flex-wrap:wrap; }
 select.f {
   padding:9px 30px 9px 10px; border:1px solid var(--b); border-radius:8px;
   font-size:12px; font-family:inherit; color:var(--t); font-weight:500;
-  background:var(--s) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%238992A8' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 9px center;
+  background: var(--glass) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%235C6478' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 9px center;
   appearance:none; cursor:pointer; outline:0; transition:all .2s;
 }
-select.f:focus { border-color:rgba(79,125,243,0.4); }
+select.f:focus { border-color:rgba(108,138,255,0.35); }
 select.f option { background:#fff; color:var(--t); }
 .tbtn {
   padding:7px 14px; border:1px solid var(--b); border-radius:8px;
   font-size:11.5px; font-family:inherit; font-weight:600;
-  background:var(--s); color:var(--t2); cursor:pointer;
+  background: var(--glass); color:var(--t2); cursor:pointer;
   transition:all .2s; white-space:nowrap;
 }
-.tbtn:hover { border-color:rgba(79,125,243,0.3); color:var(--a); }
+.tbtn:hover { border-color:rgba(108,138,255,0.25); color:var(--a); }
 .tbtn.on {
-  background: linear-gradient(135deg, var(--a), #7C5CFC);
-  color:#fff; border-color:transparent;
-  box-shadow: 0 2px 8px rgba(79,125,243,0.2);
+  background: var(--a);
+  color:#fff; border-color: transparent;
+  box-shadow: 0 2px 12px rgba(79,110,247,0.25);
 }
 .dc { font-size:11.5px; color:var(--t3); font-weight:500; white-space:nowrap; }
 .dc b { color:var(--t); }
 
+/* === TABLE CARD === */
 .tcard {
-  background:var(--s); border-radius:12px; box-shadow:var(--ss);
+  background: var(--glass); border-radius:12px; box-shadow:var(--ss);
   border:1px solid var(--b); overflow:hidden;
+  backdrop-filter: blur(12px);
 }
 .tscr { overflow-x:auto; }
 .tscr::-webkit-scrollbar { height:6px; }
 .tscr::-webkit-scrollbar-track { background:transparent; }
-.tscr::-webkit-scrollbar-thumb { background:var(--b); border-radius:3px; }
+.tscr::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius:3px; }
+.tscr::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.18); }
 table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
 thead th {
-  background:#F5F7FA; padding:11px 9px; text-align:left;
+  background: rgba(0,0,0,0.02);
+  padding:11px 9px; text-align:left;
   font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.07em;
   color:var(--t3); border-bottom:1px solid var(--b); white-space:nowrap;
   cursor:pointer; user-select:none; transition:color .15s;
+  position: sticky; top: 0; z-index: 2;
 }
 thead th:hover { color:var(--t2); }
 thead th.so { color:var(--a); }
@@ -228,24 +329,31 @@ thead th.so .ar { opacity:1; }
 thead th:first-child { padding-left:14px; }
 thead th.ns { cursor:default; }
 thead th.ns:hover { color:var(--t3); }
-tbody tr { transition:background .15s; }
-tbody tr:hover { background:rgba(79,125,243,0.02); }
+tbody tr { transition: all .2s; }
+tbody tr:hover { background: rgba(79,110,247,0.03); }
 tbody td {
   padding:10px 9px; font-size:12.5px; color:var(--t2);
   border-bottom:1px solid var(--b2); vertical-align:middle;
 }
 tbody td:first-child { padding-left:14px; }
 tbody tr:last-child td { border-bottom:0; }
-.rk { font-weight:700; color:var(--t3); font-size:11.5px; min-width:20px; display:inline-block; }
+
+/* rank */
+.rk { font-family:'JetBrains Mono',monospace; font-weight:700; color:var(--t3); font-size:11px; min-width:20px; display:inline-block; }
 .rk.t3 { color:var(--a); }
+
+/* target name */
 .tn { font-weight:600; white-space:normal; max-width:130px; line-height:1.3; color:var(--t); }
 .new-tag {
   display:inline-block;
-  background:linear-gradient(135deg, var(--a), #7C5CFC);
+  background: var(--a);
   color:#fff; font-size:8px; font-weight:700; padding:2px 5px;
   border-radius:3px; margin-left:5px; vertical-align:middle;
   letter-spacing:.03em; text-transform:uppercase;
+  box-shadow: 0 2px 8px rgba(79,110,247,0.25);
 }
+
+/* country */
 .cc { display:flex; align-items:center; gap:5px; white-space:nowrap; }
 .fg {
   width:20px; height:14px; border-radius:2px; display:inline-block;
@@ -253,66 +361,100 @@ tbody tr:last-child td { border-bottom:0; }
 }
 .fg svg { display:block; width:100%; height:100%; }
 .cd { color:var(--t3); font-size:11.5px; font-weight:600; }
+
+/* bidder */
 .bn { color:var(--t2); font-size:12px; white-space:normal; max-width:120px; line-height:1.3; }
-.vc { font-weight:600; white-space:nowrap; color:var(--t); }
+
+/* value */
+.vc {
+  font-family:'JetBrains Mono',monospace;
+  font-weight:700; white-space:nowrap; color:var(--t); font-size:12px;
+}
 .vc .c { color:var(--t3); font-weight:500; }
+
+/* premium pills */
 .pp { display:inline-flex; padding:3px 8px; border-radius:5px; font-size:11.5px; font-weight:600; }
 .ph { background:var(--gb); color:var(--g); }
 .pm { background:var(--ab); color:var(--am); }
 .pl { background:var(--rb); color:var(--r); }
-.pn { background:#F0F2F6; color:var(--t3); }
+.pn { background: rgba(0,0,0,0.04); color:var(--t3); }
+
+/* offer type pills */
 .tp {
   display:inline-flex; padding:3px 8px; border-radius:5px;
   font-size:10px; font-weight:700; white-space:nowrap; letter-spacing:.02em;
+  border: 1px solid transparent;
 }
-.tp-scheme { background:var(--pb); color:var(--p); }
-.tp-po { background:var(--al); color:var(--a); }
-.tp-mand { background:var(--ab); color:var(--am); }
-.tp-mbo { background:var(--tb); color:var(--tl); }
-.tp-merger { background:var(--ib); color:var(--in); }
-.tp-div { background:rgba(248,113,113,0.08); color:var(--r); }
-.tp-partial { background:#F0F2F6; color:var(--t2); }
+.tp-scheme { background:var(--pb); color:var(--p); border-color: rgba(167,139,250,0.12); }
+.tp-po { background:var(--al); color:var(--a); border-color: rgba(108,138,255,0.12); }
+.tp-mand { background:var(--ab); color:var(--am); border-color: rgba(251,191,36,0.12); }
+.tp-mbo { background:var(--tb); color:var(--tl); border-color: rgba(34,211,238,0.12); }
+.tp-merger { background:var(--ib); color:var(--in); border-color: rgba(129,140,248,0.12); }
+.tp-div { background: rgba(248,113,113,0.08); color:var(--r); border-color: rgba(248,113,113,0.12); }
+.tp-partial { background: rgba(0,0,0,0.04); color:var(--t2); }
 .tp-hostile {
   background:var(--hb); color:var(--hr); margin-left:3px;
+  border-color: rgba(239,68,68,0.2);
   animation: hostilePulse 3s ease-in-out infinite;
 }
-@keyframes hostilePulse { 0%,100%{ box-shadow:none } 50%{ box-shadow:0 0 8px rgba(217,45,32,0.15) } }
-.tp-wk { background:rgba(176,109,0,0.06); color:#93370D; margin-left:3px; }
+@keyframes hostilePulse {
+  0%,100%{ box-shadow:none }
+  50%{ box-shadow: 0 0 10px rgba(217,45,32,0.15); }
+}
+.tp-wk { background:rgba(251,191,36,0.08); color:var(--am); margin-left:3px; border-color:rgba(251,191,36,0.12); }
+
+/* dates */
 .dt { white-space:nowrap; color:var(--t3); font-size:12px; }
+
+/* advisers */
 .adv {
   font-size:11px; color:var(--t3); line-height:1.45;
   max-width:180px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
-.adv:hover { white-space:normal; overflow:visible; position:relative; z-index:5; background:#fff; padding:4px 6px; border-radius:4px; margin:-4px -6px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+.adv:hover {
+  white-space:normal; overflow:visible; position:relative; z-index:5;
+  background: #fff; padding:4px 6px; border-radius:4px; margin:-4px -6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.04);
+}
+
+/* table footer */
 .tfr {
   padding:11px 14px; display:flex; align-items:center; justify-content:space-between;
-  background:#F5F7FA; border-top:1px solid var(--b); font-size:11.5px; color:var(--t3);
+  background: rgba(0,0,0,0.015);
+  border-top:1px solid var(--b); font-size:11.5px; color:var(--t3);
 }
-.tfr a { color:var(--a); text-decoration:none; font-weight:600; transition:color .15s; }
+.tfr a {
+  color:var(--a); text-decoration:none; font-weight:600; transition:all .2s;
+}
 .tfr a:hover { color:var(--ah); }
 .ut { display:flex; align-items:center; gap:4px; }
 
+/* === SIDEBAR CARDS === */
 .sb-card {
-  background:var(--s); border:1px solid var(--b); border-radius:12px;
+  background: var(--glass); border:1px solid var(--b); border-radius:12px;
   box-shadow:var(--ss); overflow:hidden; margin-bottom:12px;
+  backdrop-filter: blur(12px);
 }
 .sb-hd {
   padding:12px 14px; border-bottom:1px solid var(--b);
-  background:#F5F7FA;
+  background: rgba(0,0,0,0.015);
   display:flex; align-items:center; justify-content:space-between;
 }
 .sb-title { font-size:12px; font-weight:700; color:var(--t); letter-spacing:-.2px; }
 .sb-sub { font-size:10px; color:var(--t3); font-weight:500; }
-.sb-cnt { font-size:10.5px; font-weight:600; color:var(--t2); background:#F0F2F6; padding:2px 7px; border-radius:4px; }
-.sb-val { font-size:10.5px; color:var(--t3); white-space:nowrap; }
-.sb-card2 { background:var(--s); border:1px solid var(--b); border-radius:12px; box-shadow:var(--ss); overflow:hidden; }
+.sb-cnt { font-size:10.5px; font-weight:600; color:var(--t2); background: rgba(0,0,0,0.04); padding:2px 7px; border-radius:4px; }
+.sb-val { font-size:10.5px; color:var(--t3); white-space:nowrap; font-family:'JetBrains Mono',monospace; }
+.sb-card2 { background: var(--glass); border:1px solid var(--b); border-radius:12px; box-shadow:var(--ss); overflow:hidden; backdrop-filter:blur(12px); }
 .sb-stat { padding:10px 14px; border-bottom:1px solid var(--b2); }
 .sb-stat:last-child { border-bottom:0; }
 .sb-kpi-row { display:flex; border-bottom:1px solid var(--b2); }
 .sb-kpi-row:last-child { border-bottom:0; }
 .sb-kpi { flex:1; padding:10px 10px; text-align:center; border-right:1px solid var(--b2); }
 .sb-kpi:last-child { border-right:0; }
-.sb-kpi-v { font-size:16px; font-weight:800; color:var(--t); font-variant-numeric:tabular-nums; }
+.sb-kpi-v {
+  font-family:'JetBrains Mono',monospace;
+  font-size:15px; font-weight:700; color:var(--t); font-variant-numeric:tabular-nums;
+}
 .sb-kpi-l { font-size:8.5px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--t3); margin-top:2px; }
 .sb-mult-row {
   padding:5px 14px; display:flex; align-items:center; gap:6px;
@@ -320,42 +462,62 @@ tbody tr:last-child td { border-bottom:0; }
 }
 .sb-mult-row:last-child { border-bottom:0; }
 .sb-mult-sector { font-size:10px; font-weight:600; color:var(--t2); flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.sb-mult-v { font-size:10.5px; font-weight:700; color:var(--t); min-width:36px; text-align:right; font-variant-numeric:tabular-nums; }
+.sb-mult-v {
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px; font-weight:700; color:var(--t); min-width:36px; text-align:right;
+  font-variant-numeric:tabular-nums;
+}
 
-.reg { display:inline-flex; padding:3px 7px; border-radius:5px; font-size:9.5px; font-weight:700; white-space:nowrap; letter-spacing:.01em; }
-.reg-cleared { background:var(--gb); color:var(--g); }
-.reg-review { background:var(--ab); color:var(--am); }
-.reg-cond { background:var(--rb); color:var(--r); }
-.reg-none { background:#F0F2F6; color:var(--t3); }
+/* regulatory badges */
+.reg { display:inline-flex; padding:3px 7px; border-radius:5px; font-size:9.5px; font-weight:700; white-space:nowrap; letter-spacing:.01em; border:1px solid transparent; }
+.reg-cleared { background:var(--gb); color:var(--g); border-color:rgba(52,211,153,0.12); }
+.reg-review { background:var(--ab); color:var(--am); border-color:rgba(251,191,36,0.12); }
+.reg-cond { background:var(--rb); color:var(--r); border-color:rgba(248,113,113,0.12); }
+.reg-none { background: rgba(0,0,0,0.04); color:var(--t3); }
 
-.own-bar { display:flex; height:6px; border-radius:3px; overflow:hidden; background:#E2E6EF; width:100%; min-width:60px; }
+/* ownership bars */
+.own-bar { display:flex; height:6px; border-radius:3px; overflow:hidden; background: rgba(0,0,0,0.06); width:100%; min-width:60px; }
 .own-fill { height:100%; }
 .own-owned { background:var(--a); }
 .own-irrev { background:var(--g); }
 .own-cell { min-width:100px; }
 .tip { font-size:9px; color:var(--t3); margin-top:2px; white-space:nowrap; line-height:1.2; }
-.days { font-weight:700; font-size:12.5px; font-variant-numeric:tabular-nums; }
+
+/* days in play */
+.days { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:12px; font-variant-numeric:tabular-nums; }
 .days-g { color:var(--g); }
 .days-a { color:var(--am); }
 .days-r { color:var(--r); }
 
+/* === RESPONSIVE === */
 @media(max-width:1200px) { .sb{display:none} .main{padding-left:24px;padding-right:24px} }
 @media(max-width:1024px) { .hdr,.hero,.tk-w{padding-left:24px;padding-right:24px} .hero h1{font-size:30px} .kpis{gap:4px} .kv{font-size:20px} .ctrl{flex-direction:column;align-items:stretch} .sbox{flex:1} }
 @media(max-width:768px) { .nav{display:none} .hero-r{flex-direction:column;align-items:flex-start} .kpis{align-self:flex-start;flex-wrap:wrap} .kpi{min-width:70px;padding:8px 10px} }
 
-@keyframes fu { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
-.ai { animation:fu .4s ease-out both; }
-.d1 { animation-delay:.05s; }
-.d2 { animation-delay:.1s; }
-.d3 { animation-delay:.15s; }
+/* === ANIMATIONS === */
+@keyframes fu { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+.ai { animation:fu .5s cubic-bezier(.16,1,.3,1) both; }
+.d1 { animation-delay:.06s; }
+.d2 { animation-delay:.12s; }
+.d3 { animation-delay:.18s; }
 
+/* === SCROLLBAR === */
 ::-webkit-scrollbar { width:6px; }
 ::-webkit-scrollbar-track { background:transparent; }
 ::-webkit-scrollbar-thumb { background:rgba(0,0,0,0.1); border-radius:3px; }
 ::-webkit-scrollbar-thumb:hover { background:rgba(0,0,0,0.18); }
+
+/* === SELECTION === */
+::selection { background: rgba(79,110,247,0.2); color: #0F1729; }
 </style>
 </head>
 <body>
+<div class="mesh-bg"></div>
+<div class="mesh-orb"></div>
+
+<div class="flags-banner">
+  <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/european-flags-banner.png" alt="European flags">
+</div>
 
 <header class="hdr">
   <a href="#" class="logo">
@@ -370,23 +532,20 @@ tbody tr:last-child td { border-bottom:0; }
   </ul>
   <a href="#" class="cta">Request a Demo</a>
 </header>
-
 <div class="hero ai">
   <div class="hero-r">
     <div>
-      <div class="bdg">Live · Western European Public Offers</div>
+      <div class="bdg">Live &middot; Western European Public Offers</div>
       <h1>European Public M&A Monitor</h1>
-      <p class="sub">Every pending public offer across Western Europe — deal intelligence, premiums, and advisory mandates tracked by M&A Monitor.</p>
+      <p class="sub">Every pending public offer across Western Europe &mdash; deal intelligence, premiums, and advisory mandates tracked by M&A Monitor.</p>
     </div>
     <div class="kpis" id="kpis"></div>
   </div>
 </div>
-
 <div class="tk-w ai d1">
   <div class="tk-h"><span class="tk-t">Recent Developments</span><div class="tk-l"></div></div>
   <div class="tk"><div class="fl"></div><div class="fr"></div><div class="tk-tr" id="ticker"></div></div>
 </div>
-
 <div class="main">
   <div class="tc">
     <div class="ctrl ai d2">
@@ -397,7 +556,7 @@ tbody tr:last-child td { border-bottom:0; }
       <div class="flt-g">
         <select class="f" id="fCountry" onchange="go()"><option value="">All Countries</option></select>
         <select class="f" id="fType" onchange="go()"><option value="">All Types</option></select>
-        <button class="tbtn" id="bigBtn" onclick="toggleBig()">€500m+</button>
+        <button class="tbtn" id="bigBtn" onclick="toggleBig()">&euro;500m+</button>
         <button class="tbtn on" id="allBtn" onclick="toggleAll()">All Deals</button>
         <span class="dc" id="dc"></span>
       </div>
@@ -406,14 +565,14 @@ tbody tr:last-child td { border-bottom:0; }
       <div class="tscr">
         <table>
           <thead><tr>
-            <th data-c="rank" onclick="sort('rank')"># <span class="ar">▲</span></th>
-            <th data-c="target" onclick="sort('target')">Target <span class="ar">▲</span></th>
-            <th data-c="country" onclick="sort('country')">Country <span class="ar">▲</span></th>
-            <th data-c="bidder" onclick="sort('bidder')">Bidder <span class="ar">▲</span></th>
-            <th data-c="value" class="so" onclick="sort('value')">Equity Value <span class="ar">▼</span></th>
-            <th data-c="premium" onclick="sort('premium')">Premium <span class="ar">▲</span></th>
-            <th data-c="type" onclick="sort('type')">Offer Type <span class="ar">▲</span></th>
-            <th data-c="date" onclick="sort('date')">Announced <span class="ar">▲</span></th>
+            <th data-c="rank" onclick="sort('rank')"># <span class="ar">&#9650;</span></th>
+            <th data-c="target" onclick="sort('target')">Target <span class="ar">&#9650;</span></th>
+            <th data-c="country" onclick="sort('country')">Country <span class="ar">&#9650;</span></th>
+            <th data-c="bidder" onclick="sort('bidder')">Bidder <span class="ar">&#9650;</span></th>
+            <th data-c="value" class="so" onclick="sort('value')">Equity Value <span class="ar">&#9660;</span></th>
+            <th data-c="premium" onclick="sort('premium')">Premium <span class="ar">&#9650;</span></th>
+            <th data-c="type" onclick="sort('type')">Offer Type <span class="ar">&#9650;</span></th>
+            <th data-c="date" onclick="sort('date')">Announced <span class="ar">&#9650;</span></th>
             <th class="ns">Exp. Completion</th>
             <th class="ns" style="white-space:normal;max-width:55px;line-height:1.3">Days in Play</th>
             <th class="ns">Regulatory</th>
@@ -425,14 +584,13 @@ tbody tr:last-child td { border-bottom:0; }
         </table>
       </div>
       <div class="tfr">
-        <span class="ut"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Data as at 24 Feb 2026, 17:14 GMT · Source: M&A Monitor DataBase</span>
-        <a href="#">Subscribe for full deal intelligence →</a>
+        <span class="ut"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Data as at 24 Feb 2026, 17:14 GMT &middot; Source: M&A Monitor DataBase</span>
+        <a href="#">Subscribe for full deal intelligence &rarr;</a>
       </div>
     </div>
   </div>
   <div class="sb" id="sidebar"></div>
 </div>
-
 <script>
 const F={
 UK:`<svg viewBox="0 0 60 30"><clipPath id="u"><rect width="60" height="30"/></clipPath><g clip-path="url(#u)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#u)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>`,
@@ -452,7 +610,6 @@ IS:`<svg viewBox="0 0 25 18"><rect width="25" height="18" fill="#003897"/><rect 
 CH:`<svg viewBox="0 0 32 32"><rect width="32" height="32" fill="#F00"/><rect x="13" y="6" width="6" height="20" fill="#fff"/><rect x="6" y="13" width="20" height="6" fill="#fff"/></svg>`
 };
 const fg=(c,cl)=>`<span class="${cl||'fg'}">${F[c]||''}</span>`;
-
 const deals=[
 {t:"JDE PEETS NV",co:"Netherlands",c:"NL",b:"KEURIG DR PEPPER INC",v:13398.1,p:20.0,tp:"Divestiture",at:"Friendly",d:"2025-08-25",ec:"2026-07-31",reg:"Cleared",own:0,irr:80.2,acc:75,xb:true,tfa:"Bank of America",bfa:"Lazard"},
 {t:"SCHRODERS PLC",co:"United Kingdom",c:"UK",b:"TEACHERS INSURANCE AND ANNUITY ASSOCIATION",v:9503.2,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-02-12",ec:"2026-06-30",reg:"No Referral",own:0,irr:47.2,acc:75,xb:true,tfa:"Wells Fargo Securities / JPMorgan Cazenove / Barclays",bfa:"BNP Paribas"},
@@ -470,7 +627,7 @@ const deals=[
 {t:"NURNBERGER BETEILIGUNGS AG",co:"Germany",c:"DE",b:"VIENNA INSURANCE GROUP AG",v:1202.1,p:154.2,tp:"Public Offer",at:"Friendly",d:"2025-10-16",ec:"2026-04-30",reg:"No Referral",own:3.1,irr:0,acc:50,xb:true,tfa:"ParkView Partners GmbH",bfa:"Deutsche Bank"},
 {t:"FERRETTI S.P.A.",co:"Italy",c:"IT",b:"KKCG AG",v:1030.2,p:-4.9,tp:"Partial",at:"Friendly",d:"2026-01-19",ec:"2026-04-30",reg:"No Referral",own:86.8,irr:0,acc:90,xb:true,tfa:"",bfa:"Somerley Capital Limited / Unicredit"},
 {t:"KLOCKNER & CO SE",co:"Germany",c:"DE",b:"WORTHINGTON STEEL INC",v:963.9,p:81.2,tp:"Public Offer",at:"Friendly",d:"2026-01-15",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:50,xb:true,tfa:"Goldman Sachs",bfa:"Bank of America / Andina Partners"},
-{t:"FNAC DARTY SA",co:"France",c:"FR",b:"EP CORPORATE GROUP AS",v:929.2,p:19.0,tp:"MBO/MBI",at:"Friendly",d:"2026-01-26",ec:"2026-05-31",reg:"No Referral",own:28.5,irr:28.5,acc:50,xb:true,tfa:"Ledouble SAS / Rothschild",bfa:"Crédit Agricole CIB / Société Générale / BNP Paribas"},
+{t:"FNAC DARTY SA",co:"France",c:"FR",b:"EP CORPORATE GROUP AS",v:929.2,p:19.0,tp:"MBO/MBI",at:"Friendly",d:"2026-01-26",ec:"2026-05-31",reg:"No Referral",own:28.5,irr:28.5,acc:50,xb:true,tfa:"Ledouble SAS / Rothschild",bfa:"Cr\u00e9dit Agricole CIB / Soci\u00e9t\u00e9 G\u00e9n\u00e9rale / BNP Paribas"},
 {t:"COINSHARES INTERNATIONAL LIMITED",co:"Sweden",c:"SE",b:"VINE HILL CAPITAL INVESTMENT CORP",v:921.8,p:30.6,tp:"Scheme",at:"Friendly",d:"2025-09-08",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Keefe, Bruyette & Woods / Stifel",bfa:""},
 {t:"SOLGOLD PLC",co:"United Kingdom",c:"UK",b:"JIANGXI COPPER COMPANY LIMITED",v:866.8,p:7.1,tp:"Scheme",at:"Friendly",d:"2025-12-24",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:75,xb:true,tfa:"RBC Capital Markets / Maxit Capital LP",bfa:"Admiralty Harbour Capital / Peel Hunt LLP"},
 {t:"OCI NV",co:"Netherlands",c:"NL",b:"ORASCOM CONSTRUCTION PLC",v:765.2,p:-14.1,tp:"Merger",at:"Friendly",d:"2025-12-09",ec:"2026-07-31",reg:"No Referral",own:0,irr:54.6,acc:50,xb:true,tfa:"Rothschild / Rabobank",bfa:"First Abu Dhabi Bank / EFG Hermes"},
@@ -517,20 +674,18 @@ const deals=[
 {t:"DELTIC ENERGY PLC",co:"United Kingdom",c:"UK",b:"VIARO INVESTMENT LIMITED",v:6.9,p:35.6,tp:"Scheme",at:"Friendly",d:"2025-06-30",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:75,xb:false,tfa:"Allenby Capital",bfa:"Hannam & Partners"},
 {t:"WALKER CRIPS GROUP PLC",co:"United Kingdom",c:"UK",b:"PHILLIP BROKERAGE PTE LTD",v:6.0,p:86.7,tp:"Scheme",at:"Friendly",d:"2025-11-24",ec:"2026-05-31",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Singer Capital Markets Limited",bfa:"Cavendish Corporate Finance Ltd"}
 ];
-
 const updates=[
 {d:"23 Feb",c:"UK",t:"Schroders",x:"TIAA confirms 700p/share cash offer; Board recommends"},
 {d:"22 Feb",c:"LU",t:"InPost",x:"Consortium files for EU Commission merger clearance"},
 {d:"22 Feb",c:"UK",t:"IHS Holding",x:"MTN Group announces firm intention to acquire at $4.80/share"},
-{d:"21 Feb",c:"UK",t:"Allfunds Group",x:"Deutsche Börse scheme document posted to shareholders"},
-{d:"21 Feb",c:"DE",t:"Klöckner & Co",x:"Worthington Steel receives BaFin approval for offer document"},
+{d:"21 Feb",c:"UK",t:"Allfunds Group",x:"Deutsche B\u00f6rse scheme document posted to shareholders"},
+{d:"21 Feb",c:"DE",t:"Kl\u00f6ckner & Co",x:"Worthington Steel receives BaFin approval for offer document"},
 {d:"20 Feb",c:"FR",t:"FNAC Darty",x:"EP Corporate Group publishes AMF-approved offer document"},
 {d:"20 Feb",c:"UK",t:"Kitwave Group",x:"OEP Capital offer declared unconditional as to acceptances"},
 {d:"19 Feb",c:"IT",t:"Iveco Group",x:"CONSOB approves Tata Motors prospectus; acceptance opens 3 Mar"},
 {d:"19 Feb",c:"FI",t:"Tecnotree",x:"Helios publishes offer document; acceptance period begins"},
-{d:"19 Feb",c:"ES",t:"Ercros",x:"José de Mello extends acceptance deadline to 14 Mar; 41.2% tendered"},
+{d:"19 Feb",c:"ES",t:"Ercros",x:"Jos\u00e9 de Mello extends acceptance deadline to 14 Mar; 41.2% tendered"},
 ];
-
 const multData = {
   "JDE PEETS NV": {"consid": "Cash", "sector": "Food Manufacturers", "ev_ebitda": 12.3, "ev_sales": 2.0, "pe": 15.3},
   "SCHRODERS PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 9.6, "ev_sales": 2.6, "pe": 16.4},
@@ -581,16 +736,13 @@ const multData = {
   "VINPAI SA": {"consid": "Mixed", "sector": "Chemicals", "ev_ebitda": null, "ev_sales": 2.2, "pe": null},
   "DELTIC ENERGY PLC": {"consid": "Cash", "sector": "Energy", "ev_ebitda": null, "ev_sales": null, "pe": null}
 };
-
 let bigOnly=false;
 let cs={col:'value',asc:false};
-
 function buildTicker(){
   const el=document.getElementById('ticker');
   const h=updates.map(u=>`<div class="ti"><span class="ti-d">${u.d}</span>${fg(u.c,'ti-f')}<span class="ti-n">${u.t}</span><span class="ti-x">${u.x}</span></div>`).join('');
   el.innerHTML=h+h;
 }
-
 function buildFilters(){
   const cs=[...new Set(deals.map(d=>d.co))].sort();
   const s=document.getElementById('fCountry');
@@ -599,13 +751,11 @@ function buildFilters(){
   const t=document.getElementById('fType');
   ts.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;t.appendChild(o)});
 }
-
 function isNew(d){const ann=new Date(d);const now=new Date();return(now-ann)/(864e5)<=10}
-function fv(v){return v>=1000?`<span class="c">€</span>${(v/1000).toFixed(1)}bn`:`<span class="c">€</span>${v.toFixed(0)}m`}
-function fd(s){if(!s)return'—';const d=new Date(s);const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return d.getDate()+' '+m[d.getMonth()]+' '+String(d.getFullYear()).slice(2)}
+function fv(v){return v>=1000?`<span class="c">\u20AC</span>${(v/1000).toFixed(1)}bn`:`<span class="c">\u20AC</span>${v.toFixed(0)}m`}
+function fd(s){if(!s)return'\u2014';const d=new Date(s);const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return d.getDate()+' '+m[d.getMonth()]+' '+String(d.getFullYear()).slice(2)}
 function tpc(t){return{'Scheme':'tp-scheme','Public Offer':'tp-po','Mandatory':'tp-mand','MBO/MBI':'tp-mbo','Merger':'tp-merger','Divestiture':'tp-div','Partial':'tp-partial'}[t]||''}
 function ph(p){if(p===null)return'<span class="pp pn">n/a</span>';const c=p>=30?'ph':p>=10?'pm':'pl';return`<span class="pp ${c}">${p>0?'+':''}${p.toFixed(1)}%</span>`}
-
 function getData(){
   const q=document.getElementById('q').value.toLowerCase();
   const co=document.getElementById('fCountry').value;
@@ -618,7 +768,6 @@ function getData(){
     return true;
   });
 }
-
 function doSort(data){
   const c=cs.col;
   data.sort((a,b)=>{
@@ -637,7 +786,6 @@ function doSort(data){
   });
   return data;
 }
-
 function render(data){
   const tb=document.getElementById('tb');
   tb.innerHTML=data.map((d,i)=>{
@@ -656,14 +804,13 @@ function render(data){
       <td>${(()=>{const days=Math.floor((new Date()-new Date(d.d))/864e5);const cls=days>180?'days-r':days>90?'days-a':'days-g';return`<span class="days ${cls}">${days}</span>`;})()}</td>
       <td><span class="reg reg-${({'Cleared':'cleared','Under Review':'review','Conditions':'cond','No Referral':'none'})[d.reg]||'none'}">${d.reg}</span></td>
       <td class="own-cell">${(()=>{const total=d.irr>d.own?d.irr:d.own;const pct=d.acc>0?Math.min(100,Math.round(total/d.acc*100)):0;const ownPct=d.acc>0?Math.min(100,Math.round(d.own/d.acc*100)):0;const irrPct=d.acc>0?Math.min(100,Math.round(Math.max(0,d.irr-d.own)/d.acc*100)):0;const parts=[];if(d.own>0)parts.push(d.own+'% held');if(d.irr>d.own)parts.push((d.irr-d.own).toFixed(1)+'% irrev');const controlPct=total;return`<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:${ownPct}%"></div><div class="own-fill own-irrev" style="width:${irrPct}%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">${controlPct}%</span></div><div class="tip">${parts.length?parts.join(' + '):controlPct+'% control'} of ${d.acc+'%'} threshold</div>`;})()}</td>
-      <td class="adv" title="${d.tfa}">${d.tfa||'—'}</td>
-      <td class="adv" title="${d.bfa}">${d.bfa||'—'}</td>
+      <td class="adv" title="${d.tfa}">${d.tfa||'\u2014'}</td>
+      <td class="adv" title="${d.bfa}">${d.bfa||'\u2014'}</td>
     </tr>`}).join('');
   document.getElementById('dc').innerHTML=`Showing <b>${data.length}</b> of ${deals.length}`;
   updateKpis(data);
   updateSidebar(data);
 }
-
 function updateKpis(data){
   const tv=data.reduce((s,d)=>s+d.v,0);
   const wp=data.filter(d=>d.p!==null);
@@ -673,34 +820,31 @@ function updateKpis(data){
   const xbCount=data.filter(d=>d.xb).length;
   document.getElementById('kpis').innerHTML=`
     <div class="kpi"><div class="kv">${data.length}</div><div class="kl">Live Deals</div></div>
-    <div class="kpi"><div class="kv">€${(tv/1000).toFixed(1)}<span class="u">bn</span></div><div class="kl">Total Value</div></div>
+    <div class="kpi"><div class="kv">\u20AC${(tv/1000).toFixed(1)}<span class="u">bn</span></div><div class="kl">Total Value</div></div>
     <div class="kpi"><div class="kv">${ap.toFixed(1)}<span class="u">%</span></div><div class="kl">Avg Premium</div></div>
     <div class="kpi"><div class="kv">${xbCount}</div><div class="kl">Cross-Border</div></div>
     <div class="kpi"><div class="kv" style="color:var(--hr)">${hostile}</div><div class="kl">Hostile</div></div>
     <div class="kpi"><div class="kv">${nc}</div><div class="kl">Countries</div></div>`;
 }
-
 function median(arr){
   if(!arr.length)return null;
   const s=[...arr].sort((a,b)=>a-b);
   const m=Math.floor(s.length/2);
   return s.length%2?s[m]:(s[m-1]+s[m])/2;
 }
-
 function updateSidebar(data){
   const withP=data.filter(d=>d.p!==null);
   const bands=[
     {label:'< 0%',min:-Infinity,max:0,color:'#F87171'},
-    {label:'0–20%',min:0,max:20,color:'#FBBF24'},
-    {label:'20–40%',min:20,max:40,color:'#4F7DF3'},
-    {label:'40–60%',min:40,max:60,color:'#34D399'},
+    {label:'0\u201320%',min:0,max:20,color:'#FBBF24'},
+    {label:'20\u201340%',min:20,max:40,color:'#6C8AFF'},
+    {label:'40\u201360%',min:40,max:60,color:'#34D399'},
     {label:'> 60%',min:60,max:Infinity,color:'#A78BFA'},
   ];
   const bandCounts=bands.map(b=>({...b,n:withP.filter(d=>d.p>=b.min&&d.p<b.max).length}));
   const maxN=Math.max(...bandCounts.map(b=>b.n),1);
   const medP=median(withP.map(d=>d.p));
   const avgP=withP.length?(withP.reduce((s,d)=>s+d.p,0)/withP.length):null;
-
   const considMap={Cash:{n:0,v:0},Shares:{n:0,v:0},Mixed:{n:0,v:0}};
   data.forEach(d=>{
     const m=multData[d.t];
@@ -712,14 +856,12 @@ function updateSidebar(data){
   const considOrder=['Cash','Shares','Mixed'];
   const considColors={Cash:'#34D399',Shares:'#818CF8',Mixed:'#FBBF24'};
   const maxConsidV=Math.max(...considOrder.map(k=>considMap[k].v),1);
-
   const allEVEBITDA=data.map(d=>{const m=multData[d.t];return m&&m.ev_ebitda&&m.ev_ebitda>0&&m.ev_ebitda<100?m.ev_ebitda:null;}).filter(v=>v!==null);
   const allEVSales=data.map(d=>{const m=multData[d.t];return m&&m.ev_sales&&m.ev_sales>0&&m.ev_sales<50?m.ev_sales:null;}).filter(v=>v!==null);
   const allPE=data.map(d=>{const m=multData[d.t];return m&&m.pe&&m.pe>0&&m.pe<80?m.pe:null;}).filter(v=>v!==null);
   const medEVEBITDA=median(allEVEBITDA);
   const medEVSales=median(allEVSales);
   const medPE=median(allPE);
-
   const sectorMap={};
   data.forEach(d=>{
     const m=multData[d.t];
@@ -732,7 +874,6 @@ function updateSidebar(data){
     .filter(([,v])=>v.ebitda.length>=2)
     .map(([k,v])=>({sector:k,ebitda:median(v.ebitda),sales:median(v.sales),n:v.ebitda.length}))
     .sort((a,b)=>b.n-a.n).slice(0,5);
-
   const coMap={};
   data.forEach(d=>{
     if(!coMap[d.c])coMap[d.c]={count:0,value:0};
@@ -740,7 +881,6 @@ function updateSidebar(data){
     coMap[d.c].value+=d.v;
   });
   const coSorted=Object.entries(coMap).sort((a,b)=>b[1].value-a[1].value);
-
   document.getElementById('sidebar').innerHTML=`
     <div class="sb-card">
       <div class="sb-hd" style="display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;border-bottom:1px solid var(--b)">
@@ -756,25 +896,25 @@ function updateSidebar(data){
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
         <div style="border-right:1px solid var(--b)">
           <div style="padding:7px 14px 5px;display:flex;gap:12px;border-bottom:1px solid var(--b2)">
-            <div><div style="font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t)">${medP!==null?medP.toFixed(1)+'%':'—'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Median</div></div>
-            <div><div style="font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t)">${avgP!==null?avgP.toFixed(1)+'%':'—'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Mean</div></div>
-            <div><div style="font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t)">${withP.length?Math.max(...withP.map(d=>d.p)).toFixed(0)+'%':'—'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">High</div></div>
+            <div><div style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">${medP!==null?medP.toFixed(1)+'%':'\u2014'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Median</div></div>
+            <div><div style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">${avgP!==null?avgP.toFixed(1)+'%':'\u2014'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Mean</div></div>
+            <div><div style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">${withP.length?Math.max(...withP.map(d=>d.p)).toFixed(0)+'%':'\u2014'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">High</div></div>
           </div>
           ${bandCounts.map(b=>`<div style="padding:4px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--b2)">
             <span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">${b.label}</span>
-            <div style="flex:1;height:7px;background:#F0F2F6;border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${b.n?Math.round(b.n/maxN*100):0}%;background:${b.color};transition:width .4s"></div></div>
-            <span style="font-size:10px;font-weight:700;color:var(--t);min-width:14px;text-align:right">${b.n}</span>
+            <div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${b.n?Math.round(b.n/maxN*100):0}%;background:${b.color};transition:width .4s;box-shadow:0 0 6px ${b.color}22"></div></div>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:var(--t);min-width:14px;text-align:right">${b.n}</span>
           </div>`).join('')}
         </div>
         <div>
           ${considOrder.filter(k=>considMap[k].n>0).map(k=>`<div style="padding:6px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid var(--b2)">
             <span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">${k}</span>
-            <div style="flex:1;height:7px;background:#F0F2F6;border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${Math.round(considMap[k].v/maxConsidV*100)}%;background:${considColors[k]};transition:width .4s"></div></div>
-            <span style="font-size:9px;font-weight:700;color:${considColors[k]};min-width:26px;text-align:right">${totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'—'}</span>
+            <div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${Math.round(considMap[k].v/maxConsidV*100)}%;background:${considColors[k]};transition:width .4s;box-shadow:0 0 6px ${considColors[k]}22"></div></div>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:${considColors[k]};min-width:26px;text-align:right">${totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'\u2014'}</span>
           </div>`).join('')}
           <div style="padding:8px 12px;border-bottom:1px solid var(--b2)">
             <div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:4px">Largest cash deal</div>
-            <div style="font-size:10px;font-weight:600;color:var(--t);line-height:1.3">${(()=>{const cashDeals=data.filter(d=>{const m=multData[d.t];return m&&m.consid==='Cash';});cashDeals.sort((a,b)=>b.v-a.v);return cashDeals.length?cashDeals[0].t.split(' ').slice(0,3).join(' ')+'…':'—';})()}</div>
+            <div style="font-size:10px;font-weight:600;color:var(--t);line-height:1.3">${(()=>{const cashDeals=data.filter(d=>{const m=multData[d.t];return m&&m.consid==='Cash';});cashDeals.sort((a,b)=>b.v-a.v);return cashDeals.length?cashDeals[0].t.split(' ').slice(0,3).join(' ')+'\u2026':'\u2014';})()}</div>
           </div>
         </div>
       </div>
@@ -782,12 +922,12 @@ function updateSidebar(data){
     <div class="sb-card">
       <div class="sb-hd">
         <span class="sb-title">Transaction Multiples</span>
-        <span class="sb-sub">Medians · M&A Monitor data</span>
+        <span class="sb-sub">Medians \u00b7 M&A Monitor data</span>
       </div>
       <div class="sb-kpi-row">
-        <div class="sb-kpi"><div class="sb-kpi-v">${medEVEBITDA?medEVEBITDA.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">EV/EBITDA</div></div>
-        <div class="sb-kpi"><div class="sb-kpi-v">${medEVSales?medEVSales.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">EV/Sales</div></div>
-        <div class="sb-kpi"><div class="sb-kpi-v">${medPE?medPE.toFixed(1)+'x':'—'}</div><div class="sb-kpi-l">P/E</div></div>
+        <div class="sb-kpi"><div class="sb-kpi-v">${medEVEBITDA?medEVEBITDA.toFixed(1)+'x':'\u2014'}</div><div class="sb-kpi-l">EV/EBITDA</div></div>
+        <div class="sb-kpi"><div class="sb-kpi-v">${medEVSales?medEVSales.toFixed(1)+'x':'\u2014'}</div><div class="sb-kpi-l">EV/Sales</div></div>
+        <div class="sb-kpi"><div class="sb-kpi-v">${medPE?medPE.toFixed(1)+'x':'\u2014'}</div><div class="sb-kpi-l">P/E</div></div>
       </div>
       ${sectorRows.length?`<div style="display:grid;grid-template-columns:1fr auto auto;gap:0;padding:5px 14px 3px;border-top:1px solid var(--b2)">
         <span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3)">Sector</span>
@@ -796,8 +936,8 @@ function updateSidebar(data){
       </div>
       ${sectorRows.map(r=>`<div class="sb-mult-row" style="display:grid;grid-template-columns:1fr auto auto;gap:0">
         <span class="sb-mult-sector">${r.sector}</span>
-        <span class="sb-mult-v" style="padding-right:8px">${r.ebitda?r.ebitda.toFixed(1)+'x':'—'}</span>
-        <span class="sb-mult-v">${r.sales?r.sales.toFixed(1)+'x':'—'}</span>
+        <span class="sb-mult-v" style="padding-right:8px">${r.ebitda?r.ebitda.toFixed(1)+'x':'\u2014'}</span>
+        <span class="sb-mult-v">${r.sales?r.sales.toFixed(1)+'x':'\u2014'}</span>
       </div>`).join('')}`:''}
     </div>
     <div class="sb-card2">
@@ -806,17 +946,16 @@ function updateSidebar(data){
         ${fg(e[0])}
         <span style="font-size:12px;font-weight:600;flex:1;color:var(--t)">${e[0]}</span>
         <span class="sb-cnt">${e[1].count}</span>
-        <span class="sb-val">€${e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m'}</span>
+        <span class="sb-val">\u20AC${e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m'}</span>
       </div>`).join('')}
     </div>`;
 }
-
 function sort(col){
   document.querySelectorAll('thead th').forEach(h=>h.classList.remove('so'));
   if(cs.col===col)cs.asc=!cs.asc;
   else{cs.col=col;cs.asc=(col==='value'||col==='premium')?false:true}
   const th=document.querySelector(`th[data-c="${col}"]`);
-  if(th){th.classList.add('so');th.querySelector('.ar').textContent=cs.asc?'▲':'▼'}
+  if(th){th.classList.add('so');th.querySelector('.ar').textContent=cs.asc?'\u25B2':'\u25BC'}
   go();
 }
 function toggleBig(){bigOnly=true;document.getElementById('bigBtn').classList.add('on');document.getElementById('allBtn').classList.remove('on');go()}
