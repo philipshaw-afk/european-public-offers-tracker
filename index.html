@@ -392,6 +392,7 @@ tbody tr:last-child td { border-bottom:0; }
 .tp-merger { background:var(--ib); color:var(--in); border-color: rgba(129,140,248,0.12); }
 .tp-div { background: rgba(248,113,113,0.08); color:var(--r); border-color: rgba(248,113,113,0.12); }
 .tp-partial { background: rgba(0,0,0,0.04); color:var(--t2); }
+.tp-minority { background: rgba(245,158,11,0.08); color:#B45309; border-color: rgba(245,158,11,0.12); }
 .tp-hostile {
   background:var(--hb); color:var(--hr); margin-left:3px;
   border-color: rgba(239,68,68,0.2);
@@ -662,6 +663,7 @@ function normalizeType(raw) {
   if (s.includes('divestiture') && !s.includes('mand')) return 'Divestiture';
   if (s.includes('mand')) return 'Mandatory';
   if (s.includes('divestiture')) return 'Divestiture';
+  if (s.includes('minorit')) return 'Minority Bid';
   if (s.includes('public')) return 'Public Offer';
   return raw;
 }
@@ -912,7 +914,7 @@ function buildFilters() {
 function isNew(d) { var ann=new Date(d); var now=new Date(); return (now-ann)/864e5 <= 10; }
 function fv(v) { return v>=1000 ? '<span class="c">\u20AC</span>'+(v/1000).toFixed(1)+'bn' : '<span class="c">\u20AC</span>'+v.toFixed(0)+'m'; }
 function fd(s) { if(!s) return '\u2014'; var d=new Date(s); if(isNaN(d.getTime())) return s; var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return d.getDate()+' '+m[d.getMonth()]+' '+String(d.getFullYear()).slice(2); }
-function tpc(t) { return {'Scheme':'tp-scheme','Public Offer':'tp-po','Mandatory':'tp-mand','MBO/MBI':'tp-mbo','Merger':'tp-merger','Divestiture':'tp-div','Partial':'tp-partial'}[t]||''; }
+function tpc(t) { return {'Scheme':'tp-scheme','Public Offer':'tp-po','Mandatory':'tp-mand','MBO/MBI':'tp-mbo','Merger':'tp-merger','Divestiture':'tp-div','Partial':'tp-partial','Minority Bid':'tp-minority'}[t]||''; }
 function ph(p) { if(p===null) return '<span class="pp pn">n/a</span>'; var c=p>=30?'ph':p>=10?'pm':'pl'; return '<span class="pp '+c+'">'+(p>0?'+':'')+p.toFixed(1)+'%</span>'; }
 
 function getData() {
