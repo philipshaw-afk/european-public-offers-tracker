@@ -809,8 +809,18 @@ async function loadFromSheets() {
     var m_sales = evSalesIdx >= 0 ? parseFloat((row[evSalesIdx]||'').replace(/[^0-9.\-]/g,'')) || null : null;
     var m_pe = peIdx >= 0 ? parseFloat((row[peIdx]||'').replace(/[^0-9.\-]/g,'')) || null : null;
 
+    var considNorm = 'Cash';
+    if (consid) {
+      var cl = consid.toLowerCase();
+      var hasCash = cl.includes('cash');
+      var hasShares = cl.includes('share') || cl.includes('ordinary');
+      if (hasCash && hasShares) considNorm = 'Mixed';
+      else if (hasShares) considNorm = 'Shares';
+      else if (hasCash) considNorm = 'Cash';
+      else if (cl.includes('plus') || cl.includes('mixed')) considNorm = 'Mixed';
+    }
     parsedMultiples[targetName] = {
-      consid: consid || 'Cash', sector: sector,
+      consid: considNorm, sector: sector,
       ev_ebitda: m_ebitda, ev_sales: m_sales, pe: m_pe
     };
   }
