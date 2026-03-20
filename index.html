@@ -523,27 +523,28 @@ tbody tr:last-child td { border-bottom:0; }
 <div class="mesh-bg"></div>
 <div class="mesh-orb"></div>
 
-<div class="flags-banner">
+<div class="flags-banner" style="position:relative">
   <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/european-flags-banner.png" alt="European flags">
+  <a href="https://ma-monitor.co.uk/" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);z-index:102">
+    <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/rounded%20edge%20logo.png" alt="M&A Monitor" style="height:90px;width:auto;display:block;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.2)">
+  </a>
 </div>
 
 <header class="hdr">
-  <a href="#" class="logo">
-    <img src="https://raw.githubusercontent.com/philipshaw-afk/ma-monitor-assets/main/rounded%20edge%20logo.png" alt="M&A Monitor" style="height:30px;width:auto;display:block;border-radius:5px">
+  <a href="https://ma-monitor.co.uk/" class="logo">
     <div class="logo-t">M&A Monitor <span>/ Live Tracker</span></div>
   </a>
   <ul class="nav">
-    <li><a href="#">DataBase</a></li>
-    <li><a href="#">8.3 Tracker</a></li>
-    <li><a href="#">ARB-Insight</a></li>
+    <li><a href="https://ma-data.ma-monitor.co.uk/">DataBase</a></li>
+    <li><a href="https://rule8.3.ma-monitor.co.uk/">8.3 Tracker</a></li>
+    <li><a href="https://arb.ma-monitor.co.uk/">ARB-Insight</a></li>
     <li><a href="#" class="on">Live Tracker</a></li>
   </ul>
-  <a href="#" class="cta">Request a Demo</a>
+  <a href="https://arbinsight.co.uk/" class="cta">View UK Tracker</a>
 </header>
 <div class="hero ai">
   <div class="hero-r">
     <div>
-      <div class="bdg">Live &middot; Western European Public Offers</div>
       <h1>European Public M&A Monitor</h1>
       <p class="sub">Every pending public offer across Western Europe &mdash; deal intelligence, premiums, and advisory mandates tracked by M&A Monitor.</p>
     </div>
@@ -593,7 +594,7 @@ tbody tr:last-child td { border-bottom:0; }
       </div>
       <div class="tfr">
         <span class="ut" id="footer-date"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Loading data&hellip;</span>
-        <a href="#">Subscribe for full deal intelligence &rarr;</a>
+        <a href="https://ma-monitor.co.uk/">Subscribe for full deal intelligence &rarr;</a>
       </div>
     </div>
   </div>
@@ -786,7 +787,6 @@ async function loadFromSheets() {
     var irr = parseFloat(getVal(row, 'undertakings').replace(/[^0-9.\-]/g,'')) || 0;
     if (!irr) irr = parseFloat(getVal(row, 'acceptances').replace(/[^0-9.\-]/g,'')) || 0;
     var acc = parseFloat(getVal(row, 'Acceptance condition').replace(/[^0-9.\-]/g,'')) || 0;
-    if (acc === 0) acc = 50;
     var tfa = getAdviser(row, 'target');
     var bfa = getAdviser(row, 'bidder');
 
@@ -963,7 +963,7 @@ function render(data) {
       + '<td class="dt">' + fd(d.ec) + '</td>'
       + '<td><span class="days ' + daysCls + '">' + days + '</span></td>'
       + '<td><span class="reg reg-' + regCls + '">' + d.reg + '</span></td>'
-      + '<td class="own-cell"><div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:' + ownPct + '%"></div><div class="own-fill own-irrev" style="width:' + irrPct + '%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">' + total + '%</span></div><div class="tip">' + (parts.length ? parts.join(' + ') : total+'% control') + ' of ' + d.acc + '% threshold</div></td>'
+      + '<td class="own-cell">' + (d.acc > 0 ? '<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:' + ownPct + '%"></div><div class="own-fill own-irrev" style="width:' + irrPct + '%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">' + total + '%</span></div><div class="tip">' + (parts.length ? parts.join(' + ') : total+'% control') + ' of ' + d.acc + '% threshold</div>' : '<div style="font-size:10px;font-weight:600;color:var(--t3)">No acceptance condition</div>' + (parts.length ? '<div class="tip">' + parts.join(' + ') + '</div>' : '')) + '</td>'
       + '<td class="adv" title="' + d.tfa + '">' + (d.tfa || '\u2014') + '</td>'
       + '<td class="adv" title="' + d.bfa + '">' + (d.bfa || '\u2014') + '</td>'
       + '</tr>';
