@@ -509,6 +509,14 @@ tbody tr:last-child td { border-bottom:0; }
 
 /* === SELECTION === */
 ::selection { background: rgba(79,110,247,0.2); color: #0F1729; }
+
+/* === LOADING === */
+.loading{text-align:center;padding:40px;color:var(--t3);font-size:14px}
+.loading-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);margin:0 3px;animation:ld .6s infinite alternate}
+.loading-dot:nth-child(2){animation-delay:.2s}
+.loading-dot:nth-child(3){animation-delay:.4s}
+@keyframes ld{from{opacity:.3;transform:translateY(0)}to{opacity:1;transform:translateY(-6px)}}
+.error-msg{text-align:center;padding:30px;color:var(--r);font-size:13px;background:var(--rb);border-radius:8px;margin:20px}
 </style>
 </head>
 <body>
@@ -544,7 +552,7 @@ tbody tr:last-child td { border-bottom:0; }
 </div>
 <div class="tk-w ai d1">
   <div class="tk-h"><span class="tk-t">Recent Developments</span><div class="tk-l"></div></div>
-  <div class="tk"><div class="fl"></div><div class="fr"></div><div class="tk-tr" id="ticker"></div></div>
+  <div class="tk"><div class="fl"></div><div class="fr"></div><div class="tk-tr" id="ticker"><div class="loading" style="padding:12px 20px"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></div></div>
 </div>
 <div class="main">
   <div class="tc">
@@ -580,11 +588,11 @@ tbody tr:last-child td { border-bottom:0; }
             <th class="ns">Target Advisers</th>
             <th class="ns">Bidder Advisers</th>
           </tr></thead>
-          <tbody id="tb"></tbody>
+          <tbody id="tb"><tr><td colspan="14"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></td></tr></tbody>
         </table>
       </div>
       <div class="tfr">
-        <span class="ut"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Data as at 24 Feb 2026, 17:14 GMT &middot; Source: M&A Monitor DataBase</span>
+        <span class="ut" id="footer-date"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Loading data&hellip;</span>
         <a href="#">Subscribe for full deal intelligence &rarr;</a>
       </div>
     </div>
@@ -610,360 +618,497 @@ IS:`<svg viewBox="0 0 25 18"><rect width="25" height="18" fill="#003897"/><rect 
 CH:`<svg viewBox="0 0 32 32"><rect width="32" height="32" fill="#F00"/><rect x="13" y="6" width="6" height="20" fill="#fff"/><rect x="6" y="13" width="20" height="6" fill="#fff"/></svg>`
 };
 const fg=(c,cl)=>`<span class="${cl||'fg'}">${F[c]||''}</span>`;
-const deals=[
-{t:"JDE PEETS NV",co:"Netherlands",c:"NL",b:"KEURIG DR PEPPER INC",v:13398.1,p:20.0,tp:"Divestiture",at:"Friendly",d:"2025-08-25",ec:"2026-07-31",reg:"Cleared",own:0,irr:80.2,acc:75,xb:true,tfa:"Bank of America",bfa:"Lazard"},
-{t:"SCHRODERS PLC",co:"United Kingdom",c:"UK",b:"TEACHERS INSURANCE AND ANNUITY ASSOCIATION",v:9503.2,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-02-12",ec:"2026-06-30",reg:"No Referral",own:0,irr:47.2,acc:75,xb:true,tfa:"Wells Fargo Securities / JPMorgan Cazenove / Barclays",bfa:"BNP Paribas"},
-{t:"INPOST SA",co:"Luxembourg",c:"LU",b:"ADVENT INTERNATIONAL/FEDEX/A&R INVESTMENTS/PPF",v:6782.6,p:50,tp:"MBO/MBI",at:"Friendly",d:"2026-02-09",ec:"2026-08-31",reg:"Under Review",own:39.8,irr:39.8,acc:50,xb:true,tfa:"JP Morgan / Santander",bfa:""},
-{t:"MERUS NV",co:"Netherlands",c:"NL",b:"GENMAB A/S",v:6020.0,p:40.8,tp:"Public Offer",at:"Friendly",d:"2025-09-29",ec:"2026-04-30",reg:"Cleared",own:0,irr:0,acc:50,xb:true,tfa:"Jefferies LLC",bfa:"Morgan Stanley / PJT Partners"},
-{t:"BANCA POPOLARE DI SONDRIO SPA",co:"Italy",c:"IT",b:"BPER BANCA SPA",v:5930.5,p:68.8,tp:"Public Offer",at:"Friendly",d:"2025-11-05",ec:"2026-06-30",reg:"Under Review",own:19.9,irr:0,acc:50,xb:false,tfa:"",bfa:""},
-{t:"JANUS HENDERSON GROUP PLC",co:"United Kingdom",c:"UK",b:"TRIAN FUND MANAGEMENT LP/GENERAL CATALYST GROUP",v:5634.9,p:18.9,tp:"MBO/MBI",at:"Friendly",d:"2025-12-22",ec:"2026-07-31",reg:"Under Review",own:9.9,irr:9.9,acc:75,xb:true,tfa:"Centerview Partners LLC / Goldman Sachs",bfa:"Jefferies LLC / Citi"},
-{t:"IVECO GROUP NV",co:"Italy",c:"IT",b:"TATA MOTORS LIMITED",v:4682.0,p:29.7,tp:"Public Offer",at:"Friendly",d:"2025-07-30",ec:"2026-05-31",reg:"Conditions",own:0,irr:43.1,acc:50,xb:true,tfa:"Goldman Sachs",bfa:"Morgan Stanley"},
-{t:"ALLFUNDS GROUP PLC",co:"United Kingdom",c:"UK",b:"DEUTSCHE BORSE AG",v:4498.5,p:29.9,tp:"Scheme",at:"Friendly",d:"2026-01-21",ec:"2026-06-30",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Goldman Sachs / Citi",bfa:"Barclays"},
-{t:"SUBSEA 7 SA",co:"Luxembourg",c:"LU",b:"SAIPEM SPA",v:4168.8,p:9.3,tp:"Merger",at:"Friendly",d:"2025-02-23",ec:"2026-09-30",reg:"Under Review",own:0,irr:0,acc:50,xb:false,tfa:"Deloitte Corporate Finance / Kirk Lovegrove & Company",bfa:"Goldman Sachs International / Deutsche Bank"},
-{t:"JUST GROUP PLC",co:"United Kingdom",c:"UK",b:"BROOKFIELD WEALTH SOLUTIONS LIMITED",v:2355.7,p:73.9,tp:"Scheme",at:"Friendly",d:"2025-07-31",ec:"2026-04-30",reg:"Cleared",own:0,irr:0,acc:75,xb:true,tfa:"JPMorgan Cazenove / Evercore Partners",bfa:"RBC Capital Markets"},
-{t:"JTC PLC",co:"United Kingdom",c:"UK",b:"PERMIRA ADVISERS LLP",v:2340.2,p:37.4,tp:"Scheme",at:"Friendly",d:"2025-11-10",ec:"2026-04-30",reg:"Cleared",own:0,irr:39.7,acc:75,xb:true,tfa:"Deutsche Numis / Robert W Baird / Berenberg Bank",bfa:"Jefferies International"},
-{t:"IHS HOLDING LIMITED",co:"United Kingdom",c:"UK",b:"MTN GROUP LIMITED",v:2212.2,p:3.3,tp:"Public Offer",at:"Friendly",d:"2026-02-17",ec:"2026-06-30",reg:"Under Review",own:0,irr:0,acc:50,xb:true,tfa:"JP Morgan",bfa:"Citigroup Global Markets Limited / Bank of America"},
-{t:"AVADEL PHARMACEUTICALS PLC",co:"Ireland (Republic of)",c:"IE",b:"ALKERMES PLC",v:1731.1,p:17.5,tp:"Scheme",at:"Friendly",d:"2025-10-22",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:75,xb:false,tfa:"Morgan Stanley / Goldman Sachs",bfa:"JP Morgan"},
-{t:"NURNBERGER BETEILIGUNGS AG",co:"Germany",c:"DE",b:"VIENNA INSURANCE GROUP AG",v:1202.1,p:154.2,tp:"Public Offer",at:"Friendly",d:"2025-10-16",ec:"2026-04-30",reg:"No Referral",own:3.1,irr:0,acc:50,xb:true,tfa:"ParkView Partners GmbH",bfa:"Deutsche Bank"},
-{t:"FERRETTI S.P.A.",co:"Italy",c:"IT",b:"KKCG AG",v:1030.2,p:-4.9,tp:"Partial",at:"Friendly",d:"2026-01-19",ec:"2026-04-30",reg:"No Referral",own:86.8,irr:0,acc:90,xb:true,tfa:"",bfa:"Somerley Capital Limited / Unicredit"},
-{t:"KLOCKNER & CO SE",co:"Germany",c:"DE",b:"WORTHINGTON STEEL INC",v:963.9,p:81.2,tp:"Public Offer",at:"Friendly",d:"2026-01-15",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:50,xb:true,tfa:"Goldman Sachs",bfa:"Bank of America / Andina Partners"},
-{t:"FNAC DARTY SA",co:"France",c:"FR",b:"EP CORPORATE GROUP AS",v:929.2,p:19.0,tp:"MBO/MBI",at:"Friendly",d:"2026-01-26",ec:"2026-05-31",reg:"No Referral",own:28.5,irr:28.5,acc:50,xb:true,tfa:"Ledouble SAS / Rothschild",bfa:"Cr\u00e9dit Agricole CIB / Soci\u00e9t\u00e9 G\u00e9n\u00e9rale / BNP Paribas"},
-{t:"COINSHARES INTERNATIONAL LIMITED",co:"Sweden",c:"SE",b:"VINE HILL CAPITAL INVESTMENT CORP",v:921.8,p:30.6,tp:"Scheme",at:"Friendly",d:"2025-09-08",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Keefe, Bruyette & Woods / Stifel",bfa:""},
-{t:"SOLGOLD PLC",co:"United Kingdom",c:"UK",b:"JIANGXI COPPER COMPANY LIMITED",v:866.8,p:7.1,tp:"Scheme",at:"Friendly",d:"2025-12-24",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:75,xb:true,tfa:"RBC Capital Markets / Maxit Capital LP",bfa:"Admiralty Harbour Capital / Peel Hunt LLP"},
-{t:"OCI NV",co:"Netherlands",c:"NL",b:"ORASCOM CONSTRUCTION PLC",v:765.2,p:-14.1,tp:"Merger",at:"Friendly",d:"2025-12-09",ec:"2026-07-31",reg:"No Referral",own:0,irr:54.6,acc:50,xb:true,tfa:"Rothschild / Rabobank",bfa:"First Abu Dhabi Bank / EFG Hermes"},
-{t:"CITYCON OYJ",co:"Finland",c:"FI",b:"G CITY LTD",v:644.4,p:35.8,tp:"Mandatory",at:"Neutral",d:"2025-11-03",ec:"2026-04-30",reg:"No Referral",own:48.5,irr:0,acc:50,xb:true,tfa:"",bfa:"Evli Corporate Finance"},
-{t:"TINEXTA SPA",co:"Italy",c:"IT",b:"ADVENT INTERNATIONAL LP / NEXTALIA SGR SPA",v:604.2,p:39.7,tp:"Mandatory",at:"Friendly",d:"2025-08-05",ec:"2026-05-31",reg:"Cleared",own:63.9,irr:63.9,acc:90,xb:true,tfa:"Lazard",bfa:""},
-{t:"NORTHERN DATA AG",co:"Germany",c:"DE",b:"RUMBLE INC",v:581.1,p:-55.2,tp:"Divestiture",at:"Friendly",d:"2025-11-10",ec:"2026-06-30",reg:"No Referral",own:0,irr:0,acc:50,xb:true,tfa:"Jefferies & Company",bfa:"Guggenheim Securities LLC / ParkView Partners GmbH"},
-{t:"EUROGROUP LAMINATIONS SPA",co:"Italy",c:"IT",b:"FOUNTAINVEST PARTNERS (ASIA) LIMITED",v:549.3,p:65.2,tp:"Mandatory",at:"Friendly",d:"2025-07-28",ec:"2026-04-30",reg:"Cleared",own:62.5,irr:62.5,acc:90,xb:true,tfa:"",bfa:"Morgan Stanley / BNP Paribas / Rothschild"},
-{t:"INTERNATIONAL PERSONAL FINANCE PLC",co:"United Kingdom",c:"UK",b:"BASEPOINT CAPITAL LLC",v:542.5,p:34.0,tp:"Scheme",at:"Friendly",d:"2025-12-29",ec:"2026-05-31",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Stephens Inc",bfa:"Jefferies International / Deutsche Bank"},
-{t:"NILFISK HOLDING A/S",co:"Denmark",c:"DK",b:"FREUDENBERG & CO KG",v:460.0,p:35.9,tp:"Public Offer",at:"Friendly",d:"2025-12-11",ec:"2026-04-30",reg:"Under Review",own:0,irr:31.6,acc:50,xb:true,tfa:"Guggenheim Securities LLC",bfa:"JP Morgan"},
-{t:"IDOX PLC",co:"United Kingdom",c:"UK",b:"LONG PATH PARTNERS LLC",v:339.5,p:26.8,tp:"MBO/MBI",at:"Friendly",d:"2025-10-28",ec:"2026-04-30",reg:"No Referral",own:29.9,irr:29.9,acc:75,xb:true,tfa:"Peel Hunt LLP / Rothschild",bfa:"Canaccord Genuity Limited"},
-{t:"ANTARES VISION S.P.A.",co:"Italy",c:"IT",b:"CRANE NXT, CO.",v:306.0,p:3.9,tp:"Mandatory",at:"Friendly",d:"2025-09-12",ec:"2026-04-30",reg:"Cleared",own:71.8,irr:71.8,acc:90,xb:true,tfa:"JP Morgan",bfa:"Goldman Sachs"},
-{t:"ESSO SOCIETE ANONYME FRANCAISE SA",co:"France",c:"FR",b:"NORTH ATLANTIC REFINING CORP",v:288.0,p:-19.5,tp:"Mandatory",at:"Friendly",d:"2025-05-28",ec:"2026-04-30",reg:"No Referral",own:82.9,irr:82.9,acc:90,xb:true,tfa:"",bfa:""},
-{t:"ERCROS SA",co:"Spain",c:"ES",b:"JOSE DE MELLO SGPS SA",v:281.3,p:40.4,tp:"Public Offer",at:"Hostile",d:"2024-03-04",ec:"2026-06-30",reg:"Cleared",own:0,irr:0,acc:50,xb:true,tfa:"Evercore Partners",bfa:"Banco Santander Central Hispano"},
-{t:"SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA",co:"France",c:"FR",b:"SOCIETE DE PARTICIPATION DEAUVILLAISE SAS",v:262.4,p:27.3,tp:"Public Offer",at:"Friendly",d:"2025-12-08",ec:"2026-04-30",reg:"No Referral",own:67.7,irr:67.7,acc:50,xb:false,tfa:"",bfa:""},
-{t:"DIGITAL VALUE SPA",co:"Italy",c:"IT",b:"OEP CAPITAL ADVISORS LP",v:255.9,p:-2.4,tp:"Mandatory",at:"Friendly",d:"2025-10-21",ec:"2026-04-30",reg:"Cleared",own:71.3,irr:71.3,acc:90,xb:true,tfa:"D.G.P.A",bfa:"Equita Corporate Finance"},
-{t:"KITWAVE GROUP PLC",co:"United Kingdom",c:"UK",b:"OEP CAPITAL ADVISORS LP",v:250.6,p:33.5,tp:"Scheme",at:"Friendly",d:"2026-01-22",ec:"2026-05-31",reg:"No Referral",own:0,irr:52.8,acc:75,xb:true,tfa:"Canaccord Genuity Limited",bfa:"Moelis & Co LLC"},
-{t:"SKAGI HF",co:"Iceland",c:"IS",b:"ISLANDSBANKI HF",v:246.4,p:null,tp:"Public Offer",at:"Friendly",d:"2025-10-06",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:50,xb:false,tfa:"",bfa:""},
-{t:"BREDBAND2 I SKANDINAVIEN AB",co:"Sweden",c:"SE",b:"TELIA COMPANY AB",v:237.4,p:34.9,tp:"Public Offer",at:"Friendly",d:"2025-07-18",ec:"2026-04-30",reg:"Cleared",own:0,irr:0,acc:50,xb:false,tfa:"Ernst & Young",bfa:"Nordea Corporate Finance / Avanza Bank AB"},
-{t:"RANA GRUBER ASA",co:"Norway",c:"NO",b:"CHAMPION IRON LIMITED",v:216.1,p:12.9,tp:"Public Offer",at:"Friendly",d:"2025-12-21",ec:"2026-04-30",reg:"Under Review",own:0,irr:13.3,acc:50,xb:true,tfa:"DNB Carnegie",bfa:"Clarksons Securities"},
-{t:"JOHN WOOD GROUP PLC",co:"United Kingdom",c:"UK",b:"DAR AL-HANDASAH CONSULTANTS SHAIR & PARTNERS HLDGS",v:215.8,p:13.6,tp:"Scheme",at:"Friendly",d:"2025-08-29",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:75,xb:true,tfa:"JPMorgan Cazenove / Europa Partners / Morgan Stanley / Rothschild",bfa:"Greenhill & Co / Goldman Sachs"},
-{t:"GROUPE PIZZORNO ENVIRONNEMENT SA",co:"France",c:"FR",b:"PAPREC GROUP SA",v:210.0,p:11.6,tp:"Mandatory",at:"Friendly",d:"2026-01-19",ec:"2026-04-30",reg:"No Referral",own:61.8,irr:61.8,acc:50,xb:false,tfa:"",bfa:""},
-{t:"MARTIFER SGPS SA",co:"Portugal",c:"PT",b:"FERNANDO CAMPOS NUNES",v:174.9,p:-6.5,tp:"Public Offer",at:"Friendly",d:"2025-08-05",ec:"2026-05-31",reg:"No Referral",own:54.7,irr:54.7,acc:50,xb:false,tfa:"",bfa:""},
-{t:"BANCA SISTEMA SPA",co:"Italy",c:"IT",b:"ELLIOTT INVESTMENT MANAGEMENT LP",v:158.6,p:null,tp:"MBO/MBI",at:"Friendly",d:"2025-06-30",ec:"2026-07-31",reg:"No Referral",own:0,irr:0,acc:50,xb:true,tfa:"",bfa:"Unicredit"},
-{t:"LIFE SCIENCE REIT PLC",co:"United Kingdom",c:"UK",b:"BRITISH LAND COMPANY PLC, THE",v:149.8,p:20.9,tp:"Scheme",at:"Friendly",d:"2026-01-28",ec:"2026-06-30",reg:"No Referral",own:0,irr:0,acc:75,xb:false,tfa:"Panmure Liberum",bfa:"UBS"},
-{t:"FALCON OIL & GAS LTD",co:"Ireland (Republic of)",c:"IE",b:"TAMBORAN RESOURCES CORPORATION",v:129.0,p:17.4,tp:"Scheme",at:"Friendly",d:"2025-09-30",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Cavendish Corporate Finance Ltd",bfa:""},
-{t:"1SPATIAL PLC",co:"United Kingdom",c:"UK",b:"BATTERY VENTURES",v:87.1,p:57.0,tp:"Scheme",at:"Friendly",d:"2026-01-21",ec:"2026-05-31",reg:"No Referral",own:0,irr:48.3,acc:75,xb:true,tfa:"Panmure Liberum",bfa:"Raymond James"},
-{t:"ADDVISE GROUP AB (PUBL)",co:"Sweden",c:"SE",b:"AMPLEX AB",v:85.8,p:43.4,tp:"MBO/MBI",at:"Friendly",d:"2025-12-10",ec:"2026-04-30",reg:"No Referral",own:0,irr:44.1,acc:50,xb:false,tfa:"Mangold Fondkommission AB",bfa:"Nordea Corporate Finance"},
-{t:"INSPECS GROUP PLC",co:"United Kingdom",c:"UK",b:"LUKE JOHNSON AND IAN LIVINGSTONE",v:85.4,p:107.4,tp:"Scheme",at:"Friendly",d:"2025-12-10",ec:"2026-05-31",reg:"No Referral",own:0,irr:37.6,acc:75,xb:false,tfa:"Peel Hunt LLP",bfa:"Cavendish Corporate Finance Ltd"},
-{t:"SPIR GROUP ASA",co:"Norway",c:"NO",b:"KARBON INVEST AS/CARUCEL FINANCE AS/STELLA IND.",v:84.5,p:37.7,tp:"Public Offer",at:"Friendly",d:"2025-11-27",ec:"2026-04-30",reg:"No Referral",own:67.4,irr:67.4,acc:50,xb:false,tfa:"",bfa:"Nordea Corporate Finance"},
-{t:"TECNOTREE OYJ",co:"Finland",c:"FI",b:"HELIOS INVESTMENT PARTNERS LLP",v:84.4,p:42.5,tp:"MBO/MBI",at:"Friendly",d:"2026-01-27",ec:"2026-05-31",reg:"Under Review",own:0,irr:0,acc:50,xb:true,tfa:"Ernst & Young / Bridewell",bfa:"DNB Carnegie"},
-{t:"ASETEK A/S",co:"Denmark",c:"DK",b:"SUZHOU CHUNQIU ELECTRONIC TECHNOLOGY CO LTD",v:68.0,p:109.8,tp:"Public Offer",at:"Friendly",d:"2025-11-25",ec:"2026-04-30",reg:"Under Review",own:0,irr:0,acc:50,xb:true,tfa:"ABG Sundal Collier",bfa:""},
-{t:"SPINDOX SPA",co:"Italy",c:"IT",b:"PROGRESSIO SGR SPA",v:67.2,p:null,tp:"Mandatory",at:"Friendly",d:"2025-07-31",ec:"2026-04-30",reg:"No Referral",own:70.5,irr:70.5,acc:90,xb:false,tfa:"Klecha & Co.",bfa:"Banco BPM"},
-{t:"FRENKEL TOPPING GROUP PLC",co:"United Kingdom",c:"UK",b:"HARWOOD PRIVATE EQUITY LLP",v:64.0,p:20.1,tp:"Scheme",at:"Friendly",d:"2025-09-30",ec:"2026-04-30",reg:"No Referral",own:0,irr:52.1,acc:75,xb:false,tfa:"Cavendish Corporate Finance Ltd",bfa:"Strand Hanson Limited"},
-{t:"HEALTH ITALIA SPA",co:"Italy",c:"IT",b:"SALUTIA SPA",v:49.9,p:null,tp:"Mandatory",at:"Friendly",d:"2025-05-21",ec:"2026-04-30",reg:"No Referral",own:55.3,irr:55.3,acc:90,xb:false,tfa:"",bfa:"Banca Akros SA"},
-{t:"CULTI MILANO SPA",co:"Italy",c:"IT",b:"BERGER INTERNATIONAL SAS",v:45.8,p:null,tp:"Mandatory",at:"Friendly",d:"2025-12-19",ec:"2026-04-30",reg:"No Referral",own:64.1,irr:64.1,acc:90,xb:true,tfa:"",bfa:""},
-{t:"ELES SEMICONDUCTOR EQUIPMENT SPA",co:"Italy",c:"IT",b:"XENON AIFM SA",v:45.1,p:null,tp:"MBO/MBI",at:"White Knight",d:"2025-10-23",ec:"2026-05-31",reg:"No Referral",own:0,irr:0,acc:50,xb:true,tfa:"Pirola Corporate Finance",bfa:"PricewaterhouseCoopers / Rothschild"},
-{t:"KRONA PUBLIC REAL ESTATE AB",co:"Sweden",c:"SE",b:"STENHUS FASTIGHETER I NORDEN AB",v:32.2,p:1.0,tp:"Public Offer",at:"Friendly",d:"2026-01-15",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:50,xb:false,tfa:"",bfa:""},
-{t:"MURAL ONCOLOGY PLC",co:"Ireland (Republic of)",c:"IE",b:"XOMA ROYALTY CORPORATION",v:26.8,p:97.6,tp:"Scheme",at:"Friendly",d:"2025-08-20",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Lucid Capital Markets",bfa:"Davy Corporate Finance"},
-{t:"LIPUM AB",co:"Sweden",c:"SE",b:"FLERIE AB",v:26.8,p:33.2,tp:"Public Offer",at:"Friendly",d:"2025-11-18",ec:"2026-04-30",reg:"No Referral",own:29.9,irr:29.9,acc:50,xb:false,tfa:"Vastra Hamnen",bfa:""},
-{t:"CONSENSUS ASSET MANAGEMENT AB (PUBL) LAURE VERSION",co:"Sweden",c:"SE",b:"NORION BANK AB (PUBL)",v:13.7,p:116.3,tp:"Public Offer",at:"Friendly",d:"2025-11-21",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:50,xb:false,tfa:"KPMG",bfa:"Skandinaviska Enskilda Banken AB"},
-{t:"WH IRELAND GROUP PLC",co:"United Kingdom",c:"UK",b:"TEAM PLC",v:13.2,p:257.5,tp:"Scheme",at:"Friendly",d:"2025-11-27",ec:"2026-04-30",reg:"No Referral",own:29.6,irr:29.6,acc:75,xb:false,tfa:"Shore Capital & Corporate Ltd",bfa:"Hannam & Partners"},
-{t:"ESSENSYS PLC",co:"United Kingdom",c:"UK",b:"MR MARK FURNESS/TERRY & DAVID LEAH/WILLIAM CURRIE",v:11.3,p:9.7,tp:"MBO/MBI",at:"Friendly",d:"2026-02-24",ec:"2026-06-30",reg:"No Referral",own:0,irr:42.3,acc:75,xb:false,tfa:"Canaccord Genuity Limited",bfa:"Kroll Securities"},
-{t:"VINPAI SA",co:"France",c:"FR",b:"CAMLIN FINE SCIENCES LIMITED",v:10.3,p:13.2,tp:"Public Offer",at:"Friendly",d:"2025-02-24",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:50,xb:true,tfa:"",bfa:""},
-{t:"DELTIC ENERGY PLC",co:"United Kingdom",c:"UK",b:"VIARO INVESTMENT LIMITED",v:6.9,p:35.6,tp:"Scheme",at:"Friendly",d:"2025-06-30",ec:"2026-04-30",reg:"No Referral",own:0,irr:0,acc:75,xb:false,tfa:"Allenby Capital",bfa:"Hannam & Partners"},
-{t:"WALKER CRIPS GROUP PLC",co:"United Kingdom",c:"UK",b:"PHILLIP BROKERAGE PTE LTD",v:6.0,p:86.7,tp:"Scheme",at:"Friendly",d:"2025-11-24",ec:"2026-05-31",reg:"No Referral",own:0,irr:0,acc:75,xb:true,tfa:"Singer Capital Markets Limited",bfa:"Cavendish Corporate Finance Ltd"}
-];
-const updates=[
-{d:"23 Feb",c:"UK",t:"Schroders",x:"TIAA confirms 700p/share cash offer; Board recommends"},
-{d:"22 Feb",c:"LU",t:"InPost",x:"Consortium files for EU Commission merger clearance"},
-{d:"22 Feb",c:"UK",t:"IHS Holding",x:"MTN Group announces firm intention to acquire at $4.80/share"},
-{d:"21 Feb",c:"UK",t:"Allfunds Group",x:"Deutsche B\u00f6rse scheme document posted to shareholders"},
-{d:"21 Feb",c:"DE",t:"Kl\u00f6ckner & Co",x:"Worthington Steel receives BaFin approval for offer document"},
-{d:"20 Feb",c:"FR",t:"FNAC Darty",x:"EP Corporate Group publishes AMF-approved offer document"},
-{d:"20 Feb",c:"UK",t:"Kitwave Group",x:"OEP Capital offer declared unconditional as to acceptances"},
-{d:"19 Feb",c:"IT",t:"Iveco Group",x:"CONSOB approves Tata Motors prospectus; acceptance opens 3 Mar"},
-{d:"19 Feb",c:"FI",t:"Tecnotree",x:"Helios publishes offer document; acceptance period begins"},
-{d:"19 Feb",c:"ES",t:"Ercros",x:"Jos\u00e9 de Mello extends acceptance deadline to 14 Mar; 41.2% tendered"},
-];
-const multData = {
-  "JDE PEETS NV": {"consid": "Cash", "sector": "Food Manufacturers", "ev_ebitda": 12.3, "ev_sales": 2.0, "pe": 15.3},
-  "SCHRODERS PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 9.6, "ev_sales": 2.6, "pe": 16.4},
-  "INPOST SA": {"consid": "Cash", "sector": "Transport", "ev_ebitda": 10.0, "ev_sales": 3.0, "pe": 23.0},
-  "BANCA POPOLARE DI SONDRIO SPA": {"consid": "Shares", "sector": "Banking", "ev_ebitda": null, "ev_sales": null, "pe": null},
-  "JANUS HENDERSON GROUP PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 11.7, "ev_sales": 4.2, "pe": 12.9},
-  "IVECO GROUP NV": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.5, "ev_sales": 0.6, "pe": 14.4},
-  "ALLFUNDS GROUP PLC": {"consid": "Mixed", "sector": "Financial Services", "ev_ebitda": 12.3, "ev_sales": 8.3, "pe": 19.6},
-  "SUBSEA 7 SA": {"consid": "Shares", "sector": "Engineering", "ev_ebitda": 6.0, "ev_sales": 0.9, "pe": 32.4},
-  "JUST GROUP PLC": {"consid": "Cash", "sector": "Insurance", "ev_ebitda": null, "ev_sales": null, "pe": 29.4},
-  "JTC PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 24.9, "ev_sales": 8.2, "pe": null},
-  "IHS HOLDING LIMITED": {"consid": "Cash", "sector": "Telecoms", "ev_ebitda": 6.4, "ev_sales": 3.6, "pe": 6.5},
-  "NURNBERGER BETEILIGUNGS AG": {"consid": "Cash", "sector": "Insurance", "ev_ebitda": null, "ev_sales": null, "pe": null},
-  "FERRETTI S.P.A.": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.5, "ev_sales": 0.9, "pe": 13.5},
-  "KLOCKNER & CO SE": {"consid": "Cash", "sector": "Distribution", "ev_ebitda": 11.7, "ev_sales": 0.3, "pe": null},
-  "FNAC DARTY SA": {"consid": "Cash", "sector": "Retail", "ev_ebitda": 5.2, "ev_sales": 0.3, "pe": 13.7},
-  "COINSHARES INTERNATIONAL LIMITED": {"consid": "Shares", "sector": "Financial Services", "ev_ebitda": 10.7, "ev_sales": 10.5, "pe": 10.8},
-  "OCI NV": {"consid": "Shares", "sector": "Chemicals", "ev_ebitda": null, "ev_sales": 1.1, "pe": null},
-  "TINEXTA SPA": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 9.0, "ev_sales": 2.1, "pe": 14.6},
-  "NORTHERN DATA AG": {"consid": "Shares", "sector": "Technology", "ev_ebitda": 24.2, "ev_sales": 5.0, "pe": null},
-  "EUROGROUP LAMINATIONS SPA": {"consid": "Cash", "sector": "Electronics", "ev_ebitda": 8.3, "ev_sales": 1.1, "pe": 29.9},
-  "INTERNATIONAL PERSONAL FINANCE PLC": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": 6.3, "ev_sales": 1.6, "pe": 10.0},
-  "NILFISK HOLDING A/S": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.6, "ev_sales": 0.8, "pe": null},
-  "IDOX PLC": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 13.0, "ev_sales": 3.9, "pe": 54.4},
-  "ANTARES VISION S.P.A.": {"consid": "Cash", "sector": "Electronics", "ev_ebitda": 12.6, "ev_sales": 2.1, "pe": null},
-  "ESSO SOCIETE ANONYME FRANCAISE SA": {"consid": "Cash", "sector": "Energy", "ev_ebitda": 4.3, "ev_sales": 0.02, "pe": null},
-  "ERCROS SA": {"consid": "Cash", "sector": "Chemicals", "ev_ebitda": 8.8, "ev_sales": 0.6, "pe": 11.4},
-  "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA": {"consid": "Cash", "sector": "Leisure", "ev_ebitda": 5.5, "ev_sales": 1.6, "pe": 12.1},
-  "DIGITAL VALUE SPA": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 2.6, "ev_sales": 0.3, "pe": 15.7},
-  "GROUPE PIZZORNO ENVIRONNEMENT SA": {"consid": "Cash", "sector": "Support Services", "ev_ebitda": 6.3, "ev_sales": 1.0, "pe": 11.0},
-  "MARTIFER SGPS SA": {"consid": "Cash", "sector": "Industrials", "ev_ebitda": 5.4, "ev_sales": 0.8, "pe": 8.8},
-  "BANCA SISTEMA SPA": {"consid": "Cash", "sector": "Banking", "ev_ebitda": null, "ev_sales": null, "pe": null},
-  "LIFE SCIENCE REIT PLC": {"consid": "Mixed", "sector": "Real Estate", "ev_ebitda": 26.3, "ev_sales": 13.1, "pe": 25.5},
-  "FALCON OIL & GAS LTD": {"consid": "Shares", "sector": "Energy", "ev_ebitda": null, "ev_sales": null, "pe": null},
-  "1SPATIAL PLC": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 15.9, "ev_sales": 2.6, "pe": null},
-  "TECNOTREE OYJ": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 3.9, "ev_sales": 1.6, "pe": 14.9},
-  "ASETEK A/S": {"consid": "Cash", "sector": "Technology", "ev_ebitda": null, "ev_sales": 2.1, "pe": null},
-  "SPINDOX SPA": {"consid": "Cash", "sector": "Technology", "ev_ebitda": 7.6, "ev_sales": 0.7, "pe": null},
-  "FRENKEL TOPPING GROUP PLC": {"consid": "Mixed", "sector": "Financial Services", "ev_ebitda": 8.2, "ev_sales": 1.7, "pe": 15.1},
-  "HEALTH ITALIA SPA": {"consid": "Cash", "sector": "Healthcare", "ev_ebitda": 7.5, "ev_sales": 1.5, "pe": 18.5},
-  "CULTI MILANO SPA": {"consid": "Cash", "sector": "Consumer", "ev_ebitda": 11.0, "ev_sales": 2.4, "pe": 14.5},
-  "ELES SEMICONDUCTOR EQUIPMENT SPA": {"consid": "Cash", "sector": "Electronics", "ev_ebitda": 11.7, "ev_sales": 1.7, "pe": null},
-  "KRONA PUBLIC REAL ESTATE AB": {"consid": "Cash", "sector": "Real Estate", "ev_ebitda": 26.5, "ev_sales": 14.5, "pe": 10.9},
-  "LIPUM AB": {"consid": "Shares", "sector": "Pharma", "ev_ebitda": null, "ev_sales": null, "pe": null},
-  "CONSENSUS ASSET MANAGEMENT AB (PUBL) LAURE VERSION": {"consid": "Cash", "sector": "Financial Services", "ev_ebitda": null, "ev_sales": null, "pe": null},
-  "WH IRELAND GROUP PLC": {"consid": "Shares", "sector": "Financial Services", "ev_ebitda": null, "ev_sales": 0.8, "pe": null},
-  "ESSENSYS PLC": {"consid": "Mixed", "sector": "Technology", "ev_ebitda": 8.2, "ev_sales": 0.5, "pe": null},
-  "VINPAI SA": {"consid": "Mixed", "sector": "Chemicals", "ev_ebitda": null, "ev_sales": 2.2, "pe": null},
-  "DELTIC ENERGY PLC": {"consid": "Cash", "sector": "Energy", "ev_ebitda": null, "ev_sales": null, "pe": null}
+
+// =====================================================================
+// CONFIGURATION
+// =====================================================================
+var SHEET_ID = '1XQmTmYeBh_Ld2jymRwqkGMGtDUTHmThwbSi8nalxx6k';
+var DEALS_GID = '1733945906';
+var DEALS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&gid=' + DEALS_GID;
+var UPDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=Updates';
+
+// Static JSON fallback (hosted on same domain)
+var _cb = '?_t=' + new Date().getTime();
+var STATIC_DEALS_URL = 'data/deals.json' + _cb;
+var STATIC_UPDATES_URL = 'data/updates.json' + _cb;
+
+// =====================================================================
+// COUNTRY CODE MAPPING
+// =====================================================================
+var COUNTRY_CODES = {
+  'united kingdom':'UK','france':'FR','germany':'DE','italy':'IT',
+  'spain':'ES','netherlands':'NL','sweden':'SE','norway':'NO',
+  'denmark':'DK','finland':'FI','ireland':'IE','ireland (republic of)':'IE',
+  'luxembourg':'LU','portugal':'PT','iceland':'IS','switzerland':'CH',
+  'belgium':'BE','austria':'AT','greece':'GR','poland':'PL'
 };
-let bigOnly=false;
-let cs={col:'value',asc:false};
-function buildTicker(){
-  const el=document.getElementById('ticker');
-  const h=updates.map(u=>`<div class="ti"><span class="ti-d">${u.d}</span>${fg(u.c,'ti-f')}<span class="ti-n">${u.t}</span><span class="ti-x">${u.x}</span></div>`).join('');
-  el.innerHTML=h+h;
+function countryCode(name) {
+  if (!name) return '';
+  return COUNTRY_CODES[name.toLowerCase().trim()] || name.substring(0,2).toUpperCase();
 }
-function buildFilters(){
-  const cs=[...new Set(deals.map(d=>d.co))].sort();
-  const s=document.getElementById('fCountry');
-  cs.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;s.appendChild(o)});
-  const ts=[...new Set(deals.map(d=>d.tp))].sort();
-  const t=document.getElementById('fType');
-  ts.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;t.appendChild(o)});
+
+// =====================================================================
+// DATA NORMALISATION
+// =====================================================================
+function normalizeType(raw) {
+  if (!raw) return '';
+  var s = raw.toLowerCase().trim();
+  if (s.includes('scheme')) return 'Scheme';
+  if (s.includes('mbo') || s.includes('mbi')) return 'MBO/MBI';
+  if (s.includes('merger')) return 'Merger';
+  if (s.includes('partial')) return 'Partial';
+  if (s.includes('divestiture') && !s.includes('mand')) return 'Divestiture';
+  if (s.includes('mand')) return 'Mandatory';
+  if (s.includes('divestiture')) return 'Divestiture';
+  if (s.includes('public')) return 'Public Offer';
+  return raw;
 }
-function isNew(d){const ann=new Date(d);const now=new Date();return(now-ann)/(864e5)<=10}
-function fv(v){return v>=1000?`<span class="c">\u20AC</span>${(v/1000).toFixed(1)}bn`:`<span class="c">\u20AC</span>${v.toFixed(0)}m`}
-function fd(s){if(!s)return'\u2014';const d=new Date(s);const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return d.getDate()+' '+m[d.getMonth()]+' '+String(d.getFullYear()).slice(2)}
-function tpc(t){return{'Scheme':'tp-scheme','Public Offer':'tp-po','Mandatory':'tp-mand','MBO/MBI':'tp-mbo','Merger':'tp-merger','Divestiture':'tp-div','Partial':'tp-partial'}[t]||''}
-function ph(p){if(p===null)return'<span class="pp pn">n/a</span>';const c=p>=30?'ph':p>=10?'pm':'pl';return`<span class="pp ${c}">${p>0?'+':''}${p.toFixed(1)}%</span>`}
-function getData(){
-  const q=document.getElementById('q').value.toLowerCase();
-  const co=document.getElementById('fCountry').value;
-  const tp=document.getElementById('fType').value;
-  return deals.filter(d=>{
-    if(bigOnly&&d.v<500)return false;
-    if(q&&!d.t.toLowerCase().includes(q)&&!d.b.toLowerCase().includes(q)&&!d.tfa.toLowerCase().includes(q)&&!d.bfa.toLowerCase().includes(q))return false;
-    if(co&&d.co!==co)return false;
-    if(tp&&d.tp!==tp)return false;
+function normalizeReg(raw) {
+  if (!raw) return 'No Referral';
+  var s = raw.toLowerCase().trim();
+  if (s.includes('cleared') || s.includes('approved')) return 'Cleared';
+  if (s.includes('review') || s.includes('pending')) return 'Under Review';
+  if (s.includes('condition')) return 'Conditions';
+  return 'No Referral';
+}
+function normalizeDate(raw) {
+  if (!raw) return '';
+  var d;
+  if (raw.indexOf('Date(') === 0) {
+    var parts = raw.replace('Date(','').replace(')','').split(',');
+    d = new Date(parseInt(parts[0]), parseInt(parts[1]), parseInt(parts[2]));
+  } else {
+    d = new Date(raw);
+  }
+  if (isNaN(d.getTime())) return raw;
+  var mm = String(d.getMonth()+1); if (mm.length<2) mm='0'+mm;
+  var dd = String(d.getDate()); if (dd.length<2) dd='0'+dd;
+  return d.getFullYear()+'-'+mm+'-'+dd;
+}
+
+// =====================================================================
+// CSV PARSER
+// =====================================================================
+function parseCSV(text) {
+  var rows = [], row = [], cell = '', inQ = false;
+  for (var i = 0; i < text.length; i++) {
+    var ch = text[i];
+    if (inQ) {
+      if (ch === '"' && text[i+1] === '"') { cell += '"'; i++; }
+      else if (ch === '"') { inQ = false; }
+      else { cell += ch; }
+    } else {
+      if (ch === '"') { inQ = true; }
+      else if (ch === ',') { row.push(cell.trim()); cell = ''; }
+      else if (ch === '\n' || (ch === '\r' && text[i+1] === '\n')) {
+        row.push(cell.trim()); cell = '';
+        if (row.some(function(c){ return c !== ''; })) rows.push(row);
+        row = [];
+        if (ch === '\r') i++;
+      } else { cell += ch; }
+    }
+  }
+  row.push(cell.trim());
+  if (row.some(function(c){ return c !== ''; })) rows.push(row);
+  return rows;
+}
+
+// =====================================================================
+// DATA LOADING
+// =====================================================================
+var deals = [];
+var multData = {};
+
+async function loadFromStatic() {
+  var responses = await Promise.all([fetch(STATIC_DEALS_URL), fetch(STATIC_UPDATES_URL)]);
+  if (!responses[0].ok || !responses[1].ok) throw new Error('Static files not available');
+  var dealsData = await responses[0].json();
+  var updatesData = await responses[1].json();
+  return { deals: dealsData.deals || dealsData, multiples: dealsData.multiples || {}, updates: updatesData, source: 'static' };
+}
+
+async function loadFromSheets() {
+  var dealsResp = await fetch(DEALS_URL);
+  if (!dealsResp.ok) throw new Error('Google Sheets not available (status ' + dealsResp.status + ')');
+  var dealsCsv = await dealsResp.text();
+  var rows = parseCSV(dealsCsv);
+  if (rows.length < 2) throw new Error('No data rows found');
+  var header = rows[0];
+
+  // Column finder
+  function colIdx(search) {
+    return header.findIndex(function(h){ return h.toLowerCase().includes(search.toLowerCase()); });
+  }
+  function getVal(row, search) {
+    var idx = colIdx(search);
+    return idx >= 0 ? (row[idx] || '').trim() : '';
+  }
+  function getAdviser(row, type) {
+    var idx;
+    if (type === 'target') {
+      idx = header.findIndex(function(h){ var l=h.toLowerCase(); return (l.includes('target') || l.includes('divestor')) && l.includes('advi'); });
+    } else {
+      idx = header.findIndex(function(h){ var l=h.toLowerCase(); return l.includes('bidder') && l.includes('advi') && !l.includes('target') && !l.includes('divestor'); });
+    }
+    return idx >= 0 ? (row[idx] || '').trim() : '';
+  }
+
+  // Column indices for multiples (find once)
+  var evEbitdaIdx = header.findIndex(function(h){ return h.toLowerCase().includes('enterprise value/ebitda') || h.toLowerCase().includes('ev/ebitda'); });
+  var evSalesIdx = header.findIndex(function(h){ var l=h.toLowerCase(); return l.includes('enterprise value/sales') || l.includes('ev/sales'); });
+  var peIdx = header.findIndex(function(h){ var l=h.toLowerCase(); return l.includes('price/earnings') || l.includes('p/e'); });
+  var xbIdx = header.findIndex(function(h){ return h.toLowerCase().includes('cross') && h.toLowerCase().includes('border'); });
+
+  var parsedDeals = [];
+  var parsedMultiples = {};
+
+  for (var i = 1; i < rows.length; i++) {
+    var row = rows[i];
+    var targetName = getVal(row, 'Target Name').replace(/\s+/g,' ');
+    if (!targetName) continue;
+
+    var country = getVal(row, 'Country').replace(/\s+/g,' ');
+    var cc = countryCode(country);
+    var bidder = getVal(row, 'Ultimate Bidder').replace(/\s+/g,' ');
+    if (!bidder) bidder = getVal(row, 'Bidder').replace(/\s+/g,' ');
+    var evStr = getVal(row, 'Equity Value').replace(/[^0-9.\-]/g,'');
+    var ev = parseFloat(evStr) || 0;
+    var premStr = getVal(row, 'Pre-bid').replace(/[^0-9.\-]/g,'');
+    var prem = premStr === '' ? null : parseFloat(premStr);
+    if (prem !== null && isNaN(prem)) prem = null;
+    var tp = normalizeType(getVal(row, 'Type of deal'));
+    var attitude = getVal(row, 'Deal Attitude').replace(/\s+/g,' ') || getVal(row, 'Attitude').replace(/\s+/g,' ') || 'Friendly';
+    var consid = getVal(row, 'Consideration');
+    var dateAnn = normalizeDate(getVal(row, 'Date announced'));
+    var expComp = normalizeDate(getVal(row, 'Expected completion'));
+    var reg = normalizeReg(getVal(row, 'Regulatory'));
+    var own = parseFloat(getVal(row, 'already owned').replace(/[^0-9.\-]/g,'')) || 0;
+    var irr = parseFloat(getVal(row, 'undertakings').replace(/[^0-9.\-]/g,'')) || 0;
+    if (!irr) irr = parseFloat(getVal(row, 'acceptances').replace(/[^0-9.\-]/g,'')) || 0;
+    var acc = parseFloat(getVal(row, 'Acceptance condition').replace(/[^0-9.\-]/g,'')) || 0;
+    if (acc === 0) acc = 50;
+    var tfa = getAdviser(row, 'target');
+    var bfa = getAdviser(row, 'bidder');
+
+    var xb = false;
+    if (xbIdx >= 0) {
+      var xbVal = (row[xbIdx] || '').toLowerCase().trim();
+      xb = xbVal === 'yes' || xbVal === 'true' || xbVal === '1' || xbVal === 'y';
+    }
+
+    parsedDeals.push({
+      t: targetName, co: country, c: cc, b: bidder, v: ev, p: prem,
+      tp: tp, at: attitude, d: dateAnn, ec: expComp, reg: reg,
+      own: own, irr: irr, acc: acc, xb: xb, tfa: tfa, bfa: bfa
+    });
+
+    // Build multiples lookup
+    var sector = getVal(row, 'Industrial Sector').replace(/\s+/g,' ') || getVal(row, 'Sector').replace(/\s+/g,' ');
+    var m_ebitda = evEbitdaIdx >= 0 ? parseFloat((row[evEbitdaIdx]||'').replace(/[^0-9.\-]/g,'')) || null : null;
+    var m_sales = evSalesIdx >= 0 ? parseFloat((row[evSalesIdx]||'').replace(/[^0-9.\-]/g,'')) || null : null;
+    var m_pe = peIdx >= 0 ? parseFloat((row[peIdx]||'').replace(/[^0-9.\-]/g,'')) || null : null;
+
+    parsedMultiples[targetName] = {
+      consid: consid || 'Cash', sector: sector,
+      ev_ebitda: m_ebitda, ev_sales: m_sales, pe: m_pe
+    };
+  }
+
+  // Load updates (separate tab, fail gracefully)
+  var parsedUpdates = [];
+  try {
+    var updResp = await fetch(UPDATES_URL);
+    if (updResp.ok) {
+      var updCsv = await updResp.text();
+      var updRows = parseCSV(updCsv);
+      if (updRows.length > 1) {
+        var updHeader = updRows[0];
+        for (var j = 1; j < updRows.length; j++) {
+          var urow = updRows[j];
+          var getU = function(search) {
+            var idx = updHeader.findIndex(function(h){ return h.toLowerCase().includes(search.toLowerCase()); });
+            return idx >= 0 ? (urow[idx] || '').trim() : '';
+          };
+          var uTarget = getU('Target');
+          var uText = getU('Update');
+          if (!uTarget || !uText) continue;
+          var uDate = getU('Date');
+          var uCountry = getU('Country');
+          var ucc = uCountry.length <= 3 ? uCountry : countryCode(uCountry);
+          parsedUpdates.push({ d: uDate, c: ucc, t: uTarget, x: uText });
+        }
+      }
+    }
+  } catch(e) { console.log('Updates tab not available:', e); }
+
+  return { deals: parsedDeals, multiples: parsedMultiples, updates: parsedUpdates, source: 'sheets' };
+}
+
+async function loadData() {
+  try {
+    var data;
+    try {
+      data = await loadFromStatic();
+    } catch(e) {
+      console.log('Static files not available, trying Google Sheets...', e);
+      data = await loadFromSheets();
+    }
+    deals = data.deals;
+    multData = data.multiples;
+
+    if (data.updates && data.updates.length > 0) {
+      buildTicker(data.updates);
+    } else {
+      document.getElementById('ticker').innerHTML = '<div class="ti"><span class="ti-x" style="color:var(--t3)">No recent updates — add an Updates tab to your Google Sheet</span></div>';
+    }
+
+    var today = new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+    var src = data.source === 'sheets' ? 'Google Sheets' : 'static data';
+    document.getElementById('footer-date').innerHTML = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Data as at ' + today + ' \u00B7 Source: M&A Monitor DataBase (' + src + ')';
+
+    buildFilters();
+    go();
+  } catch(err) {
+    console.error('Error loading data:', err);
+    document.getElementById('ticker').innerHTML = '<div class="ti"><span class="ti-x" style="color:var(--r)">Unable to load updates</span></div>';
+    document.getElementById('tb').innerHTML = '<tr><td colspan="14"><div class="error-msg">Unable to load deal data. Please check that the Google Sheet is published to the web (File &rarr; Share &rarr; Publish to web). Error: ' + err.message + '</div></td></tr>';
+  }
+}
+
+// =====================================================================
+// TICKER & FILTERS
+// =====================================================================
+var bigOnly = false;
+var cs = {col:'value', asc:false};
+
+function buildTicker(updates) {
+  var el = document.getElementById('ticker');
+  var h = updates.map(function(u){ return '<div class="ti"><span class="ti-d">' + u.d + '</span>' + fg(u.c,'ti-f') + '<span class="ti-n">' + u.t + '</span><span class="ti-x">' + u.x + '</span></div>'; }).join('');
+  el.innerHTML = h + h;
+}
+
+function buildFilters() {
+  var cs2 = []; deals.forEach(function(d){ if(cs2.indexOf(d.co)===-1) cs2.push(d.co); }); cs2.sort();
+  var s = document.getElementById('fCountry');
+  s.innerHTML = '<option value="">All Countries</option>';
+  cs2.forEach(function(c){ var o=document.createElement('option'); o.value=c; o.textContent=c; s.appendChild(o); });
+  var ts = []; deals.forEach(function(d){ if(ts.indexOf(d.tp)===-1) ts.push(d.tp); }); ts.sort();
+  var t = document.getElementById('fType');
+  t.innerHTML = '<option value="">All Types</option>';
+  ts.forEach(function(v){ var o=document.createElement('option'); o.value=v; o.textContent=v; t.appendChild(o); });
+}
+
+function isNew(d) { var ann=new Date(d); var now=new Date(); return (now-ann)/864e5 <= 10; }
+function fv(v) { return v>=1000 ? '<span class="c">\u20AC</span>'+(v/1000).toFixed(1)+'bn' : '<span class="c">\u20AC</span>'+v.toFixed(0)+'m'; }
+function fd(s) { if(!s) return '\u2014'; var d=new Date(s); if(isNaN(d.getTime())) return s; var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return d.getDate()+' '+m[d.getMonth()]+' '+String(d.getFullYear()).slice(2); }
+function tpc(t) { return {'Scheme':'tp-scheme','Public Offer':'tp-po','Mandatory':'tp-mand','MBO/MBI':'tp-mbo','Merger':'tp-merger','Divestiture':'tp-div','Partial':'tp-partial'}[t]||''; }
+function ph(p) { if(p===null) return '<span class="pp pn">n/a</span>'; var c=p>=30?'ph':p>=10?'pm':'pl'; return '<span class="pp '+c+'">'+(p>0?'+':'')+p.toFixed(1)+'%</span>'; }
+
+function getData() {
+  var q = document.getElementById('q').value.toLowerCase();
+  var co = document.getElementById('fCountry').value;
+  var tp = document.getElementById('fType').value;
+  return deals.filter(function(d){
+    if (bigOnly && d.v < 500) return false;
+    if (q && !d.t.toLowerCase().includes(q) && !d.b.toLowerCase().includes(q) && !d.tfa.toLowerCase().includes(q) && !d.bfa.toLowerCase().includes(q)) return false;
+    if (co && d.co !== co) return false;
+    if (tp && d.tp !== tp) return false;
     return true;
   });
 }
-function doSort(data){
-  const c=cs.col;
-  data.sort((a,b)=>{
-    let av,bv;
-    switch(c){
-      case'rank':case'value':av=a.v;bv=b.v;break;
-      case'target':return cs.asc?a.t.localeCompare(b.t):b.t.localeCompare(a.t);
-      case'country':return cs.asc?a.c.localeCompare(b.c):b.c.localeCompare(a.c);
-      case'bidder':return cs.asc?a.b.localeCompare(b.b):b.b.localeCompare(a.b);
-      case'premium':av=a.p??-999;bv=b.p??-999;break;
-      case'type':return cs.asc?a.tp.localeCompare(b.tp):b.tp.localeCompare(a.tp);
-      case'date':av=new Date(a.d||0);bv=new Date(b.d||0);break;
-      default:return 0;
+
+function doSort(data) {
+  var c = cs.col;
+  data.sort(function(a,b){
+    var av, bv;
+    switch(c) {
+      case 'rank': case 'value': av=a.v; bv=b.v; break;
+      case 'target': return cs.asc ? a.t.localeCompare(b.t) : b.t.localeCompare(a.t);
+      case 'country': return cs.asc ? a.c.localeCompare(b.c) : b.c.localeCompare(a.c);
+      case 'bidder': return cs.asc ? a.b.localeCompare(b.b) : b.b.localeCompare(a.b);
+      case 'premium': av = a.p !== null ? a.p : -999; bv = b.p !== null ? b.p : -999; break;
+      case 'type': return cs.asc ? a.tp.localeCompare(b.tp) : b.tp.localeCompare(a.tp);
+      case 'date': av = new Date(a.d||0); bv = new Date(b.d||0); break;
+      default: return 0;
     }
-    return cs.asc?av-bv:bv-av;
+    return cs.asc ? av - bv : bv - av;
   });
   return data;
 }
-function render(data){
-  const tb=document.getElementById('tb');
-  tb.innerHTML=data.map((d,i)=>{
-    const atBadge=d.at==='Hostile'?'<span class="tp tp-hostile">Hostile</span>':d.at==='White Knight'?'<span class="tp tp-wk">White Knight</span>':d.at==='Neutral'?'<span class="tp tp-wk">Neutral</span>':'';
-    const newBadge=isNew(d.d)?'<span class="new-tag">New</span>':'';
-    return`<tr style="animation:fu .25s ease-out ${.012*i}s both">
-      <td><span class="rk${i<3?' t3':''}">${i+1}</span></td>
-      <td><span class="tn">${d.t}</span>${newBadge}</td>
-      <td><div class="cc">${fg(d.c)}<span class="cd">${d.c}</span></div></td>
-      <td><span class="bn" title="${d.b}">${d.b}</span></td>
-      <td class="vc">${fv(d.v)}</td>
-      <td>${ph(d.p)}</td>
-      <td><span class="tp ${tpc(d.tp)}">${d.tp}</span>${atBadge}</td>
-      <td class="dt">${fd(d.d)}</td>
-      <td class="dt">${fd(d.ec)}</td>
-      <td>${(()=>{const days=Math.floor((new Date()-new Date(d.d))/864e5);const cls=days>180?'days-r':days>90?'days-a':'days-g';return`<span class="days ${cls}">${days}</span>`;})()}</td>
-      <td><span class="reg reg-${({'Cleared':'cleared','Under Review':'review','Conditions':'cond','No Referral':'none'})[d.reg]||'none'}">${d.reg}</span></td>
-      <td class="own-cell">${(()=>{const total=d.irr>d.own?d.irr:d.own;const pct=d.acc>0?Math.min(100,Math.round(total/d.acc*100)):0;const ownPct=d.acc>0?Math.min(100,Math.round(d.own/d.acc*100)):0;const irrPct=d.acc>0?Math.min(100,Math.round(Math.max(0,d.irr-d.own)/d.acc*100)):0;const parts=[];if(d.own>0)parts.push(d.own+'% held');if(d.irr>d.own)parts.push((d.irr-d.own).toFixed(1)+'% irrev');const controlPct=total;return`<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:${ownPct}%"></div><div class="own-fill own-irrev" style="width:${irrPct}%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">${controlPct}%</span></div><div class="tip">${parts.length?parts.join(' + '):controlPct+'% control'} of ${d.acc+'%'} threshold</div>`;})()}</td>
-      <td class="adv" title="${d.tfa}">${d.tfa||'\u2014'}</td>
-      <td class="adv" title="${d.bfa}">${d.bfa||'\u2014'}</td>
-    </tr>`}).join('');
-  document.getElementById('dc').innerHTML=`Showing <b>${data.length}</b> of ${deals.length}`;
+
+function render(data) {
+  var tb = document.getElementById('tb');
+  tb.innerHTML = data.map(function(d, i){
+    var atBadge = d.at==='Hostile' ? '<span class="tp tp-hostile">Hostile</span>' : d.at==='White Knight' ? '<span class="tp tp-wk">White Knight</span>' : d.at==='Neutral' ? '<span class="tp tp-wk">Neutral</span>' : '';
+    var newBadge = isNew(d.d) ? '<span class="new-tag">New</span>' : '';
+    var days = Math.floor((new Date()-new Date(d.d))/864e5);
+    var daysCls = days>180 ? 'days-r' : days>90 ? 'days-a' : 'days-g';
+    var total = d.irr > d.own ? d.irr : d.own;
+    var ownPct = d.acc > 0 ? Math.min(100, Math.round(d.own/d.acc*100)) : 0;
+    var irrPct = d.acc > 0 ? Math.min(100, Math.round(Math.max(0, d.irr-d.own)/d.acc*100)) : 0;
+    var parts = [];
+    if (d.own > 0) parts.push(d.own + '% held');
+    if (d.irr > d.own) parts.push((d.irr - d.own).toFixed(1) + '% irrev');
+    var regCls = {'Cleared':'cleared','Under Review':'review','Conditions':'cond','No Referral':'none'}[d.reg] || 'none';
+
+    return '<tr style="animation:fu .25s ease-out ' + (.012*i) + 's both">'
+      + '<td><span class="rk' + (i<3?' t3':'') + '">' + (i+1) + '</span></td>'
+      + '<td><span class="tn">' + d.t + '</span>' + newBadge + '</td>'
+      + '<td><div class="cc">' + fg(d.c) + '<span class="cd">' + d.c + '</span></div></td>'
+      + '<td><span class="bn" title="' + d.b + '">' + d.b + '</span></td>'
+      + '<td class="vc">' + fv(d.v) + '</td>'
+      + '<td>' + ph(d.p) + '</td>'
+      + '<td><span class="tp ' + tpc(d.tp) + '">' + d.tp + '</span>' + atBadge + '</td>'
+      + '<td class="dt">' + fd(d.d) + '</td>'
+      + '<td class="dt">' + fd(d.ec) + '</td>'
+      + '<td><span class="days ' + daysCls + '">' + days + '</span></td>'
+      + '<td><span class="reg reg-' + regCls + '">' + d.reg + '</span></td>'
+      + '<td class="own-cell"><div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:' + ownPct + '%"></div><div class="own-fill own-irrev" style="width:' + irrPct + '%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">' + total + '%</span></div><div class="tip">' + (parts.length ? parts.join(' + ') : total+'% control') + ' of ' + d.acc + '% threshold</div></td>'
+      + '<td class="adv" title="' + d.tfa + '">' + (d.tfa || '\u2014') + '</td>'
+      + '<td class="adv" title="' + d.bfa + '">' + (d.bfa || '\u2014') + '</td>'
+      + '</tr>';
+  }).join('');
+  document.getElementById('dc').innerHTML = 'Showing <b>' + data.length + '</b> of ' + deals.length;
   updateKpis(data);
   updateSidebar(data);
 }
-function updateKpis(data){
-  const tv=data.reduce((s,d)=>s+d.v,0);
-  const wp=data.filter(d=>d.p!==null);
-  const ap=wp.length?(wp.reduce((s,d)=>s+d.p,0)/wp.length):0;
-  const nc=new Set(data.map(d=>d.co)).size;
-  const hostile=data.filter(d=>d.at==='Hostile').length;
-  const xbCount=data.filter(d=>d.xb).length;
-  document.getElementById('kpis').innerHTML=`
-    <div class="kpi"><div class="kv">${data.length}</div><div class="kl">Live Deals</div></div>
-    <div class="kpi"><div class="kv">\u20AC${(tv/1000).toFixed(1)}<span class="u">bn</span></div><div class="kl">Total Value</div></div>
-    <div class="kpi"><div class="kv">${ap.toFixed(1)}<span class="u">%</span></div><div class="kl">Avg Premium</div></div>
-    <div class="kpi"><div class="kv">${xbCount}</div><div class="kl">Cross-Border</div></div>
-    <div class="kpi"><div class="kv" style="color:var(--hr)">${hostile}</div><div class="kl">Hostile</div></div>
-    <div class="kpi"><div class="kv">${nc}</div><div class="kl">Countries</div></div>`;
+
+function updateKpis(data) {
+  var tv = data.reduce(function(s,d){ return s+d.v; }, 0);
+  var wp = data.filter(function(d){ return d.p !== null; });
+  var ap = wp.length ? wp.reduce(function(s,d){ return s+d.p; }, 0) / wp.length : 0;
+  var nc = []; data.forEach(function(d){ if(nc.indexOf(d.co)===-1) nc.push(d.co); });
+  var hostile = data.filter(function(d){ return d.at === 'Hostile'; }).length;
+  var xbCount = data.filter(function(d){ return d.xb; }).length;
+  document.getElementById('kpis').innerHTML = ''
+    + '<div class="kpi"><div class="kv">' + data.length + '</div><div class="kl">Live Deals</div></div>'
+    + '<div class="kpi"><div class="kv">\u20AC' + (tv/1000).toFixed(1) + '<span class="u">bn</span></div><div class="kl">Total Value</div></div>'
+    + '<div class="kpi"><div class="kv">' + ap.toFixed(1) + '<span class="u">%</span></div><div class="kl">Avg Premium</div></div>'
+    + '<div class="kpi"><div class="kv">' + xbCount + '</div><div class="kl">Cross-Border</div></div>'
+    + '<div class="kpi"><div class="kv" style="color:var(--hr)">' + hostile + '</div><div class="kl">Hostile</div></div>'
+    + '<div class="kpi"><div class="kv">' + nc.length + '</div><div class="kl">Countries</div></div>';
 }
-function median(arr){
-  if(!arr.length)return null;
-  const s=[...arr].sort((a,b)=>a-b);
-  const m=Math.floor(s.length/2);
-  return s.length%2?s[m]:(s[m-1]+s[m])/2;
+
+function median(arr) {
+  if (!arr.length) return null;
+  var s = arr.slice().sort(function(a,b){ return a-b; });
+  var m = Math.floor(s.length/2);
+  return s.length%2 ? s[m] : (s[m-1]+s[m])/2;
 }
-function updateSidebar(data){
-  const withP=data.filter(d=>d.p!==null);
-  const bands=[
+
+function updateSidebar(data) {
+  var withP = data.filter(function(d){ return d.p !== null; });
+  var bands = [
     {label:'< 0%',min:-Infinity,max:0,color:'#F87171'},
     {label:'0\u201320%',min:0,max:20,color:'#FBBF24'},
     {label:'20\u201340%',min:20,max:40,color:'#6C8AFF'},
     {label:'40\u201360%',min:40,max:60,color:'#34D399'},
-    {label:'> 60%',min:60,max:Infinity,color:'#A78BFA'},
+    {label:'> 60%',min:60,max:Infinity,color:'#A78BFA'}
   ];
-  const bandCounts=bands.map(b=>({...b,n:withP.filter(d=>d.p>=b.min&&d.p<b.max).length}));
-  const maxN=Math.max(...bandCounts.map(b=>b.n),1);
-  const medP=median(withP.map(d=>d.p));
-  const avgP=withP.length?(withP.reduce((s,d)=>s+d.p,0)/withP.length):null;
-  const considMap={Cash:{n:0,v:0},Shares:{n:0,v:0},Mixed:{n:0,v:0}};
-  data.forEach(d=>{
-    const m=multData[d.t];
-    if(!m)return;
-    const cat=m.consid;
-    if(considMap[cat]){considMap[cat].n++;considMap[cat].v+=d.v;}
+  var bandCounts = bands.map(function(b){ return Object.assign({}, b, {n: withP.filter(function(d){ return d.p>=b.min && d.p<b.max; }).length}); });
+  var maxN = Math.max.apply(null, bandCounts.map(function(b){ return b.n; }).concat([1]));
+  var medP = median(withP.map(function(d){ return d.p; }));
+  var avgP = withP.length ? withP.reduce(function(s,d){ return s+d.p; },0)/withP.length : null;
+
+  var considMap = {Cash:{n:0,v:0}, Shares:{n:0,v:0}, Mixed:{n:0,v:0}};
+  data.forEach(function(d){
+    var m = multData[d.t];
+    if (!m) return;
+    var cat = m.consid;
+    if (considMap[cat]) { considMap[cat].n++; considMap[cat].v += d.v; }
   });
-  const totalConsidV=Object.values(considMap).reduce((s,c)=>s+c.v,0);
-  const considOrder=['Cash','Shares','Mixed'];
-  const considColors={Cash:'#34D399',Shares:'#818CF8',Mixed:'#FBBF24'};
-  const maxConsidV=Math.max(...considOrder.map(k=>considMap[k].v),1);
-  const allEVEBITDA=data.map(d=>{const m=multData[d.t];return m&&m.ev_ebitda&&m.ev_ebitda>0&&m.ev_ebitda<100?m.ev_ebitda:null;}).filter(v=>v!==null);
-  const allEVSales=data.map(d=>{const m=multData[d.t];return m&&m.ev_sales&&m.ev_sales>0&&m.ev_sales<50?m.ev_sales:null;}).filter(v=>v!==null);
-  const allPE=data.map(d=>{const m=multData[d.t];return m&&m.pe&&m.pe>0&&m.pe<80?m.pe:null;}).filter(v=>v!==null);
-  const medEVEBITDA=median(allEVEBITDA);
-  const medEVSales=median(allEVSales);
-  const medPE=median(allPE);
-  const sectorMap={};
-  data.forEach(d=>{
-    const m=multData[d.t];
-    if(!m)return;
-    if(!sectorMap[m.sector])sectorMap[m.sector]={ebitda:[],sales:[]};
-    if(m.ev_ebitda&&m.ev_ebitda>0&&m.ev_ebitda<100)sectorMap[m.sector].ebitda.push(m.ev_ebitda);
-    if(m.ev_sales&&m.ev_sales>0&&m.ev_sales<50)sectorMap[m.sector].sales.push(m.ev_sales);
+  var totalConsidV = Object.keys(considMap).reduce(function(s,k){ return s+considMap[k].v; }, 0);
+  var considOrder = ['Cash','Shares','Mixed'];
+  var considColors = {Cash:'#34D399', Shares:'#818CF8', Mixed:'#FBBF24'};
+  var maxConsidV = Math.max.apply(null, considOrder.map(function(k){ return considMap[k].v; }).concat([1]));
+
+  var allEVEBITDA = []; var allEVSales = []; var allPE = [];
+  data.forEach(function(d){
+    var m = multData[d.t];
+    if (!m) return;
+    if (m.ev_ebitda && m.ev_ebitda > 0 && m.ev_ebitda < 100) allEVEBITDA.push(m.ev_ebitda);
+    if (m.ev_sales && m.ev_sales > 0 && m.ev_sales < 50) allEVSales.push(m.ev_sales);
+    if (m.pe && m.pe > 0 && m.pe < 80) allPE.push(m.pe);
   });
-  const sectorRows=Object.entries(sectorMap)
-    .filter(([,v])=>v.ebitda.length>=2)
-    .map(([k,v])=>({sector:k,ebitda:median(v.ebitda),sales:median(v.sales),n:v.ebitda.length}))
-    .sort((a,b)=>b.n-a.n).slice(0,5);
-  const coMap={};
-  data.forEach(d=>{
-    if(!coMap[d.c])coMap[d.c]={count:0,value:0};
+  var medEVEBITDA = median(allEVEBITDA);
+  var medEVSales = median(allEVSales);
+  var medPE = median(allPE);
+
+  var sectorMap = {};
+  data.forEach(function(d){
+    var m = multData[d.t];
+    if (!m) return;
+    if (!sectorMap[m.sector]) sectorMap[m.sector] = {ebitda:[], sales:[]};
+    if (m.ev_ebitda && m.ev_ebitda > 0 && m.ev_ebitda < 100) sectorMap[m.sector].ebitda.push(m.ev_ebitda);
+    if (m.ev_sales && m.ev_sales > 0 && m.ev_sales < 50) sectorMap[m.sector].sales.push(m.ev_sales);
+  });
+  var sectorRows = Object.keys(sectorMap).filter(function(k){ return sectorMap[k].ebitda.length >= 2; })
+    .map(function(k){ return {sector:k, ebitda:median(sectorMap[k].ebitda), sales:median(sectorMap[k].sales), n:sectorMap[k].ebitda.length}; })
+    .sort(function(a,b){ return b.n - a.n; }).slice(0,5);
+
+  var coMap = {};
+  data.forEach(function(d){
+    if (!coMap[d.c]) coMap[d.c] = {count:0, value:0};
     coMap[d.c].count++;
-    coMap[d.c].value+=d.v;
+    coMap[d.c].value += d.v;
   });
-  const coSorted=Object.entries(coMap).sort((a,b)=>b[1].value-a[1].value);
-  document.getElementById('sidebar').innerHTML=`
-    <div class="sb-card">
-      <div class="sb-hd" style="display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;border-bottom:1px solid var(--b)">
-        <div style="padding:10px 14px;border-right:1px solid var(--b)">
-          <div class="sb-title">Premium Distribution</div>
-          <div class="sb-sub">${withP.length} deals with data</div>
-        </div>
-        <div style="padding:10px 14px">
-          <div class="sb-title">Consideration</div>
-          <div class="sb-sub">By deal value</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
-        <div style="border-right:1px solid var(--b)">
-          <div style="padding:7px 14px 5px;display:flex;gap:12px;border-bottom:1px solid var(--b2)">
-            <div><div style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">${medP!==null?medP.toFixed(1)+'%':'\u2014'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Median</div></div>
-            <div><div style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">${avgP!==null?avgP.toFixed(1)+'%':'\u2014'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Mean</div></div>
-            <div><div style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">${withP.length?Math.max(...withP.map(d=>d.p)).toFixed(0)+'%':'\u2014'}</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">High</div></div>
-          </div>
-          ${bandCounts.map(b=>`<div style="padding:4px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--b2)">
-            <span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">${b.label}</span>
-            <div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${b.n?Math.round(b.n/maxN*100):0}%;background:${b.color};transition:width .4s;box-shadow:0 0 6px ${b.color}22"></div></div>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:var(--t);min-width:14px;text-align:right">${b.n}</span>
-          </div>`).join('')}
-        </div>
-        <div>
-          ${considOrder.filter(k=>considMap[k].n>0).map(k=>`<div style="padding:6px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid var(--b2)">
-            <span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">${k}</span>
-            <div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:${Math.round(considMap[k].v/maxConsidV*100)}%;background:${considColors[k]};transition:width .4s;box-shadow:0 0 6px ${considColors[k]}22"></div></div>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:${considColors[k]};min-width:26px;text-align:right">${totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'\u2014'}</span>
-          </div>`).join('')}
-          <div style="padding:8px 12px;border-bottom:1px solid var(--b2)">
-            <div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:4px">Largest cash deal</div>
-            <div style="font-size:10px;font-weight:600;color:var(--t);line-height:1.3">${(()=>{const cashDeals=data.filter(d=>{const m=multData[d.t];return m&&m.consid==='Cash';});cashDeals.sort((a,b)=>b.v-a.v);return cashDeals.length?cashDeals[0].t.split(' ').slice(0,3).join(' ')+'\u2026':'\u2014';})()}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sb-card">
-      <div class="sb-hd">
-        <span class="sb-title">Transaction Multiples</span>
-        <span class="sb-sub">Medians \u00b7 M&A Monitor data</span>
-      </div>
-      <div class="sb-kpi-row">
-        <div class="sb-kpi"><div class="sb-kpi-v">${medEVEBITDA?medEVEBITDA.toFixed(1)+'x':'\u2014'}</div><div class="sb-kpi-l">EV/EBITDA</div></div>
-        <div class="sb-kpi"><div class="sb-kpi-v">${medEVSales?medEVSales.toFixed(1)+'x':'\u2014'}</div><div class="sb-kpi-l">EV/Sales</div></div>
-        <div class="sb-kpi"><div class="sb-kpi-v">${medPE?medPE.toFixed(1)+'x':'\u2014'}</div><div class="sb-kpi-l">P/E</div></div>
-      </div>
-      ${sectorRows.length?`<div style="display:grid;grid-template-columns:1fr auto auto;gap:0;padding:5px 14px 3px;border-top:1px solid var(--b2)">
-        <span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3)">Sector</span>
-        <span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);text-align:right;padding-right:8px">EV/EBITDA</span>
-        <span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);text-align:right">EV/Sales</span>
-      </div>
-      ${sectorRows.map(r=>`<div class="sb-mult-row" style="display:grid;grid-template-columns:1fr auto auto;gap:0">
-        <span class="sb-mult-sector">${r.sector}</span>
-        <span class="sb-mult-v" style="padding-right:8px">${r.ebitda?r.ebitda.toFixed(1)+'x':'\u2014'}</span>
-        <span class="sb-mult-v">${r.sales?r.sales.toFixed(1)+'x':'\u2014'}</span>
-      </div>`).join('')}`:''}
-    </div>
-    <div class="sb-card2">
-      <div class="sb-hd"><span class="sb-title">By Country</span><span class="sb-sub">Deal count & value</span></div>
-      ${coSorted.map(e=>`<div class="sb-stat" style="padding:7px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">
-        ${fg(e[0])}
-        <span style="font-size:12px;font-weight:600;flex:1;color:var(--t)">${e[0]}</span>
-        <span class="sb-cnt">${e[1].count}</span>
-        <span class="sb-val">\u20AC${e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m'}</span>
-      </div>`).join('')}
-    </div>`;
+  var coSorted = Object.keys(coMap).map(function(k){ return [k, coMap[k]]; }).sort(function(a,b){ return b[1].value - a[1].value; });
+
+  document.getElementById('sidebar').innerHTML = ''
+    + '<div class="sb-card">'
+    + '  <div class="sb-hd" style="display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;border-bottom:1px solid var(--b)">'
+    + '    <div style="padding:10px 14px;border-right:1px solid var(--b)"><div class="sb-title">Premium Distribution</div><div class="sb-sub">' + withP.length + ' deals with data</div></div>'
+    + '    <div style="padding:10px 14px"><div class="sb-title">Consideration</div><div class="sb-sub">By deal value</div></div>'
+    + '  </div>'
+    + '  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">'
+    + '    <div style="border-right:1px solid var(--b)">'
+    + '      <div style="padding:7px 14px 5px;display:flex;gap:12px;border-bottom:1px solid var(--b2)">'
+    + '        <div><div style="font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">' + (medP!==null?medP.toFixed(1)+'%':'\u2014') + '</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Median</div></div>'
+    + '        <div><div style="font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">' + (avgP!==null?avgP.toFixed(1)+'%':'\u2014') + '</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Mean</div></div>'
+    + '        <div><div style="font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">' + (withP.length?Math.max.apply(null,withP.map(function(d){return d.p;})).toFixed(0)+'%':'\u2014') + '</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">High</div></div>'
+    + '      </div>'
+    + bandCounts.map(function(b){ return '<div style="padding:4px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--b2)"><span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">' + b.label + '</span><div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:' + (b.n?Math.round(b.n/maxN*100):0) + '%;background:' + b.color + ';transition:width .4s;box-shadow:0 0 6px ' + b.color + '22"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:10px;font-weight:700;color:var(--t);min-width:14px;text-align:right">' + b.n + '</span></div>'; }).join('')
+    + '    </div>'
+    + '    <div>'
+    + considOrder.filter(function(k){ return considMap[k].n > 0; }).map(function(k){ return '<div style="padding:6px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid var(--b2)"><span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">' + k + '</span><div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:' + Math.round(considMap[k].v/maxConsidV*100) + '%;background:' + considColors[k] + ';transition:width .4s;box-shadow:0 0 6px ' + considColors[k] + '22"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:9px;font-weight:700;color:' + considColors[k] + ';min-width:26px;text-align:right">' + (totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'\u2014') + '</span></div>'; }).join('')
+    + '      <div style="padding:8px 12px;border-bottom:1px solid var(--b2)">'
+    + '        <div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:4px">Largest cash deal</div>'
+    + '        <div style="font-size:10px;font-weight:600;color:var(--t);line-height:1.3">' + (function(){ var cd=data.filter(function(d){var m=multData[d.t];return m&&m.consid==='Cash';}); cd.sort(function(a,b){return b.v-a.v;}); return cd.length?cd[0].t.split(' ').slice(0,3).join(' ')+'\u2026':'\u2014'; })() + '</div>'
+    + '      </div>'
+    + '    </div>'
+    + '  </div>'
+    + '</div>'
+    + '<div class="sb-card">'
+    + '  <div class="sb-hd"><span class="sb-title">Transaction Multiples</span><span class="sb-sub">Medians \u00B7 M&A Monitor data</span></div>'
+    + '  <div class="sb-kpi-row">'
+    + '    <div class="sb-kpi"><div class="sb-kpi-v">' + (medEVEBITDA?medEVEBITDA.toFixed(1)+'x':'\u2014') + '</div><div class="sb-kpi-l">EV/EBITDA</div></div>'
+    + '    <div class="sb-kpi"><div class="sb-kpi-v">' + (medEVSales?medEVSales.toFixed(1)+'x':'\u2014') + '</div><div class="sb-kpi-l">EV/Sales</div></div>'
+    + '    <div class="sb-kpi"><div class="sb-kpi-v">' + (medPE?medPE.toFixed(1)+'x':'\u2014') + '</div><div class="sb-kpi-l">P/E</div></div>'
+    + '  </div>'
+    + (sectorRows.length ? '<div style="display:grid;grid-template-columns:1fr auto auto;gap:0;padding:5px 14px 3px;border-top:1px solid var(--b2)"><span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3)">Sector</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);text-align:right;padding-right:8px">EV/EBITDA</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);text-align:right">EV/Sales</span></div>' + sectorRows.map(function(r){ return '<div class="sb-mult-row" style="display:grid;grid-template-columns:1fr auto auto;gap:0"><span class="sb-mult-sector">' + r.sector + '</span><span class="sb-mult-v" style="padding-right:8px">' + (r.ebitda?r.ebitda.toFixed(1)+'x':'\u2014') + '</span><span class="sb-mult-v">' + (r.sales?r.sales.toFixed(1)+'x':'\u2014') + '</span></div>'; }).join('') : '')
+    + '</div>'
+    + '<div class="sb-card2">'
+    + '  <div class="sb-hd"><span class="sb-title">By Country</span><span class="sb-sub">Deal count & value</span></div>'
+    + coSorted.map(function(e){ return '<div class="sb-stat" style="padding:7px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(e[0]) + '<span style="font-size:12px;font-weight:600;flex:1;color:var(--t)">' + e[0] + '</span><span class="sb-cnt">' + e[1].count + '</span><span class="sb-val">\u20AC' + (e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m') + '</span></div>'; }).join('')
+    + '</div>';
 }
-function sort(col){
-  document.querySelectorAll('thead th').forEach(h=>h.classList.remove('so'));
-  if(cs.col===col)cs.asc=!cs.asc;
-  else{cs.col=col;cs.asc=(col==='value'||col==='premium')?false:true}
-  const th=document.querySelector(`th[data-c="${col}"]`);
-  if(th){th.classList.add('so');th.querySelector('.ar').textContent=cs.asc?'\u25B2':'\u25BC'}
+
+function sort(col) {
+  document.querySelectorAll('thead th').forEach(function(h){ h.classList.remove('so'); });
+  if (cs.col === col) cs.asc = !cs.asc;
+  else { cs.col = col; cs.asc = (col==='value'||col==='premium') ? false : true; }
+  var th = document.querySelector('th[data-c="'+col+'"]');
+  if (th) { th.classList.add('so'); th.querySelector('.ar').textContent = cs.asc ? '\u25B2' : '\u25BC'; }
   go();
 }
-function toggleBig(){bigOnly=true;document.getElementById('bigBtn').classList.add('on');document.getElementById('allBtn').classList.remove('on');go()}
-function toggleAll(){bigOnly=false;document.getElementById('allBtn').classList.add('on');document.getElementById('bigBtn').classList.remove('on');go()}
-function go(){render(doSort(getData()))}
-buildTicker();
-buildFilters();
-go();
+function toggleBig() { bigOnly=true; document.getElementById('bigBtn').classList.add('on'); document.getElementById('allBtn').classList.remove('on'); go(); }
+function toggleAll() { bigOnly=false; document.getElementById('allBtn').classList.add('on'); document.getElementById('bigBtn').classList.remove('on'); go(); }
+function go() { render(doSort(getData())); }
+
+// =====================================================================
+// INITIALISE
+// =====================================================================
+loadData();
 </script>
 </body>
 </html>
