@@ -1065,29 +1065,31 @@ function updateSidebar(data) {
   });
   var coSorted = Object.keys(coMap).map(function(k){ return [k, coMap[k]]; }).sort(function(a,b){ return b[1].value - a[1].value; });
 
+  // Database totals — computed from ALL deals (not filtered view)
+  var dbCountries = [
+    {code:'FR',name:'France'}, {code:'DE',name:'Germany'}, {code:'IT',name:'Italy'},
+    {code:'SE',name:'Sweden'}, {code:'NO',name:'Norway'}, {code:'ES',name:'Spain'},
+    {code:'NL',name:'Netherlands'}
+  ];
+  var dbCounts = {};
+  var dbTotal = deals.length;
+  dbCountries.forEach(function(c){ dbCounts[c.code] = 0; });
+  var dbOther = 0;
+  deals.forEach(function(d){
+    if (dbCounts.hasOwnProperty(d.c)) dbCounts[d.c]++;
+    else dbOther++;
+  });
+  var dbMaxCount = Math.max.apply(null, dbCountries.map(function(c){ return dbCounts[c.code]; }).concat([dbOther]));
+
   document.getElementById('sidebar').innerHTML = ''
     + '<div class="sb-card">'
-    + '  <div class="sb-hd" style="display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;border-bottom:1px solid var(--b)">'
-    + '    <div style="padding:10px 14px;border-right:1px solid var(--b)"><div class="sb-title">Premium Distribution</div><div class="sb-sub">' + withP.length + ' deals with data</div></div>'
-    + '    <div style="padding:10px 14px"><div class="sb-title">Consideration</div><div class="sb-sub">By deal value</div></div>'
+    + '  <div class="sb-hd"><span class="sb-title">M&A Monitor Database</span><span class="sb-sub">European Public Deals (ex-UK)</span></div>'
+    + '  <div style="padding:12px 14px 8px;border-bottom:1px solid var(--b)">'
+    + '    <div style="font-family:\'JetBrains Mono\',monospace;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t);letter-spacing:-0.02em">' + dbTotal.toLocaleString() + '</div>'
+    + '    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-top:2px">Total deals</div>'
     + '  </div>'
-    + '  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">'
-    + '    <div style="border-right:1px solid var(--b)">'
-    + '      <div style="padding:7px 14px 5px;display:flex;gap:12px;border-bottom:1px solid var(--b2)">'
-    + '        <div><div style="font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">' + (medP!==null?medP.toFixed(1)+'%':'\u2014') + '</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Median</div></div>'
-    + '        <div><div style="font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">' + (avgP!==null?avgP.toFixed(1)+'%':'\u2014') + '</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">Mean</div></div>'
-    + '        <div><div style="font-family:\'JetBrains Mono\',monospace;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--t)">' + (withP.length?Math.max.apply(null,withP.map(function(d){return d.p;})).toFixed(0)+'%':'\u2014') + '</div><div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-top:1px">High</div></div>'
-    + '      </div>'
-    + bandCounts.map(function(b){ return '<div style="padding:4px 14px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--b2)"><span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">' + b.label + '</span><div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:' + (b.n?Math.round(b.n/maxN*100):0) + '%;background:' + b.color + ';transition:width .4s;box-shadow:0 0 6px ' + b.color + '22"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:10px;font-weight:700;color:var(--t);min-width:14px;text-align:right">' + b.n + '</span></div>'; }).join('')
-    + '    </div>'
-    + '    <div>'
-    + considOrder.filter(function(k){ return considMap[k].n > 0; }).map(function(k){ return '<div style="padding:6px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid var(--b2)"><span style="font-size:9px;font-weight:600;color:var(--t2);min-width:40px">' + k + '</span><div style="flex:1;height:7px;background:rgba(0,0,0,0.03);border-radius:4px;overflow:hidden"><div style="height:100%;border-radius:4px;width:' + Math.round(considMap[k].v/maxConsidV*100) + '%;background:' + considColors[k] + ';transition:width .4s;box-shadow:0 0 6px ' + considColors[k] + '22"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:9px;font-weight:700;color:' + considColors[k] + ';min-width:26px;text-align:right">' + (totalConsidV?(considMap[k].v/totalConsidV*100).toFixed(0)+'%':'\u2014') + '</span></div>'; }).join('')
-    + '      <div style="padding:8px 12px;border-bottom:1px solid var(--b2)">'
-    + '        <div style="font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:4px">Largest cash deal</div>'
-    + '        <div style="font-size:10px;font-weight:600;color:var(--t);line-height:1.3">' + (function(){ var cd=data.filter(function(d){var m=multData[d.t];return m&&m.consid==='Cash';}); cd.sort(function(a,b){return b.v-a.v;}); return cd.length?cd[0].t.split(' ').slice(0,3).join(' ')+'\u2026':'\u2014'; })() + '</div>'
-    + '      </div>'
-    + '    </div>'
-    + '  </div>'
+    + dbCountries.map(function(c){ return '<div style="padding:5px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(c.code) + '<span style="font-size:11px;font-weight:600;color:var(--t);flex:1">' + c.name + '</span><div style="width:60px;height:6px;background:rgba(0,0,0,0.04);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;width:' + Math.round(dbCounts[c.code]/dbMaxCount*100) + '%;background:var(--a);transition:width .4s"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:700;color:var(--t);min-width:30px;text-align:right">' + dbCounts[c.code].toLocaleString() + '</span></div>'; }).join('')
+    + '  <div style="padding:5px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)"><span style="font-size:11px;font-weight:600;color:var(--t2);flex:1;padding-left:22px">Other</span><div style="width:60px;height:6px;background:rgba(0,0,0,0.04);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;width:' + Math.round(dbOther/dbMaxCount*100) + '%;background:var(--t3);transition:width .4s"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:700;color:var(--t);min-width:30px;text-align:right">' + dbOther.toLocaleString() + '</span></div>'
     + '</div>'
     + '<div class="sb-card">'
     + '  <div class="sb-hd"><span class="sb-title">Transaction Multiples</span><span class="sb-sub">Medians \u00B7 M&A Monitor data</span></div>'
