@@ -1091,15 +1091,6 @@ function updateSidebar(data) {
 
   document.getElementById('sidebar').innerHTML = ''
     + '<div class="sb-card">'
-    + '  <div class="sb-hd"><span class="sb-title">M&A Monitor Database</span><span class="sb-sub">European Public Deals (ex-UK)</span></div>'
-    + '  <div style="padding:12px 14px 8px;border-bottom:1px solid var(--b)">'
-    + '    <div style="font-family:\'JetBrains Mono\',monospace;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t);letter-spacing:-0.02em">' + dbTotal.toLocaleString() + '</div>'
-    + '    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-top:2px">Total deals</div>'
-    + '  </div>'
-    + dbCountries.map(function(c){ return '<div style="padding:5px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(c.code) + '<span style="font-size:11px;font-weight:600;color:var(--t);flex:1">' + c.name + '</span><div style="width:60px;height:6px;background:rgba(0,0,0,0.04);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;width:' + Math.round(dbCounts[c.code]/dbMaxCount*100) + '%;background:var(--a);transition:width .4s"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:700;color:var(--t);min-width:30px;text-align:right">' + dbCounts[c.code].toLocaleString() + '</span></div>'; }).join('')
-    + '  <div style="padding:5px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)"><span style="font-size:11px;font-weight:600;color:var(--t2);flex:1;padding-left:22px">Other</span><div style="width:60px;height:6px;background:rgba(0,0,0,0.04);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;width:' + Math.round(dbOther/dbMaxCount*100) + '%;background:var(--t3);transition:width .4s"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:700;color:var(--t);min-width:30px;text-align:right">' + dbOther.toLocaleString() + '</span></div>'
-    + '</div>'
-    + '<div class="sb-card">'
     + '  <div class="sb-hd"><span class="sb-title">Transaction Multiples</span><span class="sb-sub">Medians \u00B7 M&A Monitor data</span></div>'
     + '  <div class="sb-kpi-row">'
     + '    <div class="sb-kpi"><div class="sb-kpi-v">' + (medEVEBITDA?medEVEBITDA.toFixed(1)+'x':'\u2014') + '</div><div class="sb-kpi-l">EV/EBITDA</div></div>'
@@ -1109,8 +1100,21 @@ function updateSidebar(data) {
     + (sectorRows.length ? '<div style="display:grid;grid-template-columns:1fr auto auto;gap:0;padding:5px 14px 3px;border-top:1px solid var(--b2)"><span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3)">Sector</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);text-align:right;padding-right:8px">EV/EBITDA</span><span style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);text-align:right">EV/Sales</span></div>' + sectorRows.map(function(r){ return '<div class="sb-mult-row" style="display:grid;grid-template-columns:1fr auto auto;gap:0"><span class="sb-mult-sector">' + r.sector + '</span><span class="sb-mult-v" style="padding-right:8px">' + (r.ebitda?r.ebitda.toFixed(1)+'x':'\u2014') + '</span><span class="sb-mult-v">' + (r.sales?r.sales.toFixed(1)+'x':'\u2014') + '</span></div>'; }).join('') : '')
     + '</div>'
     + '<div class="sb-card2">'
-    + '  <div class="sb-hd"><span class="sb-title">By Country</span><span class="sb-sub">Deal count & value</span></div>'
+    + '  <div class="sb-hd"><span class="sb-title">Live Deals By Country</span><span class="sb-sub">Deal count & value</span></div>'
     + coSorted.map(function(e){ return '<div class="sb-stat" style="padding:7px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(e[0]) + '<span style="font-size:12px;font-weight:600;flex:1;color:var(--t)">' + e[0] + '</span><span class="sb-cnt">' + e[1].count + '</span><span class="sb-val">\u20AC' + (e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m') + '</span></div>'; }).join('')
+    + '</div>'
+    + '<div class="sb-card">'
+    + '  <div class="sb-hd"><span class="sb-title">M&A Monitor Database Total</span><span class="sb-sub">Western European Public Deals (ex-UK)</span></div>'
+    + '  <div style="padding:12px 14px 8px;border-bottom:1px solid var(--b)">'
+    + '    <div style="font-family:\'JetBrains Mono\',monospace;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t);letter-spacing:-0.02em">' + dbTotal.toLocaleString() + '</div>'
+    + '    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-top:2px">Total deals</div>'
+    + '  </div>'
+    + dbCountries.map(function(c){ return '<div style="padding:5px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(c.code) + '<span style="font-size:11px;font-weight:600;color:var(--t);flex:1">' + c.name + '</span><div style="width:60px;height:6px;background:rgba(0,0,0,0.04);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;width:' + Math.round(dbCounts[c.code]/dbMaxCount*100) + '%;background:var(--a);transition:width .4s"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:700;color:var(--t);min-width:30px;text-align:right">' + dbCounts[c.code].toLocaleString() + '</span></div>'; }).join('')
+    + '  <div style="padding:5px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)"><span style="font-size:11px;font-weight:600;color:var(--t2);flex:1;padding-left:22px">Other</span><div style="width:60px;height:6px;background:rgba(0,0,0,0.04);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;width:' + Math.round(dbOther/dbMaxCount*100) + '%;background:var(--t3);transition:width .4s"></div></div><span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;font-weight:700;color:var(--t);min-width:30px;text-align:right">' + dbOther.toLocaleString() + '</span></div>'
+    + '  <div style="padding:10px 14px;border-top:1px solid var(--b);background:var(--al);border-radius:0 0 12px 12px;display:flex;align-items:center;gap:8px">'
+    + '    <div style="font-family:\'JetBrains Mono\',monospace;font-size:16px;font-weight:800;color:var(--a)">40,000+</div>'
+    + '    <div style="font-size:9px;font-weight:600;color:var(--t2);line-height:1.3">total deal reports across<br>all M&A Monitor databases</div>'
+    + '  </div>'
     + '</div>';
 }
 
