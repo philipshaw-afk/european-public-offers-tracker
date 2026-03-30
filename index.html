@@ -1065,20 +1065,28 @@ function updateSidebar(data) {
   });
   var coSorted = Object.keys(coMap).map(function(k){ return [k, coMap[k]]; }).sort(function(a,b){ return b[1].value - a[1].value; });
 
-  // Database totals — computed from ALL deals (not filtered view)
+  // Database totals — base counts represent historical database MINUS current live deals.
+  // When a new deal is added to the live tracker, the relevant country increments automatically.
+  var dbBase = {FR:940, DE:798, IT:464, SE:422, NO:375, ES:258, NL:254, OTHER:1160};
   var dbCountries = [
     {code:'FR',name:'France'}, {code:'DE',name:'Germany'}, {code:'IT',name:'Italy'},
     {code:'SE',name:'Sweden'}, {code:'NO',name:'Norway'}, {code:'ES',name:'Spain'},
     {code:'NL',name:'Netherlands'}
   ];
-  var dbCounts = {};
-  var dbTotal = deals.length;
-  dbCountries.forEach(function(c){ dbCounts[c.code] = 0; });
-  var dbOther = 0;
+  // Count live deals per country and add to base
+  var liveCounts = {};
+  dbCountries.forEach(function(c){ liveCounts[c.code] = 0; });
+  var liveOther = 0;
   deals.forEach(function(d){
-    if (dbCounts.hasOwnProperty(d.c)) dbCounts[d.c]++;
-    else dbOther++;
+    if (liveCounts.hasOwnProperty(d.c)) liveCounts[d.c]++;
+    else liveOther++;
   });
+  var dbCounts = {};
+  dbCountries.forEach(function(c){ dbCounts[c.code] = dbBase[c.code] + liveCounts[c.code]; });
+  var dbOther = dbBase.OTHER + liveOther;
+  var dbTotal = 0;
+  dbCountries.forEach(function(c){ dbTotal += dbCounts[c.code]; });
+  dbTotal += dbOther;
   var dbMaxCount = Math.max.apply(null, dbCountries.map(function(c){ return dbCounts[c.code]; }).concat([dbOther]));
 
   document.getElementById('sidebar').innerHTML = ''
