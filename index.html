@@ -1104,7 +1104,7 @@ function updateSidebar(data) {
     + coSorted.map(function(e){ return '<div class="sb-stat" style="padding:7px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(e[0]) + '<span style="font-size:12px;font-weight:600;flex:1;color:var(--t)">' + e[0] + '</span><span class="sb-cnt">' + e[1].count + '</span><span class="sb-val">\u20AC' + (e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m') + '</span></div>'; }).join('')
     + '</div>'
     + '<div class="sb-card">'
-    + '  <div class="sb-hd"><span class="sb-title">M&A Monitor Database Total</span><span class="sb-sub">Western European Public Deals (ex-UK)</span></div>'
+    + '  <div class="sb-hd"><span class="sb-title">Total Western European Public Deals (ex-UK) on M&A Database</span></div>'
     + '  <div style="padding:12px 14px 8px;border-bottom:1px solid var(--b)">'
     + '    <div style="font-family:\'JetBrains Mono\',monospace;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t);letter-spacing:-0.02em">' + dbTotal.toLocaleString() + '</div>'
     + '    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-top:2px">Total deals</div>'
