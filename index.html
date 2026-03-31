@@ -1040,15 +1040,17 @@ function updateSidebar(data) {
   });
   var coSorted = Object.keys(coMap).map(function(k){ return [k, coMap[k]]; }).sort(function(a,b){ return b[1].value - a[1].value; });
 
-  // Database totals — base counts represent historical database MINUS current live deals.
-  // When a new deal is added to the live tracker, the relevant country increments automatically.
-  var dbBase = {FR:940, DE:798, IT:464, SE:422, NO:375, ES:258, NL:254, OTHER:1160};
+  // Database totals — floor counts are the known database totals (4,712).
+  // Original live counts at time of calibration are stored so we can detect NEW additions.
+  // Removing deals (completed) never decreases the count; only new additions increase it.
+  var dbFloor = {FR:945, DE:803, IT:476, SE:426, NO:376, ES:260, NL:255, OTHER:1171};
+  var dbOrigLive = {FR:5, DE:5, IT:12, SE:4, NO:1, ES:2, NL:1, OTHER:11};
   var dbCountries = [
     {code:'FR',name:'France'}, {code:'DE',name:'Germany'}, {code:'IT',name:'Italy'},
     {code:'SE',name:'Sweden'}, {code:'NO',name:'Norway'}, {code:'ES',name:'Spain'},
     {code:'NL',name:'Netherlands'}
   ];
-  // Count live deals per country and add to base
+  // Count current live deals per country
   var liveCounts = {};
   dbCountries.forEach(function(c){ liveCounts[c.code] = 0; });
   var liveOther = 0;
@@ -1056,9 +1058,13 @@ function updateSidebar(data) {
     if (liveCounts.hasOwnProperty(d.c)) liveCounts[d.c]++;
     else liveOther++;
   });
+  // Displayed = floor + max(0, current live - original live). Only goes up, never down.
   var dbCounts = {};
-  dbCountries.forEach(function(c){ dbCounts[c.code] = dbBase[c.code] + liveCounts[c.code]; });
-  var dbOther = dbBase.OTHER + liveOther;
+  dbCountries.forEach(function(c){
+    var extra = Math.max(0, liveCounts[c.code] - dbOrigLive[c.code]);
+    dbCounts[c.code] = dbFloor[c.code] + extra;
+  });
+  var dbOther = dbFloor.OTHER + Math.max(0, liveOther - dbOrigLive.OTHER);
   var dbTotal = 0;
   dbCountries.forEach(function(c){ dbTotal += dbCounts[c.code]; });
   dbTotal += dbOther;
