@@ -407,16 +407,6 @@ tbody tr:last-child td { border-bottom:0; }
 /* dates */
 .dt { white-space:nowrap; color:var(--t3); font-size:12px; }
 
-/* advisers */
-.adv {
-  font-size:11px; color:var(--t3); line-height:1.45;
-  max-width:180px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-}
-.adv:hover {
-  white-space:normal; overflow:visible; position:relative; z-index:5;
-  background: #fff; padding:4px 6px; border-radius:4px; margin:-4px -6px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.04);
-}
 
 /* table footer */
 .tfr {
@@ -561,7 +551,7 @@ tbody tr:last-child td { border-bottom:0; }
     <div class="ctrl ai d2">
       <div class="sbox">
         <svg class="si" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        <input type="text" id="q" placeholder="Search target, bidder or adviser..." oninput="go()">
+        <input type="text" id="q" placeholder="Search target or bidder..." oninput="go()">
       </div>
       <div class="flt-g">
         <select class="f" id="fCountry" onchange="go()"><option value="">All Countries</option></select>
@@ -587,8 +577,6 @@ tbody tr:last-child td { border-bottom:0; }
             <th class="ns" style="white-space:normal;max-width:55px;line-height:1.3">Days in Play</th>
             <th class="ns">Regulatory</th>
             <th class="ns" style="white-space:normal;max-width:70px;line-height:1.3">Acceptance Threshold</th>
-            <th class="ns">Target Advisers</th>
-            <th class="ns">Bidder Advisers</th>
           </tr></thead>
           <tbody id="tb"><tr><td colspan="14"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></td></tr></tbody>
         </table>
@@ -747,15 +735,6 @@ async function loadFromSheets() {
     var idx = colIdx(search);
     return idx >= 0 ? (row[idx] || '').trim() : '';
   }
-  function getAdviser(row, type) {
-    var idx;
-    if (type === 'target') {
-      idx = header.findIndex(function(h){ var l=h.toLowerCase(); return (l.includes('target') || l.includes('divestor')) && l.includes('advi'); });
-    } else {
-      idx = header.findIndex(function(h){ var l=h.toLowerCase(); return l.includes('bidder') && l.includes('advi') && !l.includes('target') && !l.includes('divestor'); });
-    }
-    return idx >= 0 ? (row[idx] || '').trim() : '';
-  }
 
   // Column indices for multiples (find once)
   var evEbitdaIdx = header.findIndex(function(h){ return h.toLowerCase().includes('enterprise value/ebitda') || h.toLowerCase().includes('ev/ebitda'); });
@@ -790,8 +769,6 @@ async function loadFromSheets() {
     var irr = parseFloat(getVal(row, 'undertakings').replace(/[^0-9.\-]/g,'')) || 0;
     if (!irr) irr = parseFloat(getVal(row, 'acceptances').replace(/[^0-9.\-]/g,'')) || 0;
     var acc = parseFloat(getVal(row, 'Acceptance condition').replace(/[^0-9.\-]/g,'')) || 0;
-    var tfa = getAdviser(row, 'target');
-    var bfa = getAdviser(row, 'bidder');
 
     var xb = false;
     if (xbIdx >= 0) {
@@ -802,7 +779,7 @@ async function loadFromSheets() {
     parsedDeals.push({
       t: targetName, co: country, c: cc, b: bidder, v: ev, p: prem,
       tp: tp, at: attitude, d: dateAnn, ec: expComp, reg: reg,
-      own: own, irr: irr, acc: acc, xb: xb, tfa: tfa, bfa: bfa
+      own: own, irr: irr, acc: acc, xb: xb
     });
 
     // Build multiples lookup
@@ -923,7 +900,7 @@ function getData() {
   var tp = document.getElementById('fType').value;
   return deals.filter(function(d){
     if (bigOnly && d.v < 500) return false;
-    if (q && !d.t.toLowerCase().includes(q) && !d.b.toLowerCase().includes(q) && !d.tfa.toLowerCase().includes(q) && !d.bfa.toLowerCase().includes(q)) return false;
+    if (q && !d.t.toLowerCase().includes(q) && !d.b.toLowerCase().includes(q)) return false;
     if (co && d.co !== co) return false;
     if (tp && d.tp !== tp) return false;
     return true;
@@ -977,8 +954,6 @@ function render(data) {
       + '<td><span class="days ' + daysCls + '">' + days + '</span></td>'
       + '<td><span class="reg reg-' + regCls + '">' + d.reg + '</span></td>'
       + '<td class="own-cell">' + (d.acc > 0 ? '<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:' + ownPct + '%"></div><div class="own-fill own-irrev" style="width:' + irrPct + '%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">' + total + '%</span></div><div class="tip">' + (parts.length ? parts.join(' + ') : total+'% control') + ' of ' + d.acc + '% threshold</div>' : '<div style="font-size:10px;font-weight:600;color:var(--t3)">No acceptance condition</div>' + (parts.length ? '<div class="tip">' + parts.join(' + ') + '</div>' : '')) + '</td>'
-      + '<td class="adv" title="' + d.tfa + '">' + (d.tfa || '\u2014') + '</td>'
-      + '<td class="adv" title="' + d.bfa + '">' + (d.bfa || '\u2014') + '</td>'
       + '</tr>';
   }).join('');
   document.getElementById('dc').innerHTML = 'Showing <b>' + data.length + '</b> of ' + deals.length;
