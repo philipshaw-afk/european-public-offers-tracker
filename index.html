@@ -502,7 +502,7 @@ tbody tr:last-child td { border-bottom:0; }
 .coverage-section {
   max-width: 1520px;
   margin: 0 auto;
-  padding: 48px 40px 56px;
+  padding: 56px 40px 64px;
   position: relative;
   z-index: 1;
 }
@@ -514,134 +514,264 @@ tbody tr:last-child td { border-bottom:0; }
   backdrop-filter: blur(16px);
   overflow: hidden;
 }
+/* header */
 .coverage-header {
-  padding: 28px 32px 0;
+  padding: 32px 32px 0;
+}
+.coverage-eyebrow {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--a);
+  margin-bottom: 12px;
 }
 .coverage-header h2 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   color: var(--t);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  line-height: 1.15;
 }
-.coverage-header .coverage-sub {
-  font-size: 13px;
-  color: var(--t2);
-  line-height: 1.6;
-  max-width: 800px;
-}
-.coverage-body {
-  padding: 24px 32px 28px;
-}
-.coverage-body p {
-  font-size: 13px;
+.coverage-lead {
+  font-size: 14px;
   color: var(--t2);
   line-height: 1.7;
-  margin-bottom: 16px;
-  max-width: 800px;
+  max-width: 720px;
+}
+/* coverage badge */
+.coverage-body {
+  padding: 24px 32px 0;
 }
 .coverage-scope {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   background: var(--al);
-  border: 1px solid rgba(79,110,247,0.12);
-  padding: 8px 16px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--a);
-  margin-bottom: 20px;
-}
-.coverage-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 8px 24px;
-  margin: 4px 0 20px;
-}
-.coverage-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 12.5px;
-  color: var(--t2);
+  border: 1px solid rgba(79,110,247,0.14);
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 5px 0;
+  color: var(--t);
+  margin-bottom: 28px;
+  line-height: 1.45;
 }
-.coverage-list li::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  min-width: 6px;
-  background: var(--a);
-  border-radius: 50%;
-  margin-top: 5px;
+.coverage-scope strong {
+  font-weight: 700;
 }
-.coverage-contact {
-  font-size: 12.5px;
-  color: var(--t3);
-  margin-top: 8px;
-  padding-top: 16px;
-  border-top: 1px solid var(--b);
-}
-.coverage-contact a {
+.coverage-scope svg {
   color: var(--a);
-  text-decoration: none;
-  font-weight: 600;
+  flex-shrink: 0;
 }
-.coverage-contact a:hover {
-  color: var(--ah);
+/* data points grid */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--b);
+  border: 1px solid var(--b);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 32px 28px;
 }
-.coverage-reports {
-  padding: 20px 32px 28px;
-  border-top: 1px solid var(--b);
-  background: rgba(0,0,0,0.01);
+.data-card {
+  background: var(--glass2);
+  padding: 22px 20px;
+  transition: background .2s;
 }
-.coverage-reports h3 {
+.data-card:hover {
+  background: rgba(79,110,247,0.03);
+}
+.data-card-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+.data-card-icon.ic-val { background: rgba(79,110,247,0.1); color: var(--a); }
+.data-card-icon.ic-pre { background: rgba(13,155,106,0.1); color: var(--g); }
+.data-card-icon.ic-mul { background: rgba(176,125,0,0.1); color: var(--am); }
+.data-card-icon.ic-bmp { background: rgba(124,92,252,0.1); color: var(--p); }
+.data-card-icon.ic-cmp { background: rgba(220,62,27,0.1); color: var(--r); }
+.data-card-icon.ic-nar { background: rgba(13,116,144,0.1); color: var(--tl); }
+.data-card-title {
   font-size: 13px;
   font-weight: 700;
   color: var(--t);
-  margin-bottom: 14px;
+  margin-bottom: 4px;
   letter-spacing: -0.01em;
 }
-.report-links {
+.data-card-desc {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--t3);
+}
+/* stats row */
+.stats-row {
+  display: flex;
+  gap: 48px;
+  padding: 24px 32px;
+  border-top: 1px solid var(--b);
+  border-bottom: 1px solid var(--b);
+}
+.cov-stat-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--t);
+  line-height: 1;
+  margin-bottom: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.cov-stat-number .plus {
+  color: var(--a);
+  font-size: 18px;
+}
+.cov-stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--t3);
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+/* sample reports */
+.coverage-reports {
+  padding: 24px 32px 28px;
+}
+.sample-heading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--t3);
+  margin-bottom: 14px;
+}
+.report-cards {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
-.report-link {
+.report-card {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  padding: 14px 18px;
   background: var(--s);
   border: 1px solid var(--b);
   border-radius: 10px;
-  padding: 12px 18px;
   text-decoration: none;
   color: var(--t);
-  font-size: 12.5px;
-  font-weight: 600;
   transition: all .2s;
   box-shadow: var(--ss);
 }
-.report-link:hover {
+.report-card:hover {
   background: var(--s2);
   border-color: rgba(79,110,247,0.2);
   transform: translateY(-1px);
   box-shadow: var(--sm);
 }
-.report-link svg {
-  color: var(--r);
+.report-card .file-icon {
+  width: 34px;
+  height: 34px;
+  background: var(--al);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
+.report-card .file-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--a);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+.report-card-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--t);
+}
+.report-card-sub {
+  font-size: 11px;
+  color: var(--t3);
+  margin-top: 2px;
+}
+/* CTA row */
+.cov-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cov-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  background: var(--a);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .25s;
+  box-shadow: 0 2px 16px rgba(79,110,247,0.3);
+}
+.cov-cta-primary:hover {
+  background: var(--ah);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 24px rgba(79,110,247,0.4);
+}
+.cov-cta-primary svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+.cov-cta-secondary {
+  font-size: 12.5px;
+  color: var(--t3);
+}
+.cov-cta-secondary a {
+  color: var(--a);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cov-cta-secondary a:hover {
+  color: var(--ah);
+}
+/* responsive */
 @media(max-width:1024px) {
-  .coverage-section { padding: 36px 24px 40px; }
+  .coverage-section { padding: 40px 24px 48px; }
   .coverage-header, .coverage-body, .coverage-reports { padding-left: 24px; padding-right: 24px; }
+  .data-grid { margin-left: 24px; margin-right: 24px; }
+  .stats-row { padding-left: 24px; padding-right: 24px; }
 }
 @media(max-width:768px) {
-  .coverage-list { grid-template-columns: 1fr; }
-  .report-links { flex-direction: column; }
+  .data-grid { grid-template-columns: repeat(2, 1fr); }
+  .report-cards { flex-direction: column; }
+  .stats-row { gap: 32px; flex-wrap: wrap; }
+  .cov-cta-row { flex-direction: column; align-items: flex-start; }
+}
+@media(max-width:480px) {
+  .data-grid { grid-template-columns: 1fr; }
 }
 
 /* === SELECTION === */
@@ -740,38 +870,92 @@ tbody tr:last-child td { border-bottom:0; }
 <div class="coverage-section ai" style="animation-delay:.24s">
   <div class="coverage-card">
     <div class="coverage-header">
-      <h2>What's behind the tracker</h2>
-      <p class="coverage-sub">For each company in an offer period, M&A Monitor maintains a full transaction record designed to support valuation and precedent analysis, including a comprehensive narrative and background to the development and progression of each deal.</p>
+      <div class="coverage-eyebrow">The M&A DataBase</div>
+      <h2>Full deal intelligence for every transaction</h2>
+      <p class="coverage-lead">Every deal on this tracker is backed by a comprehensive transaction record &mdash; valuation, premia, multiples, and precedent analysis &mdash; maintained by M&A Monitor.</p>
     </div>
     <div class="coverage-body">
       <div class="coverage-scope">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        Coverage: all deals involving a European party valued at over &euro;10 million, with over 10% being targeted
-      </div>
-      <p>In addition to the status information shown here, the database includes (inter alia) the following data points for European deals:</p>
-      <ul class="coverage-list">
-        <li>Deal valuation</li>
-        <li>Bid premia for multiple data points, including custom data</li>
-        <li>Transaction multiples</li>
-        <li>Competing offer history</li>
-        <li>Offer price bumps</li>
-      </ul>
-      <p>This information is not displayed on this page.</p>
-      <div class="coverage-contact">
-        For questions on coverage or access to the underlying transaction data, please contact <a href="mailto:enquiries@ma-monitor.co.uk">enquiries@ma-monitor.co.uk</a>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span>All deals involving a European party valued at over <strong>&euro;10 million</strong>, with over 10% being targeted</span>
       </div>
     </div>
+
+    <!-- Data points grid -->
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-card-icon ic-val">&euro;</div>
+        <div class="data-card-title">Deal valuation</div>
+        <div class="data-card-desc">Enterprise and equity value breakdowns for each transaction</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-icon ic-pre">%</div>
+        <div class="data-card-title">Bid premia</div>
+        <div class="data-card-desc">Multiple reference points including custom date premia</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-icon ic-mul">&times;</div>
+        <div class="data-card-title">Transaction multiples</div>
+        <div class="data-card-desc">EV/Revenue, EV/EBITDA, P/E and sector benchmarks</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-icon ic-bmp">&uarr;</div>
+        <div class="data-card-title">Offer price bumps</div>
+        <div class="data-card-desc">Revised terms, price increases, and sweetener history</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-icon ic-cmp">&harr;</div>
+        <div class="data-card-title">Competing offer history</div>
+        <div class="data-card-desc">Counter-bids, rival approaches, and competitive dynamics</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-icon ic-nar">&#9673;</div>
+        <div class="data-card-title">Full narrative &amp; background</div>
+        <div class="data-card-desc">Deal development, rationale, regulatory and shareholder context</div>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats-row">
+      <div>
+        <div class="cov-stat-number">40,000<span class="plus">+</span></div>
+        <div class="cov-stat-label">Total deal reports<br>in the database</div>
+      </div>
+      <div>
+        <div class="cov-stat-number">1997</div>
+        <div class="cov-stat-label">Established</div>
+      </div>
+    </div>
+
+    <!-- Sample reports & CTA -->
     <div class="coverage-reports">
-      <h3>Illustrative reports</h3>
-      <div class="report-links">
-        <a class="report-link" href="https://github.com/philipshaw-afk/european-public-offers-tracker/blob/main/Industrial%20example%20report.pdf" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          Industrial Example Report
+      <div class="sample-heading">See what a full deal record looks like</div>
+      <div class="report-cards">
+        <a class="report-card" href="https://github.com/philipshaw-afk/european-public-offers-tracker/blob/main/Industrial%20example%20report.pdf" target="_blank" rel="noopener">
+          <div class="file-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <div class="report-card-label">Industrial Example Report</div>
+            <div class="report-card-sub">Standard public offer format</div>
+          </div>
         </a>
-        <a class="report-link" href="https://github.com/philipshaw-afk/european-public-offers-tracker/blob/main/Banking%20example%20report.pdf" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          Banking Example Report
+        <a class="report-card" href="https://github.com/philipshaw-afk/european-public-offers-tracker/blob/main/Banking%20example%20report.pdf" target="_blank" rel="noopener">
+          <div class="file-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <div class="report-card-label">Banking Example Report</div>
+            <div class="report-card-sub">Financial sector deal format</div>
+          </div>
         </a>
+      </div>
+      <div class="cov-cta-row">
+        <a class="cov-cta-primary" href="mailto:enquiries@ma-monitor.co.uk">
+          Request access
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <span class="cov-cta-secondary">Or email <a href="mailto:enquiries@ma-monitor.co.uk">enquiries@ma-monitor.co.uk</a></span>
       </div>
     </div>
   </div>
