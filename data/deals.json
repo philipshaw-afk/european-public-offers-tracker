@@ -628,6 +628,23 @@
       "irr": 69.61,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "WHAT'S COOKING GROUP NV",
+      "co": "Belgium",
+      "c": "BE",
+      "b": "MALAGA INVESTMENT",
+      "v": 273.0,
+      "p": 22.31,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "27-Feb-2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 68.05,
+      "irr": 0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -886,6 +903,13 @@
     "ALPHA TRUST HOLDINGS SA": {
       "consid": "Cash",
       "sector": "Financial Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "WHAT'S COOKING GROUP NV": {
+      "consid": "Cash",
+      "sector": "Food",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
