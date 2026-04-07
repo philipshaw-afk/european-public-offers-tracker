@@ -1,6 +1,12 @@
 [
   {
     "d": "01 April 2026",
+    "c": "ES",
+    "t": "Substrate Artificial Inteligence",
+    "x": "Subgen AI's offer unconditional, 43.8% control"
+  },
+  {
+    "d": "01 April 2026",
     "c": "IT",
     "t": "STAR7 SpA",
     "x": "Argos agrees to acquire 75% stake in STAR7 from existing shareholders and to launch mandatory offer"
@@ -10,29 +16,5 @@
     "c": "SE",
     "t": "Consensus Asset Management AB",
     "x": "Norion completes offer for Consensus"
-  },
-  {
-    "d": "31 March 2026",
-    "c": "SE",
-    "t": "CoinShares International Limited",
-    "x": "Scheme of arrangement becomes effective and offer completes"
-  },
-  {
-    "d": "31 March 2026",
-    "c": "DE",
-    "t": "Klockner & Co SE",
-    "x": "Worthington Steel exceeds minimum acceptance threshold and extends acceptance period"
-  },
-  {
-    "d": "30 March 2026",
-    "c": "SE",
-    "t": "CoinShares International Limited",
-    "x": "Court sanctions the scheme of arrangement"
-  },
-  {
-    "d": "27 March 2026",
-    "c": "NL",
-    "t": "JDE Peets NV",
-    "x": "KDP completes offer for JDE Peet's"
   }
 ]
