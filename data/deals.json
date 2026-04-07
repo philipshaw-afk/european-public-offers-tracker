@@ -1,23 +1,6 @@
 {
   "deals": [
     {
-      "t": "ERCROS SA",
-      "co": "Spain",
-      "c": "ES",
-      "b": "JOSE DE MELLO SGPS SA",
-      "v": 329.17,
-      "p": 40.35,
-      "tp": "Public Offer",
-      "at": "Hostile",
-      "d": "4-Mar-2024",
-      "ec": "31-Mar-2026",
-      "reg": "Conditions",
-      "own": 0.0,
-      "irr": 77.23,
-      "acc": 50.0,
-      "xb": false
-    },
-    {
       "t": "ESSO SOCIETE ANONYME FRANCAISE SA",
       "co": "France",
       "c": "FR",
@@ -32,23 +15,6 @@
       "own": 0.0,
       "irr": 82.89,
       "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "ELES SEMICONDUCTOR EQUIPMENT SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "XENON AIFM SA",
-      "v": 56.114,
-      "p": 40.9,
-      "tp": "MBO/MBI",
-      "at": "White Knight",
-      "d": "23-Oct-2025",
-      "ec": "31-Mar-2026",
-      "reg": "No Referral",
-      "own": 27.62,
-      "irr": 27.51,
-      "acc": 50.0,
       "xb": false
     },
     {
@@ -154,23 +120,6 @@
       "xb": false
     },
     {
-      "t": "SUBSTRATE ARTIFICIAL INTELIGENCE SA",
-      "co": "Spain",
-      "c": "ES",
-      "b": "SUBGEN AI AB",
-      "v": 52.944,
-      "p": 198.64,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "4-Mar-2026",
-      "ec": "27-Mar-2026",
-      "reg": "No Referral",
-      "own": 15.0,
-      "irr": 0.0,
-      "acc": 20.0,
-      "xb": false
-    },
-    {
       "t": "VINPAI SA",
       "co": "France",
       "c": "FR",
@@ -214,7 +163,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "5-Aug-2025",
-      "ec": "20-Mar-2026",
+      "ec": "7-Apr-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 38.74,
@@ -350,7 +299,7 @@
       "tp": "Scheme",
       "at": "Friendly",
       "d": "30-Sep-2025",
-      "ec": "30-Mar-2026",
+      "ec": "30-Jun-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 0.65,
@@ -452,7 +401,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "15-Jan-2026",
-      "ec": "26-Mar-2026",
+      "ec": "14-Apr-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 42.0,
@@ -469,7 +418,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "27-Jan-2026",
-      "ec": "25-Mar-2026",
+      "ec": "3-Jun-2026",
       "reg": "No Referral",
       "own": 43.6,
       "irr": 6.8,
@@ -665,25 +614,11 @@
     }
   ],
   "multiples": {
-    "ERCROS SA": {
-      "consid": "Cash",
-      "sector": "Chemicals",
-      "ev_ebitda": 8.76,
-      "ev_sales": 0.56,
-      "pe": 11.43
-    },
     "ESSO SOCIETE ANONYME FRANCAISE SA": {
       "consid": "Cash",
       "sector": "Oil & Gas",
       "ev_ebitda": 4.35,
       "ev_sales": 0.02,
-      "pe": 0.0
-    },
-    "ELES SEMICONDUCTOR EQUIPMENT SPA": {
-      "consid": "Cash",
-      "sector": "Electronics",
-      "ev_ebitda": 11.72,
-      "ev_sales": 1.67,
       "pe": 0.0
     },
     "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA": {
@@ -727,13 +662,6 @@
       "ev_ebitda": 8.09,
       "ev_sales": 1.72,
       "pe": 38.21
-    },
-    "SUBSTRATE ARTIFICIAL INTELIGENCE SA": {
-      "consid": "Shares",
-      "sector": "I.T.",
-      "ev_ebitda": 25.38,
-      "ev_sales": 2.96,
-      "pe": 0.0
     },
     "VINPAI SA": {
       "consid": "Mixed",
