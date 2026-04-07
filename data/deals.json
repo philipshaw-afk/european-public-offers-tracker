@@ -611,6 +611,23 @@
       "irr": 75.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "ALPHA TRUST HOLDINGS SA",
+      "co": "Greece",
+      "c": "GR",
+      "b": "ALPHA BANK",
+      "v": 0,
+      "p": null,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "7 April 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 0,
+      "irr": 69.61,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -862,6 +879,13 @@
     "STAR7 SPA": {
       "consid": "Cash",
       "sector": "Engineering/Support Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "ALPHA TRUST HOLDINGS SA": {
+      "consid": "Cash",
+      "sector": "Financial Services",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
