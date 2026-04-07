@@ -617,16 +617,16 @@
       "co": "Greece",
       "c": "GR",
       "b": "ALPHA BANK",
-      "v": 0,
-      "p": null,
+      "v": 63.6,
+      "p": 15.1,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "7 April 2026",
-      "ec": "",
+      "ec": "30 June 2026",
       "reg": "No Referral",
-      "own": 0,
+      "own": 0.0,
       "irr": 69.61,
-      "acc": 0,
+      "acc": 66.67,
       "xb": false
     },
     {
@@ -634,16 +634,16 @@
       "co": "Belgium",
       "c": "BE",
       "b": "MALAGA INVESTMENT",
-      "v": 273.0,
+      "v": 274.7,
       "p": 22.31,
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "27-Feb-2026",
-      "ec": "",
+      "ec": "30 June 2026",
       "reg": "No Referral",
       "own": 68.05,
-      "irr": 0,
-      "acc": 0,
+      "irr": 6.97,
+      "acc": 95.0,
       "xb": false
     }
   ],
@@ -910,9 +910,9 @@
     "WHAT'S COOKING GROUP NV": {
       "consid": "Cash",
       "sector": "Food",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.73,
+      "ev_sales": 0.58,
+      "pe": 20.27
     }
   }
 }
