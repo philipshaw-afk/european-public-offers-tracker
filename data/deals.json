@@ -896,9 +896,9 @@
     "STAR7 SPA": {
       "consid": "Cash",
       "sector": "Engineering/Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.71,
+      "ev_sales": 1.1,
+      "pe": 45.12
     },
     "ALPHA TRUST HOLDINGS SA": {
       "consid": "Cash",
