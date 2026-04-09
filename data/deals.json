@@ -645,6 +645,23 @@
       "irr": 6.97,
       "acc": 95.0,
       "xb": false
+    },
+    {
+      "t": "ADDIKO BANK AG",
+      "co": "Austria",
+      "c": "AT",
+      "b": "RAIFFEISEN BANK INTERNATIONAL",
+      "v": 449.0,
+      "p": -7.43,
+      "tp": "Public Offer",
+      "at": "Neutral",
+      "d": "8 April 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 0,
+      "irr": 0,
+      "acc": 75.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -913,6 +930,13 @@
       "ev_ebitda": 6.73,
       "ev_sales": 0.58,
       "pe": 20.27
+    },
+    "ADDIKO BANK AG": {
+      "consid": "Cash",
+      "sector": "Banking",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
