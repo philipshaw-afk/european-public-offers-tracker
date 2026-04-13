@@ -154,23 +154,6 @@
       "xb": false
     },
     {
-      "t": "TINEXTA SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "ADVENT INTERNATIONAL LP / NEXTALIA SGR SPA",
-      "v": 694.782,
-      "p": 39.66,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "5-Aug-2025",
-      "ec": "7-Apr-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 79.08,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "DIGITAL VALUE SPA",
       "co": "Italy",
       "c": "IT",
@@ -744,13 +727,6 @@
       "ev_ebitda": 5.49,
       "ev_sales": 0.58,
       "pe": 14.44
-    },
-    "TINEXTA SPA": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 8.98,
-      "ev_sales": 2.14,
-      "pe": 14.64
     },
     "DIGITAL VALUE SPA": {
       "consid": "Cash",
