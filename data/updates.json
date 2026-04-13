@@ -1,5 +1,11 @@
 [
   {
+    "d": "09 April 2026",
+    "c": "AT",
+    "t": "Addiko Bank AG",
+    "x": "Slovenia's NLB makes competing offer for Addiko Bank at €29 per share"
+  },
+  {
     "d": "08 April 2026",
     "c": "AT",
     "t": "Addiko Bank AG",
@@ -22,23 +28,5 @@
     "c": "GR",
     "t": "Alpha Trust Holdings",
     "x": "Alpha Bank announces purchase of 69.61% of Alpha Trust and its intention to make offer for remaining shares at €20.20 per share"
-  },
-  {
-    "d": "01 April 2026",
-    "c": "ES",
-    "t": "Substrate Artificial Inteligence",
-    "x": "Subgen AI's offer unconditional, 43.8% control"
-  },
-  {
-    "d": "01 April 2026",
-    "c": "IT",
-    "t": "STAR7 SpA",
-    "x": "Argos agrees to acquire 75% stake in STAR7 from existing shareholders and to launch mandatory offer"
-  },
-  {
-    "d": "01 April 2026",
-    "c": "SE",
-    "t": "Consensus Asset Management AB",
-    "x": "Norion completes offer for Consensus"
   }
 ]
