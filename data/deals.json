@@ -358,23 +358,6 @@
       "xb": false
     },
     {
-      "t": "NILFISK HOLDING A/S",
-      "co": "Denmark",
-      "c": "DK",
-      "b": "FREUDENBERG & CO KG",
-      "v": 524.45,
-      "p": 35.92,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "11-Dec-2025",
-      "ec": "8-Apr-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 50.87,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
       "t": "KLOCKNER & CO SE",
       "co": "Germany",
       "c": "DE",
@@ -810,13 +793,6 @@
       "sector": "Chemicals",
       "ev_ebitda": 0.0,
       "ev_sales": 1.05,
-      "pe": 0.0
-    },
-    "NILFISK HOLDING A/S": {
-      "consid": "Cash",
-      "sector": "Engineering",
-      "ev_ebitda": 5.56,
-      "ev_sales": 0.83,
       "pe": 0.0
     },
     "KLOCKNER & CO SE": {
