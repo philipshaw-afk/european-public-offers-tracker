@@ -658,9 +658,26 @@
       "d": "8 April 2026",
       "ec": "31 December 2026",
       "reg": "No Referral",
-      "own": 0,
+      "own": 0.0,
       "irr": 0,
       "acc": 75.0,
+      "xb": false
+    },
+    {
+      "t": "ADDIKO BANK AG",
+      "co": "Austria",
+      "c": "AT",
+      "b": "NLB",
+      "v": 565.0,
+      "p": 16.5,
+      "tp": "Public Offer",
+      "at": "Neutral",
+      "d": "9 April 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0,
+      "acc": 50.1,
       "xb": false
     }
   ],
