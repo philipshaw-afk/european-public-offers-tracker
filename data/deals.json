@@ -477,23 +477,6 @@
       "xb": false
     },
     {
-      "t": "GRAND CITY PROPERTIES",
-      "co": "Luxembourg",
-      "c": "LU",
-      "b": "AROUNDTOWN SA",
-      "v": 1965.0,
-      "p": 6.62,
-      "tp": "Partial",
-      "at": "Friendly",
-      "d": "4-Mar-2026",
-      "ec": "9-Apr-2026",
-      "reg": "No Referral",
-      "own": 63.0,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "TELECOM ITALIA SPA",
       "co": "Italy",
       "c": "IT",
@@ -878,13 +861,6 @@
       "ev_sales": 12.05,
       "pe": 21.6
     },
-    "GRAND CITY PROPERTIES": {
-      "consid": "Shares",
-      "sector": "Property",
-      "ev_ebitda": 16.13,
-      "ev_sales": 9.11,
-      "pe": 11.46
-    },
     "TELECOM ITALIA SPA": {
       "consid": "Mixed",
       "sector": "Telecoms",
@@ -923,9 +899,9 @@
     "ALPHA TRUST HOLDINGS SA": {
       "consid": "Cash",
       "sector": "Financial Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 10.87,
+      "ev_sales": 4.87,
+      "pe": 13.68
     },
     "WHAT'S COOKING GROUP NV": {
       "consid": "Cash",
@@ -939,21 +915,21 @@
       "sector": "Banking",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": null
+      "pe": 12.74
     },
     "POULAILLON SA": {
       "consid": "Cash",
       "sector": "Food",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 4.78,
+      "ev_sales": 0.53,
+      "pe": 9.43
     },
     "PERMANENT TSB GROUP HOLDINGS PLC": {
       "consid": "Cash",
       "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": null
+      "pe": 22.8
     }
   }
 }
