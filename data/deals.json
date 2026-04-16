@@ -324,23 +324,6 @@
       "xb": false
     },
     {
-      "t": "ASETEK A/S",
-      "co": "Denmark",
-      "c": "DK",
-      "b": "SUZHOU CHUNQIU ELECTRONIC TECHNOLOGY CO LTD",
-      "v": 77.552,
-      "p": 109.76,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "25-Nov-2025",
-      "ec": "8-Apr-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 90.12,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
       "t": "OCI NV",
       "co": "Netherlands",
       "c": "NL",
@@ -796,13 +779,6 @@
       "sector": "I.T.",
       "ev_ebitda": 24.24,
       "ev_sales": 4.96,
-      "pe": 0.0
-    },
-    "ASETEK A/S": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 0.0,
-      "ev_sales": 2.14,
       "pe": 0.0
     },
     "OCI NV": {
