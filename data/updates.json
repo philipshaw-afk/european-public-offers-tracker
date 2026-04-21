@@ -1,6 +1,12 @@
 [
   {
     "d": "20 April 2026",
+    "c": "DE",
+    "t": "Commerzbank AG",
+    "x": "Commerzbank formally rejects UniCredit’s \"continued hostile tactics and misleading characterisations\""
+  },
+  {
+    "d": "20 April 2026",
     "c": "GI",
     "t": "Evoke Plc",
     "x": "Proposal from Bally's Intralot at 50p, not subject to UK Takeover Code (as registered in Gibraltar)."
@@ -28,11 +34,5 @@
     "c": "NO",
     "t": "Zalaris ASA",
     "x": "Norvestor publishes offer document"
-  },
-  {
-    "d": "15 April 2026",
-    "c": "FI",
-    "t": "Lemonsoft OYJ",
-    "x": "Rite Ventures adjusts offer price to €4.53 due to announcement of dividend by Lemonsoft"
   }
 ]
