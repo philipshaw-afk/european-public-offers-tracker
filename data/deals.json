@@ -188,23 +188,6 @@
       "xb": false
     },
     {
-      "t": "FERRETTI S.P.A.",
-      "co": "Italy",
-      "c": "IT",
-      "b": "KKCG AG",
-      "v": 1320.082,
-      "p": 5.98,
-      "tp": "Partial",
-      "at": "Hostile",
-      "d": "19-Jan-2026",
-      "ec": "13-Apr-2026",
-      "reg": "No Referral",
-      "own": 14.5,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "FNAC DARTY SA",
       "co": "France",
       "c": "FR",
@@ -338,23 +321,6 @@
       "own": 0.0,
       "irr": 50.9,
       "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "KLOCKNER & CO SE",
-      "co": "Germany",
-      "c": "DE",
-      "b": "WORTHINGTON STEEL INC",
-      "v": 1098.891,
-      "p": 81.22,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "15-Jan-2026",
-      "ec": "14-Apr-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 42.0,
-      "acc": 57.5,
       "xb": false
     },
     {
@@ -742,13 +708,6 @@
       "ev_sales": null,
       "pe": null
     },
-    "FERRETTI S.P.A.": {
-      "consid": "Cash",
-      "sector": "Engineering",
-      "ev_ebitda": 6.18,
-      "ev_sales": 1.02,
-      "pe": 15.08
-    },
     "FNAC DARTY SA": {
       "consid": "Cash",
       "sector": "Retailers",
@@ -803,13 +762,6 @@
       "sector": "Chemicals",
       "ev_ebitda": 0.0,
       "ev_sales": 1.05,
-      "pe": 0.0
-    },
-    "KLOCKNER & CO SE": {
-      "consid": "Cash",
-      "sector": "Distributors",
-      "ev_ebitda": 11.72,
-      "ev_sales": 0.33,
       "pe": 0.0
     },
     "TECNOTREE OYJ": {
