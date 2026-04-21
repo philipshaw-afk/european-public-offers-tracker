@@ -645,6 +645,23 @@
       "irr": 57.5,
       "acc": 75.0,
       "xb": false
+    },
+    {
+      "t": "BONIFICHE FERRARESI",
+      "co": "Italy",
+      "c": "IT",
+      "b": "ARUM & DOMPE HOLDINGS",
+      "v": 1309.0,
+      "p": 13.8,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "21 April 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 49.12,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -906,6 +923,13 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 22.8
+    },
+    "BONIFICHE FERRARESI": {
+      "consid": "Cash",
+      "sector": "Food",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
