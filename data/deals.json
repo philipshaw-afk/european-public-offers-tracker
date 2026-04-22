@@ -618,7 +618,7 @@
       "c": "IT",
       "b": "ARUM & DOMPE HOLDINGS",
       "v": 1309.0,
-      "p": 13.8,
+      "p": 13.6,
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "21 April 2026",
@@ -879,8 +879,8 @@
     "BONIFICHE FERRARESI": {
       "consid": "Cash",
       "sector": "Food",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 18.1,
+      "ev_sales": 1.17,
       "pe": null
     }
   }
