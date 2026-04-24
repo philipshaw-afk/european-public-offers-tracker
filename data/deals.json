@@ -613,7 +613,7 @@
       "xb": false
     },
     {
-      "t": "BONIFICHE FERRARESI",
+      "t": "BF SPA (BONIFICHE FERRARESI)",
       "co": "Italy",
       "c": "IT",
       "b": "ARUM & DOMPE HOLDINGS",
@@ -876,7 +876,7 @@
       "ev_sales": null,
       "pe": 22.8
     },
-    "BONIFICHE FERRARESI": {
+    "BF SPA (BONIFICHE FERRARESI)": {
       "consid": "Cash",
       "sector": "Food",
       "ev_ebitda": 18.1,
