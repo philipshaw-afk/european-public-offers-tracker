@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "co": "Netherlands",
+    "c": "NL",
+    "name": "Universal Music Group NV",
+    "status": "Confirmed",
+    "first": "7 April 2026",
+    "latest": "Pershing Square makes non-binding unsolicited cash and share proposal at €30.40 per share"
+  },
+  {
+    "co": "France",
+    "c": "FR",
+    "name": "Getlink SE",
+    "status": "Speculation",
+    "first": "26 March 2026",
+    "latest": "Eiffage increased stake to 29.40%, leading to speculation it will breach mandatory bid threshold"
+  },
+  {
+    "co": "Italy",
+    "c": "IT",
+    "name": "Recordati SpA",
+    "status": "Confirmed",
+    "first": "26 March 2026",
+    "latest": "Subject to a non-binding indication of interest from CVC"
+  },
+  {
+    "co": "Spain",
+    "c": "ES",
+    "name": "Puig Brands SA",
+    "status": "Confirmed",
+    "first": "23 March 2026",
+    "latest": "Estée Lauder Companies Inc announced discussions regarding a potential business combination with Puig, no price given"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Deutsche Telekom AG",
+    "status": "Speculation",
+    "first": "21 April 2026",
+    "latest": "Reportedly in talks with T-Mobile to combine under a new holding company, which would make offers for each company (Bloomberg)"
+  },
+  {
+    "co": "Gibraltar",
+    "c": "GI",
+    "name": "Evoke Plc",
+    "status": "Confirmed",
+    "first": "20 April 2026",
+    "latest": "Proposal from Bally's Intralot at 50p, not subject to UK Takeover Code (as registered in Gibraltar)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Gerresheimer AG",
+    "status": "Speculation",
+    "first": "17 April 2026",
+    "latest": "Reportedly rejected an approach from Silgan (Reuters)"
+  },
+  {
+    "co": "Netherlands",
+    "c": "NL",
+    "name": "BE Semiconductor Industries NV",
+    "status": "Speculation",
+    "first": "13 March 2026",
+    "latest": "Subject to an approach from Lam Research and Applied Materials (Reuters)"
+  },
+  {
+    "co": "Switzerland",
+    "c": "CH",
+    "name": "PolyPeptide Group AG",
+    "status": "Confirmed",
+    "first": "10 April 2026",
+    "latest": "Strategic review ongoing, after takeover interest from certain investors"
+  }
+]
