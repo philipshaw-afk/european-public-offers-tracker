@@ -1599,38 +1599,56 @@ function go() { render(doSort(getData())); }
 // =====================================================================
 // RUMOURS & APPROACHES
 // =====================================================================
-async function loadRumours() {
-  var tb = document.getElementById('rumours-tb');
-  try {
-    var resp = await fetch(RUMOURS_URL);
-    if (!resp.ok) throw new Error('Status ' + resp.status);
-    var csv = await resp.text();
-    var rows = parseCSV(csv);
-    if (rows.length < 2) throw new Error('No data rows');
-    var header = rows[0];
-    function ci(s) { return header.findIndex(function(h){ return h.toLowerCase().includes(s.toLowerCase()); }); }
-    var iCountry = ci('Country');
-    var iCompany = ci('Company');
-    var iStatus  = ci('Status');
-    var iFirst   = ci('First');
-    var iLatest  = ci('Latest');
+var STATIC_RUMOURS_URL = 'data/rumours.json' + _cb;
 
-    var data = [];
-    for (var i = 1; i < rows.length; i++) {
-      var r = rows[i];
-      var name = (r[iCompany] || '').replace(/\s+/g,' ').trim();
-      if (!name) continue;
-      var country = (r[iCountry] || '').replace(/\s+/g,' ').trim();
-      data.push({
-        co: country,
-        c: countryCode(country),
-        name: name,
-        status: (r[iStatus] || '').trim(),
-        first: normalizeDate((r[iFirst] || '').trim()),
-        latest: (r[iLatest] || '').trim()
-      });
+async function loadRumoursFromStatic() {
+  var resp = await fetch(STATIC_RUMOURS_URL);
+  if (!resp.ok) throw new Error('Static rumours not available');
+  return await resp.json();
+}
+
+async function loadRumoursFromSheet() {
+  var resp = await fetch(RUMOURS_URL);
+  if (!resp.ok) throw new Error('Rumours sheet fetch failed (' + resp.status + ')');
+  var csv = await resp.text();
+  var rows = parseCSV(csv);
+  if (rows.length < 2) throw new Error('No rumours data rows');
+  var header = rows[0];
+  function ci(s) { return header.findIndex(function(h){ return h.toLowerCase().includes(s.toLowerCase()); }); }
+  var iCountry = ci('Country');
+  var iCompany = ci('Company');
+  var iStatus  = ci('Status');
+  var iFirst   = ci('First');
+  var iLatest  = ci('Latest');
+
+  var data = [];
+  for (var i = 1; i < rows.length; i++) {
+    var r = rows[i];
+    var name = (r[iCompany] || '').replace(/\s+/g,' ').trim();
+    if (!name) continue;
+    var country = (r[iCountry] || '').replace(/\s+/g,' ').trim();
+    data.push({
+      co: country,
+      c: countryCode(country),
+      name: name,
+      status: (r[iStatus] || '').trim(),
+      first: normalizeDate((r[iFirst] || '').trim()),
+      latest: (r[iLatest] || '').trim()
+    });
+  }
+  return data;
+}
+
+async function loadRumours() {
+  try {
+    var data;
+    try {
+      data = await loadRumoursFromStatic();
+    } catch(e) {
+      console.log('Static rumours not available, trying Google Sheets...', e);
+      data = await loadRumoursFromSheet();
     }
-    // Sort by First Appeared, most recent first
+    // Always sort by First Appeared, most recent first
     data.sort(function(a,b){
       var da = new Date(a.first || 0).getTime() || 0;
       var db = new Date(b.first || 0).getTime() || 0;
