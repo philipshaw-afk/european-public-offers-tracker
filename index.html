@@ -786,6 +786,77 @@ tbody tr:last-child td { border-bottom:0; }
 /* === SELECTION === */
 ::selection { background: rgba(79,110,247,0.2); color: #0F1729; }
 
+/* === RUMOURS SECTION === */
+.rumours-section {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 40px 30px;
+  position: relative;
+  z-index: 1;
+}
+.rumours-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rumours-eyebrow {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--am);
+  margin-bottom: 6px;
+}
+.rumours-head h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--t);
+  margin-bottom: 3px;
+  line-height: 1.15;
+}
+.rumours-sub {
+  font-size: 12.5px;
+  color: var(--t2);
+  line-height: 1.45;
+  max-width: 720px;
+}
+.rumours-caveat {
+  font-size: 11px;
+  color: var(--t3);
+  font-style: italic;
+  margin-top: 10px;
+  line-height: 1.5;
+  padding: 0 4px;
+}
+.rum-latest {
+  color: var(--t2);
+  font-size: 12px;
+  line-height: 1.4;
+  display: inline-block;
+  max-width: 640px;
+  white-space: normal;
+}
+.st {
+  display: inline-flex;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: .02em;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.st-spec { background: var(--ab); color: var(--am); border-color: rgba(251,191,36,0.18); }
+.st-conf { background: var(--al); color: var(--a); border-color: rgba(108,138,255,0.18); }
+@media(max-width:1024px) {
+  .rumours-section { padding: 0 24px 30px; }
+}
+
 /* === LOADING === */
 .loading{text-align:center;padding:40px;color:var(--t3);font-size:14px}
 .loading-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);margin:0 3px;animation:ld .6s infinite alternate}
@@ -873,6 +944,33 @@ tbody tr:last-child td { border-bottom:0; }
     </div>
   </div>
   <div class="sb" id="sidebar"></div>
+</div>
+
+<!-- === RUMOURS & APPROACHES SECTION === -->
+<div class="rumours-section ai" id="rumours-section" style="animation-delay:.22s">
+  <div class="rumours-head">
+    <div>
+      <div class="rumours-eyebrow">Early-Stage Situations</div>
+      <h2>Rumours &amp; Approaches</h2>
+      <p class="rumours-sub">Unconfirmed speculation and preliminary approaches on Western European listed companies &mdash; situations that may or may not develop into a formal offer.</p>
+    </div>
+    <span class="dc" id="rumours-dc"></span>
+  </div>
+  <div class="tcard">
+    <div class="tscr">
+      <table>
+        <thead><tr>
+          <th class="ns">Country</th>
+          <th class="ns">Company</th>
+          <th class="ns">Status</th>
+          <th class="ns">First Appeared</th>
+          <th class="ns">Latest</th>
+        </tr></thead>
+        <tbody id="rumours-tb"><tr><td colspan="5"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></td></tr></tbody>
+      </table>
+    </div>
+  </div>
+  <p class="rumours-caveat">Includes unconfirmed speculation and preliminary approaches which may not lead to a formal offer. For information only.</p>
 </div>
 
 <!-- === COVERAGE SECTION === -->
@@ -990,7 +1088,8 @@ CH:`<svg viewBox="0 0 32 32"><rect width="32" height="32" fill="#F00"/><rect x="
 AT:`<svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect width="3" height=".667" fill="#ED2939"/><rect y="1.333" width="3" height=".667" fill="#ED2939"/></svg>`,
 GR:`<svg viewBox="0 0 27 18"><rect width="27" height="18" fill="#0D5EAF"/><rect width="27" height="2" y="2" fill="#fff"/><rect width="27" height="2" y="6" fill="#fff"/><rect width="27" height="2" y="10" fill="#fff"/><rect width="27" height="2" y="14" fill="#fff"/><rect width="10" height="10" fill="#0D5EAF"/><rect x="4" width="2" height="10" fill="#fff"/><rect y="4" width="10" height="2" fill="#fff"/></svg>`,
 BE:`<svg viewBox="0 0 3 2"><rect width="1" height="2" fill="#000"/><rect x="1" width="1" height="2" fill="#FAE042"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>`,
-PL:`<svg viewBox="0 0 8 5"><rect width="8" height="2.5" fill="#fff"/><rect y="2.5" width="8" height="2.5" fill="#DC143C"/></svg>`
+PL:`<svg viewBox="0 0 8 5"><rect width="8" height="2.5" fill="#fff"/><rect y="2.5" width="8" height="2.5" fill="#DC143C"/></svg>`,
+GI:`<svg viewBox="0 0 3 2"><rect width="3" height="1.33" fill="#fff"/><rect y="1.33" width="3" height=".67" fill="#DA020E"/></svg>`
 };
 const fg=(c,cl)=>`<span class="${cl||'fg'}">${F[c]||''}</span>`;
 
@@ -1001,6 +1100,7 @@ var SHEET_ID = '1XQmTmYeBh_Ld2jymRwqkGMGtDUTHmThwbSi8nalxx6k';
 var DEALS_GID = '1733945906';
 var DEALS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&gid=' + DEALS_GID;
 var UPDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=Updates';
+var RUMOURS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=Rumoursapproaches';
 
 // Static JSON fallback (hosted on same domain)
 var _cb = '?_t=' + new Date().getTime();
@@ -1015,7 +1115,8 @@ var COUNTRY_CODES = {
   'spain':'ES','netherlands':'NL','sweden':'SE','norway':'NO',
   'denmark':'DK','finland':'FI','ireland':'IE','ireland (republic of)':'IE',
   'luxembourg':'LU','portugal':'PT','iceland':'IS','switzerland':'CH',
-  'belgium':'BE','austria':'AT','greece':'GR','poland':'PL'
+  'belgium':'BE','austria':'AT','greece':'GR','poland':'PL',
+  'gibraltar':'GI'
 };
 function countryCode(name) {
   if (!name) return '';
@@ -1496,9 +1597,78 @@ function toggleAll() { bigOnly=false; document.getElementById('allBtn').classLis
 function go() { render(doSort(getData())); }
 
 // =====================================================================
+// RUMOURS & APPROACHES
+// =====================================================================
+async function loadRumours() {
+  var tb = document.getElementById('rumours-tb');
+  try {
+    var resp = await fetch(RUMOURS_URL);
+    if (!resp.ok) throw new Error('Status ' + resp.status);
+    var csv = await resp.text();
+    var rows = parseCSV(csv);
+    if (rows.length < 2) throw new Error('No data rows');
+    var header = rows[0];
+    function ci(s) { return header.findIndex(function(h){ return h.toLowerCase().includes(s.toLowerCase()); }); }
+    var iCountry = ci('Country');
+    var iCompany = ci('Company');
+    var iStatus  = ci('Status');
+    var iFirst   = ci('First');
+    var iLatest  = ci('Latest');
+
+    var data = [];
+    for (var i = 1; i < rows.length; i++) {
+      var r = rows[i];
+      var name = (r[iCompany] || '').replace(/\s+/g,' ').trim();
+      if (!name) continue;
+      var country = (r[iCountry] || '').replace(/\s+/g,' ').trim();
+      data.push({
+        co: country,
+        c: countryCode(country),
+        name: name,
+        status: (r[iStatus] || '').trim(),
+        first: normalizeDate((r[iFirst] || '').trim()),
+        latest: (r[iLatest] || '').trim()
+      });
+    }
+    // Sort by First Appeared, most recent first
+    data.sort(function(a,b){
+      var da = new Date(a.first || 0).getTime() || 0;
+      var db = new Date(b.first || 0).getTime() || 0;
+      return db - da;
+    });
+    renderRumours(data);
+  } catch(e) {
+    console.log('Rumours load failed:', e);
+    var sec = document.getElementById('rumours-section');
+    if (sec) sec.style.display = 'none';
+  }
+}
+
+function renderRumours(data) {
+  var tb = document.getElementById('rumours-tb');
+  if (!data.length) {
+    tb.innerHTML = '<tr><td colspan="5" style="padding:24px;text-align:center;color:var(--t3);font-size:12.5px">No rumours or approaches to display</td></tr>';
+    document.getElementById('rumours-dc').innerHTML = '';
+    return;
+  }
+  tb.innerHTML = data.map(function(d){
+    var stCls = d.status.toLowerCase().indexOf('spec') >= 0 ? 'st-spec' : 'st-conf';
+    return '<tr>'
+      + '<td><div class="cc">' + fg(d.c) + '<span class="cd">' + d.c + '</span></div></td>'
+      + '<td><span class="tn">' + d.name + '</span></td>'
+      + '<td><span class="st ' + stCls + '">' + d.status + '</span></td>'
+      + '<td class="dt">' + fd(d.first) + '</td>'
+      + '<td><span class="rum-latest">' + d.latest + '</span></td>'
+      + '</tr>';
+  }).join('');
+  document.getElementById('rumours-dc').innerHTML = '<b>' + data.length + '</b> situation' + (data.length===1?'':'s') + ' tracked';
+}
+
+// =====================================================================
 // INITIALISE
 // =====================================================================
 loadData();
+loadRumours();
 </script>
 </body>
 </html>
