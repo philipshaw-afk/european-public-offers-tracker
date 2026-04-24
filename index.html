@@ -1100,7 +1100,8 @@ var SHEET_ID = '1XQmTmYeBh_Ld2jymRwqkGMGtDUTHmThwbSi8nalxx6k';
 var DEALS_GID = '1733945906';
 var DEALS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&gid=' + DEALS_GID;
 var UPDATES_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=Updates';
-var RUMOURS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=Rumoursapproaches';
+var RUMOURS_GID = '1601107326';
+var RUMOURS_URL = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&gid=' + RUMOURS_GID;
 
 // Static JSON fallback (hosted on same domain)
 var _cb = '?_t=' + new Date().getTime();
@@ -1687,6 +1688,3 @@ function renderRumours(data) {
 // =====================================================================
 loadData();
 loadRumours();
-</script>
-</body>
-</html>
