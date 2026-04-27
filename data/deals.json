@@ -653,7 +653,7 @@
       "sector": "Oil & Gas",
       "ev_ebitda": 4.35,
       "ev_sales": 0.02,
-      "pe": 0.0
+      "pe": null
     },
     "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA": {
       "consid": "Cash",
@@ -700,9 +700,9 @@
     "VINPAI SA": {
       "consid": "Mixed",
       "sector": "Chemicals",
-      "ev_ebitda": 0.0,
+      "ev_ebitda": null,
       "ev_sales": 2.17,
-      "pe": 0.0
+      "pe": null
     },
     "IVECO GROUP NV": {
       "consid": "Mixed",
@@ -756,30 +756,30 @@
     "FALCON OIL & GAS LTD": {
       "consid": "Shares",
       "sector": "Oil & Gas",
-      "ev_ebitda": 0.0,
-      "ev_sales": 0.0,
-      "pe": 0.0
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     },
     "NURNBERGER BETEILIGUNGS AG": {
       "consid": "Cash",
       "sector": "Insurance",
-      "ev_ebitda": 0.0,
-      "ev_sales": 0.0,
-      "pe": 0.0
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     },
     "NORTHERN DATA AG": {
       "consid": "Mixed",
       "sector": "I.T.",
       "ev_ebitda": 24.24,
       "ev_sales": 4.96,
-      "pe": 0.0
+      "pe": null
     },
     "OCI NV": {
       "consid": "Shares",
       "sector": "Chemicals",
-      "ev_ebitda": 0.0,
+      "ev_ebitda": null,
       "ev_sales": 1.05,
-      "pe": 0.0
+      "pe": null
     },
     "TECNOTREE OYJ": {
       "consid": "Cash",
