@@ -628,6 +628,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "CINT GROUP AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "TRITON FUND & MANAGEMENT TEAM",
+      "v": 184.0,
+      "p": 33.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "27 April 2026",
+      "ec": "12 June 2026",
+      "reg": "No Referral",
+      "own": 34.0,
+      "irr": 0.0,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -881,6 +898,13 @@
       "sector": "Food",
       "ev_ebitda": 18.1,
       "ev_sales": 1.17,
+      "pe": null
+    },
+    "CINT GROUP AB": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
