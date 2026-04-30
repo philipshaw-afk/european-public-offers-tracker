@@ -163,7 +163,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "21-Oct-2025",
-      "ec": "30-Jun-2026",
+      "ec": "15-May-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 59.29,
@@ -440,23 +440,6 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 66.67,
-      "xb": false
-    },
-    {
-      "t": "SOLUTIONS CAPITAL MANAGEMENT SIM SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "BANCO DESIO",
-      "v": 10.3,
-      "p": 2.4,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "25-Nov-2025",
-      "ec": "24-Apr-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 80.28,
-      "acc": 95.0,
       "xb": false
     },
     {
@@ -811,13 +794,6 @@
       "sector": "Electronics",
       "ev_ebitda": null,
       "ev_sales": 1.43,
-      "pe": null
-    },
-    "SOLUTIONS CAPITAL MANAGEMENT SIM SPA": {
-      "consid": "Cash",
-      "sector": "Financial Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
       "pe": null
     },
     "MEDIOBANCA": {
