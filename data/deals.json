@@ -171,23 +171,6 @@
       "xb": false
     },
     {
-      "t": "BANCA POPOLARE DI SONDRIO SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "BPER BANCA SPA",
-      "v": 6760.802,
-      "p": 68.78,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "5-Nov-2025",
-      "ec": "30-Jun-2026",
-      "reg": "No Referral",
-      "own": 80.7,
-      "irr": 0.0,
-      "acc": 0.0,
-      "xb": false
-    },
-    {
       "t": "FNAC DARTY SA",
       "co": "France",
       "c": "FR",
@@ -717,13 +700,6 @@
       "ev_ebitda": 2.58,
       "ev_sales": 0.32,
       "pe": 15.74
-    },
-    "BANCA POPOLARE DI SONDRIO SPA": {
-      "consid": "Shares",
-      "sector": "Banks",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
     },
     "FNAC DARTY SA": {
       "consid": "Cash",
