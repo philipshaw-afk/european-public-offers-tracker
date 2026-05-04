@@ -611,6 +611,23 @@
       "irr": 0.0,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "NILORNGRUPPEN AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "TRIMCO",
+      "v": 81.0,
+      "p": 53.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "4 May 2026",
+      "ec": "10 July 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 40.2,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -855,6 +872,13 @@
     "CINT GROUP AB": {
       "consid": "Cash",
       "sector": "I.T.",
+      "ev_ebitda": 4.06,
+      "ev_sales": 1.17,
+      "pe": null
+    },
+    "NILORNGRUPPEN AB": {
+      "consid": "Cash",
+      "sector": "Support Services",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
