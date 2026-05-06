@@ -1,5 +1,11 @@
 [
   {
+    "d": "5 May 2026",
+    "c": "DE",
+    "t": "Commerzbank AG",
+    "x": "UniCredit publishes offer document"
+  },
+  {
     "d": "4 May 2026",
     "c": "DE",
     "t": "Semperit AG",
@@ -7,21 +13,9 @@
   },
   {
     "d": "4 May 2026",
-    "c": "DE",
-    "t": "Commerzbank AG",
-    "x": "Unicredit's EGM approves proposal to issue new shares in relation to funding of the offer"
-  },
-  {
-    "d": "4 May 2026",
     "c": "SE",
     "t": "Nilörngruppen AB",
     "x": "Trimco announces recommended offer"
-  },
-  {
-    "d": "30 April 2026",
-    "c": "CH",
-    "t": "APG SGA SA",
-    "x": "NZZ completes deal"
   },
   {
     "d": "30 April 2026",
@@ -34,23 +28,5 @@
     "c": "IE",
     "t": "DCC Plc",
     "x": "Board rejects £58 per share proposal from Energy Capital Partners & KKR."
-  },
-  {
-    "d": "30 April 2026",
-    "c": "NO",
-    "t": "Zalaris ASA",
-    "x": "Norvestor's offer period extended to 7 May 2026"
-  },
-  {
-    "d": "27 April 2026",
-    "c": "SE",
-    "t": "Cint Group AB",
-    "x": "Recommended SEK 1.9bn offer from management and Triton Fund"
-  },
-  {
-    "d": "27 April 2026",
-    "c": "IT",
-    "t": "Solutions Capital Management SIM SpA",
-    "x": "Deletion - offer closed, Banco Desio owns 97.67%"
   }
 ]
