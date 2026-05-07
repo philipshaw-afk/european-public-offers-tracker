@@ -358,23 +358,6 @@
       "xb": false
     },
     {
-      "t": "LEMONSOFT OYJ",
-      "co": "Finland",
-      "c": "FI",
-      "b": "RITE VENTURES",
-      "v": 85.3,
-      "p": -0.64,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "7-Mar-2026",
-      "ec": "5-Jun-2026",
-      "reg": "No Referral",
-      "own": 47.31,
-      "irr": 3.25,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "SEMPERIT AG",
       "co": "Austria",
       "c": "AT",
@@ -777,13 +760,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
-    },
-    "LEMONSOFT OYJ": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 9.54,
-      "ev_sales": 2.98,
-      "pe": 18.42
     },
     "SEMPERIT AG": {
       "consid": "Cash",
