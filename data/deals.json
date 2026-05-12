@@ -855,9 +855,9 @@
     "NILORNGRUPPEN AB": {
       "consid": "Cash",
       "sector": "Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.21,
+      "ev_sales": 0.93,
+      "pe": 18.7
     }
   }
 }
