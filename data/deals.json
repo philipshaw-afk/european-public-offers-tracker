@@ -611,6 +611,23 @@
       "irr": 40.2,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "SLEEP CYCLE AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "ALTOR",
+      "v": 46.0,
+      "p": 47.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "11 May 2026",
+      "ec": "22 June 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 62.9,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -858,6 +875,13 @@
       "ev_ebitda": 8.21,
       "ev_sales": 0.93,
       "pe": 18.7
+    },
+    "SLEEP CYCLE AB": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
