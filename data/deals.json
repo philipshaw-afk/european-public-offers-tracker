@@ -628,6 +628,23 @@
       "irr": 62.9,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "AUSTRIACARD HOLDINGS AG",
+      "co": "Austria",
+      "c": "AT",
+      "b": "DAI NIPPPON PRINTING",
+      "v": 364.0,
+      "p": 20.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "13 May 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 74.6,
+      "acc": 75.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -877,6 +894,13 @@
       "pe": 18.7
     },
     "SLEEP CYCLE AB": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "AUSTRIACARD HOLDINGS AG": {
       "consid": "Cash",
       "sector": "I.T.",
       "ev_ebitda": null,
