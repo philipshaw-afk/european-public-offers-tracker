@@ -896,9 +896,9 @@
     "SLEEP CYCLE AB": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.44,
+      "ev_sales": 1.69,
+      "pe": 11.06
     },
     "AUSTRIACARD HOLDINGS AG": {
       "consid": "Cash",
