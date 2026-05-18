@@ -645,6 +645,23 @@
       "irr": 74.6,
       "acc": 75.0,
       "xb": false
+    },
+    {
+      "t": "REWAY GROUP SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "RENAISSANCE PARTNERS",
+      "v": 400.0,
+      "p": -5.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "18 May 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 83.4,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -903,6 +920,13 @@
     "AUSTRIACARD HOLDINGS AG": {
       "consid": "Cash",
       "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "REWAY GROUP SPA": {
+      "consid": "Cash",
+      "sector": "Building & Construction",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
