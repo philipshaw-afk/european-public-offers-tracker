@@ -1,9 +1,27 @@
 [
   {
     "d": "18 May 2026",
+    "c": "GI",
+    "t": "Evoke Plc",
+    "x": "Deadline for firm offerby Bally's Intralot extended to 8 June 2026."
+  },
+  {
+    "d": "18 May 2026",
+    "c": "DE",
+    "t": "Commerzbank AG",
+    "x": "Commerzbank's Boards formally reject UniCredit's offer"
+  },
+  {
+    "d": "18 May 2026",
     "c": "IT",
     "t": "Reway Group SpA",
     "x": "Renaissance Partners agrees to acquire 83.38%, and announces mandatory offer for remainder"
+  },
+  {
+    "d": "15 May 2026",
+    "c": "PT",
+    "t": "Martifer SGPS SA",
+    "x": "Visabeira publishes offer document"
   },
   {
     "d": "14 May 2026",
@@ -16,35 +34,5 @@
     "c": "AT",
     "t": "Addiko Bank AG",
     "x": "Raiffeisen publishes offer document"
-  },
-  {
-    "d": "13 May 2026",
-    "c": "AT",
-    "t": "Addiko Bank AG",
-    "x": "Nova Ljubljanska banka publishes offer memorandum"
-  },
-  {
-    "d": "13 May 2026",
-    "c": "AT",
-    "t": "Addiko Bank AG",
-    "x": "Raiffeisen increases offer price to €26.50 per share"
-  },
-  {
-    "d": "13 May 2026",
-    "c": "AT",
-    "t": "Austriacard Holdings AG",
-    "x": "Japan's Dai Nippon Printing makes €364m offer"
-  },
-  {
-    "d": "13 May 2026",
-    "c": "DE",
-    "t": "Northern Data AG",
-    "x": "Rumble extends offer period to 1 June 2026"
-  },
-  {
-    "d": "11 May 2026",
-    "c": "SE",
-    "t": "Sleep Cycle",
-    "x": "Altor makes SEK 497m offer"
   }
 ]
