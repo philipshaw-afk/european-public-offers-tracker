@@ -634,7 +634,7 @@
       "co": "Austria",
       "c": "AT",
       "b": "DAI NIPPON PRINTING",
-      "v": 364.0,
+      "v": 386.0,
       "p": 20.0,
       "tp": "Public Offer",
       "at": "Friendly",
@@ -661,6 +661,23 @@
       "own": 0.0,
       "irr": 83.4,
       "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "KLARABO SVERIGE AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "SVEAFASTIGHETER AB",
+      "v": 186.0,
+      "p": 0.6,
+      "tp": "Merger",
+      "at": "Friendly",
+      "d": "18 May 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 58.4,
+      "acc": 66.67,
       "xb": false
     }
   ],
@@ -920,13 +937,20 @@
     "AUSTRIACARD HOLDINGS AG": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 9.7,
+      "ev_sales": 1.32,
+      "pe": 23.84
     },
     "REWAY GROUP SPA": {
       "consid": "Cash",
       "sector": "Building & Construction",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "KLARABO SVERIGE AB": {
+      "consid": "Shares",
+      "sector": "Property",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
