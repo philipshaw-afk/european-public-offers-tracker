@@ -679,6 +679,23 @@
       "irr": 58.4,
       "acc": 66.67,
       "xb": false
+    },
+    {
+      "t": "PLC SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "LIZARD RENEWABLES",
+      "v": 59.0,
+      "p": -14.0,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "21 May 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 74.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -951,6 +968,13 @@
     "KLARABO SVERIGE AB": {
       "consid": "Shares",
       "sector": "Property",
+      "ev_ebitda": 21.64,
+      "ev_sales": 10.45,
+      "pe": null
+    },
+    "PLC SPA": {
+      "consid": "Cash",
+      "sector": "Engineering",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
