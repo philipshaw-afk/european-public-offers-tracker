@@ -52,23 +52,6 @@
       "xb": false
     },
     {
-      "t": "NEXT RE SIIQ SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "CPI PROPERTY GROUP SA",
-      "v": 65.961,
-      "p": 3.45,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "2-Mar-2026",
-      "ec": "31-May-2026",
-      "reg": "No Referral",
-      "own": 79.96,
-      "irr": 0.0,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
       "t": "COMMERZBANK AG",
       "co": "Germany",
       "c": "DE",
@@ -736,13 +719,6 @@
       "ev_ebitda": 11.03,
       "ev_sales": 2.44,
       "pe": 14.47
-    },
-    "NEXT RE SIIQ SPA": {
-      "consid": "Cash",
-      "sector": "Property",
-      "ev_ebitda": 50.64,
-      "ev_sales": 12.29,
-      "pe": 36.46
     },
     "COMMERZBANK AG": {
       "consid": "Shares",
