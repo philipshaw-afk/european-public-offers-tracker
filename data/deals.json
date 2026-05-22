@@ -316,7 +316,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "9-Feb-2026",
-      "ec": "30-Jun-2026",
+      "ec": "27-Jul-2026",
       "reg": "No Referral",
       "own": 48.0,
       "irr": 0.0,
@@ -954,9 +954,9 @@
     "REWAY GROUP SPA": {
       "consid": "Cash",
       "sector": "Building & Construction",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 9.49,
+      "ev_sales": 1.92,
+      "pe": 19.16
     },
     "KLARABO SVERIGE AB": {
       "consid": "Shares",
