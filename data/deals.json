@@ -696,6 +696,23 @@
       "irr": 74.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "RECORDATI SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "CVC & GBL",
+      "v": 10726.0,
+      "p": 12.9,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "22 May 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 46.82,
+      "irr": 0.0,
+      "acc": 66.67,
+      "xb": false
     }
   ],
   "multiples": {
@@ -975,6 +992,13 @@
     "PLC SPA": {
       "consid": "Cash",
       "sector": "Engineering",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "RECORDATI SPA": {
+      "consid": "Cash",
+      "sector": "Pharmaceuticals",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
