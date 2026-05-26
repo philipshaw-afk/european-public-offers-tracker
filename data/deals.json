@@ -685,8 +685,8 @@
       "co": "Italy",
       "c": "IT",
       "b": "CVC & GBL",
-      "v": 10726.0,
-      "p": 12.9,
+      "v": 10459.0,
+      "p": 12.8,
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "22 May 2026",
@@ -975,9 +975,9 @@
     "RECORDATI SPA": {
       "consid": "Cash",
       "sector": "Pharmaceuticals",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 12.53,
+      "ev_sales": 4.75,
+      "pe": 15.76
     }
   }
 }
