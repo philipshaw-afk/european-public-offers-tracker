@@ -50,6 +50,14 @@
   {
     "co": "Germany",
     "c": "DE",
+    "name": "Delivery Hero SE",
+    "status": "Confirmed",
+    "first": "23 May 2026",
+    "latest": "Uber makes indicative proposal of €33 per share (€11.5bn value)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
     "name": "Deutsche Telekom AG",
     "status": "Speculation",
     "first": "21 April 2026",
