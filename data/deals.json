@@ -696,6 +696,23 @@
       "irr": 0.0,
       "acc": 66.67,
       "xb": false
+    },
+    {
+      "t": "CECONOMY AG",
+      "co": "Germany",
+      "c": "DE",
+      "b": "JD.COM INC",
+      "v": 2232.0,
+      "p": 22.7,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "30 July 2025",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 85.2,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -978,6 +995,13 @@
       "ev_ebitda": 12.53,
       "ev_sales": 4.75,
       "pe": 15.76
+    },
+    "CECONOMY AG": {
+      "consid": "Cash",
+      "sector": "Retailers",
+      "ev_ebitda": 3.82,
+      "ev_sales": 0.17,
+      "pe": null
     }
   }
 }
