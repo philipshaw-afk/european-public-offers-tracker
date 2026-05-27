@@ -730,6 +730,23 @@
       "irr": 83.24,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "INSTALLUX SA",
+      "co": "France",
+      "c": "FR",
+      "b": "FINANCIERE CCE",
+      "v": 140.0,
+      "p": 72.4,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "26 May 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 81.07,
+      "irr": 6.38,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1025,6 +1042,13 @@
       "sector": "I.T.",
       "ev_ebitda": 33.83,
       "ev_sales": 2.53,
+      "pe": null
+    },
+    "INSTALLUX SA": {
+      "consid": "Cash",
+      "sector": "Building Materials",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
