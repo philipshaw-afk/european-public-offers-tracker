@@ -707,11 +707,28 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "30 July 2025",
-      "ec": "31 Dec 2026",
+      "ec": "10 Nov 2026",
       "reg": "Under Review",
       "own": 0.0,
       "irr": 85.2,
       "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "PSI SOFTWARE SE",
+      "co": "Germany",
+      "c": "DE",
+      "b": "WARBURG PINCUS LLC",
+      "v": 697.0,
+      "p": 83.7,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "13 October 2025",
+      "ec": "30 June 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 83.24,
+      "acc": 50.0,
       "xb": false
     }
   ],
@@ -1001,6 +1018,13 @@
       "sector": "Retailers",
       "ev_ebitda": 3.82,
       "ev_sales": 0.17,
+      "pe": null
+    },
+    "PSI SOFTWARE SE": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": 33.83,
+      "ev_sales": 2.53,
       "pe": null
     }
   }
