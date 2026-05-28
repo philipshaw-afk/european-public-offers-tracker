@@ -1,6 +1,12 @@
 [
   {
     "d": "27 May 2026",
+    "c": "DE",
+    "t": "Northern Data AG",
+    "x": "Rumble states its offer is final and will not be increased"
+  },
+  {
+    "d": "27 May 2026",
     "c": "NL",
     "t": "AkzoNobel NV",
     "x": "Board rejects €73 per share proposal from Nippon Paint & Sherwin-Williams"
@@ -34,17 +40,5 @@
     "c": "IT",
     "t": "Recordati SpA",
     "x": "CVC & GBL make €10.7bn offer for remaining 53%"
-  },
-  {
-    "d": "21 May 2026",
-    "c": "IT",
-    "t": "PLC SpA",
-    "x": "Lizard Renewables agrees to acquire 75% and make a mandatory offer"
-  },
-  {
-    "d": "20 May 2026",
-    "c": "IT",
-    "t": "NEXT RE SIIQ SpA",
-    "x": "Result of CPI's offer announced - 98.78% control"
   }
 ]
