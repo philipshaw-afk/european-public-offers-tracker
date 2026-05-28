@@ -749,20 +749,20 @@
       "xb": false
     },
     {
-      "t": "KLOCKNER & CO SE",
-      "co": "Germany",
-      "c": "DE",
-      "b": "WORTHINGTON STEEL INC",
-      "v": 1109.0,
-      "p": 81.2,
-      "tp": "Public Offer",
+      "t": "ERCROS SA",
+      "co": "Spain",
+      "c": "ES",
+      "b": "BONDALTI CAPITAL SA",
+      "v": 320.0,
+      "p": 3.0,
+      "tp": "Minority Bid",
       "at": "Friendly",
-      "d": "15 Jan 2026",
-      "ec": "3 June 2026",
+      "d": "27 May 2026",
+      "ec": "",
       "reg": "No Referral",
-      "own": 0.0,
-      "irr": 61.87,
-      "acc": 57.5,
+      "own": 77.23,
+      "irr": 0.0,
+      "acc": 0,
       "xb": false
     }
   ],
@@ -1068,11 +1068,11 @@
       "ev_sales": null,
       "pe": null
     },
-    "KLOCKNER & CO SE": {
+    "ERCROS SA": {
       "consid": "Cash",
-      "sector": "Distributors",
-      "ev_ebitda": 11.72,
-      "ev_sales": 0.33,
+      "sector": "Chemicals",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
