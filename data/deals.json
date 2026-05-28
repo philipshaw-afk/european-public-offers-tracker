@@ -299,7 +299,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "27-Jan-2026",
-      "ec": "3-Jun-2026",
+      "ec": "26-Jun-2026",
       "reg": "No Referral",
       "own": 43.6,
       "irr": 6.8,
@@ -747,6 +747,23 @@
       "irr": 6.38,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "KLOCKNER & CO SE",
+      "co": "Germany",
+      "c": "DE",
+      "b": "WORTHINGTON STEEL INC",
+      "v": 1109.0,
+      "p": 81.2,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "15 Jan 2026",
+      "ec": "3 June 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 61.87,
+      "acc": 65.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1049,6 +1066,13 @@
       "sector": "Building Materials",
       "ev_ebitda": null,
       "ev_sales": null,
+      "pe": null
+    },
+    "KLOCKNER & CO SE": {
+      "consid": "Cash",
+      "sector": "Distributors",
+      "ev_ebitda": 11.72,
+      "ev_sales": 0.33,
       "pe": null
     }
   }
