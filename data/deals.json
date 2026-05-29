@@ -764,6 +764,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "BRAGA MORO SISTEMI DI ENERGIA SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "STRATEGIC POWER HOLDING SRL",
+      "v": 15.0,
+      "p": 89.8,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "28 May 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 50.23,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1071,6 +1088,13 @@
     "ERCROS SA": {
       "consid": "Cash",
       "sector": "Chemicals",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "BRAGA MORO SISTEMI DI ENERGIA SPA": {
+      "consid": "Cash",
+      "sector": "Electronics",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
