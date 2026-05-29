@@ -781,6 +781,23 @@
       "irr": 50.23,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "ENERGY SOLAR TECH",
+      "co": "Spain",
+      "c": "ES",
+      "b": "GREENING GROUP GLOBAL SA",
+      "v": 85.0,
+      "p": 41.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "28 May 2026",
+      "ec": "31 August 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1095,6 +1112,13 @@
     "BRAGA MORO SISTEMI DI ENERGIA SPA": {
       "consid": "Cash",
       "sector": "Electronics",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "ENERGY SOLAR TECH": {
+      "consid": "Shares",
+      "sector": "Electricity",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
