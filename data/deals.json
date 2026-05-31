@@ -86,23 +86,6 @@
       "xb": false
     },
     {
-      "t": "ZALARIS ASA",
-      "co": "Norway",
-      "c": "NO",
-      "b": "NORVESTOR ADVISORY AS",
-      "v": 204.342,
-      "p": 40.06,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "13-Mar-2026",
-      "ec": "18-May-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 30.9,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
       "t": "VINPAI SA",
       "co": "France",
       "c": "FR",
@@ -134,23 +117,6 @@
       "own": 0.0,
       "irr": 28.45,
       "acc": 80.0,
-      "xb": false
-    },
-    {
-      "t": "DIGITAL VALUE SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "OEP CAPITAL ADVISORS LP",
-      "v": 294.284,
-      "p": -2.36,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "21-Oct-2025",
-      "ec": "15-May-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 59.29,
-      "acc": 0,
       "xb": false
     },
     {
@@ -219,40 +185,6 @@
       "own": 85.5,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "FALCON OIL & GAS LTD",
-      "co": "Ireland (Republic of)",
-      "c": "IE",
-      "b": "TAMBORAN RESOURCES CORPORATION",
-      "v": 148.372,
-      "p": 17.35,
-      "tp": "Scheme",
-      "at": "Friendly",
-      "d": "30-Sep-2025",
-      "ec": "30-Jun-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 0.65,
-      "acc": 66.67,
-      "xb": false
-    },
-    {
-      "t": "NURNBERGER BETEILIGUNGS AG",
-      "co": "Germany",
-      "c": "DE",
-      "b": "VIENNA INSURANCE GROUP AG",
-      "v": 1382.4,
-      "p": 154.24,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "16-Oct-2025",
-      "ec": "30-Sep-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 98.81,
-      "acc": 50.0,
       "xb": false
     },
     {
@@ -668,7 +600,7 @@
       "co": "Italy",
       "c": "IT",
       "b": "LIZARD RENEWABLES",
-      "v": 59.0,
+      "v": 80.0,
       "p": -14.0,
       "tp": "Mandatory",
       "at": "Friendly",
@@ -836,13 +768,6 @@
       "ev_sales": 10.98,
       "pe": 13.58
     },
-    "ZALARIS ASA": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 8.09,
-      "ev_sales": 1.72,
-      "pe": 38.21
-    },
     "VINPAI SA": {
       "consid": "Mixed",
       "sector": "Chemicals",
@@ -856,13 +781,6 @@
       "ev_ebitda": 5.49,
       "ev_sales": 0.58,
       "pe": 14.44
-    },
-    "DIGITAL VALUE SPA": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 2.58,
-      "ev_sales": 0.32,
-      "pe": 15.74
     },
     "FNAC DARTY SA": {
       "consid": "Cash",
@@ -891,20 +809,6 @@
       "ev_ebitda": 5.37,
       "ev_sales": 0.81,
       "pe": 8.75
-    },
-    "FALCON OIL & GAS LTD": {
-      "consid": "Shares",
-      "sector": "Oil & Gas",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
-    },
-    "NURNBERGER BETEILIGUNGS AG": {
-      "consid": "Cash",
-      "sector": "Insurance",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
     },
     "NORTHERN DATA AG": {
       "consid": "Mixed",
