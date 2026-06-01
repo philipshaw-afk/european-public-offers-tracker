@@ -416,7 +416,7 @@
       "v": 511.0,
       "p": 7.7,
       "tp": "Public Offer",
-      "at": "Neutral",
+      "at": "Friendly",
       "d": "8 April 2026",
       "ec": "31 December 2026",
       "reg": "No Referral",
@@ -430,8 +430,8 @@
       "co": "Austria",
       "c": "AT",
       "b": "NLB",
-      "v": 565.0,
-      "p": 16.5,
+      "v": 646.0,
+      "p": 26.4,
       "tp": "Public Offer",
       "at": "Neutral",
       "d": "9 April 2026",
@@ -906,7 +906,7 @@
       "sector": "Banking",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": 12.74
+      "pe": null
     },
     "POULAILLON SA": {
       "consid": "Cash",
