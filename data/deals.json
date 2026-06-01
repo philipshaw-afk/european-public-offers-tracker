@@ -730,6 +730,40 @@
       "irr": 0,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "DATALOGIC SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "HYDRA INVESTIMENTI",
+      "v": 352.0,
+      "p": 36.0,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "29 May 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 74.92,
+      "irr": 0.0,
+      "acc": 90.0,
+      "xb": false
+    },
+    {
+      "t": "AIXIA GROUP AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "WHITE PEARL TECHNOLOGY GROUP AB",
+      "v": 16.0,
+      "p": 31.5,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "1 June 2026",
+      "ec": "10 August 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 56.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1023,6 +1057,20 @@
     "ENERGY SOLAR TECH": {
       "consid": "Shares",
       "sector": "Electricity",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "DATALOGIC SPA": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "AIXIA GROUP AB": {
+      "consid": "Mixed",
+      "sector": "I.T.",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
