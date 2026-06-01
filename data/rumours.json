@@ -5,7 +5,7 @@
     "name": "Universal Music Group NV",
     "status": "Confirmed",
     "first": "7 April 2026",
-    "latest": "Pershing Square makes non-binding unsolicited cash and share proposal at €30.40 per share. Rejected by Bollore (which held 18.5%)."
+    "latest": "Pershing Square makes non-binding unsolicited cash and share proposal at €30.40 per share. Rejected by Board on 29 May"
   },
   {
     "co": "Austria",
@@ -102,5 +102,13 @@
     "status": "Confirmed",
     "first": "10 April 2026",
     "latest": "Strategic review ongoing, after takeover interest from certain investors. EQT AB, IDG Capital and Altaris rumoured to be shortlisted."
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Delivery Hero SE",
+    "status": "Speculation",
+    "first": "1 June 2026",
+    "latest": "Prosus considering offer after Uber approach (FT)"
   }
 ]
