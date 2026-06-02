@@ -64,7 +64,7 @@
       "ec": "30-Jun-2027",
       "reg": "No Referral",
       "own": 29.99,
-      "irr": 0.0,
+      "irr": 7.58,
       "acc": 0,
       "xb": false
     },
@@ -1036,23 +1036,23 @@
     "INSTALLUX SA": {
       "consid": "Cash",
       "sector": "Building Materials",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 5.52,
+      "ev_sales": 0.67,
+      "pe": 18.29
     },
     "ERCROS SA": {
       "consid": "Cash",
       "sector": "Chemicals",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 49.25,
+      "ev_sales": 0.71,
       "pe": null
     },
     "BRAGA MORO SISTEMI DI ENERGIA SPA": {
       "consid": "Cash",
       "sector": "Electronics",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 5.68,
+      "ev_sales": 1.08,
+      "pe": 42.54
     },
     "ENERGY SOLAR TECH": {
       "consid": "Shares",
