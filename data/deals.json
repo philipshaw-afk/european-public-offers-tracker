@@ -764,6 +764,23 @@
       "irr": 56.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "FORMPIPE SOFTWARE AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "TABELLAE BIDCO",
+      "v": 81.0,
+      "p": 53.8,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "4 June 2026",
+      "ec": "22 July 2026",
+      "reg": "No Referral",
+      "own": 29.3,
+      "irr": 25.0,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1070,6 +1087,13 @@
     },
     "AIXIA GROUP AB": {
       "consid": "Mixed",
+      "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "FORMPIPE SOFTWARE AB": {
+      "consid": "Cash",
       "sector": "I.T.",
       "ev_ebitda": null,
       "ev_sales": null,
