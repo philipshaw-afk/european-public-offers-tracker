@@ -1074,9 +1074,9 @@
     "ENERGY SOLAR TECH": {
       "consid": "Shares",
       "sector": "Electricity",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 11.28,
+      "ev_sales": 1.19,
+      "pe": 39.25
     },
     "DATALOGIC SPA": {
       "consid": "Cash",
