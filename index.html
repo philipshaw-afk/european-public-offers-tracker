@@ -1252,8 +1252,8 @@ async function loadFromSheets() {
     var expComp = normalizeDate(getVal(row, 'Expected completion'));
     var reg = normalizeReg(getVal(row, 'Regulatory'));
     var own = parseFloat(getVal(row, 'already owned').replace(/[^0-9.\-]/g,'')) || 0;
+    // "% undertakings/acceptances" is an ADDITIONAL amount stacked on top of "% already owned"
     var irr = parseFloat(getVal(row, 'undertakings').replace(/[^0-9.\-]/g,'')) || 0;
-    if (!irr) irr = parseFloat(getVal(row, 'acceptances').replace(/[^0-9.\-]/g,'')) || 0;
     var acc = parseFloat(getVal(row, 'Acceptance condition').replace(/[^0-9.\-]/g,'')) || 0;
 
     var xb = false;
@@ -1419,12 +1419,12 @@ function render(data) {
     var newBadge = isNew(d.d) ? '<span class="new-tag">New</span>' : '';
     var days = Math.floor((new Date()-new Date(d.d))/864e5);
     var daysCls = days>180 ? 'days-r' : days>90 ? 'days-a' : 'days-g';
-    var total = d.irr > d.own ? d.irr : d.own;
-    var ownPct = d.acc > 0 ? Math.min(100, Math.round(d.own/d.acc*100)) : 0;
-    var irrPct = d.acc > 0 ? Math.min(100, Math.round(Math.max(0, d.irr-d.own)/d.acc*100)) : 0;
+    var total = d.own + d.irr;
+    var ownPct = d.acc > 0 ? Math.min(100, d.own/d.acc*100) : 0;
+    var irrPct = d.acc > 0 ? Math.min(100 - ownPct, d.irr/d.acc*100) : 0;
     var parts = [];
     if (d.own > 0) parts.push(d.own + '% held');
-    if (d.irr > d.own) parts.push((d.irr - d.own).toFixed(1) + '% irrev');
+    if (d.irr > 0) parts.push(d.irr.toFixed(1) + '% irrev/acc');
     var regCls = {'Cleared':'cleared','Under Review':'review','Conditions':'cond','No Referral':'none'}[d.reg] || 'none';
 
     return '<tr style="animation:fu .25s ease-out ' + (.012*i) + 's both">'
@@ -1439,7 +1439,7 @@ function render(data) {
       + '<td class="dt">' + fd(d.ec) + '</td>'
       + '<td><span class="days ' + daysCls + '">' + days + '</span></td>'
       + '<td><span class="reg reg-' + regCls + '">' + d.reg + '</span></td>'
-      + '<td class="own-cell">' + (d.acc > 0 ? '<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:' + ownPct + '%"></div><div class="own-fill own-irrev" style="width:' + irrPct + '%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">' + total + '%</span></div><div class="tip">' + (parts.length ? parts.join(' + ') : total+'% control') + ' of ' + d.acc + '% threshold</div>' : '<div style="font-size:10px;font-weight:600;color:var(--t3)">No acceptance condition</div>' + (parts.length ? '<div class="tip">' + parts.join(' + ') + '</div>' : '')) + '</td>'
+      + '<td class="own-cell">' + (d.acc > 0 ? '<div style="display:flex;align-items:center;gap:5px"><div class="own-bar"><div class="own-fill own-owned" style="width:' + ownPct + '%"></div><div class="own-fill own-irrev" style="width:' + irrPct + '%"></div></div><span style="font-size:10px;font-weight:700;color:var(--t)">' + (+total.toFixed(1)) + '%</span></div><div class="tip">' + (parts.length ? parts.join(' + ') : (+total.toFixed(1))+'% control') + ' of ' + d.acc + '% threshold</div>' : '<div style="font-size:10px;font-weight:600;color:var(--t3)">No acceptance condition</div>' + (parts.length ? '<div class="tip">' + parts.join(' + ') + ' (' + (+total.toFixed(1)) + '% control)</div>' : '')) + '</td>'
       + '</tr>';
   }).join('');
   document.getElementById('dc').innerHTML = 'Showing <b>' + data.length + '</b> of ' + deals.length;
