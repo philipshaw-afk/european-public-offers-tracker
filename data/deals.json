@@ -798,6 +798,23 @@
       "irr": 29.07,
       "acc": 75.0,
       "xb": false
+    },
+    {
+      "t": "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA",
+      "co": "france",
+      "c": "FR",
+      "b": "DOODLE",
+      "v": 62.0,
+      "p": 37.93,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "5 June 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 78.84,
+      "irr": 8.89,
+      "acc": 0.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1119,6 +1136,13 @@
     "EVOKE PLC": {
       "consid": "Shares",
       "sector": "Leisure & Hotels",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA": {
+      "consid": "Cash",
+      "sector": "Electronics",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
