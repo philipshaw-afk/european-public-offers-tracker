@@ -431,7 +431,7 @@
       "c": "AT",
       "b": "NLB",
       "v": 646.0,
-      "p": 26.4,
+      "p": 36.18,
       "tp": "Public Offer",
       "at": "Neutral",
       "d": "9 April 2026",
@@ -486,7 +486,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "21 April 2026",
-      "ec": "3-Jul-2026",
+      "ec": "3 July 2026",
       "reg": "No Referral",
       "own": 49.12,
       "irr": 0.0,
@@ -669,7 +669,7 @@
       "c": "FR",
       "b": "FINANCIERE CCE",
       "v": 140.0,
-      "p": 72.4,
+      "p": 74.47,
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "26 May 2026",
@@ -723,7 +723,7 @@
       "p": 41.0,
       "tp": "Public Offer",
       "at": "Friendly",
-      "d": "28 May 2026",
+      "d": "29 May 2026",
       "ec": "31 August 2026",
       "reg": "No Referral",
       "own": 0.0,
@@ -801,7 +801,7 @@
     },
     {
       "t": "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA",
-      "co": "france",
+      "co": "France",
       "c": "FR",
       "b": "DOODLE",
       "v": 62.0,
@@ -809,7 +809,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "5 June 2026",
-      "ec": "",
+      "ec": "30 Sep 2026",
       "reg": "No Referral",
       "own": 78.84,
       "irr": 8.89,
@@ -1115,30 +1115,30 @@
     "DATALOGIC SPA": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.08,
+      "ev_sales": 0.66,
+      "pe": 36.35
     },
     "AIXIA GROUP AB": {
       "consid": "Mixed",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 44.97,
+      "ev_sales": 0.88,
       "pe": null
     },
     "FORMPIPE SOFTWARE AB": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 18.59,
+      "ev_sales": 3.46,
       "pe": null
     },
     "EVOKE PLC": {
       "consid": "Shares",
       "sector": "Leisure & Hotels",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 5.7,
+      "ev_sales": 1.14,
+      "pe": 35.23
     },
     "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA": {
       "consid": "Cash",
