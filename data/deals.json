@@ -828,7 +828,7 @@
       "d": "8 June 2026",
       "ec": "31 December 2026",
       "reg": "No Referral",
-      "own": 0,
+      "own": 0.07,
       "irr": 66.67,
       "acc": 0.0,
       "xb": false
@@ -1169,7 +1169,7 @@
       "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": null
+      "pe": 8.04
     }
   }
 }
