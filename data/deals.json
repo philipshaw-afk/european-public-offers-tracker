@@ -815,6 +815,23 @@
       "irr": 8.89,
       "acc": 0.0,
       "xb": false
+    },
+    {
+      "t": "BANCA MONTE DEI PASCHI DI SIENA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "INTESA SANPAOL",
+      "v": 30600.0,
+      "p": 12.5,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "8 June 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 0,
+      "irr": 0,
+      "acc": 0.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1143,6 +1160,13 @@
     "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA": {
       "consid": "Cash",
       "sector": "Electronics",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "BANCA MONTE DEI PASCHI DI SIENA": {
+      "consid": "Mixed",
+      "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
