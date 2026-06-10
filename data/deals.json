@@ -866,6 +866,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "HOTEI PROPERTIES GROUP, SOCIMI SA",
+      "co": "Spain",
+      "c": "ES",
+      "b": "SANCUS CAPITAL PARTNERS",
+      "v": 371.0,
+      "p": 15.94,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "9 June 2026",
+      "ec": "16 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 53.67,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1215,6 +1232,13 @@
     "KONTRON AG": {
       "consid": "Cash",
       "sector": "Electronics",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "HOTEI PROPERTIES GROUP, SOCIMI SA": {
+      "consid": "Cash",
+      "sector": "Leisure & Hotels",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
