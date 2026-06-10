@@ -412,6 +412,7 @@ tbody tr:last-child td { border-bottom:0; }
   50%{ box-shadow: 0 0 10px rgba(217,45,32,0.15); }
 }
 .tp-wk { background:rgba(251,191,36,0.08); color:var(--am); margin-left:3px; border-color:rgba(251,191,36,0.12); }
+.tp-unsol { background:rgba(234,88,12,0.08); color:#C2410C; margin-left:3px; border-color:rgba(234,88,12,0.2); }
 
 /* dates */
 .dt { white-space:nowrap; color:var(--t3); font-size:12px; }
@@ -1415,7 +1416,7 @@ function doSort(data) {
 function render(data) {
   var tb = document.getElementById('tb');
   tb.innerHTML = data.map(function(d, i){
-    var atBadge = d.at==='Hostile' ? '<span class="tp tp-hostile">Hostile</span>' : d.at==='White Knight' ? '<span class="tp tp-wk">White Knight</span>' : d.at==='Neutral' ? '<span class="tp tp-wk">Neutral</span>' : '';
+    var atBadge = d.at==='Hostile' ? '<span class="tp tp-hostile">Hostile</span>' : /unsolicit/i.test(d.at) ? '<span class="tp tp-unsol">Unsolicited</span>' : d.at==='White Knight' ? '<span class="tp tp-wk">White Knight</span>' : d.at==='Neutral' ? '<span class="tp tp-wk">Neutral</span>' : '';
     var newBadge = isNew(d.d) ? '<span class="new-tag">New</span>' : '';
     var days = Math.floor((new Date()-new Date(d.d))/864e5);
     var daysCls = days>180 ? 'days-r' : days>90 ? 'days-a' : 'days-g';
@@ -1453,11 +1454,13 @@ function updateKpis(data) {
   var ap = wp.length ? wp.reduce(function(s,d){ return s+d.p; }, 0) / wp.length : 0;
   var nc = []; data.forEach(function(d){ if(nc.indexOf(d.co)===-1) nc.push(d.co); });
   var hostile = data.filter(function(d){ return d.at === 'Hostile'; }).length;
+  var unsol = data.filter(function(d){ return /unsolicit/i.test(d.at); }).length;
   document.getElementById('kpis').innerHTML = ''
     + '<div class="kpi"><div class="kv">' + data.length + '</div><div class="kl">Live Deals</div></div>'
     + '<div class="kpi"><div class="kv">\u20AC' + (tv/1000).toFixed(1) + '<span class="u">bn</span></div><div class="kl">Total Value</div></div>'
     + '<div class="kpi"><div class="kv">' + ap.toFixed(1) + '<span class="u">%</span></div><div class="kl">Avg Premium</div></div>'
     + '<div class="kpi"><div class="kv" style="color:var(--hr)">' + hostile + '</div><div class="kl">Hostile</div></div>'
+    + '<div class="kpi"><div class="kv" style="color:#C2410C">' + unsol + '</div><div class="kl">Unsolicited</div></div>'
     + '<div class="kpi"><div class="kv">' + nc.length + '</div><div class="kl">Countries</div></div>';
 }
 
