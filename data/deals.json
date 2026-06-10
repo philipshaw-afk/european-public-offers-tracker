@@ -829,8 +829,42 @@
       "ec": "31 December 2026",
       "reg": "No Referral",
       "own": 0.07,
-      "irr": 66.67,
-      "acc": 0.0,
+      "irr": 0.0,
+      "acc": 66.67,
+      "xb": false
+    },
+    {
+      "t": "HUGO BOSS AG",
+      "co": "Germany",
+      "c": "DE",
+      "b": "FRASERS GROUP PLC",
+      "v": 2694.0,
+      "p": 4.3,
+      "tp": "Public Offer",
+      "at": "Unsolicited",
+      "d": "10 June 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 26.06,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "KONTRON AG",
+      "co": "Austria",
+      "c": "AT",
+      "b": "ENNOCONN CORPORATION",
+      "v": 1470.0,
+      "p": 2.4,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "10 June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 30.0,
+      "irr": 0.0,
+      "acc": 0,
       "xb": false
     }
   ],
@@ -1170,6 +1204,20 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 8.04
+    },
+    "HUGO BOSS AG": {
+      "consid": "Cash",
+      "sector": "Textiles & Apparel",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "KONTRON AG": {
+      "consid": "Cash",
+      "sector": "Electronics",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
