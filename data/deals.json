@@ -1225,9 +1225,9 @@
     "HUGO BOSS AG": {
       "consid": "Cash",
       "sector": "Textiles & Apparel",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 4.68,
+      "ev_sales": 0.84,
+      "pe": 11.58
     },
     "KONTRON AG": {
       "consid": "Cash",
