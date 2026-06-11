@@ -421,7 +421,7 @@
       "ec": "31 December 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 0.0,
+      "irr": 50.42,
       "acc": 75.0,
       "xb": false
     },
@@ -1059,7 +1059,7 @@
       "sector": "Banking",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": null
+      "pe": 14.72
     },
     "POULAILLON SA": {
       "consid": "Cash",
