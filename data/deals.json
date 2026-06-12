@@ -727,7 +727,7 @@
       "ec": "31 August 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 0,
+      "irr": 0.0,
       "acc": 50.0,
       "xb": false
     },
