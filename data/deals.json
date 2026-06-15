@@ -883,6 +883,23 @@
       "irr": 53.67,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "MATVAREEXPRESSEN AS",
+      "co": "Norway",
+      "c": "NO",
+      "b": "COOP NORGE",
+      "v": 29.0,
+      "p": 28.7,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "15 June 2026",
+      "ec": "29 June 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 53.26,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1211,9 +1228,9 @@
     "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA": {
       "consid": "Cash",
       "sector": "Electronics",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.88,
+      "ev_sales": 0.82,
+      "pe": 9.06
     },
     "BANCA MONTE DEI PASCHI DI SIENA": {
       "consid": "Mixed",
@@ -1239,6 +1256,13 @@
     "HOTEI PROPERTIES GROUP, SOCIMI SA": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "MATVAREEXPRESSEN AS": {
+      "consid": "Cash",
+      "sector": "Retailers",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
