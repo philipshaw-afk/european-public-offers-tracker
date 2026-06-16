@@ -900,6 +900,23 @@
       "irr": 53.26,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "DECEUNINCK NV",
+      "co": "Belgium",
+      "c": "BE",
+      "b": "FRANCIS VAN EECKHOUT",
+      "v": 295.0,
+      "p": -4.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "9 June 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 30.0,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1263,6 +1280,13 @@
     "MATVAREEXPRESSEN AS": {
       "consid": "Cash",
       "sector": "Retailers",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "DECEUNINCK NV": {
+      "consid": "Cash",
+      "sector": "Building Materials",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
