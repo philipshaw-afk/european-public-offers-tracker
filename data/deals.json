@@ -917,6 +917,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "SPOTLIGHT GROUP AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "KRIPTOWN SAS",
+      "v": 18.0,
+      "p": 94.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "16 June 2026",
+      "ec": "14 October 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 69.0,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1287,6 +1304,13 @@
     "DECEUNINCK NV": {
       "consid": "Cash",
       "sector": "Building Materials",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "SPOTLIGHT GROUP AB": {
+      "consid": "Cash",
+      "sector": "Financial Services",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
