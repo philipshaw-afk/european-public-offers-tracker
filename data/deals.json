@@ -384,7 +384,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "7 April 2026",
-      "ec": "30 June 2026",
+      "ec": "26 June 2026",
       "reg": "Under Review",
       "own": 0.0,
       "irr": 69.61,
@@ -855,7 +855,7 @@
       "co": "Austria",
       "c": "AT",
       "b": "ENNOCONN CORPORATION",
-      "v": 1470.0,
+      "v": 1485.0,
       "p": 2.4,
       "tp": "Mandatory",
       "at": "Friendly",
@@ -1266,9 +1266,9 @@
     "KONTRON AG": {
       "consid": "Cash",
       "sector": "Electronics",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 5.44,
+      "ev_sales": 0.82,
+      "pe": 11.0
     },
     "HOTEI PROPERTIES GROUP, SOCIMI SA": {
       "consid": "Cash",
