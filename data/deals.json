@@ -871,7 +871,7 @@
       "t": "HOTEI PROPERTIES GROUP, SOCIMI SA",
       "co": "Spain",
       "c": "ES",
-      "b": "SANCUS CAPITAL PARTNERS",
+      "b": "VOUCHING SL",
       "v": 371.0,
       "p": 15.94,
       "tp": "MBO/MBI",
@@ -911,7 +911,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "9 June 2026",
-      "ec": "",
+      "ec": "31 August 2026",
       "reg": "No Referral",
       "own": 30.0,
       "irr": 0.0,
@@ -933,6 +933,23 @@
       "own": 0.0,
       "irr": 69.0,
       "acc": 90.0,
+      "xb": false
+    },
+    {
+      "t": "CITYCON OYJ",
+      "co": "Finland",
+      "c": "FI",
+      "b": "G-CITY LTD",
+      "v": 532.0,
+      "p": 7.0,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "17June 2026",
+      "ec": "3 August 2026",
+      "reg": "No Referral",
+      "own": 86.47,
+      "irr": 0,
+      "acc": 0,
       "xb": false
     }
   ],
@@ -1297,20 +1314,27 @@
     "MATVAREEXPRESSEN AS": {
       "consid": "Cash",
       "sector": "Retailers",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 13.45,
+      "ev_sales": 0.76,
+      "pe": 99.78
     },
     "DECEUNINCK NV": {
       "consid": "Cash",
       "sector": "Building Materials",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 3.82,
+      "ev_sales": 0.54,
+      "pe": 12.14
     },
     "SPOTLIGHT GROUP AB": {
       "consid": "Cash",
       "sector": "Financial Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "CITYCON OYJ": {
+      "consid": "Cash",
+      "sector": "Property",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
