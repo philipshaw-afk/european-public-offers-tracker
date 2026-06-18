@@ -188,23 +188,6 @@
       "xb": false
     },
     {
-      "t": "NORTHERN DATA AG",
-      "co": "Germany",
-      "c": "DE",
-      "b": "RUMBLE INC",
-      "v": 662.51,
-      "p": -55.17,
-      "tp": "Divestiture",
-      "at": "Friendly",
-      "d": "10-Nov-2025",
-      "ec": "30-Jun-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 72.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "OCI NV",
       "co": "Netherlands",
       "c": "NL",
@@ -1047,13 +1030,6 @@
       "ev_ebitda": 5.37,
       "ev_sales": 0.81,
       "pe": 8.75
-    },
-    "NORTHERN DATA AG": {
-      "consid": "Mixed",
-      "sector": "I.T.",
-      "ev_ebitda": 24.24,
-      "ev_sales": 4.96,
-      "pe": null
     },
     "OCI NV": {
       "consid": "Shares",
