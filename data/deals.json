@@ -951,6 +951,23 @@
       "irr": 0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "LUDWIG BECK AM RATHAUSECK",
+      "co": "Germany",
+      "c": "DE",
+      "b": "BAYERISCHE GEWERBRAU AG",
+      "v": 115.0,
+      "p": null,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "17June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 78.17,
+      "irr": 0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1335,6 +1352,13 @@
     "CITYCON OYJ": {
       "consid": "Cash",
       "sector": "Property",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "LUDWIG BECK AM RATHAUSECK": {
+      "consid": "Cash",
+      "sector": "Retailers",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
