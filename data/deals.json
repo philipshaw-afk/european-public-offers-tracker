@@ -931,7 +931,7 @@
       "ec": "3 August 2026",
       "reg": "No Referral",
       "own": 86.47,
-      "irr": 0,
+      "irr": 0.0,
       "acc": 0,
       "xb": false
     },
@@ -948,7 +948,24 @@
       "ec": "30 Sep 2026",
       "reg": "No Referral",
       "own": 78.17,
-      "irr": 0,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "ZALARIS ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "NORVESTOR ADVISORY AS",
+      "v": 208.0,
+      "p": 40.06,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "15 June 2026",
+      "ec": "14 July 2026",
+      "reg": "No Referral",
+      "own": 86.41,
+      "irr": 0.0,
       "acc": 0,
       "xb": false
     }
@@ -1300,9 +1317,9 @@
     "HOTEI PROPERTIES GROUP, SOCIMI SA": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 22.08,
+      "ev_sales": 18.63,
+      "pe": 16.31
     },
     "MATVAREEXPRESSEN AS": {
       "consid": "Cash",
@@ -1338,6 +1355,13 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
+    },
+    "ZALARIS ASA": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": 8.09,
+      "ev_sales": 1.72,
+      "pe": 38.21
     }
   }
 }
