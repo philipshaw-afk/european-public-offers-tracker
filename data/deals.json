@@ -256,23 +256,6 @@
       "xb": false
     },
     {
-      "t": "SEMPERIT AG",
-      "co": "Austria",
-      "c": "AT",
-      "b": "B&C HOLDING",
-      "v": 308.6,
-      "p": 30.66,
-      "tp": "Minority Bid",
-      "at": "Neutral",
-      "d": "18-Mar-2026",
-      "ec": "12-Jun-2026",
-      "reg": "No Referral",
-      "own": 58.48,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "PROCIMMO GROUP SA",
       "co": "Switzerland",
       "c": "CH",
@@ -1074,13 +1057,6 @@
       "sector": "Financial Services",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": null
-    },
-    "SEMPERIT AG": {
-      "consid": "Cash",
-      "sector": "Engineering",
-      "ev_ebitda": 6.12,
-      "ev_sales": 0.73,
       "pe": null
     },
     "PROCIMMO GROUP SA": {
