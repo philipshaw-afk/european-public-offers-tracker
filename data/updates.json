@@ -44,6 +44,12 @@
   {
     "d": "15 June 2026",
     "c": "NO",
+    "t": "Zalaris ASA",
+    "x": "Kona BidCo makes mandatory offer for remaining 13.59%"
+  },
+  {
+    "d": "15 June 2026",
+    "c": "NO",
     "t": "MatvareExpressen AS",
     "x": "Coop Norge announces NOK 350m offer"
   },
@@ -52,29 +58,5 @@
     "c": "IT",
     "t": "The Italian Sea Group",
     "x": "Ferretti considering offer for The Italian Sea Group (Bloomberg)"
-  },
-  {
-    "d": "10 June 2026",
-    "c": "DE",
-    "t": "Commerzbank AG",
-    "x": "Commerzbank raises further concerns over unusual tender behaviour"
-  },
-  {
-    "d": "10 June 2026",
-    "c": "DE",
-    "t": "Hugo Boss AG",
-    "x": "Frasers Group announces unsolicited offer for remaining 73.94%, no minimum acceptance threshold"
-  },
-  {
-    "d": "10 June 2026",
-    "c": "IE",
-    "t": "DCC plc",
-    "x": "Indicative proposal increased to £65.25 per share, which Board is \"minded to recommend\""
-  },
-  {
-    "d": "10 June 2026",
-    "c": "AT",
-    "t": "Kontron AG",
-    "x": "Taiwan's Ennoconn crosses 30% threshold and makes mandatory offer"
   }
 ]
