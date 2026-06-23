@@ -951,6 +951,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "EAGLE FOOTBALL GROUP",
+      "co": "France",
+      "c": "FR",
+      "b": "MICHELE KANG",
+      "v": 30.0,
+      "p": null,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "23 June 2026",
+      "ec": "31 October 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 87.78,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1338,6 +1355,13 @@
       "ev_ebitda": 8.09,
       "ev_sales": 1.72,
       "pe": 38.21
+    },
+    "EAGLE FOOTBALL GROUP": {
+      "consid": "Cash",
+      "sector": "Leisure & Hotels",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
