@@ -968,6 +968,40 @@
       "irr": 87.78,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "ELMERA GROUP ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "AUDAX RENOVABLES SA",
+      "v": 402.0,
+      "p": 39.4,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "25 June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 39.2,
+      "acc": 66.7,
+      "xb": false
+    },
+    {
+      "t": "OCI NV",
+      "co": "Netherlands",
+      "c": "NL",
+      "b": "NNS HOLDING",
+      "v": 867.0,
+      "p": 12.32,
+      "tp": "Minority Bid",
+      "at": "Unsolicited",
+      "d": "24 June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 58.28,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1049,10 +1083,10 @@
       "pe": 8.75
     },
     "OCI NV": {
-      "consid": "Shares",
+      "consid": "Cash",
       "sector": "Chemicals",
       "ev_ebitda": null,
-      "ev_sales": 1.05,
+      "ev_sales": null,
       "pe": null
     },
     "TECNOTREE OYJ": {
@@ -1359,6 +1393,13 @@
     "EAGLE FOOTBALL GROUP": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "ELMERA GROUP ASA": {
+      "consid": "Cash",
+      "sector": "Electricity",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
