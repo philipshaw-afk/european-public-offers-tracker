@@ -214,7 +214,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "27-Jan-2026",
-      "ec": "26-Jun-2026",
+      "ec": "7-Jul-2026",
       "reg": "No Referral",
       "own": 43.6,
       "irr": 6.8,
@@ -387,7 +387,7 @@
       "ec": "31 December 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 50.42,
+      "irr": 50.72,
       "acc": 75.0,
       "xb": false
     },
@@ -455,7 +455,7 @@
       "ec": "3 July 2026",
       "reg": "No Referral",
       "own": 49.12,
-      "irr": 0.0,
+      "irr": 16.2,
       "acc": 0,
       "xb": false
     },
@@ -469,7 +469,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "27 April 2026",
-      "ec": "12 June 2026",
+      "ec": "7 July 2026",
       "reg": "No Referral",
       "own": 34.0,
       "irr": 0.0,
@@ -503,7 +503,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "11 May 2026",
-      "ec": "22 June 2026",
+      "ec": "2 July 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 62.9,
@@ -863,7 +863,7 @@
       "ec": "29 June 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 53.26,
+      "irr": 90.0,
       "acc": 90.0,
       "xb": false
     },
@@ -1017,6 +1017,23 @@
       "reg": "No Referral",
       "own": 25.05,
       "irr": 0,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "VALTECNE SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "G SQUARE",
+      "v": 73.0,
+      "p": 35.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "26 June 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 82.0,
       "acc": 0,
       "xb": false
     }
@@ -1424,6 +1441,13 @@
     "INNOTEC TSS AG": {
       "consid": "Cash",
       "sector": "Building Materials",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "VALTECNE SPA": {
+      "consid": "Cash",
+      "sector": "Healthcare",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
