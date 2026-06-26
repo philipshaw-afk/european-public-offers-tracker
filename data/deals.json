@@ -1002,6 +1002,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "INNOTEC TSS AG",
+      "co": "Germany",
+      "c": "DE",
+      "b": "GLI & GRONDBACH GMBH",
+      "v": 70.0,
+      "p": null,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "25 June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 25.05,
+      "irr": 0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1400,6 +1417,13 @@
     "ELMERA GROUP ASA": {
       "consid": "Cash",
       "sector": "Electricity",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "INNOTEC TSS AG": {
+      "consid": "Cash",
+      "sector": "Building Materials",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
