@@ -1036,6 +1036,74 @@
       "irr": 82.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "NAGARRO SE",
+      "co": "Germany",
+      "c": "DE",
+      "b": "PERSISTENT SYSTEMS",
+      "v": 1047.0,
+      "p": 140.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "26 June 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 21.0,
+      "acc": 50.0,
+      "xb": false
+    },
+    {
+      "t": "HUMANA AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "AMBEA AB",
+      "v": 267.0,
+      "p": 26.8,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "29 June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 41.9,
+      "acc": 90.0,
+      "xb": false
+    },
+    {
+      "t": "ELMERA GROUP ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "FORTUM",
+      "v": 450.0,
+      "p": 59.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "29 June 2026",
+      "ec": "30 Sep 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 37.8,
+      "acc": 90.0,
+      "xb": false
+    },
+    {
+      "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "ICOP",
+      "v": 273.0,
+      "p": 20.1,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "29 June 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1448,6 +1516,27 @@
     "VALTECNE SPA": {
       "consid": "Cash",
       "sector": "Healthcare",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "NAGARRO SE": {
+      "consid": "Cash",
+      "sector": "Engineering",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "HUMANA AB": {
+      "consid": "Mixed",
+      "sector": "Healthcare",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "TREVI FINANZIARIA INDUSTRIALE SPA": {
+      "consid": "Shares",
+      "sector": "Engineering",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
