@@ -1104,6 +1104,23 @@
       "irr": 0,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "VIVA WINE GROUP AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "RIESLING VENTURES",
+      "v": 311.0,
+      "p": 38.0,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "29 June 2026",
+      "ec": "28 August 2026",
+      "reg": "No Referral",
+      "own": 62.79,
+      "irr": 11.54,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1539,6 +1556,13 @@
       "sector": "Building & Construction",
       "ev_ebitda": 4.73,
       "ev_sales": 0.64,
+      "pe": null
+    },
+    "VIVA WINE GROUP AB": {
+      "consid": "Cash",
+      "sector": "Alcoholic Beverages",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
