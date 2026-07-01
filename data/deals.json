@@ -1547,9 +1547,9 @@
     "HUMANA AB": {
       "consid": "Mixed",
       "sector": "Healthcare",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.84,
+      "ev_sales": 0.73,
+      "pe": 14.73
     },
     "TREVI FINANZIARIA INDUSTRIALE SPA": {
       "consid": "Shares",
