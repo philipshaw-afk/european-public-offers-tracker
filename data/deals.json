@@ -256,23 +256,6 @@
       "xb": false
     },
     {
-      "t": "PROCIMMO GROUP SA",
-      "co": "Switzerland",
-      "c": "CH",
-      "b": "VAUDOISE ASSURANCES",
-      "v": 428.0,
-      "p": 9.7,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "18-Mar-2026",
-      "ec": "30-Sep-2026",
-      "reg": "No Referral",
-      "own": 20.0,
-      "irr": 72.27,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "TELECOM ITALIA SPA",
       "co": "Italy",
       "c": "IT",
@@ -1212,13 +1195,6 @@
       "ev_sales": null,
       "pe": null
     },
-    "PROCIMMO GROUP SA": {
-      "consid": "Cash",
-      "sector": "Financial Services",
-      "ev_ebitda": 17.92,
-      "ev_sales": 12.05,
-      "pe": 21.6
-    },
     "TELECOM ITALIA SPA": {
       "consid": "Mixed",
       "sector": "Telecoms",
@@ -1460,16 +1436,16 @@
     "SPOTLIGHT GROUP AB": {
       "consid": "Cash",
       "sector": "Financial Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 50.97,
+      "ev_sales": 1.73,
       "pe": null
     },
     "CITYCON OYJ": {
       "consid": "Cash",
       "sector": "Property",
       "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_sales": 8.02,
+      "pe": 6.77
     },
     "LUDWIG BECK AM RATHAUSECK": {
       "consid": "Cash",
@@ -1509,9 +1485,9 @@
     "VALTECNE SPA": {
       "consid": "Cash",
       "sector": "Healthcare",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.94,
+      "ev_sales": 2.02,
+      "pe": 21.71
     },
     "NAGARRO SE": {
       "consid": "Cash",
@@ -1537,9 +1513,9 @@
     "VIVA WINE GROUP AB": {
       "consid": "Cash",
       "sector": "Alcoholic Beverages",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 9.4,
+      "ev_sales": 0.81,
+      "pe": 15.34
     }
   }
 }
