@@ -410,7 +410,7 @@
     },
     {
       "t": "PERMANENT TSB GROUP HOLDINGS PLC",
-      "co": "Ireland (Republic of)",
+      "co": "Ireland",
       "c": "IE",
       "b": "BAWAG AG",
       "v": 1619.0,
@@ -1087,6 +1087,23 @@
       "irr": 11.54,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "ELEKTROIMPORTOREN AS",
+      "co": "Norway",
+      "c": "NO",
+      "b": "BRØDRENE A. & O. JOHANSEN A/S",
+      "v": 99.0,
+      "p": 57.1,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "3 July 2026",
+      "ec": "5 August 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 46.65,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1239,7 +1256,7 @@
     },
     "ADDIKO BANK AG": {
       "consid": "Cash",
-      "sector": "Banking",
+      "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 16.26
@@ -1516,6 +1533,13 @@
       "ev_ebitda": 9.4,
       "ev_sales": 0.81,
       "pe": 15.34
+    },
+    "ELEKTROIMPORTOREN AS": {
+      "consid": "Cash",
+      "sector": "Retailers",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
