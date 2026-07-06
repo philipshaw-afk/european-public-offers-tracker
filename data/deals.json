@@ -1104,6 +1104,40 @@
       "irr": 46.65,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "NEXT GEOSOLUTIONS SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "FINCANTIERI",
+      "v": 780.0,
+      "p": -1.2,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "6 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 52.6,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "EXAIL TECHNOLOGIES SA",
+      "co": "France",
+      "c": "FR",
+      "b": "THALES",
+      "v": 2300.0,
+      "p": 44.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "6 July 2026",
+      "ec": "30 Sep 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 35.51,
+      "acc": 0.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1537,6 +1571,20 @@
     "ELEKTROIMPORTOREN AS": {
       "consid": "Cash",
       "sector": "Retailers",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "NEXT GEOSOLUTIONS SPA": {
+      "consid": "Cash",
+      "sector": "Support Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "EXAIL TECHNOLOGIES SA": {
+      "consid": "Cash",
+      "sector": "Aerospace",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
