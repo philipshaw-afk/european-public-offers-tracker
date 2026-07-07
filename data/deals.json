@@ -1588,16 +1588,16 @@
     "ELEKTROIMPORTOREN AS": {
       "consid": "Cash",
       "sector": "Retailers",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 7.54,
+      "ev_sales": 0.89,
+      "pe": 33.02
     },
     "NEXT GEOSOLUTIONS SPA": {
       "consid": "Cash",
       "sector": "Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 10.63,
+      "ev_sales": 2.72,
+      "pe": 16.21
     },
     "EXAIL TECHNOLOGIES SA": {
       "consid": "Cash",
