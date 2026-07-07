@@ -1136,7 +1136,24 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 35.51,
-      "acc": 0.0,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "VOYAGEURS DU MONDE",
+      "co": "France",
+      "c": "FR",
+      "b": "AVANTAGE SA",
+      "v": 0,
+      "p": 23.7,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "6 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 62.24,
+      "irr": 24.2,
+      "acc": 0,
       "xb": false
     }
   ],
@@ -1585,6 +1602,13 @@
     "EXAIL TECHNOLOGIES SA": {
       "consid": "Cash",
       "sector": "Aerospace",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "VOYAGEURS DU MONDE": {
+      "consid": "Cash",
+      "sector": "Leisure & Hotels",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
