@@ -1602,8 +1602,8 @@
     "EXAIL TECHNOLOGIES SA": {
       "consid": "Cash",
       "sector": "Aerospace",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 37.75,
+      "ev_sales": 8.15,
       "pe": null
     },
     "VOYAGEURS DU MONDE": {
