@@ -35,23 +35,6 @@
       "xb": false
     },
     {
-      "t": "CULTI MILANO SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "BERGER INTERNATIONAL SAS",
-      "v": 52.225,
-      "p": 42.5,
-      "tp": "Mandatory",
-      "at": "Friendly",
-      "d": "19-Dec-2025",
-      "ec": "31-Jul-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 77.17,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "COMMERZBANK AG",
       "co": "Germany",
       "c": "DE",
@@ -78,7 +61,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "16-Feb-2026",
-      "ec": "30-Jun-2026",
+      "ec": "24-Jul-2026",
       "reg": "No Referral",
       "own": 49.68,
       "irr": 0.0,
@@ -423,23 +406,6 @@
       "own": 0.0,
       "irr": 57.5,
       "acc": 75.0,
-      "xb": false
-    },
-    {
-      "t": "BF SPA (BONIFICHE FERRARESI)",
-      "co": "Italy",
-      "c": "IT",
-      "b": "ARUM & DOMPE HOLDINGS",
-      "v": 1309.0,
-      "p": 13.6,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "21 April 2026",
-      "ec": "3 July 2026",
-      "reg": "No Referral",
-      "own": 49.12,
-      "irr": 16.2,
-      "acc": 0,
       "xb": false
     },
     {
@@ -1189,13 +1155,6 @@
       "ev_sales": 1.62,
       "pe": 12.06
     },
-    "CULTI MILANO SPA": {
-      "consid": "Cash",
-      "sector": "Household Goods",
-      "ev_ebitda": 11.03,
-      "ev_sales": 2.44,
-      "pe": 14.47
-    },
     "COMMERZBANK AG": {
       "consid": "Shares",
       "sector": "Banks",
@@ -1342,13 +1301,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 22.8
-    },
-    "BF SPA (BONIFICHE FERRARESI)": {
-      "consid": "Cash",
-      "sector": "Food",
-      "ev_ebitda": 18.1,
-      "ev_sales": 1.17,
-      "pe": null
     },
     "CINT GROUP AB": {
       "consid": "Cash",
