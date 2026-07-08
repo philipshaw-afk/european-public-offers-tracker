@@ -129,7 +129,7 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "19-Jan-2026",
-      "ec": "30-Sep-2026",
+      "ec": "28-Sep-2026",
       "reg": "No Referral",
       "own": 20.0,
       "irr": 30.64,
@@ -372,23 +372,6 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 50.1,
-      "xb": false
-    },
-    {
-      "t": "POULAILLON SA",
-      "co": "France",
-      "c": "FR",
-      "b": "EUGENIE",
-      "v": 46.0,
-      "p": 28.6,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "14 April 2026",
-      "ec": "31 July 2026",
-      "reg": "No Referral",
-      "own": 76.43,
-      "irr": 0.0,
-      "acc": 0,
       "xb": false
     },
     {
@@ -1287,13 +1270,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 16.26
-    },
-    "POULAILLON SA": {
-      "consid": "Cash",
-      "sector": "Food",
-      "ev_ebitda": 4.78,
-      "ev_sales": 0.53,
-      "pe": 9.43
     },
     "PERMANENT TSB GROUP HOLDINGS PLC": {
       "consid": "Cash",
