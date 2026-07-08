@@ -1155,6 +1155,23 @@
       "irr": 24.2,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "BAHNHOF AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "TELENOR",
+      "v": 578.0,
+      "p": 21.81,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "8 July 2026",
+      "ec": "31 March 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 57.5,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1609,6 +1626,13 @@
     "VOYAGEURS DU MONDE": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "BAHNHOF AB": {
+      "consid": "Cash",
+      "sector": "Telecoms",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
