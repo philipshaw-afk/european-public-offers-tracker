@@ -1121,6 +1121,23 @@
       "irr": 57.5,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "OMA SAVINGS BANK PLC",
+      "co": "Finland",
+      "c": "FI",
+      "b": "S-BANK PLC",
+      "v": 571.0,
+      "p": 47.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "9 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 59.9,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1561,6 +1578,13 @@
     "BAHNHOF AB": {
       "consid": "Cash",
       "sector": "Telecoms",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "OMA SAVINGS BANK PLC": {
+      "consid": "Cash",
+      "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
