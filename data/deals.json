@@ -307,23 +307,6 @@
       "xb": false
     },
     {
-      "t": "ALPHA TRUST HOLDINGS SA",
-      "co": "Greece",
-      "c": "GR",
-      "b": "ALPHA BANK",
-      "v": 63.6,
-      "p": 15.1,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "7 April 2026",
-      "ec": "26 June 2026",
-      "reg": "Under Review",
-      "own": 0.0,
-      "irr": 69.61,
-      "acc": 66.67,
-      "xb": false
-    },
-    {
       "t": "WHAT'S COOKING GROUP NV",
       "co": "Belgium",
       "c": "BE",
@@ -1249,13 +1232,6 @@
       "ev_ebitda": 6.71,
       "ev_sales": 1.1,
       "pe": 45.12
-    },
-    "ALPHA TRUST HOLDINGS SA": {
-      "consid": "Cash",
-      "sector": "Financial Services",
-      "ev_ebitda": 10.87,
-      "ev_sales": 4.87,
-      "pe": 13.68
     },
     "WHAT'S COOKING GROUP NV": {
       "consid": "Cash",
