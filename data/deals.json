@@ -722,7 +722,7 @@
       "v": 2694.0,
       "p": 4.3,
       "tp": "Public Offer",
-      "at": "Unsolicited",
+      "at": "Hostile",
       "d": "10 June 2026",
       "ec": "31 December 2026",
       "reg": "No Referral",
@@ -763,23 +763,6 @@
       "own": 0.0,
       "irr": 53.67,
       "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "MATVAREEXPRESSEN AS",
-      "co": "Norway",
-      "c": "NO",
-      "b": "COOP NORGE",
-      "v": 29.0,
-      "p": 28.7,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "15 June 2026",
-      "ec": "29 June 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 90.0,
-      "acc": 90.0,
       "xb": false
     },
     {
@@ -1448,13 +1431,6 @@
       "ev_ebitda": 22.08,
       "ev_sales": 18.63,
       "pe": 16.31
-    },
-    "MATVAREEXPRESSEN AS": {
-      "consid": "Cash",
-      "sector": "Retailers",
-      "ev_ebitda": 13.45,
-      "ev_sales": 0.76,
-      "pe": 99.78
     },
     "DECEUNINCK NV": {
       "consid": "Cash",
