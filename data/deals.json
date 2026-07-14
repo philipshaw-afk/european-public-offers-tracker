@@ -1104,6 +1104,23 @@
       "irr": 59.9,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "COMPAGNIA DEI CARAIBI SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "TANDEM",
+      "v": 6.0,
+      "p": 17.6,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "14 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 74.01,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1537,6 +1554,13 @@
     "OMA SAVINGS BANK PLC": {
       "consid": "Cash",
       "sector": "Banks",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "COMPAGNIA DEI CARAIBI SPA": {
+      "consid": "Cash",
+      "sector": "Alcoholic Beverages",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
