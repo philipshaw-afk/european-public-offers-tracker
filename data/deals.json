@@ -273,23 +273,6 @@
       "xb": false
     },
     {
-      "t": "STAR7 SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "ARGOS SAS",
-      "v": 107.1,
-      "p": 41.25,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "1-Apr-2026",
-      "ec": "30-Sep-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 75.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "WHAT'S COOKING GROUP NV",
       "co": "Belgium",
       "c": "BE",
@@ -1235,13 +1218,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 10.86
-    },
-    "STAR7 SPA": {
-      "consid": "Cash",
-      "sector": "Engineering/Support Services",
-      "ev_ebitda": 6.71,
-      "ev_sales": 1.1,
-      "pe": 45.12
     },
     "WHAT'S COOKING GROUP NV": {
       "consid": "Cash",
