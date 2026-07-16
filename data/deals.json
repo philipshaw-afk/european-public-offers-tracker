@@ -1138,6 +1138,23 @@
       "irr": 16.68,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "ALL FOR ONE GROUP SE",
+      "co": "Germany",
+      "c": "DE",
+      "b": "VINCI SA",
+      "v": 336.0,
+      "p": 92.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "16 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 54.7,
+      "acc": 75.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1585,6 +1602,13 @@
     "DELIVERY HERO SE": {
       "consid": "Cash",
       "sector": "Internet",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "ALL FOR ONE GROUP SE": {
+      "consid": "Cash",
+      "sector": "I.T.",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
