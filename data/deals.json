@@ -1530,8 +1530,8 @@
     "DELIVERY HERO SE": {
       "consid": "Cash",
       "sector": "Internet",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 16.8,
+      "ev_sales": 1.08,
       "pe": null
     },
     "ALL FOR ONE GROUP SE": {
