@@ -1121,6 +1121,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "DELIVERY HERO SE",
+      "co": "Germany",
+      "c": "DE",
+      "b": "UBER",
+      "v": 13000.0,
+      "p": 108.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "16 July 2026",
+      "ec": "30 June 2027",
+      "reg": "No Referral",
+      "own": 36.51,
+      "irr": 16.68,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1561,6 +1578,13 @@
     "COMPAGNIA DEI CARAIBI SPA": {
       "consid": "Cash",
       "sector": "Alcoholic Beverages",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "DELIVERY HERO SE": {
+      "consid": "Cash",
+      "sector": "Internet",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
