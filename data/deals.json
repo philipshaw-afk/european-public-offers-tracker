@@ -69,23 +69,6 @@
       "xb": false
     },
     {
-      "t": "VINPAI SA",
-      "co": "France",
-      "c": "FR",
-      "b": "CAMLIN FINE SCIENCES LIMITED",
-      "v": 12.358,
-      "p": 13.21,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "24-Feb-2025",
-      "ec": "7-Jul-2026",
-      "reg": "Under Review",
-      "own": 0.0,
-      "irr": 78.68,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "IVECO GROUP NV",
       "co": "Italy",
       "c": "IT",
@@ -559,23 +542,6 @@
       "own": 77.23,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "BRAGA MORO SISTEMI DI ENERGIA SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "STRATEGIC POWER HOLDING SRL",
-      "v": 15.0,
-      "p": 89.8,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "28 May 2026",
-      "ec": "10 Jul 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 50.23,
-      "acc": 90.0,
       "xb": false
     },
     {
@@ -1186,13 +1152,6 @@
       "ev_sales": 10.98,
       "pe": 13.58
     },
-    "VINPAI SA": {
-      "consid": "Mixed",
-      "sector": "Chemicals",
-      "ev_ebitda": null,
-      "ev_sales": 2.17,
-      "pe": null
-    },
     "IVECO GROUP NV": {
       "consid": "Mixed",
       "sector": "Engineering",
@@ -1381,13 +1340,6 @@
       "ev_ebitda": 49.25,
       "ev_sales": 0.71,
       "pe": null
-    },
-    "BRAGA MORO SISTEMI DI ENERGIA SPA": {
-      "consid": "Cash",
-      "sector": "Electronics",
-      "ev_ebitda": 5.68,
-      "ev_sales": 1.08,
-      "pe": 42.54
     },
     "ENERGY SOLAR TECH": {
       "consid": "Shares",
