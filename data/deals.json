@@ -299,7 +299,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "8 April 2026",
-      "ec": "31 December 2026",
+      "ec": "21 July 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 50.72,
@@ -316,7 +316,7 @@
       "tp": "Public Offer",
       "at": "Unsolicited",
       "d": "9 April 2026",
-      "ec": "31 December 2026",
+      "ec": "29 July 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 0.0,
@@ -537,10 +537,10 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "29 May 2026",
-      "ec": "30 Sep 2026",
+      "ec": "17 Jul 2026",
       "reg": "No Referral",
       "own": 74.92,
-      "irr": 0.0,
+      "irr": 3.27,
       "acc": 90.0,
       "xb": false
     },
@@ -990,7 +990,7 @@
       "t": "BAHNHOF AB",
       "co": "Sweden",
       "c": "SE",
-      "b": "TELENOR",
+      "b": "TELENOR ASA",
       "v": 578.0,
       "p": 21.81,
       "tp": "Mandatory",
@@ -1013,7 +1013,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "9 July 2026",
-      "ec": "31 Dec 2026",
+      "ec": "25 Sep 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 59.9,
@@ -1041,7 +1041,7 @@
       "t": "DELIVERY HERO SE",
       "co": "Germany",
       "c": "DE",
-      "b": "UBER",
+      "b": "UBER TECHNOLOGIES INC",
       "v": 13000.0,
       "p": 108.0,
       "tp": "Public Offer",
@@ -1069,6 +1069,23 @@
       "own": 0.0,
       "irr": 54.7,
       "acc": 75.0,
+      "xb": false
+    },
+    {
+      "t": "AKER BIOMARINE ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "AKER ASA",
+      "v": 835.0,
+      "p": null,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "16 July 2026",
+      "ec": "31 August 2026",
+      "reg": "No Referral",
+      "own": 77.6,
+      "irr": 0.0,
+      "acc": 0,
       "xb": false
     }
   ],
@@ -1454,16 +1471,16 @@
     "VOYAGEURS DU MONDE": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.31,
+      "ev_sales": 0.77,
+      "pe": 16.66
     },
     "BAHNHOF AB": {
       "consid": "Cash",
       "sector": "Telecoms",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 16.76,
+      "ev_sales": 2.67,
+      "pe": 35.43
     },
     "OMA SAVINGS BANK PLC": {
       "consid": "Cash",
@@ -1489,6 +1506,13 @@
     "ALL FOR ONE GROUP SE": {
       "consid": "Cash",
       "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "AKER BIOMARINE ASA": {
+      "consid": "Cash",
+      "sector": "Food",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
