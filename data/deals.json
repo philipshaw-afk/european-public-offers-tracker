@@ -1094,15 +1094,32 @@
       "c": "CH",
       "b": "SAMSUNG BIOLOGICS",
       "v": 1581.0,
-      "p": 50.0,
+      "p": 40.0,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "20 July 2026",
-      "ec": "",
+      "ec": "31 Dec 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 55.65,
       "acc": 66.66,
+      "xb": false
+    },
+    {
+      "t": "PIERRE ET VACANCES-CENTER PARCS",
+      "co": "France",
+      "c": "FR",
+      "b": "MUBADALA CAPITAL",
+      "v": 975.0,
+      "p": 20.6,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "20 July 2026",
+      "ec": "30 June 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 80.13,
+      "acc": 50.0,
       "xb": false
     }
   ],
@@ -1537,6 +1554,13 @@
     "POLYPEPTIDE GROUP AG": {
       "consid": "Cash",
       "sector": "Chemicals",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "PIERRE ET VACANCES-CENTER PARCS": {
+      "consid": "Cash",
+      "sector": "Leisure & Hotels",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
