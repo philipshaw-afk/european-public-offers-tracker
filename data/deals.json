@@ -1110,8 +1110,8 @@
       "co": "France",
       "c": "FR",
       "b": "MUBADALA CAPITAL",
-      "v": 975.0,
-      "p": 20.6,
+      "v": 924.0,
+      "p": 41.64,
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "20 July 2026",
@@ -1554,8 +1554,8 @@
     "POLYPEPTIDE GROUP AG": {
       "consid": "Cash",
       "sector": "Chemicals",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 35.5,
+      "ev_sales": 4.26,
       "pe": null
     },
     "PIERRE ET VACANCES-CENTER PARCS": {
