@@ -1561,9 +1561,9 @@
     "PIERRE ET VACANCES-CENTER PARCS": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 6.8,
+      "ev_sales": 2.19,
+      "pe": 18.44
     }
   }
 }
