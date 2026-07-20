@@ -1540,9 +1540,9 @@
     "ALL FOR ONE GROUP SE": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 7.72,
+      "ev_sales": 0.82,
+      "pe": 57.68
     },
     "AKER BIOMARINE ASA": {
       "consid": "Cash",
