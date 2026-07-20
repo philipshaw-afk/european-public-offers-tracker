@@ -229,7 +229,7 @@
       "v": 13521.0,
       "p": 9.0,
       "tp": "Public Offer",
-      "at": "Unsolicited",
+      "at": "Friendly",
       "d": "22-Mar-2026",
       "ec": "31-Dec-2026",
       "reg": "No Referral",
@@ -1087,6 +1087,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "POLYPEPTIDE GROUP AG",
+      "co": "Switzerland",
+      "c": "CH",
+      "b": "SAMSUNG BIOLOGICS",
+      "v": 1581.0,
+      "p": 50.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "20 July 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 55.65,
+      "acc": 66.66,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1513,6 +1530,13 @@
     "AKER BIOMARINE ASA": {
       "consid": "Cash",
       "sector": "Food",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "POLYPEPTIDE GROUP AG": {
+      "consid": "Cash",
+      "sector": "Chemicals",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
