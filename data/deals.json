@@ -1102,7 +1102,7 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 55.65,
-      "acc": 66.66,
+      "acc": 66.67,
       "xb": false
     },
     {
@@ -1136,7 +1136,7 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 0.0,
-      "acc": 0,
+      "acc": 66.67,
       "xb": false
     }
   ],
