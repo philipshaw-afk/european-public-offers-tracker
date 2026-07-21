@@ -1084,7 +1084,7 @@
       "ec": "31 August 2026",
       "reg": "No Referral",
       "own": 77.6,
-      "irr": 0.0,
+      "irr": 2.3,
       "acc": 0,
       "xb": false
     },
@@ -1564,8 +1564,8 @@
     "AKER BIOMARINE ASA": {
       "consid": "Cash",
       "sector": "Food",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 24.71,
+      "ev_sales": 5.23,
       "pe": null
     },
     "POLYPEPTIDE GROUP AG": {
