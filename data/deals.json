@@ -1585,9 +1585,9 @@
     "BLUENORD ASA": {
       "consid": "Mixed",
       "sector": "Oil & Gas",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 3.56,
+      "ev_sales": 2.12,
+      "pe": 15.81
     }
   }
 }
