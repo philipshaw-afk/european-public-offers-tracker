@@ -1138,6 +1138,23 @@
       "irr": 0.0,
       "acc": 66.67,
       "xb": false
+    },
+    {
+      "t": "ARGAN SA",
+      "co": "France",
+      "c": "FR",
+      "b": "WDP",
+      "v": 2041.0,
+      "p": 21.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "23 July 2026",
+      "ec": "31 March 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 52.0,
+      "acc": 66.67,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1588,6 +1605,13 @@
       "ev_ebitda": 3.56,
       "ev_sales": 2.12,
       "pe": 15.81
+    },
+    "ARGAN SA": {
+      "consid": "Shares",
+      "sector": "Property",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
