@@ -58,14 +58,6 @@
   {
     "co": "France",
     "c": "FR",
-    "name": "Getlink SE",
-    "status": "Speculation",
-    "first": "26 March 2026",
-    "latest": "Eiffage increased stake to 29.40%, leading to speculation it will breach mandatory bid threshold"
-  },
-  {
-    "co": "France",
-    "c": "FR",
     "name": "Wallix Group SA",
     "status": "Speculation",
     "first": "24 June 2026",
@@ -78,14 +70,6 @@
     "status": "Confirmed",
     "first": "24 July 2026",
     "latest": "WSP has made a €51.5 per share proposal, which Board is reviewing. Follows first proposal of €48.5, which was rejected."
-  },
-  {
-    "co": "France",
-    "c": "FR",
-    "name": "Pierre & Vacances-Center Parcs",
-    "status": "Confirmed",
-    "first": "22 June 2026",
-    "latest": "Board is in discussions with Mubadala Capital. Any offer would be subject to 80% pre-acceptances by 17 July"
   },
   {
     "co": "Germany",
@@ -136,35 +120,11 @@
     "latest": "Received a preliminary, non-binding letter of interest from a Canadian technology investment and media company, potential price range of €7.98 to €9.12 per share"
   },
   {
-    "co": "Netherlands",
-    "c": "NL",
-    "name": "BE Semiconductor Industries NV",
-    "status": "Speculation",
-    "first": "13 March 2026",
-    "latest": "Subject to an approach from Lam Research and Applied Materials (Reuters)"
-  },
-  {
     "co": "France",
     "c": "FR",
     "name": "Eramet SA",
     "status": "Speculation",
     "first": "12 June 2026",
     "latest": "Orion CMC considering buying stake in Eramet (FT)"
-  },
-  {
-    "co": "Italy",
-    "c": "IT",
-    "name": "The Italian Sea Group",
-    "status": "Speculation",
-    "first": "11 June 2026",
-    "latest": "Ferretti considering offer for The Italian Sea Group (Bloomberg)"
-  },
-  {
-    "co": "Switzerland",
-    "c": "CH",
-    "name": "PolyPeptide Group AG",
-    "status": "Confirmed",
-    "first": "10 April 2026",
-    "latest": "Strategic review ongoing, after takeover interest from certain investors. EQT AB, IDG Capital and Altaris rumoured to be shortlisted."
   }
 ]
