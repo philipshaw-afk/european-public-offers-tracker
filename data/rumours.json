@@ -1,13 +1,5 @@
 [
   {
-    "co": "Ireland",
-    "c": "IE",
-    "name": "Brera Holdings Plc",
-    "status": "Confirmed",
-    "first": "9 June 2026",
-    "latest": "Forward Industries makes share for share proposal for Brera (listed on Nasdaq)"
-  },
-  {
     "co": "Netherlands",
     "c": "NL",
     "name": "Qiagen NV",
@@ -34,7 +26,7 @@
   {
     "co": "Ireland",
     "c": "IE",
-    "name": "DCC plc",
+    "name": "DCC Energy plc",
     "status": "Confirmed",
     "first": "29 April 2026",
     "latest": "Indicative proposal at £65.25 per share (plus contingent payment) from Energy Capital Partners & KKR,  which Board is \"minded to recommend\". PUSU deadline 27 July 2026."
@@ -94,14 +86,6 @@
     "status": "Speculation",
     "first": "19 June 2026",
     "latest": "Several investment funds analysing potential takeover (El Español)"
-  },
-  {
-    "co": "Germany",
-    "c": "DE",
-    "name": "Gerresheimer AG",
-    "status": "Speculation",
-    "first": "17 April 2026",
-    "latest": "Reportedly rejected an approach from Silgan (Reuters)"
   },
   {
     "co": "France",
