@@ -171,23 +171,6 @@
       "xb": false
     },
     {
-      "t": "TECNOTREE OYJ",
-      "co": "Finland",
-      "c": "FI",
-      "b": "HELIOS INVESTMENT PARTNERS LLP",
-      "v": 96.183,
-      "p": 42.5,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "27-Jan-2026",
-      "ec": "15-Jul-2026",
-      "reg": "No Referral",
-      "own": 43.6,
-      "irr": 6.8,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
       "t": "INPOST SA",
       "co": "Luxembourg",
       "c": "LU",
@@ -234,7 +217,7 @@
       "ec": "31-Dec-2026",
       "reg": "No Referral",
       "own": 27.32,
-      "irr": 0.0,
+      "irr": 0.3,
       "acc": 66.67,
       "xb": false
     },
@@ -299,10 +282,10 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "8 April 2026",
-      "ec": "21 July 2026",
+      "ec": "29 July 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 50.72,
+      "irr": 55.5,
       "acc": 55.0,
       "xb": false
     },
@@ -319,7 +302,7 @@
       "ec": "29 July 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 0.0,
+      "irr": 29.5,
       "acc": 50.1,
       "xb": false
     },
@@ -354,23 +337,6 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 40.2,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
-      "t": "SLEEP CYCLE AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "ALTOR",
-      "v": 46.0,
-      "p": 47.0,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "11 May 2026",
-      "ec": "17 July 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 78.2,
       "acc": 90.0,
       "xb": false
     },
@@ -523,25 +489,8 @@
       "ec": "31 August 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 0.0,
+      "irr": 50.0,
       "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "DATALOGIC SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "HYDRA INVESTIMENTI",
-      "v": 352.0,
-      "p": 36.0,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "29 May 2026",
-      "ec": "17 Jul 2026",
-      "reg": "No Referral",
-      "own": 74.92,
-      "irr": 3.27,
-      "acc": 90.0,
       "xb": false
     },
     {
@@ -562,7 +511,7 @@
       "xb": false
     },
     {
-      "t": "FORMPIPE SOFTWARE AB",
+      "t": "LASERNET GROUP AB",
       "co": "Sweden",
       "c": "SE",
       "b": "TABELLAE BIDCO",
@@ -571,10 +520,10 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "4 June 2026",
-      "ec": "22 July 2026",
+      "ec": "7 August 2026",
       "reg": "No Referral",
       "own": 29.3,
-      "irr": 25.0,
+      "irr": 61.6,
       "acc": 90.0,
       "xb": false
     },
@@ -642,7 +591,7 @@
       "ec": "31 December 2026",
       "reg": "No Referral",
       "own": 26.06,
-      "irr": 3.69,
+      "irr": 4.22,
       "acc": 0,
       "xb": false
     },
@@ -790,7 +739,7 @@
       "v": 867.0,
       "p": 12.32,
       "tp": "Minority Bid",
-      "at": "Unsolicited",
+      "at": "Friendly",
       "d": "24 June 2026",
       "ec": "30 Sep 2026",
       "reg": "No Referral",
@@ -1228,13 +1177,6 @@
       "ev_sales": null,
       "pe": null
     },
-    "TECNOTREE OYJ": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 3.94,
-      "ev_sales": 1.65,
-      "pe": 14.93
-    },
     "INPOST SA": {
       "consid": "Cash",
       "sector": "Transport",
@@ -1297,13 +1239,6 @@
       "ev_ebitda": 8.21,
       "ev_sales": 0.93,
       "pe": 18.7
-    },
-    "SLEEP CYCLE AB": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 6.44,
-      "ev_sales": 1.69,
-      "pe": 11.06
     },
     "AUSTRIACARD HOLDINGS AG": {
       "consid": "Cash",
@@ -1368,13 +1303,6 @@
       "ev_sales": 1.19,
       "pe": 39.25
     },
-    "DATALOGIC SPA": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 6.08,
-      "ev_sales": 0.66,
-      "pe": 36.35
-    },
     "AIXIA GROUP AB": {
       "consid": "Mixed",
       "sector": "I.T.",
@@ -1382,7 +1310,7 @@
       "ev_sales": 0.88,
       "pe": null
     },
-    "FORMPIPE SOFTWARE AB": {
+    "LASERNET GROUP AB": {
       "consid": "Cash",
       "sector": "I.T.",
       "ev_ebitda": 18.59,
