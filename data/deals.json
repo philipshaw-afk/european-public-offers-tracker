@@ -1121,6 +1121,23 @@
       "irr": 3.2,
       "acc": 75.0,
       "xb": false
+    },
+    {
+      "t": "DCC ENERGY PLC",
+      "co": "Ireland",
+      "c": "IE",
+      "b": "KKR & CO INC/ ENERGY CAPITAL PARTNERS MANAGEMENT",
+      "v": 6730.0,
+      "p": 24.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "27 July 2026",
+      "ec": "31 March 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.28,
+      "acc": 75.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1561,6 +1578,13 @@
     "IRISH CONTINENTAL GROUP PLC": {
       "consid": "Cash",
       "sector": "Transport",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "DCC ENERGY PLC": {
+      "consid": "Cash",
+      "sector": "Distributors",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
