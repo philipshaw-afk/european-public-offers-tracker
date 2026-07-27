@@ -1104,6 +1104,23 @@
       "irr": 52.0,
       "acc": 66.67,
       "xb": false
+    },
+    {
+      "t": "IRISH CONTINENTAL GROUP PLC",
+      "co": "Ireland",
+      "c": "IE",
+      "b": "BLUEFIN BIDCO LIMITED",
+      "v": 1200.0,
+      "p": 28.2,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "24 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 23.7,
+      "irr": 3.2,
+      "acc": 75.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1537,6 +1554,13 @@
     "ARGAN SA": {
       "consid": "Shares",
       "sector": "Property",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "IRISH CONTINENTAL GROUP PLC": {
+      "consid": "Cash",
+      "sector": "Transport",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
