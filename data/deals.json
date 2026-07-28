@@ -1109,9 +1109,9 @@
       "t": "AZKOYEN SA",
       "co": "Spain",
       "c": "ES",
-      "b": "JOSE JAINAGA/INSTITUTO VASCO DE FINANZAS/FUNDACION BANCARIA VITAL/CARMEN LEQUERICA HOLDING",
+      "b": "OHMNIA ELECTRONICS",
       "v": 244.0,
-      "p": -16.5,
+      "p": -14.16,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "24 July 2026",
@@ -1571,23 +1571,23 @@
     "IRISH CONTINENTAL GROUP PLC": {
       "consid": "Cash",
       "sector": "Transport",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 9.35,
+      "ev_sales": 2.17,
+      "pe": 15.86
     },
     "AZKOYEN SA": {
       "consid": "Cash",
       "sector": "Electronic & Electrical Equipment",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 7.09,
+      "ev_sales": 1.27,
+      "pe": 14.07
     },
     "DCC ENERGY PLC": {
       "consid": "Cash",
       "sector": "Distributors",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.0,
+      "ev_sales": 0.46,
+      "pe": 16.78
     }
   }
 }
