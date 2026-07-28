@@ -1106,6 +1106,23 @@
       "xb": false
     },
     {
+      "t": "AZKOYEN SA",
+      "co": "Spain",
+      "c": "ES",
+      "b": "JOSE JAINAGA/INSTITUTO VASCO DE FINANZAS/FUNDACION BANCARIA VITAL/CARMEN LEQUERICA HOLDING",
+      "v": 0,
+      "p": null,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "24 July 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 50.0,
+      "xb": false
+    },
+    {
       "t": "DCC ENERGY PLC",
       "co": "Ireland",
       "c": "IE",
@@ -1554,6 +1571,13 @@
     "IRISH CONTINENTAL GROUP PLC": {
       "consid": "Cash",
       "sector": "Transport",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "AZKOYEN SA": {
+      "consid": "Cash",
+      "sector": "Electronic & Electrical Equipment",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
