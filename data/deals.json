@@ -1172,6 +1172,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "WEBUILD SPA",
+      "v": 295.0,
+      "p": 29.8,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "29 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 5.0,
+      "irr": 0.0,
+      "acc": 66.7,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1491,10 +1508,10 @@
       "pe": 14.73
     },
     "TREVI FINANZIARIA INDUSTRIALE SPA": {
-      "consid": "Shares",
+      "consid": "Cash",
       "sector": "Building & Construction",
-      "ev_ebitda": 4.73,
-      "ev_sales": 0.64,
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     },
     "VIVA WINE GROUP AB": {
