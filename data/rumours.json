@@ -8,20 +8,20 @@
     "latest": "EQT, Advent and KKR considering an offer (Bloomberg)"
   },
   {
-    "co": "Italy",
-    "c": "IT",
-    "name": "Banca Monte dei Paschi di Siena",
-    "status": "Confirmed",
-    "first": "7 June 2026",
-    "latest": "Banco BPM sent communication to MPS Board regarding potential merger"
-  },
-  {
     "co": "France",
     "c": "FR",
     "name": "Criteo SA",
     "status": "Speculation",
     "first": "6 July 2026",
     "latest": "Vista Equity Partners and Quinti Capital have approached the company"
+  },
+  {
+    "co": "Italy",
+    "c": "IT",
+    "name": "Banco BPM SpA",
+    "status": "Speculation",
+    "first": "31 July 2026",
+    "latest": "Banca Monte dei Paschi di Siena is considering making an offer for Banco BPM after merger of equals talks ended (FT)"
   },
   {
     "co": "Italy",
