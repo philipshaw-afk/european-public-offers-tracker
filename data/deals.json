@@ -1189,6 +1189,40 @@
       "irr": 0.0,
       "acc": 66.7,
       "xb": false
+    },
+    {
+      "t": "ATLANTIC SAPPHIRE ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "CORAL HOLDCO AS",
+      "v": 2.6,
+      "p": -15.79,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "30 July 2026",
+      "ec": "28 August 2026",
+      "reg": "No Referral",
+      "own": 62.2,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "ZABKA GROUP SA",
+      "co": "Luxembourg",
+      "c": "LU",
+      "b": "ALIMENTATION COUCHE-TARD INC",
+      "v": 7400.0,
+      "p": 9.4,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "31 July 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 57.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1615,9 +1649,9 @@
     "ARGAN SA": {
       "consid": "Shares",
       "sector": "Property",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 19.25,
+      "ev_sales": 18.09,
+      "pe": 13.23
     },
     "IRISH CONTINENTAL GROUP PLC": {
       "consid": "Cash",
@@ -1650,6 +1684,20 @@
     "C100 AB": {
       "consid": "Cash",
       "sector": "Other Financial Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "ATLANTIC SAPPHIRE ASA": {
+      "consid": "Cash",
+      "sector": "Food",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "ZABKA GROUP SA": {
+      "consid": "Cash",
+      "sector": "Retailers",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
