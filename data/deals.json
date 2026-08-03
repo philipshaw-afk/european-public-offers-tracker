@@ -460,23 +460,6 @@
       "xb": false
     },
     {
-      "t": "ENERGY SOLAR TECH",
-      "co": "Spain",
-      "c": "ES",
-      "b": "GREENING GROUP GLOBAL SA",
-      "v": 85.0,
-      "p": 41.0,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "29 May 2026",
-      "ec": "31 August 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 50.0,
-      "acc": 50.0,
-      "xb": false
-    },
-    {
       "t": "AIXIA GROUP AB",
       "co": "Sweden",
       "c": "SE",
@@ -1407,13 +1390,6 @@
       "ev_ebitda": 49.25,
       "ev_sales": 0.71,
       "pe": null
-    },
-    "ENERGY SOLAR TECH": {
-      "consid": "Shares",
-      "sector": "Electricity",
-      "ev_ebitda": 11.28,
-      "ev_sales": 1.19,
-      "pe": 39.25
     },
     "AIXIA GROUP AB": {
       "consid": "Mixed",
