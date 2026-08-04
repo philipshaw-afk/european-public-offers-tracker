@@ -1130,30 +1130,13 @@
       "v": 11.6,
       "p": -14.67,
       "tp": "Public Offer",
-      "at": "Friendly",
+      "at": "Hostile",
       "d": "29 July 2026",
       "ec": "31 Dec 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 0.0,
       "acc": 51.0,
-      "xb": false
-    },
-    {
-      "t": "C100 AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "HUNTER CAPITAL AB",
-      "v": 2.0,
-      "p": 3.09,
-      "tp": "Mandatory",
-      "at": "Friendly",
-      "d": "29 July 2026",
-      "ec": "07 Sep 2026",
-      "reg": "No Referral",
-      "own": 65.1,
-      "irr": 0.0,
-      "acc": 0,
       "xb": false
     },
     {
@@ -1636,13 +1619,6 @@
     "TRADELAB SPA": {
       "consid": "Shares",
       "sector": "Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
-    },
-    "C100 AB": {
-      "consid": "Cash",
-      "sector": "Other Financial Services",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
