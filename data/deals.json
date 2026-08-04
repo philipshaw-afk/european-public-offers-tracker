@@ -1174,23 +1174,6 @@
       "xb": false
     },
     {
-      "t": "ATLANTIC SAPPHIRE ASA",
-      "co": "Norway",
-      "c": "NO",
-      "b": "CORAL HOLDCO AS",
-      "v": 2.6,
-      "p": -15.79,
-      "tp": "Mandatory",
-      "at": "Friendly",
-      "d": "30 July 2026",
-      "ec": "28 August 2026",
-      "reg": "No Referral",
-      "own": 62.2,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "ZABKA GROUP SA",
       "co": "Luxembourg",
       "c": "LU",
@@ -1660,13 +1643,6 @@
     "C100 AB": {
       "consid": "Cash",
       "sector": "Other Financial Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
-    },
-    "ATLANTIC SAPPHIRE ASA": {
-      "consid": "Cash",
-      "sector": "Food",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
