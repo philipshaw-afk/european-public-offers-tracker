@@ -222,23 +222,6 @@
       "xb": false
     },
     {
-      "t": "FINGERPRINT CARDS AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "PRECISE BIOMETRICS AB",
-      "v": 12.7,
-      "p": 12.03,
-      "tp": "Merger",
-      "at": "Friendly",
-      "d": "23-Mar-2026",
-      "ec": "30-Sep-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 0.0,
-      "acc": 66.67,
-      "xb": false
-    },
-    {
       "t": "MEDIOBANCA",
       "co": "Italy",
       "c": "IT",
@@ -282,28 +265,11 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "8 April 2026",
-      "ec": "29 July 2026",
+      "ec": "3 August 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 55.5,
       "acc": 55.0,
-      "xb": false
-    },
-    {
-      "t": "ADDIKO BANK AG",
-      "co": "Austria",
-      "c": "AT",
-      "b": "NLB",
-      "v": 714.0,
-      "p": 50.41,
-      "tp": "Public Offer",
-      "at": "Unsolicited",
-      "d": "9 April 2026",
-      "ec": "29 July 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 29.5,
-      "acc": 50.1,
       "xb": false
     },
     {
@@ -554,7 +520,7 @@
       "tp": "Public Offer",
       "at": "Hostile",
       "d": "10 June 2026",
-      "ec": "31 December 2026",
+      "ec": "13 August 2026",
       "reg": "No Referral",
       "own": 26.06,
       "irr": 4.22,
@@ -1266,13 +1232,6 @@
       "ev_sales": 1.98,
       "pe": 36.25
     },
-    "FINGERPRINT CARDS AB": {
-      "consid": "Shares",
-      "sector": "Electronics",
-      "ev_ebitda": null,
-      "ev_sales": 1.43,
-      "pe": null
-    },
     "MEDIOBANCA": {
       "consid": "Shares",
       "sector": "Banks",
@@ -1292,7 +1251,7 @@
       "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": 16.26
+      "pe": 11.64
     },
     "PERMANENT TSB GROUP HOLDINGS PLC": {
       "consid": "Cash",
