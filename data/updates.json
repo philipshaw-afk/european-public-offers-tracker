@@ -1,9 +1,33 @@
 [
   {
+    "d": "03 August 2026",
+    "c": "AT",
+    "t": "Addiko Bank AG",
+    "x": "56.1% shares tendered - grace period until 3 November 2026"
+  },
+  {
+    "d": "03 August 2026",
+    "c": "AT",
+    "t": "Addiko Bank AG",
+    "x": "31.22% shares tendered - fails to reach minimum acceptance threshold - offer fails"
+  },
+  {
     "d": "31 July 2026",
     "c": "LU",
     "t": "Zabka Group SA",
     "x": "New: Alimentation Couche-Tard Inc. launches a €7.4 billion offer for Zabka Group"
+  },
+  {
+    "d": "30 July 2026",
+    "c": "UK",
+    "t": "Permanent TSB Group Holdings PLC",
+    "x": "PTSB's shareholders aprove scheme with 91.28% of votes"
+  },
+  {
+    "d": "30 July 2026",
+    "c": "SE",
+    "t": "Viva Wine AB",
+    "x": "Offer document published, offer period would run from 31 July 2026 to 28 August 2026"
   },
   {
     "d": "29 July 2026",
@@ -21,7 +45,7 @@
     "d": "28 July 2026",
     "c": "DE",
     "t": "Hugo Boss AG",
-    "x": "Offer unconditional following EU clearance"
+    "x": "Offer unconditional following EU clearance. Additional acceptance period to 13 August 2026."
   },
   {
     "d": "27 July 2026",
@@ -106,5 +130,11 @@
     "c": "IT",
     "t": "Datalogic SpA",
     "x": "Hydra's offer closes with 95.55% control"
+  },
+  {
+    "d": "20 July 2026",
+    "c": "SE",
+    "t": "Fingerprint Cards AB",
+    "x": "Merger complete"
   }
 ]
