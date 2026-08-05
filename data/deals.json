@@ -1626,9 +1626,9 @@
     "ZABKA GROUP SA": {
       "consid": "Cash",
       "sector": "Retailers",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 9.39,
+      "ev_sales": 1.4,
+      "pe": 25.29
     }
   }
 }
