@@ -1445,8 +1445,8 @@
     "TREVI FINANZIARIA INDUSTRIALE SPA": {
       "consid": "Cash",
       "sector": "Building & Construction",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 5.0,
+      "ev_sales": 0.67,
       "pe": null
     },
     "VIVA WINE GROUP AB": {
@@ -1578,9 +1578,9 @@
     "TRADELAB SPA": {
       "consid": "Shares",
       "sector": "Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 14.7,
+      "ev_sales": 1.85,
+      "pe": 43.24
     },
     "ZABKA GROUP SA": {
       "consid": "Cash",
