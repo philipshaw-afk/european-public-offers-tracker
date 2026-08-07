@@ -10,7 +10,7 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "28-May-2025",
-      "ec": "31-Jul-2026",
+      "ec": "31-Aug-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 82.89,
@@ -137,23 +137,6 @@
       "xb": false
     },
     {
-      "t": "MARTIFER SGPS SA",
-      "co": "Portugal",
-      "c": "PT",
-      "b": "FERNANDO CAMPOS NUNES",
-      "v": 201.142,
-      "p": -6.5,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "5-Aug-2025",
-      "ec": "31-Jul-2026",
-      "reg": "No Referral",
-      "own": 85.5,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "OCI NV",
       "co": "Netherlands",
       "c": "NL",
@@ -180,7 +163,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "9-Feb-2026",
-      "ec": "27-Jul-2026",
+      "ec": "18-Sep-2026",
       "reg": "No Referral",
       "own": 48.0,
       "irr": 0.0,
@@ -197,7 +180,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "9-Mar-2026",
-      "ec": "31-Jul-2026",
+      "ec": "31-Aug-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 80.0,
@@ -239,23 +222,6 @@
       "xb": false
     },
     {
-      "t": "WHAT'S COOKING GROUP NV",
-      "co": "Belgium",
-      "c": "BE",
-      "b": "MALAGA INVESTMENT",
-      "v": 274.7,
-      "p": 22.31,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "27-Feb-2026",
-      "ec": "31 July 2026",
-      "reg": "No Referral",
-      "own": 68.05,
-      "irr": 6.97,
-      "acc": 95.0,
-      "xb": false
-    },
-    {
       "t": "ADDIKO BANK AG",
       "co": "Austria",
       "c": "AT",
@@ -265,7 +231,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "8 April 2026",
-      "ec": "3 August 2026",
+      "ec": "3 November 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 55.5,
@@ -545,7 +511,7 @@
       "xb": false
     },
     {
-      "t": "HOTEI PROPERTIES GROUP, SOCIMI SA",
+      "t": "HOTEI PROPERTIES GROUP SOCIMI SA",
       "co": "Spain",
       "c": "ES",
       "b": "VOUCHING SL",
@@ -605,7 +571,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "17June 2026",
-      "ec": "3 August 2026",
+      "ec": "27 August 2026",
       "reg": "No Referral",
       "own": 86.47,
       "irr": 0.0,
@@ -654,7 +620,7 @@
       "v": 402.0,
       "p": 39.4,
       "tp": "Public Offer",
-      "at": "Unsolicited",
+      "at": "Hostile",
       "d": "25 June 2026",
       "ec": "30 Sep 2026",
       "reg": "No Referral",
@@ -796,23 +762,6 @@
       "reg": "No Referral",
       "own": 62.79,
       "irr": 11.54,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
-      "t": "ELEKTROIMPORTOREN AS",
-      "co": "Norway",
-      "c": "NO",
-      "b": "BRØDRENE A. & O. JOHANSEN A/S",
-      "v": 99.0,
-      "p": 57.1,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "3 July 2026",
-      "ec": "5 August 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 46.65,
       "acc": 90.0,
       "xb": false
     },
@@ -1197,13 +1146,6 @@
       "ev_sales": 0.93,
       "pe": 32.4
     },
-    "MARTIFER SGPS SA": {
-      "consid": "Cash",
-      "sector": "Engineering",
-      "ev_ebitda": 5.37,
-      "ev_sales": 0.81,
-      "pe": 8.75
-    },
     "OCI NV": {
       "consid": "Cash",
       "sector": "Chemicals",
@@ -1238,13 +1180,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 10.86
-    },
-    "WHAT'S COOKING GROUP NV": {
-      "consid": "Cash",
-      "sector": "Food",
-      "ev_ebitda": 6.73,
-      "ev_sales": 0.58,
-      "pe": 20.27
     },
     "ADDIKO BANK AG": {
       "consid": "Cash",
@@ -1365,7 +1300,7 @@
       "ev_sales": 0.82,
       "pe": 11.0
     },
-    "HOTEI PROPERTIES GROUP, SOCIMI SA": {
+    "HOTEI PROPERTIES GROUP SOCIMI SA": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
       "ev_ebitda": 22.08,
@@ -1382,7 +1317,7 @@
     "SPOTLIGHT GROUP AB": {
       "consid": "Cash",
       "sector": "Financial Services",
-      "ev_ebitda": 50.97,
+      "ev_ebitda": 14.87,
       "ev_sales": 1.73,
       "pe": null
     },
@@ -1455,13 +1390,6 @@
       "ev_ebitda": 9.4,
       "ev_sales": 0.81,
       "pe": 15.34
-    },
-    "ELEKTROIMPORTOREN AS": {
-      "consid": "Cash",
-      "sector": "Retailers",
-      "ev_ebitda": 7.54,
-      "ev_sales": 0.89,
-      "pe": 33.02
     },
     "NEXT GEOSOLUTIONS SPA": {
       "consid": "Cash",
