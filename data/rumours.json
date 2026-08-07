@@ -16,6 +16,14 @@
     "latest": "Vista Equity Partners and Quinti Capital have approached the company"
   },
   {
+    "co": "France",
+    "c": "FR",
+    "name": "VusionGroup SA",
+    "status": "Speculation",
+    "first": "5 August 2026",
+    "latest": "VusionGroup is in early stages of exploring strategic options, including a potential sale (Bloomberg)"
+  },
+  {
     "co": "Italy",
     "c": "IT",
     "name": "Banco BPM SpA",
@@ -118,13 +126,5 @@
     "status": "Speculation",
     "first": "12 June 2026",
     "latest": "Orion CMC considering buying stake in Eramet (FT)"
-  },
-  {
-    "co": "France",
-    "c": "FR",
-    "name": "VusionGroup SA",
-    "status": "5 August 2026",
-    "first": "",
-    "latest": ""
   }
 ]
