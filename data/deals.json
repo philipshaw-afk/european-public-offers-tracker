@@ -1087,6 +1087,23 @@
       "irr": 57.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "HAIKI+ SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "SOSTENYA GROUP",
+      "v": 116.0,
+      "p": 52.66,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "7 August 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 56.15,
+      "irr": 0.0,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1516,6 +1533,13 @@
       "ev_ebitda": 9.39,
       "ev_sales": 1.4,
       "pe": 25.29
+    },
+    "HAIKI+ SPA": {
+      "consid": "Cash",
+      "sector": "Support Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
