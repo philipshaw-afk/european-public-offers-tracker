@@ -503,7 +503,7 @@
       "tp": "Mandatory",
       "at": "Neutral",
       "d": "10 June 2026",
-      "ec": "30 Sep 2026",
+      "ec": "20 Aug 2026",
       "reg": "No Referral",
       "own": 30.0,
       "irr": 19.5,
@@ -1537,8 +1537,8 @@
     "HAIKI+ SPA": {
       "consid": "Cash",
       "sector": "Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 5.07,
+      "ev_sales": 0.88,
       "pe": null
     }
   }
