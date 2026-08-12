@@ -583,8 +583,8 @@
       "co": "Germany",
       "c": "DE",
       "b": "BAYERISCHE GEWERBEBAU AG",
-      "v": 115.0,
-      "p": null,
+      "v": 86.0,
+      "p": -15.47,
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "17June 2026",
@@ -1348,8 +1348,8 @@
     "LUDWIG BECK AM RATHAUSECK": {
       "consid": "Cash",
       "sector": "Retailers",
-      "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_ebitda": 17.23,
+      "ev_sales": 2.39,
       "pe": null
     },
     "EAGLE FOOTBALL GROUP": {
