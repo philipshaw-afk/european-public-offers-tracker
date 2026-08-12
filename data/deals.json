@@ -392,23 +392,6 @@
       "xb": false
     },
     {
-      "t": "AIXIA GROUP AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "WHITE PEARL TECHNOLOGY GROUP AB",
-      "v": 16.0,
-      "p": 31.5,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "1 June 2026",
-      "ec": "10 August 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 56.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "LASERNET GROUP AB",
       "co": "Sweden",
       "c": "SE",
@@ -490,23 +473,6 @@
       "reg": "No Referral",
       "own": 26.06,
       "irr": 4.22,
-      "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "KONTRON AG",
-      "co": "Austria",
-      "c": "AT",
-      "b": "ENNOCONN CORPORATION",
-      "v": 1485.0,
-      "p": 2.4,
-      "tp": "Mandatory",
-      "at": "Neutral",
-      "d": "10 June 2026",
-      "ec": "20 Aug 2026",
-      "reg": "No Referral",
-      "own": 30.0,
-      "irr": 19.5,
       "acc": 0,
       "xb": false
     },
@@ -1268,13 +1234,6 @@
       "ev_sales": 0.71,
       "pe": null
     },
-    "AIXIA GROUP AB": {
-      "consid": "Mixed",
-      "sector": "I.T.",
-      "ev_ebitda": 44.97,
-      "ev_sales": 0.88,
-      "pe": null
-    },
     "LASERNET GROUP AB": {
       "consid": "Cash",
       "sector": "I.T.",
@@ -1309,13 +1268,6 @@
       "ev_ebitda": 4.68,
       "ev_sales": 0.84,
       "pe": 11.58
-    },
-    "KONTRON AG": {
-      "consid": "Cash",
-      "sector": "Electronics",
-      "ev_ebitda": 5.44,
-      "ev_sales": 0.82,
-      "pe": 11.0
     },
     "HOTEI PROPERTIES GROUP SOCIMI SA": {
       "consid": "Cash",
