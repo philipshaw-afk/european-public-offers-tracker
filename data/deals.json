@@ -52,23 +52,6 @@
       "xb": false
     },
     {
-      "t": "BORGOSESIA SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "ISA - ISTITUTO ATESINO DI SVILUPPO SPA/PRETO SRL",
-      "v": 33.585,
-      "p": 20.3,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "16-Feb-2026",
-      "ec": "7-Aug-2026",
-      "reg": "No Referral",
-      "own": 49.68,
-      "irr": 26.96,
-      "acc": 66.67,
-      "xb": false
-    },
-    {
       "t": "IVECO GROUP NV",
       "co": "Italy",
       "c": "IT",
@@ -384,7 +367,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "27 May 2026",
-      "ec": "30 Sep 2026",
+      "ec": "10 Sep 2026",
       "reg": "No Referral",
       "own": 77.23,
       "irr": 0.0,
@@ -617,15 +600,15 @@
       "co": "Germany",
       "c": "DE",
       "b": "GLI & GRONDBACH GMBH",
-      "v": 70.0,
-      "p": null,
+      "v": 72.0,
+      "p": 9.71,
       "tp": "MBO/MBI",
-      "at": "Friendly",
+      "at": "Neutral",
       "d": "25 June 2026",
       "ec": "30 Sep 2026",
       "reg": "No Referral",
       "own": 25.05,
-      "irr": 0,
+      "irr": 0.0,
       "acc": 0,
       "xb": false
     },
@@ -1070,6 +1053,23 @@
       "irr": 0.0,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "EVOLUTION AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "CANDLE LAKE LIMITED",
+      "v": 11900.0,
+      "p": 0.0,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "13 August 2026",
+      "ec": "15 Sep 2026",
+      "reg": "No Referral",
+      "own": 31.56,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1093,13 +1093,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
-    },
-    "BORGOSESIA SPA": {
-      "consid": "Cash",
-      "sector": "Property",
-      "ev_ebitda": 27.12,
-      "ev_sales": 10.98,
-      "pe": 13.58
     },
     "IVECO GROUP NV": {
       "consid": "Mixed",
@@ -1321,9 +1314,9 @@
     "INNOTEC TSS AG": {
       "consid": "Cash",
       "sector": "Building Materials",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 4.03,
+      "ev_sales": 0.49,
+      "pe": 11.86
     },
     "VALTECNE SPA": {
       "consid": "Cash",
@@ -1491,6 +1484,13 @@
       "sector": "Support Services",
       "ev_ebitda": 5.07,
       "ev_sales": 0.88,
+      "pe": null
+    },
+    "EVOLUTION AB": {
+      "consid": "Cash",
+      "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
