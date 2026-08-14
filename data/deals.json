@@ -157,7 +157,7 @@
       "t": "NETFONDS AG",
       "co": "Germany",
       "c": "DE",
-      "b": "WARBURG PINCUS AG",
+      "b": "WARBURG PINCUS",
       "v": 182.895,
       "p": 64.39,
       "tp": "MBO/MBI",
@@ -350,7 +350,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "26 May 2026",
-      "ec": "7 Aug 2026",
+      "ec": "14 Aug 2026",
       "reg": "No Referral",
       "own": 81.07,
       "irr": 6.38,
@@ -372,23 +372,6 @@
       "own": 77.23,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "LASERNET GROUP AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "TABELLAE BIDCO",
-      "v": 81.0,
-      "p": 53.8,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "4 June 2026",
-      "ec": "7 August 2026",
-      "reg": "No Referral",
-      "own": 29.3,
-      "irr": 61.6,
-      "acc": 90.0,
       "xb": false
     },
     {
@@ -523,7 +506,7 @@
       "ec": "27 August 2026",
       "reg": "No Referral",
       "own": 86.47,
-      "irr": 0.0,
+      "irr": 3.21,
       "acc": 0,
       "xb": false
     },
@@ -1225,13 +1208,6 @@
       "sector": "Chemicals",
       "ev_ebitda": 49.25,
       "ev_sales": 0.71,
-      "pe": null
-    },
-    "LASERNET GROUP AB": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 18.59,
-      "ev_sales": 3.46,
       "pe": null
     },
     "EVOKE PLC": {
