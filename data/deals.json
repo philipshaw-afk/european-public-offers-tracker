@@ -1465,9 +1465,9 @@
     "EVOLUTION AB": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.04,
+      "ev_sales": 5.31,
+      "pe": 11.24
     }
   }
 }
