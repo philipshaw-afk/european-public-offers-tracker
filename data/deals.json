@@ -350,7 +350,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "26 May 2026",
-      "ec": "14 Aug 2026",
+      "ec": "21 Aug 2026",
       "reg": "No Referral",
       "own": 81.07,
       "irr": 6.38,
@@ -423,23 +423,6 @@
       "own": 0.07,
       "irr": 0.0,
       "acc": 66.67,
-      "xb": false
-    },
-    {
-      "t": "HUGO BOSS AG",
-      "co": "Germany",
-      "c": "DE",
-      "b": "FRASERS GROUP PLC",
-      "v": 2694.0,
-      "p": 4.3,
-      "tp": "Public Offer",
-      "at": "Hostile",
-      "d": "10 June 2026",
-      "ec": "13 August 2026",
-      "reg": "No Referral",
-      "own": 26.06,
-      "irr": 4.22,
-      "acc": 0,
       "xb": false
     },
     {
@@ -1230,13 +1213,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 8.04
-    },
-    "HUGO BOSS AG": {
-      "consid": "Cash",
-      "sector": "Textiles & Apparel",
-      "ev_ebitda": 4.68,
-      "ev_sales": 0.84,
-      "pe": 11.58
     },
     "HOTEI PROPERTIES GROUP SOCIMI SA": {
       "consid": "Cash",
