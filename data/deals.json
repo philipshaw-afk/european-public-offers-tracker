@@ -1036,6 +1036,40 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "BANCO BPM SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "BANCA MONTE DEI PASCHI DI SIENA",
+      "v": 25840.0,
+      "p": 9.67,
+      "tp": "Public Offer",
+      "at": "Hostile",
+      "d": "21 August 2026",
+      "ec": "15 Feb 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 50.0,
+      "xb": false
+    },
+    {
+      "t": "BANCA GENERALI SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "BANCA MONTE DEI PASCHI DI SIENA",
+      "v": 9182.0,
+      "p": 17.8,
+      "tp": "Public Offer",
+      "at": "Neutral",
+      "d": "21 August 2026",
+      "ec": "15 Feb 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1444,6 +1478,20 @@
       "ev_ebitda": 8.04,
       "ev_sales": 5.31,
       "pe": 11.24
+    },
+    "BANCO BPM SPA": {
+      "consid": "Shares",
+      "sector": "Banks",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "BANCA GENERALI SPA": {
+      "consid": "Shares",
+      "sector": "Banks",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
