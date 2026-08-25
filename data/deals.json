@@ -443,23 +443,6 @@
       "xb": false
     },
     {
-      "t": "DECEUNINCK NV",
-      "co": "Belgium",
-      "c": "BE",
-      "b": "FRANCIS VAN EECKHOUT",
-      "v": 295.0,
-      "p": -4.0,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "9 June 2026",
-      "ec": "31 August 2026",
-      "reg": "No Referral",
-      "own": 30.0,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "SPOTLIGHT GROUP AB",
       "co": "Sweden",
       "c": "SE",
@@ -639,7 +622,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "29 June 2026",
-      "ec": "30 Sep 2026",
+      "ec": "18 Sep 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 37.8,
@@ -1254,13 +1237,6 @@
       "ev_ebitda": 22.08,
       "ev_sales": 18.63,
       "pe": 16.31
-    },
-    "DECEUNINCK NV": {
-      "consid": "Cash",
-      "sector": "Building Materials",
-      "ev_ebitda": 3.82,
-      "ev_sales": 0.54,
-      "pe": 12.14
     },
     "SPOTLIGHT GROUP AB": {
       "consid": "Cash",
