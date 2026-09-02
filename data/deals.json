@@ -1070,6 +1070,23 @@
       "irr": 77.15,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "CIRSA ENTERPRISES SA",
+      "co": "Spain",
+      "c": "ES",
+      "b": "LOTTOMATICA GROUP SPA",
+      "v": 3040.0,
+      "p": 32.77,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "2 September 2026",
+      "ec": "30 Jun 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 74.23,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1492,6 +1509,13 @@
       "ev_ebitda": 8.94,
       "ev_sales": 2.23,
       "pe": 22.61
+    },
+    "CIRSA ENTERPRISES SA": {
+      "consid": "Shares",
+      "sector": "Leisure & Hotels",
+      "ev_ebitda": 6.47,
+      "ev_sales": 1.61,
+      "pe": 26.9
     }
   }
 }
