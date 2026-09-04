@@ -460,23 +460,6 @@
       "xb": false
     },
     {
-      "t": "CITYCON OYJ",
-      "co": "Finland",
-      "c": "FI",
-      "b": "G-CITY LTD",
-      "v": 532.0,
-      "p": 7.0,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "17June 2026",
-      "ec": "31 August 2026",
-      "reg": "No Referral",
-      "own": 86.47,
-      "irr": 3.21,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "EAGLE FOOTBALL GROUP",
       "co": "France",
       "c": "FR",
@@ -1261,13 +1244,6 @@
       "ev_ebitda": 14.87,
       "ev_sales": 1.73,
       "pe": null
-    },
-    "CITYCON OYJ": {
-      "consid": "Cash",
-      "sector": "Property",
-      "ev_ebitda": null,
-      "ev_sales": 8.02,
-      "pe": 6.77
     },
     "EAGLE FOOTBALL GROUP": {
       "consid": "Cash",
