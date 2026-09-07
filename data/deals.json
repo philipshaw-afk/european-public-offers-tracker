@@ -1060,7 +1060,7 @@
       "c": "NO",
       "b": "REJLERS AB",
       "v": 383.0,
-      "p": -1.93,
+      "p": 3.85,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "7 September 2026",
@@ -1489,9 +1489,9 @@
     "MULTICONSULT ASA": {
       "consid": "Shares",
       "sector": "Support Services",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.23,
+      "ev_sales": 0.96,
+      "pe": 14.91
     }
   }
 }
