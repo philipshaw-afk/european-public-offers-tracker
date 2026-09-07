@@ -1053,6 +1053,23 @@
       "irr": 74.23,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "MULTICONSULT ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "REJLERS AB",
+      "v": 383.0,
+      "p": -1.93,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "7 September 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 37.0,
+      "acc": 66.7,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1468,6 +1485,13 @@
       "ev_ebitda": 6.47,
       "ev_sales": 1.61,
       "pe": 26.9
+    },
+    "MULTICONSULT ASA": {
+      "consid": "Shares",
+      "sector": "Support Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
