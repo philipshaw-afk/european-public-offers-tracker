@@ -175,8 +175,8 @@
       "co": "Italy",
       "c": "IT",
       "b": "POSTE ITALIANE",
-      "v": 13521.0,
-      "p": 9.0,
+      "v": 16773.0,
+      "p": 36.0,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "22-Mar-2026",
@@ -1146,9 +1146,9 @@
     "TELECOM ITALIA SPA": {
       "consid": "Mixed",
       "sector": "Telecoms",
-      "ev_ebitda": 5.97,
-      "ev_sales": 1.98,
-      "pe": 36.25
+      "ev_ebitda": 6.68,
+      "ev_sales": 2.22,
+      "pe": 44.97
     },
     "MEDIOBANCA": {
       "consid": "Shares",
