@@ -1070,6 +1070,23 @@
       "irr": 37.0,
       "acc": 66.7,
       "xb": false
+    },
+    {
+      "t": "ROBOT SA",
+      "co": "Spain",
+      "c": "ES",
+      "b": "HMS NETWORKS AB",
+      "v": 17.2,
+      "p": 9.65,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "11 September 2026",
+      "ec": "1 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 77.69,
+      "acc": 100.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1492,6 +1509,13 @@
       "ev_ebitda": 8.23,
       "ev_sales": 0.96,
       "pe": 14.91
+    },
+    "ROBOT SA": {
+      "consid": "Cash",
+      "sector": "Electronic & Electrical Equipment",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
