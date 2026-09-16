@@ -1,5 +1,17 @@
 [
   {
+    "d": "14 September 2026",
+    "c": "IT",
+    "t": "Compagnia Dei Caraibi SPA",
+    "x": "Tandem holds 91.96% of the company and will acquire the remaining shares"
+  },
+  {
+    "d": "11 September 2026",
+    "c": "SE",
+    "t": "Northern Ocean Ltd",
+    "x": "Hemen holds 83% of the company's share capital at end of offer period"
+  },
+  {
     "d": "11 September 2026",
     "c": "ES",
     "t": "Robot SA",
@@ -19,6 +31,12 @@
   },
   {
     "d": "7 September 2026",
+    "c": "SE",
+    "t": "KlaraBo Sverige AB",
+    "x": "The merger was approved for implementation, with completion expected on 30 September 2026"
+  },
+  {
+    "d": "7 September 2026",
     "c": "IT",
     "t": "Telecom Italia SpA",
     "x": "Poste Italiane increased its offer by €0.30 per share"
@@ -30,9 +48,15 @@
     "x": "Rejlers AB makes a share-for-share offer for Multiconsult"
   },
   {
-    "d": "4 September 2026",
-    "c": "SE",
-    "t": "Viva Wine Group AB",
-    "x": "Upon settlement of the consideration, Riesling Ventures AB will own 96.4% of all shares in Viva Wine. Extended acceptance period expires on 11 September 2026"
+    "d": "3 September 2026",
+    "c": "NO",
+    "t": "Elmera Group ASA",
+    "x": "All required regulatory approvals obtained, with the offer remaining subject to the other closing conditions, including the 90% minimum acceptance condition"
+  },
+  {
+    "d": "2 September 2026",
+    "c": "DE",
+    "t": "Delivery Hero",
+    "x": "Delivery Hero's Management Board and Supervisory Board recommend that shareholders accept the offer"
   }
 ]
