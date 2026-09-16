@@ -715,23 +715,6 @@
       "xb": false
     },
     {
-      "t": "COMPAGNIA DEI CARAIBI SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "TANDEM",
-      "v": 6.0,
-      "p": 17.6,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "14 July 2026",
-      "ec": "11 Sep 2026",
-      "reg": "No Referral",
-      "own": 74.01,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "DELIVERY HERO SE",
       "co": "Germany",
       "c": "DE",
@@ -1370,13 +1353,6 @@
       "ev_sales": null,
       "pe": 11.87
     },
-    "COMPAGNIA DEI CARAIBI SPA": {
-      "consid": "Cash",
-      "sector": "Alcoholic Beverages",
-      "ev_ebitda": null,
-      "ev_sales": 0.44,
-      "pe": null
-    },
     "DELIVERY HERO SE": {
       "consid": "Cash",
       "sector": "Internet",
@@ -1513,9 +1489,9 @@
     "ROBOT SA": {
       "consid": "Cash",
       "sector": "Electronic & Electrical Equipment",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.33,
+      "ev_sales": 2.32,
+      "pe": 10.96
     }
   }
 }
