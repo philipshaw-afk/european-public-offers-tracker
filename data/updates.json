@@ -1,15 +1,27 @@
 [
   {
+    "d": "18 September 2026",
+    "c": "DE",
+    "t": "All for One Group SE",
+    "x": "At end of offer period, Vinci holds 86.74% stake in All for One. Additional acceptance period runs until 2 October 2026"
+  },
+  {
     "d": "17 September 2026",
     "c": "IT",
-    "t": "Pininfarina SPA",
+    "t": "Pininfarina SpA",
     "x": "Cash offer of €1.00 per share by the Mahindra Group for the remaining 21.18% of the shares in Pininfarina"
+  },
+  {
+    "d": "16 September 2026",
+    "c": "ES",
+    "t": "Ercros SA",
+    "x": "At end of offer period, Bondalti holds 85.85% of Ercros' shares"
   },
   {
     "d": "16 September 2026",
     "c": "SE",
     "t": "Evolution AB",
-    "x": "At end of offer period, Candle Lake held 33.8% of Evolution's share capital"
+    "x": "At end of offer period, Candle Lake holds 33.8% of Evolution's share capital"
   },
   {
     "d": "16 September 2026",
@@ -25,6 +37,12 @@
   },
   {
     "d": "14 September 2026",
+    "c": "SE",
+    "t": "Viva Wine Group AB",
+    "x": "At end of offer period, the Consortium held 99.8% of Viva Wine's share capital"
+  },
+  {
+    "d": "14 September 2026",
     "c": "NL",
     "t": "OCI NV",
     "x": "Offer memorandum published - offer period will run from 15 September to 17 November 2026"
@@ -32,12 +50,12 @@
   {
     "d": "14 September 2026",
     "c": "IT",
-    "t": "Compagnia Dei Caraibi SPA",
+    "t": "Compagnia dei Caraibi SPA",
     "x": "Tandem holds 91.96% of the company and will acquire the remaining shares"
   },
   {
     "d": "11 September 2026",
-    "c": "SE",
+    "c": "NO",
     "t": "Northern Ocean Ltd",
     "x": "Hemen holds 83% of the company's share capital at end of offer period"
   },
@@ -46,47 +64,5 @@
     "c": "ES",
     "t": "Robot SA",
     "x": "Cash offer of €6.25 per share for all shares in Robot SA by HMS Industrial Networks SLU, a subsidiary of HMS Networks AB"
-  },
-  {
-    "d": "10 September 2026",
-    "c": "IE",
-    "t": "Irish Continental Group plc",
-    "x": "The scheme is approved by ICG's shareholders"
-  },
-  {
-    "d": "10 September 2026",
-    "c": "DE",
-    "t": "All for One Group SE",
-    "x": "Vinci has acceptances of 83.56%, above 75% minimum condition"
-  },
-  {
-    "d": "7 September 2026",
-    "c": "SE",
-    "t": "KlaraBo Sverige AB",
-    "x": "The merger was approved for implementation, with completion expected on 30 September 2026"
-  },
-  {
-    "d": "7 September 2026",
-    "c": "IT",
-    "t": "Telecom Italia SpA",
-    "x": "Poste Italiane increased its offer by €0.30 per share"
-  },
-  {
-    "d": "7 September 2026",
-    "c": "NO",
-    "t": "Multiconsult ASA",
-    "x": "Rejlers AB makes a share-for-share offer for Multiconsult"
-  },
-  {
-    "d": "3 September 2026",
-    "c": "NO",
-    "t": "Elmera Group ASA",
-    "x": "All required regulatory approvals obtained, with the offer remaining subject to the other closing conditions, including the 90% minimum acceptance condition"
-  },
-  {
-    "d": "2 September 2026",
-    "c": "DE",
-    "t": "Delivery Hero",
-    "x": "Delivery Hero's Management Board and Supervisory Board recommend that shareholders accept the offer"
   }
 ]
