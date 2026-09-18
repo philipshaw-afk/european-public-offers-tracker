@@ -503,7 +503,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "24 June 2026",
-      "ec": "30 Sep 2026",
+      "ec": "17 Nov 2026",
       "reg": "No Referral",
       "own": 58.28,
       "irr": 0.0,
@@ -953,23 +953,6 @@
       "xb": false
     },
     {
-      "t": "EVOLUTION AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "CANDLE LAKE LIMITED",
-      "v": 11900.0,
-      "p": 0.0,
-      "tp": "MBO/MBI",
-      "at": "Hostile",
-      "d": "13 August 2026",
-      "ec": "15 Sep 2026",
-      "reg": "No Referral",
-      "own": 31.56,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "BANCO BPM SPA",
       "co": "Italy",
       "c": "IT",
@@ -1069,6 +1052,40 @@
       "own": 0.0,
       "irr": 77.69,
       "acc": 100.0,
+      "xb": false
+    },
+    {
+      "t": "EUROBIO SCIENTIFIC SA",
+      "co": "France",
+      "c": "FR",
+      "b": "NEXTSTAGE AM / IK PARTNERS LTD / MANAGEMENT",
+      "v": 254.7,
+      "p": 25.2,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "16 September 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 90.14,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "PININFARINA SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "MAHINDRA GROUP",
+      "v": 78.7,
+      "p": 19.6,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "17 September 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 78.82,
+      "irr": 0.0,
+      "acc": 0,
       "xb": false
     }
   ],
@@ -1444,13 +1461,6 @@
       "ev_sales": 0.88,
       "pe": null
     },
-    "EVOLUTION AB": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 8.04,
-      "ev_sales": 5.31,
-      "pe": 11.24
-    },
     "BANCO BPM SPA": {
       "consid": "Shares",
       "sector": "Banks",
@@ -1492,6 +1502,20 @@
       "ev_ebitda": 8.33,
       "ev_sales": 2.32,
       "pe": 10.96
+    },
+    "EUROBIO SCIENTIFIC SA": {
+      "consid": "Cash",
+      "sector": "Healthcare",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "PININFARINA SPA": {
+      "consid": "Cash",
+      "sector": "Support Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
