@@ -1036,6 +1036,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "BERENTZEN-GRUPPE AG",
+      "co": "Germany",
+      "c": "DE",
+      "b": "SAZERAC COMPANY INC",
+      "v": 53.3,
+      "p": 62.28,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "21 September 2026",
+      "ec": "31 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1443,6 +1460,13 @@
       "sector": "Support Services",
       "ev_ebitda": 13.62,
       "ev_sales": 0.49,
+      "pe": null
+    },
+    "BERENTZEN-GRUPPE AG": {
+      "consid": "Cash",
+      "sector": "Alcoholic Beverages",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
