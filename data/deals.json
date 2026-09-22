@@ -149,7 +149,7 @@
       "ec": "18-Sep-2026",
       "reg": "No Referral",
       "own": 48.0,
-      "irr": 0.0,
+      "irr": 41.81,
       "acc": 80.0,
       "xb": false
     },
@@ -710,7 +710,7 @@
       "ec": "2 Oct 2026",
       "reg": "No Referral",
       "own": 0.0,
-      "irr": 83.56,
+      "irr": 86.74,
       "acc": 75.0,
       "xb": false
     },
