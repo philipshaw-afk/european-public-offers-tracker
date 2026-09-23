@@ -1465,9 +1465,9 @@
     "BERENTZEN-GRUPPE AG": {
       "consid": "Cash",
       "sector": "Alcoholic Beverages",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 4.82,
+      "ev_sales": 0.46,
+      "pe": 33.06
     }
   }
 }
