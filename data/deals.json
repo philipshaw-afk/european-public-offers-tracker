@@ -1053,6 +1053,40 @@
       "irr": 0.0,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "HSBC BANK MALTA PLC",
+      "co": "Malta",
+      "c": "MA",
+      "b": "CREDIABANK",
+      "v": 286.0,
+      "p": 8.3,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "16 September 2025",
+      "ec": "31 March 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 70.03,
+      "acc": 0,
+      "xb": false
+    },
+    {
+      "t": "EVROPI HOLDINGS SA",
+      "co": "Greece",
+      "c": "GR",
+      "b": "CREDIABANK",
+      "v": 310.0,
+      "p": -2.5,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "21 May 2026",
+      "ec": "31 Oct 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 40.0,
+      "acc": 66.67,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1468,6 +1502,20 @@
       "ev_ebitda": 4.82,
       "ev_sales": 0.46,
       "pe": 33.06
+    },
+    "HSBC BANK MALTA PLC": {
+      "consid": "Cash",
+      "sector": "Banks",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": 3.7
+    },
+    "EVROPI HOLDINGS SA": {
+      "consid": "Shares",
+      "sector": "Insurance",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
