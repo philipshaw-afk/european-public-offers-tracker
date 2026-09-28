@@ -24,6 +24,14 @@
     "latest": "VusionGroup is in early stages of exploring strategic options, including a potential sale (Bloomberg)"
   },
   {
+    "co": "Ireland",
+    "c": "IE",
+    "name": "Irish Residential Properties REIT plc",
+    "status": "Confirmed",
+    "first": "28 September 2026",
+    "latest": "I-RES confirms that it has received an indicative cash offer of €1.386 per share from Baring International Investment Limited (fifth in total). The Board would be minded to recommend the offer"
+  },
+  {
     "co": "Italy",
     "c": "IT",
     "name": "Nexi SpA",
@@ -46,6 +54,14 @@
     "status": "Speculation",
     "first": "27 July 2026",
     "latest": "Cellnex is studying strategic options including taking ​the company private or a merger ‌with a competitor (Reuters)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Evonik Industries AG",
+    "status": "Confirmed",
+    "first": "25 September 2026",
+    "latest": "Evonik confirms that it has received a non-binding approach from BASF SE for all shares in Evonik. No talks are taking place at the moment"
   },
   {
     "co": "France",
