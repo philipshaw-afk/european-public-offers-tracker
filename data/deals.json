@@ -1087,6 +1087,23 @@
       "irr": 40.0,
       "acc": 66.67,
       "xb": false
+    },
+    {
+      "t": "PRESERVIUM PROPERTY AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "PPI PUBLIC PROPERTY INVEST AB",
+      "v": 28.3,
+      "p": 44.4,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "29 September 2026",
+      "ec": "7 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 0.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1513,6 +1530,13 @@
     "EVROPI HOLDINGS SA": {
       "consid": "Shares",
       "sector": "Insurance",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "PRESERVIUM PROPERTY AB": {
+      "consid": "Mixed",
+      "sector": "Property",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
