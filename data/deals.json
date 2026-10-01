@@ -163,28 +163,11 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "9-Mar-2026",
-      "ec": "2-Oct-2026",
+      "ec": "",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 80.0,
       "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "TELECOM ITALIA SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "POSTE ITALIANE",
-      "v": 16773.0,
-      "p": 36.0,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "22-Mar-2026",
-      "ec": "31-Dec-2026",
-      "reg": "No Referral",
-      "own": 27.32,
-      "irr": 0.3,
-      "acc": 66.67,
       "xb": false
     },
     {
@@ -270,23 +253,6 @@
       "own": 0.0,
       "irr": 83.4,
       "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "KLARABO SVERIGE AB",
-      "co": "Sweden",
-      "c": "SE",
-      "b": "SVEAFASTIGHETER AB",
-      "v": 186.0,
-      "p": 0.6,
-      "tp": "Merger",
-      "at": "Friendly",
-      "d": "18 May 2026",
-      "ec": "30 Sep 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 58.4,
-      "acc": 66.67,
       "xb": false
     },
     {
@@ -656,7 +622,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "9 July 2026",
-      "ec": "25 Sep 2026",
+      "ec": "22 Oct 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 59.9,
@@ -877,7 +843,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "31 July 2026",
-      "ec": "25 Sep 2026",
+      "ec": "26 Oct 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 57.0,
@@ -1087,6 +1053,23 @@
       "irr": 0.0,
       "acc": 0.0,
       "xb": false
+    },
+    {
+      "t": "TRIONA AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "CONSTELLATION SOFTWARE INC",
+      "v": 23.0,
+      "p": 30.7,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "1 October 2026",
+      "ec": "12 Nov 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 17.2,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1160,13 +1143,6 @@
       "ev_sales": null,
       "pe": null
     },
-    "TELECOM ITALIA SPA": {
-      "consid": "Mixed",
-      "sector": "Telecoms",
-      "ev_ebitda": 6.68,
-      "ev_sales": 2.22,
-      "pe": 44.97
-    },
     "MEDIOBANCA": {
       "consid": "Shares",
       "sector": "Banks",
@@ -1201,13 +1177,6 @@
       "ev_ebitda": 9.49,
       "ev_sales": 1.92,
       "pe": 19.16
-    },
-    "KLARABO SVERIGE AB": {
-      "consid": "Shares",
-      "sector": "Property",
-      "ev_ebitda": 21.64,
-      "ev_sales": 10.45,
-      "pe": null
     },
     "PLC SPA": {
       "consid": "Cash",
@@ -1513,6 +1482,13 @@
     "PRESERVIUM PROPERTY AB": {
       "consid": "Mixed",
       "sector": "Property",
+      "ev_ebitda": 18.7,
+      "ev_sales": 15.3,
+      "pe": null
+    },
+    "TRIONA AB": {
+      "consid": "Cash",
+      "sector": "I.T.",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
