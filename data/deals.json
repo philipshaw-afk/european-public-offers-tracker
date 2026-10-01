@@ -409,23 +409,6 @@
       "xb": false
     },
     {
-      "t": "HOTEI PROPERTIES GROUP SOCIMI SA",
-      "co": "Spain",
-      "c": "ES",
-      "b": "VOUCHING SL",
-      "v": 371.0,
-      "p": 15.94,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "9 June 2026",
-      "ec": "25 Sep 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 53.67,
-      "acc": 50.0,
-      "xb": false
-    },
-    {
       "t": "SPOTLIGHT GROUP AB",
       "co": "Sweden",
       "c": "SE",
@@ -1274,13 +1257,6 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": 8.04
-    },
-    "HOTEI PROPERTIES GROUP SOCIMI SA": {
-      "consid": "Cash",
-      "sector": "Leisure & Hotels",
-      "ev_ebitda": 22.08,
-      "ev_sales": 18.63,
-      "pe": 16.31
     },
     "SPOTLIGHT GROUP AB": {
       "consid": "Cash",
