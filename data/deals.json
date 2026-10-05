@@ -1466,7 +1466,7 @@
       "consid": "Cash",
       "sector": "I.T.",
       "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_sales": 0.92,
       "pe": null
     }
   }
