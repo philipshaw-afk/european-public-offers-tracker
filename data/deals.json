@@ -362,15 +362,15 @@
       "co": "Italy",
       "c": "IT",
       "b": "INTESA SANPAOLO",
-      "v": 30600.0,
-      "p": 12.5,
+      "v": 34486.0,
+      "p": 26.63,
       "tp": "Public Offer",
       "at": "Hostile",
       "d": "8 June 2026",
       "ec": "31 December 2026",
       "reg": "No Referral",
       "own": 0.07,
-      "irr": 0.0,
+      "irr": 17.6,
       "acc": 66.67,
       "xb": false
     },
@@ -1208,7 +1208,7 @@
       "sector": "Banks",
       "ev_ebitda": null,
       "ev_sales": null,
-      "pe": 8.04
+      "pe": 9.06
     },
     "SPOTLIGHT GROUP AB": {
       "consid": "Cash",
