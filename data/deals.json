@@ -804,14 +804,14 @@
       "co": "Italy",
       "c": "IT",
       "b": "WEBUILD SPA",
-      "v": 295.0,
-      "p": 29.8,
+      "v": 338.7,
+      "p": 45.9,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "29 July 2026",
       "ec": "31 Dec 2026",
       "reg": "No Referral",
-      "own": 5.0,
+      "own": 18.91,
       "irr": 0.0,
       "acc": 66.7,
       "xb": false
@@ -1051,6 +1051,23 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 17.2,
+      "acc": 90.0,
+      "xb": false
+    },
+    {
+      "t": "AKVA GROUP ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "YANMAR HOLDINGS CO LTD",
+      "v": 543.0,
+      "p": 57.0,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "2 October 2026",
+      "ec": "30 May 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 92.0,
       "acc": 90.0,
       "xb": false
     }
@@ -1467,6 +1484,13 @@
       "sector": "I.T.",
       "ev_ebitda": null,
       "ev_sales": 0.92,
+      "pe": null
+    },
+    "AKVA GROUP ASA": {
+      "consid": "Cash",
+      "sector": "Engineering",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
