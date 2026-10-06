@@ -1489,9 +1489,9 @@
     "AKVA GROUP ASA": {
       "consid": "Cash",
       "sector": "Engineering",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 12.93,
+      "ev_sales": 1.66,
+      "pe": 27.36
     }
   }
 }
