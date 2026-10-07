@@ -1070,6 +1070,23 @@
       "irr": 92.0,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "SCANA ASA",
+      "co": "Norway",
+      "c": "NO",
+      "b": "RIEBER & SON AS",
+      "v": 59.5,
+      "p": -4.8,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "2 October 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 33.54,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1492,6 +1509,13 @@
       "ev_ebitda": 12.93,
       "ev_sales": 1.66,
       "pe": 27.36
+    },
+    "SCANA ASA": {
+      "consid": "Cash",
+      "sector": "Engineering",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
