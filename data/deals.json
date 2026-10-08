@@ -1077,11 +1077,11 @@
       "c": "NO",
       "b": "RIEBER & SON AS",
       "v": 59.5,
-      "p": -4.8,
+      "p": -2.1,
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "2 October 2026",
-      "ec": "",
+      "ec": "31 Dec 2026",
       "reg": "No Referral",
       "own": 33.54,
       "irr": 0.0,
@@ -1513,9 +1513,9 @@
     "SCANA ASA": {
       "consid": "Cash",
       "sector": "Engineering",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 5.02,
+      "ev_sales": 0.64,
+      "pe": 20.08
     }
   }
 }
