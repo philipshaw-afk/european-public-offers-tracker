@@ -7,6 +7,12 @@
   },
   {
     "d": "7 October 2026",
+    "c": "CH",
+    "t": "Swiss Estates AG",
+    "x": "Provisional final results showed Kolumbus holidng 89.52% of Swiss Estates share capital and 99.43% of its voting rights"
+  },
+  {
+    "d": "7 October 2026",
     "c": "LU",
     "t": "InPost SA",
     "x": "Following completion of the offer period the Consortium holds 98.49% of the shares"
@@ -20,7 +26,7 @@
   {
     "d": "5 October 2026",
     "c": "SE",
-    "t": "Bahnof AB",
+    "t": "Bahnhof AB",
     "x": "Bahnhof announced that it had agreed to sell its Norwegian operations"
   },
   {
@@ -37,8 +43,8 @@
   },
   {
     "d": "2 October 2026",
-    "c": "EL",
-    "t": "Norway",
+    "c": "NO",
+    "t": "Elmera Group ASA",
     "x": "Fortum holds 91.61% of Elmera's shares following completion of the offer period"
   },
   {
@@ -52,5 +58,11 @@
     "c": "NO",
     "t": "Scana ASA",
     "x": "Rieber & Søn AS acquires 4,439,809 shares in Scana at NOK 1.40 per share and now holds 33.54%, which triggers a mandatory offer for the rest within four weeks"
+  },
+  {
+    "d": "1 October 2026",
+    "c": "SE",
+    "t": "Humana AB",
+    "x": "Acceptance period extended to 14 October 2026"
   }
 ]
