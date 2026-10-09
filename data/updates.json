@@ -1,9 +1,27 @@
 [
   {
+    "d": "9 October 2026",
+    "c": "SE",
+    "t": "Sleep Cycle AB",
+    "x": "Mandatory offer of SEK 24.50 per share by Audiowell Group AB, a portfolio company of Altor (note that Sleep Cycle itself was acquired by Altor in July 2026)"
+  },
+  {
+    "d": "7 October 2026",
+    "c": "LU",
+    "t": "InPost SA",
+    "x": "Following completion of the offer period the Consortium holds 98.49% of the shares"
+  },
+  {
     "d": "6 October 2026",
     "c": "IT",
     "t": "Recordati SpA",
     "x": "Offer increased from €51.29 to €53.00 per share. The acceptance period is extended until 23 October 2026"
+  },
+  {
+    "d": "5 October 2026",
+    "c": "SE",
+    "t": "Bahnof AB",
+    "x": "Bahnhof announced that it had agreed to sell its Norwegian operations"
   },
   {
     "d": "5 October 2026",
@@ -19,6 +37,12 @@
   },
   {
     "d": "2 October 2026",
+    "c": "EL",
+    "t": "Norway",
+    "x": "Fortum holds 91.61% of Elmera's shares following completion of the offer period"
+  },
+  {
+    "d": "2 October 2026",
     "c": "NO",
     "t": "AKVA group ASA",
     "x": "Recommended cash offer of NOK 161 per share for all shares in AKVA by Yanmar Holdings Co., Ltd."
@@ -28,53 +52,5 @@
     "c": "NO",
     "t": "Scana ASA",
     "x": "Rieber & Søn AS acquires 4,439,809 shares in Scana at NOK 1.40 per share and now holds 33.54%, which triggers a mandatory offer for the rest within four weeks"
-  },
-  {
-    "d": "1 October 2026",
-    "c": "SE",
-    "t": "Triona AB",
-    "x": "Recommended cash offer of SEK 45.50 per share by VLRS GRP BidCo AB, an indirect subsidiary of Constellation Software Inc."
-  },
-  {
-    "d": "1 October 2026",
-    "c": "SE",
-    "t": "Humana AB",
-    "x": "Completion of the offer with Ambea AB holding 90.84% of Humana's shares"
-  },
-  {
-    "d": "30 September 2026",
-    "c": "FI",
-    "t": "Oma Savings Bank Plc",
-    "x": "Offer period extended to 22 October 2026"
-  },
-  {
-    "d": "30 September 2026",
-    "c": "SE",
-    "t": "KlaraBo AB",
-    "x": "The Swedish Companies Registration Office registered the merger, completing the combination."
-  },
-  {
-    "d": "29 September 2026",
-    "c": "SE",
-    "t": "Preservium Property AB",
-    "x": "Mixed cash and shares offer of SEK 69 per share for all shares in Preservium by PPI Public Property Invest AB"
-  },
-  {
-    "d": "28 September 2026",
-    "c": "IT",
-    "t": "Telecom Italia",
-    "x": "Poste Italiane's offer closed with 85.82% control"
-  },
-  {
-    "d": "28 September 2026",
-    "c": "SE",
-    "t": "Humana AB",
-    "x": "Ambea has received approvals from the competition authorities in Sweden, Norway and Finland"
-  },
-  {
-    "d": "23 September 2026",
-    "c": "NO",
-    "t": "Multiconsult ASA",
-    "x": "Multiconsult convened its extraordinary general meeting for 19 October 2026 to consider the merger plan. Its Board unanimously recommended that shareholders approve the merger."
   }
 ]
