@@ -1053,6 +1053,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "CHARWOOD ENERGY SA",
+      "co": "France",
+      "c": "FR",
+      "b": "BIOMASSE VISION 2030",
+      "v": 21.4,
+      "p": 18.16,
+      "tp": "Minority Bid",
+      "at": "Friendly",
+      "d": "12 October 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 91.75,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1472,6 +1489,13 @@
     "SLEEP CYCLE AB": {
       "consid": "Cash",
       "sector": "I.T.",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "CHARWOOD ENERGY SA": {
+      "consid": "Cash",
+      "sector": "Engineering",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
