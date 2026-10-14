@@ -367,7 +367,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "16 June 2026",
-      "ec": "14 October 2026",
+      "ec": "9 December 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 69.0,
@@ -1064,9 +1064,9 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "12 October 2026",
-      "ec": "",
+      "ec": "31 Dec 2026",
       "reg": "No Referral",
-      "own": 91.75,
+      "own": 89.64,
       "irr": 0.0,
       "acc": 0,
       "xb": false
@@ -1497,7 +1497,7 @@
       "consid": "Cash",
       "sector": "Engineering",
       "ev_ebitda": null,
-      "ev_sales": null,
+      "ev_sales": 2.28,
       "pe": null
     }
   }
