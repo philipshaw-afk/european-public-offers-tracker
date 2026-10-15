@@ -299,7 +299,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "26 May 2026",
-      "ec": "8 Oct 2026",
+      "ec": "",
       "reg": "No Referral",
       "own": 81.07,
       "irr": 6.38,
@@ -464,8 +464,8 @@
       "co": "Italy",
       "c": "IT",
       "b": "ICOP",
-      "v": 273.0,
-      "p": 20.1,
+      "v": 339.0,
+      "p": 48.0,
       "tp": "Public Offer",
       "at": "Hostile",
       "d": "29 June 2026",
@@ -473,7 +473,7 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 0,
-      "acc": 90.0,
+      "acc": 55.0,
       "xb": false
     },
     {
@@ -576,23 +576,6 @@
       "own": 36.51,
       "irr": 16.68,
       "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "ALL FOR ONE GROUP SE",
-      "co": "Germany",
-      "c": "DE",
-      "b": "VINCI SA",
-      "v": 336.0,
-      "p": 92.0,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "16 July 2026",
-      "ec": "16 Oct 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 86.74,
-      "acc": 75.0,
       "xb": false
     },
     {
@@ -1258,8 +1241,8 @@
     "TREVI FINANZIARIA INDUSTRIALE SPA": {
       "consid": "Cash",
       "sector": "Building & Construction",
-      "ev_ebitda": 5.0,
-      "ev_sales": 0.67,
+      "ev_ebitda": 5.55,
+      "ev_sales": 0.75,
       "pe": null
     },
     "NEXT GEOSOLUTIONS SPA": {
@@ -1303,13 +1286,6 @@
       "ev_ebitda": 16.8,
       "ev_sales": 1.08,
       "pe": null
-    },
-    "ALL FOR ONE GROUP SE": {
-      "consid": "Cash",
-      "sector": "I.T.",
-      "ev_ebitda": 7.72,
-      "ev_sales": 0.82,
-      "pe": 57.68
     },
     "AKER BIOMARINE ASA": {
       "consid": "Cash",
