@@ -57,7 +57,7 @@
       "c": "IT",
       "b": "TATA MOTORS LIMITED",
       "v": 5431.176,
-      "p": 29.74,
+      "p": 32.17,
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "30-Jul-2025",
@@ -1097,9 +1097,9 @@
     "IVECO GROUP NV": {
       "consid": "Mixed",
       "sector": "Engineering",
-      "ev_ebitda": 5.49,
+      "ev_ebitda": 5.5,
       "ev_sales": 0.58,
-      "pe": 14.44
+      "pe": 14.49
     },
     "FNAC DARTY SA": {
       "consid": "Cash",
