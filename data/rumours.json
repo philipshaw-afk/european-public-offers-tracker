@@ -16,6 +16,30 @@
     "latest": "EQT, Advent and KKR considering an offer (Bloomberg)"
   },
   {
+    "co": "Italy",
+    "c": "IT",
+    "name": "Banca Generali SpA",
+    "status": "Speculation",
+    "first": "7 October 2026",
+    "latest": "Assicurazioni Generali S.p.A. reported to be weighing a tender offer for the remaining 49.83% it does not own in Banca Generali (Affaritaliani)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Evonik Industries AG",
+    "status": "Speculation",
+    "first": "7 October 2026",
+    "latest": "BASF's initial takeover bid of around €22.15 per share rejected by Evonik (Ad Hoc News)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Uniper SE",
+    "status": "Speculation",
+    "first": "7 October 2026",
+    "latest": "Non-binding offers reported from KKR with RWE, Apollo, Equinor, and Brookfield with CPP Investments. The German Government would retain about 25% of Uniper (Finwire)"
+  },
+  {
     "co": "Ireland",
     "c": "IE",
     "name": "Kenmare Resources plc",
@@ -150,6 +174,14 @@
     "status": "Confirmed",
     "first": "14 July 2026",
     "latest": "Received a preliminary, non-binding letter of interest from a Canadian technology investment and media company, potential price range of €7.98 to €9.12 per share"
+  },
+  {
+    "co": "Denmark",
+    "c": "DK",
+    "name": "PARKEN Sport & Entertainment A/S",
+    "status": "Confirmed",
+    "first": "13 October 2026",
+    "latest": "PARKEN Sport & Entertainment A/S to explore strategic options for the group's football activities, including FC Copenhagen"
   },
   {
     "co": "France",
