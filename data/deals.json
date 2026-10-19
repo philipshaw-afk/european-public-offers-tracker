@@ -1053,6 +1053,23 @@
       "irr": 0.0,
       "acc": 0,
       "xb": false
+    },
+    {
+      "t": "STEYR MOTORS AG",
+      "co": "Austria",
+      "c": "AT",
+      "b": "RED CAT HOLDINGS INC",
+      "v": 204.8,
+      "p": 28.9,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "19 October 2026",
+      "ec": "18 Dec 2926",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1474,6 +1491,13 @@
       "sector": "Engineering",
       "ev_ebitda": null,
       "ev_sales": 2.28,
+      "pe": null
+    },
+    "STEYR MOTORS AG": {
+      "consid": "Cash",
+      "sector": "Engineering",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
