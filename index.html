@@ -1533,11 +1533,11 @@ function updateSidebar(data) {
   });
   var coSorted = Object.keys(coMap).map(function(k){ return [k, coMap[k]]; }).sort(function(a,b){ return b[1].value - a[1].value; });
 
-  // Database totals — floor counts are the known database totals (4,712).
+  // Database totals — floor counts are the known database totals (4,396 ex-UK & Ireland, recalibrated 22 Oct 2026).
   // Original live counts at time of calibration are stored so we can detect NEW additions.
   // Removing deals (completed) never decreases the count; only new additions increase it.
-  var dbFloor = {FR:945, DE:803, IT:476, SE:426, NO:376, ES:260, NL:255, OTHER:1171};
-  var dbOrigLive = {FR:5, DE:5, IT:12, SE:4, NO:1, ES:2, NL:1, OTHER:11};
+  var dbFloor = {FR:953, DE:805, IT:479, SE:427, NO:380, ES:261, NL:257, OTHER:834};
+  var dbOrigLive = {FR:13, DE:7, IT:15, SE:5, NO:5, ES:3, NL:3, OTHER:10};
   var dbCountries = [
     {code:'FR',name:'France'}, {code:'DE',name:'Germany'}, {code:'IT',name:'Italy'},
     {code:'SE',name:'Sweden'}, {code:'NO',name:'Norway'}, {code:'ES',name:'Spain'},
@@ -1578,7 +1578,7 @@ function updateSidebar(data) {
     + coSorted.map(function(e){ return '<div class="sb-stat" style="padding:7px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--b2)">' + fg(e[0]) + '<span style="font-size:12px;font-weight:600;flex:1;color:var(--t)">' + e[0] + '</span><span class="sb-cnt">' + e[1].count + '</span><span class="sb-val">\u20AC' + (e[1].value>=1000?(e[1].value/1000).toFixed(1)+'bn':e[1].value.toFixed(0)+'m') + '</span></div>'; }).join('')
     + '</div>'
     + '<div class="sb-card">'
-    + '  <div class="sb-hd"><span class="sb-title">Total Western European Public Deals (ex-UK) on M&A Database</span></div>'
+    + '  <div class="sb-hd"><span class="sb-title">Total Western European Public Deals (ex-UK&nbsp;&amp;&nbsp;Ireland) on M&A Database</span></div>'
     + '  <div style="padding:12px 14px 8px;border-bottom:1px solid var(--b)">'
     + '    <div style="font-family:\'JetBrains Mono\',monospace;font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--t);letter-spacing:-0.02em">' + dbTotal.toLocaleString() + '</div>'
     + '    <div style="font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-top:2px">Total deals</div>'
