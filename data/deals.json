@@ -1070,6 +1070,23 @@
       "irr": 15.0,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "QIAGEN NV",
+      "co": "Netherlands",
+      "c": "NL",
+      "b": "EQT AB",
+      "v": 9616.0,
+      "p": 40.3,
+      "tp": "MBO/MBI",
+      "at": "friendly",
+      "d": "21 October 2026",
+      "ec": "30 June 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 50.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1498,6 +1515,13 @@
       "sector": "Engineering",
       "ev_ebitda": 73.52,
       "ev_sales": 4.66,
+      "pe": null
+    },
+    "QIAGEN NV": {
+      "consid": "Cash",
+      "sector": "Healthcare",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     }
   }
