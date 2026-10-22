@@ -1,6 +1,6 @@
 # M&A Monitor — Western European Public Offers Tracker
 
-Live tracker of all pending public offers across Western Europe, powered by M&A Monitor's deal intelligence.
+Live tracker of all pending public offers across Western Europe outside the UK and Ireland (UK and Irish offers are on the UK & Ireland tracker at arbinsight.co.uk), powered by M&A Monitor's deal intelligence.
 
 ## Setup (one-time)
 

@@ -12,7 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>European Public M&A Monitor</title>
+<title>European Public M&A Monitor (ex UK &amp; Ireland)</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -888,13 +888,13 @@ tbody tr:last-child td { border-bottom:0; }
     <li><a href="https://arb.ma-monitor.co.uk/">ARB-Insight</a></li>
     <li><a href="#" class="on">Live Tracker</a></li>
   </ul>
-  <a href="https://arbinsight.co.uk/" class="cta">View UK Tracker</a>
+  <a href="https://arbinsight.co.uk/" class="cta">View UK &amp; Ireland Tracker</a>
 </header>
 <div class="hero ai">
   <div class="hero-r">
     <div>
       <h1>European Public M&A Monitor</h1>
-      <p class="sub">Every pending public offer across Western Europe &mdash; deal intelligence, premiums, and advisory mandates tracked by M&A Monitor.</p>
+      <p class="sub">Every pending public offer across Western Europe outside the UK and Ireland &mdash; deal intelligence, premiums, and advisory mandates tracked by M&A Monitor.</p>
     </div>
     <div class="kpis" id="kpis"></div>
   </div>
@@ -953,7 +953,7 @@ tbody tr:last-child td { border-bottom:0; }
     <div>
       <div class="rumours-eyebrow">Early-Stage Situations</div>
       <h2>Rumours &amp; Approaches</h2>
-      <p class="rumours-sub">Unconfirmed speculation and preliminary approaches on Western European listed companies &mdash; situations that may or may not develop into a formal offer.</p>
+      <p class="rumours-sub">Unconfirmed speculation and preliminary approaches on Western European listed companies outside the UK and Ireland &mdash; situations that may or may not develop into a formal offer.</p>
     </div>
     <span class="dc" id="rumours-dc"></span>
   </div>
@@ -1196,6 +1196,9 @@ function parseCSV(text) {
 // DATA LOADING
 // =====================================================================
 var deals = [];
+// UK and Irish situations are covered by the UK & Ireland tracker (arbinsight.co.uk), so they are left off this page
+var EXCLUDED_COUNTRIES = {UK:1, GB:1, IE:1};
+function notUKorIE(d){ return !(d && EXCLUDED_COUNTRIES[d.c]); }
 var multData = {};
 
 async function loadFromStatic() {
@@ -1330,9 +1333,10 @@ async function loadData() {
       console.log('Static files not available, trying Google Sheets...', e);
       data = await loadFromSheets();
     }
-    deals = data.deals;
+    deals = data.deals.filter(notUKorIE);
     multData = data.multiples;
 
+    if (data.updates) data.updates = data.updates.filter(notUKorIE);
     if (data.updates && data.updates.length > 0) {
       buildTicker(data.updates);
     } else {
@@ -1652,6 +1656,7 @@ async function loadRumours() {
       console.log('Static rumours not available, trying Google Sheets...', e);
       data = await loadRumoursFromSheet();
     }
+    data = data.filter(notUKorIE);
     // Always sort by First Appeared, most recent first
     data.sort(function(a,b){
       var da = new Date(a.first || 0).getTime() || 0;
