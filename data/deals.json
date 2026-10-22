@@ -188,23 +188,6 @@
       "xb": false
     },
     {
-      "t": "PERMANENT TSB GROUP HOLDINGS PLC",
-      "co": "Ireland",
-      "c": "IE",
-      "b": "BAWAG AG",
-      "v": 1619.0,
-      "p": 26.0,
-      "tp": "Scheme",
-      "at": "Friendly",
-      "d": "14 April 2026",
-      "ec": "31 December 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 57.5,
-      "acc": 75.0,
-      "xb": false
-    },
-    {
       "t": "AUSTRIACARD HOLDINGS AG",
       "co": "Austria",
       "c": "AT",
@@ -404,23 +387,6 @@
       "ec": "17 Nov 2026",
       "reg": "No Referral",
       "own": 58.28,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
-      "t": "INNOTEC TSS AG",
-      "co": "Germany",
-      "c": "DE",
-      "b": "GLI & GRONDBACH GMBH",
-      "v": 72.0,
-      "p": 9.71,
-      "tp": "MBO/MBI",
-      "at": "Neutral",
-      "d": "25 June 2026",
-      "ec": "23 Oct 2026",
-      "reg": "No Referral",
-      "own": 25.05,
       "irr": 0.0,
       "acc": 0,
       "xb": false
@@ -664,23 +630,6 @@
       "xb": false
     },
     {
-      "t": "IRISH CONTINENTAL GROUP PLC",
-      "co": "Ireland",
-      "c": "IE",
-      "b": "BLUEFIN BIDCO LIMITED",
-      "v": 1200.0,
-      "p": 28.2,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "24 July 2026",
-      "ec": "30 Nov 2026",
-      "reg": "No Referral",
-      "own": 23.7,
-      "irr": 3.2,
-      "acc": 75.0,
-      "xb": false
-    },
-    {
       "t": "AZKOYEN SA",
       "co": "Spain",
       "c": "ES",
@@ -695,23 +644,6 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "DCC ENERGY PLC",
-      "co": "Ireland",
-      "c": "IE",
-      "b": "KKR & CO INC/ ENERGY CAPITAL PARTNERS MANAGEMENT",
-      "v": 6730.0,
-      "p": 24.0,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "27 July 2026",
-      "ec": "31 March 2027",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 0.28,
-      "acc": 75.0,
       "xb": false
     },
     {
@@ -1167,13 +1099,6 @@
       "ev_sales": null,
       "pe": 11.64
     },
-    "PERMANENT TSB GROUP HOLDINGS PLC": {
-      "consid": "Cash",
-      "sector": "Banks",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": 22.8
-    },
     "AUSTRIACARD HOLDINGS AG": {
       "consid": "Cash",
       "sector": "I.T.",
@@ -1250,13 +1175,6 @@
       "ev_ebitda": null,
       "ev_sales": 4.03,
       "pe": null
-    },
-    "INNOTEC TSS AG": {
-      "consid": "Cash",
-      "sector": "Building Materials",
-      "ev_ebitda": 4.03,
-      "ev_sales": 0.49,
-      "pe": 11.86
     },
     "VALTECNE SPA": {
       "consid": "Cash",
@@ -1356,26 +1274,12 @@
       "ev_sales": 18.09,
       "pe": 13.23
     },
-    "IRISH CONTINENTAL GROUP PLC": {
-      "consid": "Cash",
-      "sector": "Transport",
-      "ev_ebitda": 9.35,
-      "ev_sales": 2.17,
-      "pe": 15.86
-    },
     "AZKOYEN SA": {
       "consid": "Cash",
       "sector": "Electronic & Electrical Equipment",
       "ev_ebitda": 7.09,
       "ev_sales": 1.27,
       "pe": 14.07
-    },
-    "DCC ENERGY PLC": {
-      "consid": "Cash",
-      "sector": "Distributors",
-      "ev_ebitda": 8.0,
-      "ev_sales": 0.46,
-      "pe": 16.78
     },
     "TRADELAB SPA": {
       "consid": "Shares",
@@ -1520,9 +1424,9 @@
     "QIAGEN NV": {
       "consid": "Cash",
       "sector": "Healthcare",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 15.34,
+      "ev_sales": 5.76,
+      "pe": 28.72
     }
   }
 }
