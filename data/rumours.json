@@ -1,13 +1,5 @@
 [
   {
-    "co": "Ireland",
-    "c": "IE",
-    "name": "Permanent TSB Group Holdings plc",
-    "status": "Confirmed",
-    "first": "9 October 2026",
-    "latest": "Scotchstone Capital LLP confirms that it is considering making an offer for Permanent TSB"
-  },
-  {
     "co": "Netherlands",
     "c": "NL",
     "name": "Qiagen NV",
@@ -40,14 +32,6 @@
     "latest": "Non-binding offers reported from KKR with RWE, Apollo, Equinor, and Brookfield with CPP Investments. The German Government would retain about 25% of Uniper (Finwire)"
   },
   {
-    "co": "Ireland",
-    "c": "IE",
-    "name": "Kenmare Resources plc",
-    "status": "Confirmed",
-    "first": "6 October 2026",
-    "latest": "Indicative cash offer from International Resources Holdings RSC Ltd. PUSU deadline is 17 November 2026"
-  },
-  {
     "co": "France",
     "c": "FR",
     "name": "Criteo SA",
@@ -62,14 +46,6 @@
     "status": "Speculation",
     "first": "5 August 2026",
     "latest": "VusionGroup is in early stages of exploring strategic options, including a potential sale (Bloomberg)"
-  },
-  {
-    "co": "Ireland",
-    "c": "IE",
-    "name": "Irish Residential Properties REIT plc",
-    "status": "Confirmed",
-    "first": "28 September 2026",
-    "latest": "I-RES confirms that it has received an indicative cash offer of €1.386 per share from Baring International Investment Limited (fifth in total). The Board would be minded to recommend the offer"
   },
   {
     "co": "Italy",
