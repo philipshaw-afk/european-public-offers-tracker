@@ -1,13 +1,5 @@
 [
   {
-    "co": "Netherlands",
-    "c": "NL",
-    "name": "Qiagen NV",
-    "status": "Speculation",
-    "first": "9 July 2026",
-    "latest": "EQT, Advent and KKR considering an offer (Bloomberg)"
-  },
-  {
     "co": "Italy",
     "c": "IT",
     "name": "Banca Generali SpA",
@@ -88,6 +80,14 @@
     "latest": "Thierry Dassault, Thales and Palo Alto Networks rumoured to be interested in takeover (Share Talk)"
   },
   {
+    "co": "Switzerland",
+    "c": "CH",
+    "name": "Verisure PLC",
+    "status": "Speculation",
+    "first": "21 October 2026",
+    "latest": "CVC is in early stages of assessing a bid to take Verisure private (Reuters)"
+  },
+  {
     "co": "Germany",
     "c": "DE",
     "name": "Deutsche Telekom AG",
@@ -104,12 +104,12 @@
     "latest": "Legend Holdings Corporation launches a sales process for its 90% stake in BIL for an implied value of €2.5 billion (FT)"
   },
   {
-    "co": "Netherlands",
-    "c": "NL",
-    "name": "Qiagen NV",
-    "status": "Speculation",
-    "first": "20 October 2026",
-    "latest": "EQT AB has submitted a binding offer of more than US$50 per share, and KKR has also made a bid (Bloomberg)"
+    "co": "Italy",
+    "c": "IT",
+    "name": "The Italian Sea Group SpA",
+    "status": "Confirmed",
+    "first": "19 October 2026",
+    "latest": "TISG confirms that it had received five binding offers which are being assessed by the company’s Board"
   },
   {
     "co": "Spain",
