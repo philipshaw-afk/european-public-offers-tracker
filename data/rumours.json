@@ -72,12 +72,36 @@
     "latest": "Evonik confirms that it has received a non-binding approach from BASF SE for all shares in Evonik. No talks are taking place at the moment"
   },
   {
+    "co": "Italy",
+    "c": "IT",
+    "name": "Societa Editoriale Il Fatto Spa",
+    "status": "Confirmed",
+    "first": "25 October 2026",
+    "latest": "SEIF's founding shareholders, who together hold a majority of its share capital, state that they have no intention of selling their stakes to LMDV Media"
+  },
+  {
+    "co": "Italy",
+    "c": "IT",
+    "name": "Societa Editoriale Il Fatto Spa",
+    "status": "Speculation",
+    "first": "25 October 2026",
+    "latest": "LMDV Media intends to initiate due diligence to launch a delisting offer for SEIF at a price of €0.286 per share (Teleborsa)"
+  },
+  {
     "co": "France",
     "c": "FR",
     "name": "Wallix Group SA",
     "status": "Speculation",
     "first": "24 June 2026",
     "latest": "Thierry Dassault, Thales and Palo Alto Networks rumoured to be interested in takeover (Share Talk)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Evonik Industries AG",
+    "status": "Speculation",
+    "first": "23 October 2026",
+    "latest": "BASF has increased its offer for Evonik to €24 per share (Reuters)"
   },
   {
     "co": "Switzerland",
