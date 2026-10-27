@@ -205,23 +205,6 @@
       "xb": false
     },
     {
-      "t": "REWAY GROUP SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "RENAISSANCE PARTNERS",
-      "v": 400.0,
-      "p": -5.0,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "18 May 2026",
-      "ec": "23 Oct 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 83.4,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "PLC SPA",
       "co": "Italy",
       "c": "IT",
@@ -1105,13 +1088,6 @@
       "ev_ebitda": 9.11,
       "ev_sales": 1.32,
       "pe": 23.84
-    },
-    "REWAY GROUP SPA": {
-      "consid": "Cash",
-      "sector": "Building & Construction",
-      "ev_ebitda": 9.49,
-      "ev_sales": 1.92,
-      "pe": 19.16
     },
     "PLC SPA": {
       "consid": "Cash",
