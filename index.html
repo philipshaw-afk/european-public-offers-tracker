@@ -1168,7 +1168,16 @@ function normalizeDate(raw) {
 // =====================================================================
 // CSV PARSER
 // =====================================================================
-function parseCSV(text) {
+// Sheet and JSON text is shown as page code, so the characters that could start a tag or leave an attribute
+// (< > ") are turned into their HTML forms as soon as the data is read; they display the same.
+function neut(v) {
+  if (typeof v === 'string') return v.replace(/[<>"]/g, function(c){ return c === '<' ? '&lt;' : c === '>' ? '&gt;' : '&quot;'; });
+  if (Array.isArray(v)) return v.map(neut);
+  if (v && typeof v === 'object') { for (var k in v) if (Object.prototype.hasOwnProperty.call(v, k)) v[k] = neut(v[k]); return v; }
+  return v;
+}
+function parseCSV(text) { return neut(parseCSVRaw(text)); }
+function parseCSVRaw(text) {
   var rows = [], row = [], cell = '', inQ = false;
   for (var i = 0; i < text.length; i++) {
     var ch = text[i];
@@ -1206,7 +1215,7 @@ async function loadFromStatic() {
   if (!responses[0].ok || !responses[1].ok) throw new Error('Static files not available');
   var dealsData = await responses[0].json();
   var updatesData = await responses[1].json();
-  return { deals: dealsData.deals || dealsData, multiples: dealsData.multiples || {}, updates: updatesData, source: 'static' };
+  return { deals: neut(dealsData.deals || dealsData), multiples: dealsData.multiples || {}, updates: neut(updatesData), source: 'static' };
 }
 
 async function loadFromSheets() {
@@ -1612,7 +1621,7 @@ var STATIC_RUMOURS_URL = 'data/rumours.json' + _cb;
 async function loadRumoursFromStatic() {
   var resp = await fetch(STATIC_RUMOURS_URL);
   if (!resp.ok) throw new Error('Static rumours not available');
-  return await resp.json();
+  return neut(await resp.json());
 }
 
 async function loadRumoursFromSheet() {
