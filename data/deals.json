@@ -5,8 +5,8 @@
       "co": "France",
       "c": "FR",
       "b": "NORTH ATLANTIC REFINING CORP",
-      "v": 339.808,
-      "p": -19.5,
+      "v": 444.015,
+      "p": 108.68,
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "28-May-2025",
@@ -991,9 +991,9 @@
     "ESSO SOCIETE ANONYME FRANCAISE SA": {
       "consid": "Cash",
       "sector": "Oil & Gas",
-      "ev_ebitda": 4.35,
+      "ev_ebitda": 5.73,
       "ev_sales": 0.02,
-      "pe": null
+      "pe": 4.17
     },
     "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA": {
       "consid": "Cash",
