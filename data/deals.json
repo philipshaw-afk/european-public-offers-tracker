@@ -256,23 +256,6 @@
       "xb": false
     },
     {
-      "t": "INSTALLUX SA",
-      "co": "France",
-      "c": "FR",
-      "b": "FINANCIERE CCE",
-      "v": 140.0,
-      "p": 74.47,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "26 May 2026",
-      "ec": "30 October 2026",
-      "reg": "No Referral",
-      "own": 81.07,
-      "irr": 6.38,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "EVOKE PLC",
       "co": "Gibraltar",
       "c": "GI",
@@ -1109,13 +1092,6 @@
       "ev_ebitda": 3.82,
       "ev_sales": 0.17,
       "pe": null
-    },
-    "INSTALLUX SA": {
-      "consid": "Cash",
-      "sector": "Building Materials",
-      "ev_ebitda": 5.52,
-      "ev_sales": 0.67,
-      "pe": 18.29
     },
     "EVOKE PLC": {
       "consid": "Shares",
