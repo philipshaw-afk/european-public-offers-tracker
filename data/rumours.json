@@ -42,6 +42,30 @@
   {
     "co": "Italy",
     "c": "IT",
+    "name": "Societa Editoriale Il Fatto SpA",
+    "status": "Speculation",
+    "first": "30 October 2026",
+    "latest": "LMDV Media does not intend to proceed with its offer for SEIF after the Board rejects the request for confirmatory due diligence (Alliance News)"
+  },
+  {
+    "co": "Germany",
+    "c": "DE",
+    "name": "Deutsche Telekom AG",
+    "status": "Speculation",
+    "first": "29 October 2026",
+    "latest": "Merger with T-Mobile US put on hold (Bloomberg)"
+  },
+  {
+    "co": "Spain",
+    "c": "ES",
+    "name": "Acciona Energia SA",
+    "status": "Speculation",
+    "first": "28 October 2026",
+    "latest": "EQT, NBIM and Ardian have decided not to proceed with their bids for Acciona (El Confidencial)"
+  },
+  {
+    "co": "Italy",
+    "c": "IT",
     "name": "Nexi SpA",
     "status": "Speculation",
     "first": "28 April 2026",
