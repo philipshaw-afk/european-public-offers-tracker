@@ -1,44 +1,56 @@
 [
   {
     "d": "29 October 2026",
+    "c": "IT",
+    "t": "Banca Generali SpA",
+    "x": "Offer for Banca Generali rejected by Monte dei Paschi's shareholders at the EGM"
+  },
+  {
+    "d": "29 October 2026",
+    "c": "IT",
+    "t": "Banco BPM SpA",
+    "x": "Offer for Banco BPM rejected by Monte dei Paschi's shareholders at the EGM"
+  },
+  {
+    "d": "29 October 2026",
+    "c": "IT",
+    "t": "Mediobanca",
+    "x": "Offer for Mediobanca rejected by Monte dei Paschi's shareholders at the EGM"
+  },
+  {
+    "d": "29 October 2026",
     "c": "FR",
-    "t": "ESSO SOCIETE ANONYME FRANCAISE SA",
-    "x": "Cash offer increased to €75 per share."
+    "t": "Esso Societe Anonyme Francaise SA",
+    "x": "Cash offer increased to €75 per share"
+  },
+  {
+    "d": "27 October 2026",
+    "c": "IT",
+    "t": "PLC SpA",
+    "x": "The bidder holds 88.12% of PLC's shares following completion of the offer period and reopens the offer from 2-6 November 2026"
+  },
+  {
+    "d": "26 October 2026",
+    "c": "IT",
+    "t": "Recordati SpA",
+    "x": "The bidders hold 74.58% of Recordati's shares following completion of the offer period and reopen the offer for the remaining shares until 9 November 2026"
+  },
+  {
+    "d": "26 October 2026",
+    "c": "FI",
+    "t": "Oma Savings Bank Plc",
+    "x": "Transaction was completed. Following completion S-Bank holds 97.32% of OSB's shares"
   },
   {
     "d": "23 October 2026",
     "c": "FR",
     "t": "Installux SA",
-    "x": "Transaction was completed. Mandatory squeeze-out for the remaining shares will take effect from 10 November 2026."
+    "x": "Transaction was completed. Mandatory squeeze-out for the remaining shares will take effect from 10 November 2026"
   },
   {
     "d": "23 October 2026",
     "c": "IT",
-    "t": "Reway Group SPA",
+    "t": "Reway Group SpA",
     "x": "Transaction was completed. Shares due to be delisted with effect from 4 November 2026"
-  },
-  {
-    "d": "21 October 2026",
-    "c": "NL",
-    "t": "Qiagen NV",
-    "x": "Recommended cash offer of €46.50 per share by Crown NL Bidco B.V., a company controlled by EQT AB"
-  },
-  {
-    "d": "19 October 2026",
-    "c": "AT",
-    "t": "Steyr Motors AG",
-    "x": "Cash offer of €39.00 per share for all shares in Steyr by Red Cat Holdings Inc."
-  },
-  {
-    "d": "16 October 2026",
-    "c": "LU",
-    "t": "Zabka Group SA",
-    "x": "Offer period extended until 2 December 2026"
-  },
-  {
-    "d": "15 October 2026",
-    "c": "DE",
-    "t": "Commerzbank AG",
-    "x": "UniCredit receives ECB approval to increase shareholding in Commerzbank above 30% and to raise it further without an upper limit"
   }
 ]
