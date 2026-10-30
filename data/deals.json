@@ -10,7 +10,7 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "28-May-2025",
-      "ec": "30-Oct-2026",
+      "ec": "31-Dec-2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 82.89,
@@ -27,7 +27,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "8-Dec-2025",
-      "ec": "30-Oct-2026",
+      "ec": "6-Nov-2026",
       "reg": "No Referral",
       "own": 67.23,
       "irr": 25.94,
@@ -95,7 +95,7 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "19-Jan-2026",
-      "ec": "30-Oct-2026",
+      "ec": "9-Nov-2026",
       "reg": "No Referral",
       "own": 20.0,
       "irr": 30.64,
@@ -154,23 +154,6 @@
       "xb": false
     },
     {
-      "t": "MEDIOBANCA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "BANCA MONTE DEI PASCHI DI SIENA",
-      "v": 14050.0,
-      "p": 17.94,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "10-Mar-2026",
-      "ec": "30-Nov-2026",
-      "reg": "No Referral",
-      "own": 86.3,
-      "irr": 0.0,
-      "acc": 0,
-      "xb": false
-    },
-    {
       "t": "ADDIKO BANK AG",
       "co": "Austria",
       "c": "AT",
@@ -197,7 +180,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "13 May 2026",
-      "ec": "30 Oct 2026",
+      "ec": "6 Nov 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 74.6,
@@ -214,11 +197,11 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "21 May 2026",
-      "ec": "23 Oct 2026",
+      "ec": "6 Nov 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 74.0,
-      "acc": 0,
+      "acc": 90.0,
       "xb": false
     },
     {
@@ -231,7 +214,7 @@
       "tp": "MBO/MBI",
       "at": "Friendly",
       "d": "22 May 2026",
-      "ec": "23 Oct 2026",
+      "ec": "9 Nov 2026",
       "reg": "No Referral",
       "own": 46.82,
       "irr": 0.0,
@@ -282,7 +265,7 @@
       "tp": "Minority Bid",
       "at": "Friendly",
       "d": "5 June 2026",
-      "ec": "30 Oct 2026",
+      "ec": "6 Nov 2026",
       "reg": "No Referral",
       "own": 78.84,
       "irr": 8.89,
@@ -477,23 +460,6 @@
       "xb": false
     },
     {
-      "t": "OMA SAVINGS BANK PLC",
-      "co": "Finland",
-      "c": "FI",
-      "b": "S-BANK PLC",
-      "v": 571.0,
-      "p": 47.0,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "9 July 2026",
-      "ec": "22 Oct 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 59.9,
-      "acc": 90.0,
-      "xb": false
-    },
-    {
       "t": "DELIVERY HERO SE",
       "co": "Germany",
       "c": "DE",
@@ -678,40 +644,6 @@
       "own": 56.15,
       "irr": 14.19,
       "acc": 90.0,
-      "xb": false
-    },
-    {
-      "t": "BANCO BPM SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "BANCA MONTE DEI PASCHI DI SIENA",
-      "v": 25840.0,
-      "p": 9.67,
-      "tp": "Public Offer",
-      "at": "Hostile",
-      "d": "21 August 2026",
-      "ec": "15 Feb 2027",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 0.0,
-      "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "BANCA GENERALI SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "BANCA MONTE DEI PASCHI DI SIENA",
-      "v": 9182.0,
-      "p": 17.8,
-      "tp": "Public Offer",
-      "at": "Hostile",
-      "d": "21 August 2026",
-      "ec": "15 Feb 2027",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 0.0,
-      "acc": 50.0,
       "xb": false
     },
     {
@@ -1051,13 +983,6 @@
       "ev_sales": null,
       "pe": null
     },
-    "MEDIOBANCA": {
-      "consid": "Shares",
-      "sector": "Banks",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": 10.86
-    },
     "ADDIKO BANK AG": {
       "consid": "Cash",
       "sector": "Banks",
@@ -1177,13 +1102,6 @@
       "ev_sales": 2.67,
       "pe": 35.43
     },
-    "OMA SAVINGS BANK PLC": {
-      "consid": "Cash",
-      "sector": "Banks",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": 11.87
-    },
     "DELIVERY HERO SE": {
       "consid": "Cash",
       "sector": "Internet",
@@ -1252,20 +1170,6 @@
       "sector": "Support Services",
       "ev_ebitda": 5.07,
       "ev_sales": 0.88,
-      "pe": null
-    },
-    "BANCO BPM SPA": {
-      "consid": "Shares",
-      "sector": "Banks",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
-    },
-    "BANCA GENERALI SPA": {
-      "consid": "Shares",
-      "sector": "Banks",
-      "ev_ebitda": null,
-      "ev_sales": null,
       "pe": null
     },
     "SOCIETE FRANCAISE DE CASINOS SA": {
