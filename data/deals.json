@@ -917,6 +917,23 @@
       "irr": 0.0,
       "acc": 50.0,
       "xb": false
+    },
+    {
+      "t": "ATOM HOTELES SOCIMI SA",
+      "co": "Spain",
+      "c": "ES",
+      "b": "BANKINTER SA",
+      "v": 509.8,
+      "p": -9.77,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "30 October 2026",
+      "ec": "4 Dec 2026",
+      "reg": "No Referral",
+      "own": 5.35,
+      "irr": 0.0,
+      "acc": 0.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1283,6 +1300,13 @@
       "ev_ebitda": 15.34,
       "ev_sales": 5.76,
       "pe": 28.72
+    },
+    "ATOM HOTELES SOCIMI SA": {
+      "consid": "Cash",
+      "sector": "Property",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
