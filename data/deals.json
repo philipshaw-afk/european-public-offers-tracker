@@ -934,6 +934,23 @@
       "irr": 0.0,
       "acc": 0.0,
       "xb": false
+    },
+    {
+      "t": "MEIER TOBLER GROUP AG",
+      "co": "Switzerland",
+      "c": "CH",
+      "b": "CVC CAPITAL PARTNERS",
+      "v": 536.2,
+      "p": 19.9,
+      "tp": "MBO/MBI",
+      "at": "Friendly",
+      "d": "4 November 2026",
+      "ec": "2 Dec 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 58.55,
+      "acc": 80.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1304,6 +1321,13 @@
     "ATOM HOTELES SOCIMI SA": {
       "consid": "Cash",
       "sector": "Property",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "MEIER TOBLER GROUP AG": {
+      "consid": "Cash",
+      "sector": "Distributors",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
