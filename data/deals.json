@@ -951,6 +951,40 @@
       "irr": 58.55,
       "acc": 80.0,
       "xb": false
+    },
+    {
+      "t": "INNOVATIVE-RFK SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "REDFISH LONGTERM CAPITAL SPA",
+      "v": 15.6,
+      "p": 0.0,
+      "tp": "",
+      "at": "Friendly",
+      "d": "4 November 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 45.52,
+      "acc": 0.0,
+      "xb": false
+    },
+    {
+      "t": "EGETIS THERAPEUTICS AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "ANI PHARMACEUTICALS INC",
+      "v": 477.6,
+      "p": 12.61,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "5 November 2026",
+      "ec": "18 December 2026",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 42.0,
+      "acc": 90.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1321,13 +1355,27 @@
     "ATOM HOTELES SOCIMI SA": {
       "consid": "Cash",
       "sector": "Property",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 20.29,
+      "ev_sales": 12.04,
+      "pe": 11.32
     },
     "MEIER TOBLER GROUP AG": {
       "consid": "Cash",
       "sector": "Distributors",
+      "ev_ebitda": 14.1,
+      "ev_sales": 1.07,
+      "pe": 33.14
+    },
+    "INNOVATIVE-RFK SPA": {
+      "consid": "Shares",
+      "sector": "Financial Services",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "EGETIS THERAPEUTICS AB": {
+      "consid": "Cash",
+      "sector": "Pharmaceuticals",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
