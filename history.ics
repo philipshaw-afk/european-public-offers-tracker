@@ -1,0 +1,1256 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//M&A Monitor//European Tracker Key Dates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:European Takeovers - Past Events (M&A Monitor)
+X-WR-TIMEZONE:Europe/London
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:hist-offer-esso-societe-anonyme-francaise-sa-north-atlantic-refining-co
+ rp@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250528
+DTEND;VALUE=DATE:20250529
+SUMMARY:Offer announced: Esso Societe Anonyme Francaise (NORTH ATLANTIC REF
+ INING CORP)
+DESCRIPTION:Offer announced - ESSO SOCIETE ANONYME FRANCAISE SA / NORTH ATL
+ ANTIC REFINING CORP\nSource: M&A Monitor European Tracker. Dates can chang
+ e\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-societe-fermiere-du-casino-municipal-de-cannes-sa-societe-de
+ -participation-deauvillaise-sas@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20251208
+DTEND;VALUE=DATE:20251209
+SUMMARY:Offer announced: Societe Fermiere du Casino Municipal de Cannes (SO
+ CIETE DE PARTICIPATION DEAUVILLAISE SAS)
+DESCRIPTION:Offer announced - SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNE
+ S SA / SOCIETE DE PARTICIPATION DEAUVILLAISE SAS\nSource: M&A Monitor Euro
+ pean Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-commerzbank-ag-unicredit-spa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+SUMMARY:Offer announced: Commerzbank (UNICREDIT SPA)
+DESCRIPTION:Offer announced - COMMERZBANK AG / UNICREDIT SPA\nSource: M&A M
+ onitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-commerzbank-ag-unicredit-spa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:Offer document published: Commerzbank
+DESCRIPTION:Offer document published - COMMERZBANK AG / UNICREDIT SPA\nSour
+ ce: M&A Monitor European Tracker. Dates can change\; check the latest anno
+ uncement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-commerzbank-ag-unicredit-spa@europe-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260504
+DTEND;VALUE=DATE:20260505
+SUMMARY:Shareholder meeting: Commerzbank
+DESCRIPTION:Shareholder meeting - COMMERZBANK AG / UNICREDIT SPA\nSource: M
+ &A Monitor European Tracker. Dates can change\; check the latest announcem
+ ent.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monitor
+ .co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250730
+DTEND;VALUE=DATE:20250731
+SUMMARY:Offer announced: Iveco Group (TATA MOTORS LIMITED)
+DESCRIPTION:Offer announced - IVECO GROUP NV / TATA MOTORS LIMITED\nSource:
+  M&A Monitor European Tracker. Dates can change\; check the latest announc
+ ement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monitor.
+ co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:Offer document published: Iveco Group
+DESCRIPTION:Offer document published - IVECO GROUP NV / TATA MOTORS LIMITED
+ \nSource: M&A Monitor European Tracker. Dates can change\; check the lates
+ t announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monit
+ or.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Shareholder meeting: Iveco Group
+DESCRIPTION:Shareholder meeting - IVECO GROUP NV / TATA MOTORS LIMITED\nSou
+ rce: M&A Monitor European Tracker. Dates can change\; check the latest ann
+ ouncement.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-settle-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monito
+ r.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Settlement: Iveco Group
+DESCRIPTION:Settlement - IVECO GROUP NV / TATA MOTORS LIMITED\nSource: M&A 
+ Monitor European Tracker. Dates can change\; check the latest announcement
+ .
+CATEGORIES:Settlement
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-fnac-darty-sa-ep-corporate-group-as@europe-tracker.ma-monito
+ r.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260126
+DTEND;VALUE=DATE:20260127
+SUMMARY:Offer announced: Fnac Darty (EP CORPORATE GROUP AS)
+DESCRIPTION:Offer announced - FNAC DARTY SA / EP CORPORATE GROUP AS\nSource
+ : M&A Monitor European Tracker. Dates can change\; check the latest announ
+ cement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-groupe-pizzorno-environnement-sa-paprec-group-sa@europe-trac
+ ker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260119
+DTEND;VALUE=DATE:20260120
+SUMMARY:Offer announced: Groupe Pizzorno Environnement (PAPREC GROUP SA)
+DESCRIPTION:Offer announced - GROUPE PIZZORNO ENVIRONNEMENT SA / PAPREC GRO
+ UP SA\nSource: M&A Monitor European Tracker. Dates can change\; check the 
+ latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-groupe-pizzorno-environnement-sa-paprec-group-sa@europe-track
+ er.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Offer document published: Groupe Pizzorno Environnement
+DESCRIPTION:Offer document published - GROUPE PIZZORNO ENVIRONNEMENT SA / P
+ APREC GROUP SA\nSource: M&A Monitor European Tracker. Dates can change\; c
+ heck the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-subsea-7-sa-saipem-spa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250223
+DTEND;VALUE=DATE:20250224
+SUMMARY:Offer announced: Subsea 7 (SAIPEM SPA)
+DESCRIPTION:Offer announced - SUBSEA 7 SA / SAIPEM SPA\nSource: M&A Monitor
+  European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-subsea-7-sa-saipem-spa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250925
+DTEND;VALUE=DATE:20250926
+SUMMARY:Shareholder meeting: Subsea 7
+DESCRIPTION:Shareholder meeting - SUBSEA 7 SA / SAIPEM SPA\nSource: M&A Mon
+ itor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-oci-nv-orascom-construction-plc@europe-tracker.ma-monitor.co
+ .uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20251209
+DTEND;VALUE=DATE:20251210
+SUMMARY:Offer announced: OCI (ORASCOM CONSTRUCTION PLC)
+DESCRIPTION:Offer announced - OCI NV / ORASCOM CONSTRUCTION PLC\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-oci-nv-orascom-construction-plc@europe-tracker.ma-monitor.
+ co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Shareholder meeting: OCI
+DESCRIPTION:Shareholder meeting - OCI NV\nSource: M&A Monitor European Trac
+ ker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-netfonds-ag-warburg-pincus@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260310
+SUMMARY:Offer announced: Netfonds (WARBURG PINCUS)
+DESCRIPTION:Offer announced - NETFONDS AG / WARBURG PINCUS\nSource: M&A Mon
+ itor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-addiko-bank-ag-raiffeisen-bank-international@europe-tracker.
+ ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260409
+SUMMARY:Offer announced: Addiko Bank (RAIFFEISEN BANK INTERNATIONAL)
+DESCRIPTION:Offer announced - ADDIKO BANK AG / RAIFFEISEN BANK INTERNATIONA
+ L\nSource: M&A Monitor European Tracker. Dates can change\; check the late
+ st announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-addiko-bank-ag-raiffeisen-bank-international@europe-tracker.m
+ a-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
+SUMMARY:Offer document published: Addiko Bank
+DESCRIPTION:Offer document published - ADDIKO BANK AG / RAIFFEISEN BANK INT
+ ERNATIONAL\nSource: M&A Monitor European Tracker. Dates can change\; check
+  the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-austriacard-holdings-ag-dai-nippon-printing@europe-tracker.m
+ a-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+SUMMARY:Offer announced: AUSTRIACARD Holdings (DAI NIPPON PRINTING)
+DESCRIPTION:Offer announced - AUSTRIACARD HOLDINGS AG / DAI NIPPON PRINTING
+ \nSource: M&A Monitor European Tracker. Dates can change\; check the lates
+ t announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-austriacard-holdings-ag-dai-nippon-printing@europe-tracker.ma
+ -monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Offer document published: AUSTRIACARD Holdings
+DESCRIPTION:Offer document published - AUSTRIACARD HOLDINGS AG / DAI NIPPON
+  PRINTING\nSource: M&A Monitor European Tracker. Dates can change\; check 
+ the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+SUMMARY:Offer announced: PLC (LIZARD RENEWABLES)
+DESCRIPTION:Offer announced - PLC SPA / LIZARD RENEWABLES\nSource: M&A Moni
+ tor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Offer document published: PLC
+DESCRIPTION:Offer document published - PLC SPA / LIZARD RENEWABLES\nSource:
+  M&A Monitor European Tracker. Dates can change\; check the latest announc
+ ement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-settle-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Settlement: PLC
+DESCRIPTION:Settlement - PLC SPA / LIZARD RENEWABLES\nSource: M&A Monitor E
+ uropean Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Settlement
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-completion-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Expected completion: PLC
+DESCRIPTION:Expected completion - PLC SPA / LIZARD RENEWABLES\nSource: M&A 
+ Monitor European Tracker. Dates can change\; check the latest announcement
+ .
+CATEGORIES:Expected completion
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+SUMMARY:Offer announced: Recordati (CVC & GBL)
+DESCRIPTION:Offer announced - RECORDATI SPA / CVC & GBL\nSource: M&A Monito
+ r European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+SUMMARY:Offer document published: Recordati
+DESCRIPTION:Offer document published - RECORDATI SPA / CVC & GBL\nSource: M
+ &A Monitor European Tracker. Dates can change\; check the latest announcem
+ ent.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-settle-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Settlement: Recordati
+DESCRIPTION:Settlement - RECORDATI SPA / CVC & GBL\nSource: M&A Monitor Eur
+ opean Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Settlement
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-ceconomy-ag-jd-com-inc@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250730
+DTEND;VALUE=DATE:20250731
+SUMMARY:Offer announced: Ceconomy (JD.COM INC)
+DESCRIPTION:Offer announced - CECONOMY AG / JD.COM INC\nSource: M&A Monitor
+  European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-ceconomy-ag-jd-com-inc@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250901
+DTEND;VALUE=DATE:20250902
+SUMMARY:Offer document published: Ceconomy
+DESCRIPTION:Offer document published - CECONOMY AG / JD.COM INC\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-evoke-plc-bally-s-intralot-sa@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+SUMMARY:Offer announced: evoke (BALLY'S INTRALOT SA)
+DESCRIPTION:Offer announced - EVOKE PLC / BALLY'S INTRALOT SA\nSource: M&A 
+ Monitor European Tracker. Dates can change\; check the latest announcement
+ .
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-evoke-plc-bally-s-intralot-sa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:Offer document published: evoke
+DESCRIPTION:Offer document published - EVOKE PLC / BALLY'S INTRALOT SA\nSou
+ rce: M&A Monitor European Tracker. Dates can change\; check the latest ann
+ ouncement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-evoke-plc-bally-s-intralot-sa@europe-tracker.ma-monitor.co
+ .uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:Shareholder meeting: evoke
+DESCRIPTION:Shareholder meeting - EVOKE PLC / BALLY'S INTRALOT SA\nSource: 
+ M&A Monitor European Tracker. Dates can change\; check the latest announce
+ ment.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-lexibook-linguistic-electronic-system-sa-doodle@europe-track
+ er.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+SUMMARY:Offer announced: Lexibook Linguistic Electronic System (DOODLE)
+DESCRIPTION:Offer announced - LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA / DO
+ ODLE\nSource: M&A Monitor European Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-banca-monte-dei-paschi-di-siena-intesa-sanpaolo@europe-track
+ er.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
+SUMMARY:Offer announced: Banca Monte dei Paschi di Siena (INTESA SANPAOLO)
+DESCRIPTION:Offer announced - BANCA MONTE DEI PASCHI DI SIENA / INTESA SANP
+ AOLO\nSource: M&A Monitor European Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-banca-monte-dei-paschi-di-siena-intesa-sanpaolo@europe-tra
+ cker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Shareholder meeting: Banca Monte dei Paschi di Siena
+DESCRIPTION:Shareholder meeting - BANCA MONTE DEI PASCHI DI SIENA / INTESA 
+ SANPAOLO\nSource: M&A Monitor European Tracker. Dates can change\; check t
+ he latest announcement.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-spotlight-group-ab-kriptown-sas@europe-tracker.ma-monitor.co
+ .uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
+SUMMARY:Offer announced: Spotlight Group (KRIPTOWN SAS)
+DESCRIPTION:Offer announced - SPOTLIGHT GROUP AB / KRIPTOWN SAS\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-spotlight-group-ab-kriptown-sas@europe-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+SUMMARY:Offer document published: Spotlight Group
+DESCRIPTION:Offer document published - SPOTLIGHT GROUP AB / KRIPTOWN SAS\nS
+ ource: M&A Monitor European Tracker. Dates can change\; check the latest a
+ nnouncement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-eagle-football-group-michele-kang@europe-tracker.ma-monitor.
+ co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260623
+DTEND;VALUE=DATE:20260624
+SUMMARY:Offer announced: Eagle Football Group (MICHELE KANG)
+DESCRIPTION:Offer announced - EAGLE FOOTBALL GROUP / MICHELE KANG\nSource: 
+ M&A Monitor European Tracker. Dates can change\; check the latest announce
+ ment.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-oci-nv-nns-holding@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+SUMMARY:Offer announced: OCI (NNS HOLDING)
+DESCRIPTION:Offer announced - OCI NV / NNS HOLDING\nSource: M&A Monitor Eur
+ opean Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-oci-nv-nns-holding@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:Offer document published: OCI (NNS HOLDING)
+DESCRIPTION:Offer document published - OCI NV / NNS HOLDING\nSource: M&A Mo
+ nitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-valtecne-spa-g-square@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Offer announced: Valtecne (G SQUARE)
+DESCRIPTION:Offer announced - VALTECNE SPA / G SQUARE\nSource: M&A Monitor 
+ European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-nagarro-se-persistent-systems@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Offer announced: Nagarro (PERSISTENT SYSTEMS)
+DESCRIPTION:Offer announced - NAGARRO SE / PERSISTENT SYSTEMS\nSource: M&A 
+ Monitor European Tracker. Dates can change\; check the latest announcement
+ .
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-nagarro-se-persistent-systems@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+SUMMARY:Offer document published: Nagarro
+DESCRIPTION:Offer document published - NAGARRO SE / PERSISTENT SYSTEMS\nSou
+ rce: M&A Monitor European Tracker. Dates can change\; check the latest ann
+ ouncement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-trevi-finanziaria-industriale-spa-icop@europe-tracker.ma-mon
+ itor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260630
+SUMMARY:Offer announced: Trevi Finanziaria Industriale (ICOP)
+DESCRIPTION:Offer announced - TREVI FINANZIARIA INDUSTRIALE SPA / ICOP\nSou
+ rce: M&A Monitor European Tracker. Dates can change\; check the latest ann
+ ouncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-trevi-finanziaria-industriale-spa-icop@europe-tracker.ma-moni
+ tor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:Offer document published: Trevi Finanziaria Industriale (ICOP)
+DESCRIPTION:Offer document published - TREVI FINANZIARIA INDUSTRIALE SPA / 
+ ICOP\nSource: M&A Monitor European Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-next-geosolutions-spa-fincantieri@europe-tracker.ma-monitor.
+ co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260707
+SUMMARY:Offer announced: Next Geosolutions (FINCANTIERI)
+DESCRIPTION:Offer announced - NEXT GEOSOLUTIONS SPA / FINCANTIERI\nSource: 
+ M&A Monitor European Tracker. Dates can change\; check the latest announce
+ ment.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-exail-technologies-sa-thales@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260707
+SUMMARY:Offer announced: Exail Technologies (THALES)
+DESCRIPTION:Offer announced - EXAIL TECHNOLOGIES SA / THALES\nSource: M&A M
+ onitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-voyageurs-du-monde-avantage-sa@europe-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260707
+SUMMARY:Offer announced: Voyageurs du Monde (AVANTAGE SA)
+DESCRIPTION:Offer announced - VOYAGEURS DU MONDE / AVANTAGE SA\nSource: M&A
+  Monitor European Tracker. Dates can change\; check the latest announcemen
+ t.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-bahnhof-ab-telenor-asa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260708
+DTEND;VALUE=DATE:20260709
+SUMMARY:Offer announced: Bahnhof (TELENOR ASA)
+DESCRIPTION:Offer announced - BAHNHOF AB / TELENOR ASA\nSource: M&A Monitor
+  European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-bahnhof-ab-telenor-asa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Offer document published: Bahnhof
+DESCRIPTION:Offer document published - BAHNHOF AB / TELENOR ASA\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-delivery-hero-se-uber-technologies-inc@europe-tracker.ma-mon
+ itor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260717
+SUMMARY:Offer announced: Delivery Hero (UBER TECHNOLOGIES INC)
+DESCRIPTION:Offer announced - DELIVERY HERO SE / UBER TECHNOLOGIES INC\nSou
+ rce: M&A Monitor European Tracker. Dates can change\; check the latest ann
+ ouncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-delivery-hero-se-uber-technologies-inc@europe-tracker.ma-moni
+ tor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Offer document published: Delivery Hero
+DESCRIPTION:Offer document published - DELIVERY HERO SE / UBER TECHNOLOGIES
+  INC\nSource: M&A Monitor European Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-polypeptide-group-ag-samsung-biologics@europe-tracker.ma-mon
+ itor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+SUMMARY:Offer announced: PolyPeptide Group (SAMSUNG BIOLOGICS)
+DESCRIPTION:Offer announced - POLYPEPTIDE GROUP AG / SAMSUNG BIOLOGICS\nSou
+ rce: M&A Monitor European Tracker. Dates can change\; check the latest ann
+ ouncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-polypeptide-group-ag-samsung-biologics@europe-tracker.ma-moni
+ tor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:Offer document published: PolyPeptide Group
+DESCRIPTION:Offer document published - POLYPEPTIDE GROUP AG / SAMSUNG BIOLO
+ GICS\nSource: M&A Monitor European Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-polypeptide-group-ag-samsung-biologics@europe-tracker.ma-m
+ onitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Shareholder meeting: PolyPeptide Group
+DESCRIPTION:Shareholder meeting - POLYPEPTIDE GROUP AG / SAMSUNG BIOLOGICS\
+ nSource: M&A Monitor European Tracker. Dates can change\; check the latest
+  announcement.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-pierre-et-vacances-center-parcs-mubadala-capital@europe-trac
+ ker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+SUMMARY:Offer announced: Pierre et Vacances-Center Parcs (MUBADALA CAPITAL)
+DESCRIPTION:Offer announced - PIERRE ET VACANCES-CENTER PARCS / MUBADALA CA
+ PITAL\nSource: M&A Monitor European Tracker. Dates can change\; check the 
+ latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-bluenord-asa-var-energi-asa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:Offer announced: BlueNord (VAR ENERGI ASA)
+DESCRIPTION:Offer announced - BLUENORD ASA / VAR ENERGI ASA\nSource: M&A Mo
+ nitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-bluenord-asa-var-energi-asa@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:Shareholder meeting: BlueNord
+DESCRIPTION:Shareholder meeting - BLUENORD ASA / VAR ENERGI ASA\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-argan-sa-wdp@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260724
+SUMMARY:Offer announced: Argan (WDP)
+DESCRIPTION:Offer announced - ARGAN SA / WDP\nSource: M&A Monitor European 
+ Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-azkoyen-sa-ohmnia-electronics@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:Offer announced: Azkoyen (OHMNIA ELECTRONICS)
+DESCRIPTION:Offer announced - AZKOYEN SA / OHMNIA ELECTRONICS\nSource: M&A 
+ Monitor European Tracker. Dates can change\; check the latest announcement
+ .
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-tradelab-spa-metriks-ai-spa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Offer announced: TradeLab (METRIKS AI SPA)
+DESCRIPTION:Offer announced - TRADELAB SPA / METRIKS AI SPA\nSource: M&A Mo
+ nitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-tradelab-spa-metriks-ai-spa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Offer document published: TradeLab
+DESCRIPTION:Offer document published - TRADELAB SPA / METRIKS AI SPA\nSourc
+ e: M&A Monitor European Tracker. Dates can change\; check the latest annou
+ ncement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-tradelab-spa-metriks-ai-spa@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:Shareholder meeting: TradeLab
+DESCRIPTION:Shareholder meeting - TRADELAB SPA / METRIKS AI SPA\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-trevi-finanziaria-industriale-spa-webuild-spa@europe-tracker
+ .ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Offer announced: Trevi Finanziaria Industriale (WEBUILD SPA)
+DESCRIPTION:Offer announced - TREVI FINANZIARIA INDUSTRIALE SPA / WEBUILD S
+ PA\nSource: M&A Monitor European Tracker. Dates can change\; check the lat
+ est announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-trevi-finanziaria-industriale-spa-webuild-spa@europe-tracker.
+ ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Offer document published: Trevi Finanziaria Industriale (WEBUILD SP
+ A)
+DESCRIPTION:Offer document published - TREVI FINANZIARIA INDUSTRIALE SPA / 
+ WEBUILD SPA\nSource: M&A Monitor European Tracker. Dates can change\; chec
+ k the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-zabka-group-sa-alimentation-couche-tard-inc@europe-tracker.m
+ a-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:Offer announced: Zabka Group (ALIMENTATION COUCHE-TARD INC)
+DESCRIPTION:Offer announced - ZABKA GROUP SA / ALIMENTATION COUCHE-TARD INC
+ \nSource: M&A Monitor European Tracker. Dates can change\; check the lates
+ t announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-zabka-group-sa-alimentation-couche-tard-inc@europe-tracker.ma
+ -monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+SUMMARY:Offer document published: Zabka Group
+DESCRIPTION:Offer document published - ZABKA GROUP SA / ALIMENTATION COUCHE
+ -TARD INC\nSource: M&A Monitor European Tracker. Dates can change\; check 
+ the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-haiki-spa-sostenya-group@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:Offer announced: Haiki+ (SOSTENYA GROUP)
+DESCRIPTION:Offer announced - HAIKI+ SPA / SOSTENYA GROUP\nSource: M&A Moni
+ tor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-haiki-spa-sostenya-group@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Offer document published: Haiki+
+DESCRIPTION:Offer document published - HAIKI+ SPA / SOSTENYA GROUP\nSource:
+  M&A Monitor European Tracker. Dates can change\; check the latest announc
+ ement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-societe-francaise-de-casinos-sa-gauselmann-familienstiftung@
+ europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Offer announced: Societe Francaise de Casinos (GAUSELMANN FAMILIENS
+ TIFTUNG)
+DESCRIPTION:Offer announced - SOCIETE FRANCAISE DE CASINOS SA / GAUSELMANN 
+ FAMILIENSTIFTUNG\nSource: M&A Monitor European Tracker. Dates can change\;
+  check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-cirsa-enterprises-sa-lottomatica-group-spa@europe-tracker.ma
+ -monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:Offer announced: CIRSA Enterprises (LOTTOMATICA GROUP SPA)
+DESCRIPTION:Offer announced - CIRSA ENTERPRISES SA / LOTTOMATICA GROUP SPA\
+ nSource: M&A Monitor European Tracker. Dates can change\; check the latest
+  announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-multiconsult-asa-rejlers-ab@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:Offer announced: Multiconsult (REJLERS AB)
+DESCRIPTION:Offer announced - MULTICONSULT ASA / REJLERS AB\nSource: M&A Mo
+ nitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-multiconsult-asa-rejlers-ab@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Shareholder meeting: Multiconsult
+DESCRIPTION:Shareholder meeting - MULTICONSULT ASA / REJLERS AB\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-robot-sa-hms-networks-ab@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Offer announced: Robot (HMS NETWORKS AB)
+DESCRIPTION:Offer announced - ROBOT SA / HMS NETWORKS AB\nSource: M&A Monit
+ or European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-robot-sa-hms-networks-ab@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Shareholder meeting: Robot
+DESCRIPTION:Shareholder meeting - ROBOT SA / HMS NETWORKS AB\nSource: M&A M
+ onitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-pininfarina-spa-mahindra-group@europe-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:Offer announced: Pininfarina (MAHINDRA GROUP)
+DESCRIPTION:Offer announced - PININFARINA SPA / MAHINDRA GROUP\nSource: M&A
+  Monitor European Tracker. Dates can change\; check the latest announcemen
+ t.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-pininfarina-spa-mahindra-group@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Offer document published: Pininfarina
+DESCRIPTION:Offer document published - PININFARINA SPA / MAHINDRA GROUP\nSo
+ urce: M&A Monitor European Tracker. Dates can change\; check the latest an
+ nouncement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-berentzen-gruppe-ag-sazerac-company-inc@europe-tracker.ma-mo
+ nitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Offer announced: Berentzen-Gruppe (SAZERAC COMPANY INC)
+DESCRIPTION:Offer announced - BERENTZEN-GRUPPE AG / SAZERAC COMPANY INC\nSo
+ urce: M&A Monitor European Tracker. Dates can change\; check the latest an
+ nouncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-berentzen-gruppe-ag-sazerac-company-inc@europe-tracker.ma-mon
+ itor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Offer document published: Berentzen-Gruppe
+DESCRIPTION:Offer document published - BERENTZEN-GRUPPE AG / SAZERAC COMPAN
+ Y INC\nSource: M&A Monitor European Tracker. Dates can change\; check the 
+ latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-hsbc-bank-malta-plc-crediabank@europe-tracker.ma-monitor.co.
+ uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20250916
+DTEND;VALUE=DATE:20250917
+SUMMARY:Offer announced: HSBC Bank Malta (CREDIABANK)
+DESCRIPTION:Offer announced - HSBC BANK MALTA PLC / CREDIABANK\nSource: M&A
+  Monitor European Tracker. Dates can change\; check the latest announcemen
+ t.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-preservium-property-ab-ppi-public-property-invest-ab@europe-
+ tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Offer announced: Preservium Property (PPI PUBLIC PROPERTY INVEST AB
+ )
+DESCRIPTION:Offer announced - PRESERVIUM PROPERTY AB / PPI PUBLIC PROPERTY 
+ INVEST AB\nSource: M&A Monitor European Tracker. Dates can change\; check 
+ the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-preservium-property-ab-ppi-public-property-invest-ab@europe-t
+ racker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Offer document published: Preservium Property
+DESCRIPTION:Offer document published - PRESERVIUM PROPERTY AB / PPI PUBLIC 
+ PROPERTY INVEST AB\nSource: M&A Monitor European Tracker. Dates can change
+ \; check the latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-triona-ab-constellation-software-inc@europe-tracker.ma-monit
+ or.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Offer announced: Triona (CONSTELLATION SOFTWARE INC)
+DESCRIPTION:Offer announced - TRIONA AB / CONSTELLATION SOFTWARE INC\nSourc
+ e: M&A Monitor European Tracker. Dates can change\; check the latest annou
+ ncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-triona-ab-constellation-software-inc@europe-tracker.ma-monito
+ r.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Offer document published: Triona
+DESCRIPTION:Offer document published - TRIONA AB / CONSTELLATION SOFTWARE I
+ NC\nSource: M&A Monitor European Tracker. Dates can change\; check the lat
+ est announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-akva-group-asa-yanmar-holdings-co-ltd@europe-tracker.ma-moni
+ tor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Offer announced: AKVA group (YANMAR HOLDINGS CO LTD)
+DESCRIPTION:Offer announced - AKVA GROUP ASA / YANMAR HOLDINGS CO LTD\nSour
+ ce: M&A Monitor European Tracker. Dates can change\; check the latest anno
+ uncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-scana-asa-rieber-son-as@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Offer announced: Scana (RIEBER & SON AS)
+DESCRIPTION:Offer announced - SCANA ASA / RIEBER & SON AS\nSource: M&A Moni
+ tor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-scana-asa-rieber-son-as@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Offer document published: Scana
+DESCRIPTION:Offer document published - SCANA ASA / RIEBER & SON AS\nSource:
+  M&A Monitor European Tracker. Dates can change\; check the latest announc
+ ement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-sleep-cycle-ab-altor-equity-partners-ab@europe-tracker.ma-mo
+ nitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Offer announced: Sleep Cycle (ALTOR EQUITY PARTNERS AB)
+DESCRIPTION:Offer announced - SLEEP CYCLE AB / ALTOR EQUITY PARTNERS AB\nSo
+ urce: M&A Monitor European Tracker. Dates can change\; check the latest an
+ nouncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-charwood-energy-sa-biomasse-vision-2030@europe-tracker.ma-mo
+ nitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Offer announced: Charwood Energy (BIOMASSE VISION 2030)
+DESCRIPTION:Offer announced - CHARWOOD ENERGY SA / BIOMASSE VISION 2030\nSo
+ urce: M&A Monitor European Tracker. Dates can change\; check the latest an
+ nouncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-steyr-motors-ag-red-cat-holdings-inc@europe-tracker.ma-monit
+ or.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Offer announced: Steyr Motors (RED CAT HOLDINGS INC)
+DESCRIPTION:Offer announced - STEYR MOTORS AG / RED CAT HOLDINGS INC\nSourc
+ e: M&A Monitor European Tracker. Dates can change\; check the latest annou
+ ncement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-steyr-motors-ag-red-cat-holdings-inc@europe-tracker.ma-monito
+ r.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Offer document published: Steyr Motors
+DESCRIPTION:Offer document published - STEYR MOTORS AG / RED CAT HOLDINGS I
+ NC\nSource: M&A Monitor European Tracker. Dates can change\; check the lat
+ est announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-qiagen-nv-eqt-ab@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Offer announced: QIAGEN (EQT AB)
+DESCRIPTION:Offer announced - QIAGEN NV / EQT AB\nSource: M&A Monitor Europ
+ ean Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-atom-hoteles-socimi-sa-bankinter-sa@europe-tracker.ma-monito
+ r.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Offer announced: Atom Hoteles (BANKINTER SA)
+DESCRIPTION:Offer announced - ATOM HOTELES SOCIMI SA / BANKINTER SA\nSource
+ : M&A Monitor European Tracker. Dates can change\; check the latest announ
+ cement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-meier-tobler-group-ag-cvc-capital-partners@europe-tracker.ma
+ -monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Offer announced: Meier Tobler Group (CVC CAPITAL PARTNERS)
+DESCRIPTION:Offer announced - MEIER TOBLER GROUP AG / CVC CAPITAL PARTNERS\
+ nSource: M&A Monitor European Tracker. Dates can change\; check the latest
+  announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-docs-meier-tobler-group-ag-cvc-capital-partners@europe-tracker.ma-
+ monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Offer document published: Meier Tobler Group
+DESCRIPTION:Offer document published - MEIER TOBLER GROUP AG / CVC CAPITAL 
+ PARTNERS\nSource: M&A Monitor European Tracker. Dates can change\; check t
+ he latest announcement.
+CATEGORIES:Offer document published
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-innovative-rfk-spa-redfish-longterm-capital-spa@europe-track
+ er.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Offer announced: Innovative-RFK (REDFISH LONGTERM CAPITAL SPA)
+DESCRIPTION:Offer announced - INNOVATIVE-RFK SPA / REDFISH LONGTERM CAPITAL
+  SPA\nSource: M&A Monitor European Tracker. Dates can change\; check the l
+ atest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-egetis-therapeutics-ab-ani-pharmaceuticals-inc@europe-tracke
+ r.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Offer announced: Egetis Therapeutics (ANI PHARMACEUTICALS INC)
+DESCRIPTION:Offer announced - EGETIS THERAPEUTICS AB / ANI PHARMACEUTICALS 
+ INC\nSource: M&A Monitor European Tracker. Dates can change\; check the la
+ test announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-offer-aker-biomarine-asa-aker-asa@europe-tracker.ma-monitor.co.uk
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260717
+SUMMARY:Offer announced: Aker BioMarine (AKER ASA)
+DESCRIPTION:Offer announced - AKER BIOMARINE ASA / AKER ASA\nSource: M&A Mo
+ nitor European Tracker. Dates can change\; check the latest announcement.
+CATEGORIES:Offer announced
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hist-meeting-aker-biomarine-asa-aker-asa@europe-tracker.ma-monitor.co.u
+ k
+DTSTAMP:20261110T105757Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:Shareholder meeting: Aker BioMarine
+DESCRIPTION:Shareholder meeting - AKER BIOMARINE ASA / AKER ASA\nSource: M&
+ A Monitor European Tracker. Dates can change\; check the latest announceme
+ nt.
+CATEGORIES:Shareholder meeting
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
