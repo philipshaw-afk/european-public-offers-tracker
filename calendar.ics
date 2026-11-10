@@ -10,7 +10,7 @@ X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:offer-societe-fermiere-du-casino-municipal-de-cannes-sa-societe-de-part
  icipation-deauvillaise-sas@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20251208
 DTEND;VALUE=DATE:20251209
 SUMMARY:Offer announced: Societe Fermiere du Casino Municipal de Cannes (SO
@@ -24,7 +24,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-societe-fermiere-du-casino-municipal-de-cannes-sa-societe-de
  -participation-deauvillaise-sas@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Expected completion: Societe Fermiere du Casino Municipal de Cannes
@@ -36,7 +36,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-commerzbank-ag-unicredit-spa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260316
 DTEND;VALUE=DATE:20260317
 SUMMARY:Offer announced: Commerzbank (UNICREDIT SPA)
@@ -47,7 +47,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-commerzbank-ag-unicredit-spa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260505
 DTEND;VALUE=DATE:20260506
 SUMMARY:Offer document published: Commerzbank
@@ -59,7 +59,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:Offer document published: Iveco Group
@@ -72,7 +72,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monitor.co
  .uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Shareholder meeting: Iveco Group
@@ -85,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-iveco-group-nv-tata-motors-limited@europe-tracker.ma-monitor.co.
  uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Settlement: Iveco Group
@@ -98,7 +98,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-fnac-darty-sa-ep-corporate-group-as@europe-tracker.ma-monitor.co.
  uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260126
 DTEND;VALUE=DATE:20260127
 SUMMARY:Offer announced: Fnac Darty (EP CORPORATE GROUP AS)
@@ -111,7 +111,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-fnac-darty-sa-ep-corporate-group-as@europe-tracker.ma-monitor.co
  .uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Settlement (expected): Fnac Darty
@@ -124,7 +124,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-fnac-darty-sa-ep-corporate-group-as@europe-tracker.ma-monito
  r.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Expected completion: Fnac Darty
@@ -137,7 +137,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-groupe-pizzorno-environnement-sa-paprec-group-sa@europe-tracker.m
  a-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260119
 DTEND;VALUE=DATE:20260120
 SUMMARY:Offer announced: Groupe Pizzorno Environnement (PAPREC GROUP SA)
@@ -150,7 +150,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-groupe-pizzorno-environnement-sa-paprec-group-sa@europe-tracker.ma
  -monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Offer document published: Groupe Pizzorno Environnement
@@ -163,7 +163,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-groupe-pizzorno-environnement-sa-paprec-group-sa@europe-trac
  ker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Expected completion: Groupe Pizzorno Environnement
@@ -175,7 +175,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-oci-nv-orascom-construction-plc@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20251209
 DTEND;VALUE=DATE:20251210
 SUMMARY:Offer announced: OCI (ORASCOM CONSTRUCTION PLC)
@@ -187,7 +187,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meeting-oci-nv-orascom-construction-plc@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Shareholder meeting: OCI
@@ -198,7 +198,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-netfonds-ag-warburg-pincus@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260309
 DTEND;VALUE=DATE:20260310
 SUMMARY:Offer announced: Netfonds (WARBURG PINCUS)
@@ -210,7 +210,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-addiko-bank-ag-raiffeisen-bank-international@europe-tracker.ma-mo
  nitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260408
 DTEND;VALUE=DATE:20260409
 SUMMARY:Offer announced: Addiko Bank (RAIFFEISEN BANK INTERNATIONAL)
@@ -223,7 +223,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-addiko-bank-ag-raiffeisen-bank-international@europe-tracker.ma-mon
  itor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260515
 SUMMARY:Offer document published: Addiko Bank
@@ -236,7 +236,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-addiko-bank-ag-raiffeisen-bank-international@europe-tracker.
  ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20270514
 DTEND;VALUE=DATE:20270515
 SUMMARY:Expected completion: Addiko Bank
@@ -249,7 +249,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-austriacard-holdings-ag-dai-nippon-printing@europe-tracker.ma-mon
  itor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260513
 DTEND;VALUE=DATE:20260514
 SUMMARY:Offer announced: AUSTRIACARD Holdings (DAI NIPPON PRINTING)
@@ -262,7 +262,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-austriacard-holdings-ag-dai-nippon-printing@europe-tracker.ma-moni
  tor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260613
 SUMMARY:Offer document published: AUSTRIACARD Holdings
@@ -275,7 +275,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-austriacard-holdings-ag-dai-nippon-printing@europe-tracker.m
  a-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Expected completion: AUSTRIACARD Holdings
@@ -287,7 +287,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260522
 SUMMARY:Offer announced: PLC (LIZARD RENEWABLES)
@@ -298,7 +298,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:Offer document published: PLC
@@ -310,7 +310,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:settle-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Settlement: PLC
@@ -321,7 +321,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:completion-plc-spa-lizard-renewables@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Expected completion: PLC
@@ -333,7 +333,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260522
 DTEND;VALUE=DATE:20260523
 SUMMARY:Offer announced: Recordati (CVC & GBL)
@@ -344,7 +344,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260721
 SUMMARY:Offer document published: Recordati
@@ -356,7 +356,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:settle-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:Settlement: Recordati
@@ -367,7 +367,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:completion-recordati-spa-cvc-gbl@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Expected completion: Recordati
@@ -378,9 +378,9 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:completion-ceconomy-ag-jd-com-inc@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
+DTSTAMP:20261110T110348Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
 SUMMARY:Expected completion: Ceconomy
 DESCRIPTION:Expected completion - CECONOMY AG / JD.COM INC\nSource: M&A Mon
  itor European Tracker. Dates can change\; check the latest announcement.
@@ -389,7 +389,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-evoke-plc-bally-s-intralot-sa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260606
 SUMMARY:Offer announced: evoke (BALLY'S INTRALOT SA)
@@ -401,7 +401,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-evoke-plc-bally-s-intralot-sa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260721
 DTEND;VALUE=DATE:20260722
 SUMMARY:Offer document published: evoke
@@ -414,7 +414,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-lexibook-linguistic-electronic-system-sa-doodle@europe-tracker.ma
  -monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260605
 DTEND;VALUE=DATE:20260606
 SUMMARY:Offer announced: Lexibook Linguistic Electronic System (DOODLE)
@@ -427,7 +427,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-lexibook-linguistic-electronic-system-sa-doodle@europe-track
  er.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Expected completion: Lexibook Linguistic Electronic System
@@ -440,7 +440,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-banca-monte-dei-paschi-di-siena-intesa-sanpaolo@europe-tracker.ma
  -monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260608
 DTEND;VALUE=DATE:20260609
 SUMMARY:Offer announced: Banca Monte dei Paschi di Siena (INTESA SANPAOLO)
@@ -453,7 +453,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-banca-monte-dei-paschi-di-siena-intesa-sanpaolo@europe-tracker.
  ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Shareholder meeting: Banca Monte dei Paschi di Siena
@@ -465,7 +465,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-spotlight-group-ab-kriptown-sas@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260616
 DTEND;VALUE=DATE:20260617
 SUMMARY:Offer announced: Spotlight Group (KRIPTOWN SAS)
@@ -477,7 +477,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-spotlight-group-ab-kriptown-sas@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260624
 DTEND;VALUE=DATE:20260625
 SUMMARY:Offer document published: Spotlight Group
@@ -490,7 +490,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-spotlight-group-ab-kriptown-sas@europe-tracker.ma-monitor.co
  .uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Expected completion: Spotlight Group
@@ -502,7 +502,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-eagle-football-group-michele-kang@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260623
 DTEND;VALUE=DATE:20260624
 SUMMARY:Offer announced: Eagle Football Group (MICHELE KANG)
@@ -515,7 +515,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-eagle-football-group-michele-kang@europe-tracker.ma-monitor.
  co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Expected completion: Eagle Football Group
@@ -527,7 +527,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-oci-nv-nns-holding@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260624
 DTEND;VALUE=DATE:20260625
 SUMMARY:Offer announced: OCI (NNS HOLDING)
@@ -538,7 +538,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-oci-nv-nns-holding@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260915
 SUMMARY:Offer document published: OCI (NNS HOLDING)
@@ -549,7 +549,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:completion-oci-nv-nns-holding@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Expected completion: OCI (NNS HOLDING)
@@ -560,7 +560,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-valtecne-spa-g-square@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260627
 SUMMARY:Offer announced: Valtecne (G SQUARE)
@@ -571,7 +571,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-nagarro-se-persistent-systems@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260627
 SUMMARY:Offer announced: Nagarro (PERSISTENT SYSTEMS)
@@ -583,7 +583,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-nagarro-se-persistent-systems@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260806
 DTEND;VALUE=DATE:20260807
 SUMMARY:Offer document published: Nagarro
@@ -596,7 +596,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-trevi-finanziaria-industriale-spa-icop@europe-tracker.ma-monitor.
  co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260630
 SUMMARY:Offer announced: Trevi Finanziaria Industriale (ICOP)
@@ -609,7 +609,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-trevi-finanziaria-industriale-spa-icop@europe-tracker.ma-monitor.c
  o.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260902
 SUMMARY:Offer document published: Trevi Finanziaria Industriale (ICOP)
@@ -621,7 +621,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-next-geosolutions-spa-fincantieri@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260707
 SUMMARY:Offer announced: Next Geosolutions (FINCANTIERI)
@@ -633,7 +633,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-exail-technologies-sa-thales@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260707
 SUMMARY:Offer announced: Exail Technologies (THALES)
@@ -644,7 +644,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-voyageurs-du-monde-avantage-sa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260707
 SUMMARY:Offer announced: Voyageurs du Monde (AVANTAGE SA)
@@ -656,7 +656,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-bahnhof-ab-telenor-asa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260708
 DTEND;VALUE=DATE:20260709
 SUMMARY:Offer announced: Bahnhof (TELENOR ASA)
@@ -667,7 +667,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-bahnhof-ab-telenor-asa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Offer document published: Bahnhof
@@ -679,7 +679,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:settle-bahnhof-ab-telenor-asa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:Settlement (expected): Bahnhof
@@ -690,7 +690,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:completion-bahnhof-ab-telenor-asa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:Expected completion: Bahnhof
@@ -702,7 +702,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-delivery-hero-se-uber-technologies-inc@europe-tracker.ma-monitor.
  co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20260717
 SUMMARY:Offer announced: Delivery Hero (UBER TECHNOLOGIES INC)
@@ -715,7 +715,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-delivery-hero-se-uber-technologies-inc@europe-tracker.ma-monitor.c
  o.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260827
 DTEND;VALUE=DATE:20260828
 SUMMARY:Offer document published: Delivery Hero
@@ -728,7 +728,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-polypeptide-group-ag-samsung-biologics@europe-tracker.ma-monitor.
  co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260721
 SUMMARY:Offer announced: PolyPeptide Group (SAMSUNG BIOLOGICS)
@@ -741,7 +741,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-polypeptide-group-ag-samsung-biologics@europe-tracker.ma-monitor.c
  o.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260831
 DTEND;VALUE=DATE:20260901
 SUMMARY:Offer document published: PolyPeptide Group
@@ -754,7 +754,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-polypeptide-group-ag-samsung-biologics@europe-tracker.ma-monito
  r.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Shareholder meeting: PolyPeptide Group
@@ -767,7 +767,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-pierre-et-vacances-center-parcs-mubadala-capital@europe-tracker.m
  a-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260720
 DTEND;VALUE=DATE:20260721
 SUMMARY:Offer announced: Pierre et Vacances-Center Parcs (MUBADALA CAPITAL)
@@ -779,7 +779,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-bluenord-asa-var-energi-asa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260721
 DTEND;VALUE=DATE:20260722
 SUMMARY:Offer announced: BlueNord (VAR ENERGI ASA)
@@ -790,7 +790,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-argan-sa-wdp@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260723
 DTEND;VALUE=DATE:20260724
 SUMMARY:Offer announced: Argan (WDP)
@@ -801,7 +801,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meeting-argan-sa-wdp@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Shareholder meeting: Argan
@@ -812,7 +812,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-azkoyen-sa-ohmnia-electronics@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260724
 DTEND;VALUE=DATE:20260725
 SUMMARY:Offer announced: Azkoyen (OHMNIA ELECTRONICS)
@@ -824,7 +824,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-tradelab-spa-metriks-ai-spa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260729
 DTEND;VALUE=DATE:20260730
 SUMMARY:Offer announced: TradeLab (METRIKS AI SPA)
@@ -835,7 +835,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-tradelab-spa-metriks-ai-spa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Offer document published: TradeLab
@@ -848,7 +848,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-trevi-finanziaria-industriale-spa-webuild-spa@europe-tracker.ma-m
  onitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260729
 DTEND;VALUE=DATE:20260730
 SUMMARY:Offer announced: Trevi Finanziaria Industriale (WEBUILD SPA)
@@ -861,7 +861,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-trevi-finanziaria-industriale-spa-webuild-spa@europe-tracker.ma-mo
  nitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Offer document published: Trevi Finanziaria Industriale (WEBUILD SP
@@ -875,7 +875,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-trevi-finanziaria-industriale-spa-webuild-spa@europe-tracker.ma-
  monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Settlement (expected): Trevi Finanziaria Industriale (WEBUILD SPA)
@@ -888,7 +888,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-zabka-group-sa-alimentation-couche-tard-inc@europe-tracker.ma-mon
  itor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260801
 SUMMARY:Offer announced: Zabka Group (ALIMENTATION COUCHE-TARD INC)
@@ -901,7 +901,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-zabka-group-sa-alimentation-couche-tard-inc@europe-tracker.ma-moni
  tor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
 SUMMARY:Offer document published: Zabka Group
@@ -914,7 +914,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-zabka-group-sa-alimentation-couche-tard-inc@europe-tracker.ma-mo
  nitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Settlement (expected): Zabka Group
@@ -927,7 +927,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-zabka-group-sa-alimentation-couche-tard-inc@europe-tracker.m
  a-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Expected completion: Zabka Group
@@ -939,7 +939,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-haiki-spa-sostenya-group@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
 SUMMARY:Offer announced: Haiki+ (SOSTENYA GROUP)
@@ -950,7 +950,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-haiki-spa-sostenya-group@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Offer document published: Haiki+
@@ -962,7 +962,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:settle-haiki-spa-sostenya-group@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Settlement (expected): Haiki+
@@ -975,7 +975,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-societe-francaise-de-casinos-sa-gauselmann-familienstiftung@europ
  e-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Offer announced: Societe Francaise de Casinos (GAUSELMANN FAMILIENS
@@ -989,7 +989,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-cirsa-enterprises-sa-lottomatica-group-spa@europe-tracker.ma-moni
  tor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
 SUMMARY:Offer announced: CIRSA Enterprises (LOTTOMATICA GROUP SPA)
@@ -1002,7 +1002,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-cirsa-enterprises-sa-lottomatica-group-spa@europe-tracker.ma-mo
  nitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:Shareholder meeting: CIRSA Enterprises
@@ -1014,7 +1014,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-multiconsult-asa-rejlers-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260907
 DTEND;VALUE=DATE:20260908
 SUMMARY:Offer announced: Multiconsult (REJLERS AB)
@@ -1025,7 +1025,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meeting-multiconsult-asa-rejlers-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Shareholder meeting: Multiconsult
@@ -1037,7 +1037,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-robot-sa-hms-networks-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Offer announced: Robot (HMS NETWORKS AB)
@@ -1048,7 +1048,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:meeting-robot-sa-hms-networks-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Shareholder meeting: Robot
@@ -1059,7 +1059,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:settle-robot-sa-hms-networks-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:Settlement (expected): Robot
@@ -1071,7 +1071,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-pininfarina-spa-mahindra-group@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:Offer announced: Pininfarina (MAHINDRA GROUP)
@@ -1083,7 +1083,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-pininfarina-spa-mahindra-group@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Offer document published: Pininfarina
@@ -1096,7 +1096,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-pininfarina-spa-mahindra-group@europe-tracker.ma-monitor.co.
  uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Expected completion: Pininfarina
@@ -1109,7 +1109,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-berentzen-gruppe-ag-sazerac-company-inc@europe-tracker.ma-monitor
  .co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 SUMMARY:Offer announced: Berentzen-Gruppe (SAZERAC COMPANY INC)
@@ -1122,7 +1122,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-berentzen-gruppe-ag-sazerac-company-inc@europe-tracker.ma-monitor.
  co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Offer document published: Berentzen-Gruppe
@@ -1135,7 +1135,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-preservium-property-ab-ppi-public-property-invest-ab@europe-track
  er.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:Offer announced: Preservium Property (PPI PUBLIC PROPERTY INVEST AB
@@ -1149,7 +1149,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-preservium-property-ab-ppi-public-property-invest-ab@europe-tracke
  r.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Offer document published: Preservium Property
@@ -1162,7 +1162,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-preservium-property-ab-ppi-public-property-invest-ab@europe-tra
  cker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Shareholder meeting: Preservium Property
@@ -1175,7 +1175,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-preservium-property-ab-ppi-public-property-invest-ab@europe-trac
  ker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:Settlement (expected): Preservium Property
@@ -1188,7 +1188,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-preservium-property-ab-ppi-public-property-invest-ab@europe-
  tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
 SUMMARY:Expected completion: Preservium Property
@@ -1201,7 +1201,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-triona-ab-constellation-software-inc@europe-tracker.ma-monitor.co
  .uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Offer announced: Triona (CONSTELLATION SOFTWARE INC)
@@ -1214,7 +1214,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-triona-ab-constellation-software-inc@europe-tracker.ma-monitor.co.
  uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Offer document published: Triona
@@ -1227,7 +1227,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-triona-ab-constellation-software-inc@europe-tracker.ma-monitor.c
  o.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Settlement (expected): Triona
@@ -1240,7 +1240,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-triona-ab-constellation-software-inc@europe-tracker.ma-monit
  or.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Expected completion: Triona
@@ -1253,7 +1253,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-akva-group-asa-yanmar-holdings-co-ltd@europe-tracker.ma-monitor.c
  o.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Offer announced: AKVA group (YANMAR HOLDINGS CO LTD)
@@ -1266,7 +1266,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-akva-group-asa-yanmar-holdings-co-ltd@europe-tracker.ma-moni
  tor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
 SUMMARY:Expected completion: AKVA group
@@ -1278,7 +1278,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-scana-asa-rieber-son-as@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Offer announced: Scana (RIEBER & SON AS)
@@ -1289,7 +1289,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:docs-scana-asa-rieber-son-as@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Offer document published: Scana
@@ -1302,7 +1302,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-sleep-cycle-ab-altor-equity-partners-ab@europe-tracker.ma-monitor
  .co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Offer announced: Sleep Cycle (ALTOR EQUITY PARTNERS AB)
@@ -1315,7 +1315,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-sleep-cycle-ab-altor-equity-partners-ab@europe-tracker.ma-monit
  or.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Shareholder meeting: Sleep Cycle
@@ -1328,7 +1328,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-charwood-energy-sa-biomasse-vision-2030@europe-tracker.ma-monitor
  .co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:Offer announced: Charwood Energy (BIOMASSE VISION 2030)
@@ -1341,7 +1341,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-steyr-motors-ag-red-cat-holdings-inc@europe-tracker.ma-monitor.co
  .uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Offer announced: Steyr Motors (RED CAT HOLDINGS INC)
@@ -1354,7 +1354,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-steyr-motors-ag-red-cat-holdings-inc@europe-tracker.ma-monitor.co.
  uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Offer document published: Steyr Motors
@@ -1367,7 +1367,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-steyr-motors-ag-red-cat-holdings-inc@europe-tracker.ma-monit
  or.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Expected completion: Steyr Motors
@@ -1379,7 +1379,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-qiagen-nv-eqt-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Offer announced: QIAGEN (EQT AB)
@@ -1391,7 +1391,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-atom-hoteles-socimi-sa-bankinter-sa@europe-tracker.ma-monitor.co.
  uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Offer announced: Atom Hoteles (BANKINTER SA)
@@ -1404,7 +1404,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-atom-hoteles-socimi-sa-bankinter-sa@europe-tracker.ma-monitor.c
  o.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:Shareholder meeting: Atom Hoteles
@@ -1417,7 +1417,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-atom-hoteles-socimi-sa-bankinter-sa@europe-tracker.ma-monitor.co
  .uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Settlement (expected): Atom Hoteles
@@ -1430,7 +1430,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-atom-hoteles-socimi-sa-bankinter-sa@europe-tracker.ma-monito
  r.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Expected completion: Atom Hoteles
@@ -1443,7 +1443,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-meier-tobler-group-ag-cvc-capital-partners@europe-tracker.ma-moni
  tor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Offer announced: Meier Tobler Group (CVC CAPITAL PARTNERS)
@@ -1456,7 +1456,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:docs-meier-tobler-group-ag-cvc-capital-partners@europe-tracker.ma-monit
  or.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Offer document published: Meier Tobler Group
@@ -1469,7 +1469,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:meeting-meier-tobler-group-ag-cvc-capital-partners@europe-tracker.ma-mo
  nitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Shareholder meeting: Meier Tobler Group
@@ -1482,7 +1482,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-meier-tobler-group-ag-cvc-capital-partners@europe-tracker.ma
  -monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Expected completion: Meier Tobler Group
@@ -1495,7 +1495,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-innovative-rfk-spa-redfish-longterm-capital-spa@europe-tracker.ma
  -monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Offer announced: Innovative-RFK (REDFISH LONGTERM CAPITAL SPA)
@@ -1508,7 +1508,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:offer-egetis-therapeutics-ab-ani-pharmaceuticals-inc@europe-tracker.ma-
  monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Offer announced: Egetis Therapeutics (ANI PHARMACEUTICALS INC)
@@ -1521,7 +1521,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:settle-egetis-therapeutics-ab-ani-pharmaceuticals-inc@europe-tracker.ma
  -monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261229
 DTEND;VALUE=DATE:20261230
 SUMMARY:Settlement (expected): Egetis Therapeutics
@@ -1534,7 +1534,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:completion-egetis-therapeutics-ab-ani-pharmaceuticals-inc@europe-tracke
  r.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Expected completion: Egetis Therapeutics
@@ -1546,7 +1546,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-qliro-ab-svea-bank-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Offer announced: Qliro (SVEA BANK AB)
@@ -1557,7 +1557,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:completion-qliro-ab-svea-bank-ab@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20270225
 DTEND;VALUE=DATE:20270226
 SUMMARY:Expected completion: Qliro
@@ -1568,7 +1568,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:offer-aker-biomarine-asa-aker-asa@europe-tracker.ma-monitor.co.uk
-DTSTAMP:20261110T105755Z
+DTSTAMP:20261110T110348Z
 DTSTART;VALUE=DATE:20260716
 DTEND;VALUE=DATE:20260717
 SUMMARY:Offer announced: Aker BioMarine (AKER ASA)
