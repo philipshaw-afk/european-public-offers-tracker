@@ -221,26 +221,6 @@
       "sm": ""
     },
     {
-      "t": "PLC SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "LIZARD RENEWABLES",
-      "v": 80.0,
-      "p": -14.0,
-      "tp": "Mandatory",
-      "at": "Friendly",
-      "d": "21 May 2026",
-      "ec": "6 Nov 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 74.0,
-      "acc": 90.0,
-      "xb": false,
-      "sd": "30 Oct 2026",
-      "od": "28 Sep 2026",
-      "sm": ""
-    },
-    {
       "t": "RECORDATI SPA",
       "co": "Italy",
       "c": "IT",
@@ -1219,13 +1199,6 @@
       "ev_sales": 1.32,
       "pe": 23.84
     },
-    "PLC SPA": {
-      "consid": "Cash",
-      "sector": "Engineering",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
-    },
     "RECORDATI SPA": {
       "consid": "Cash",
       "sector": "Pharmaceuticals",
@@ -1467,9 +1440,9 @@
     "SLEEP CYCLE AB": {
       "consid": "Cash",
       "sector": "I.T.",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.5,
+      "ev_sales": 1.82,
+      "pe": 20.3
     },
     "CHARWOOD ENERGY SA": {
       "consid": "Cash",
