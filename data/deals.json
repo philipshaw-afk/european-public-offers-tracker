@@ -15,7 +15,10 @@
       "own": 0.0,
       "irr": 82.89,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA",
@@ -32,7 +35,10 @@
       "own": 67.23,
       "irr": 25.94,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "COMMERZBANK AG",
@@ -49,7 +55,10 @@
       "own": 26.77,
       "irr": 20.82,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "5 May 2026",
+      "sm": "4 May 2026"
     },
     {
       "t": "IVECO GROUP NV",
@@ -66,7 +75,10 @@
       "own": 0.0,
       "irr": 28.45,
       "acc": 80.0,
-      "xb": false
+      "xb": false,
+      "sd": "30 Oct 2026",
+      "od": "4 Sep 2026",
+      "sm": "16 Oct 2026"
     },
     {
       "t": "FNAC DARTY SA",
@@ -83,7 +95,10 @@
       "own": 28.5,
       "irr": 0.0,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "12 Nov 2026",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "GROUPE PIZZORNO ENVIRONNEMENT SA",
@@ -100,7 +115,10 @@
       "own": 20.0,
       "irr": 30.64,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "26 Oct 2026",
+      "sm": ""
     },
     {
       "t": "SUBSEA 7 SA",
@@ -117,7 +135,10 @@
       "own": 0.0,
       "irr": 24.0,
       "acc": 66.7,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "25 Sep 2025"
     },
     {
       "t": "OCI NV",
@@ -134,7 +155,10 @@
       "own": 0.0,
       "irr": 50.9,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "30 Oct 2026"
     },
     {
       "t": "NETFONDS AG",
@@ -151,7 +175,10 @@
       "own": 0.0,
       "irr": 80.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "ADDIKO BANK AG",
@@ -168,7 +195,10 @@
       "own": 0.0,
       "irr": 55.5,
       "acc": 55.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "14 May 2026",
+      "sm": ""
     },
     {
       "t": "AUSTRIACARD HOLDINGS AG",
@@ -185,7 +215,10 @@
       "own": 0.0,
       "irr": 74.6,
       "acc": 75.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "12 Jun 2026",
+      "sm": ""
     },
     {
       "t": "PLC SPA",
@@ -202,7 +235,10 @@
       "own": 0.0,
       "irr": 74.0,
       "acc": 90.0,
-      "xb": false
+      "xb": false,
+      "sd": "30 Oct 2026",
+      "od": "28 Sep 2026",
+      "sm": ""
     },
     {
       "t": "RECORDATI SPA",
@@ -219,7 +255,10 @@
       "own": 46.82,
       "irr": 0.0,
       "acc": 66.67,
-      "xb": false
+      "xb": false,
+      "sd": "2 Nov 2026",
+      "od": "20 Jul 2026",
+      "sm": ""
     },
     {
       "t": "CECONOMY AG",
@@ -236,7 +275,10 @@
       "own": 0.0,
       "irr": 85.2,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "1 Sep 2025",
+      "sm": ""
     },
     {
       "t": "EVOKE PLC",
@@ -253,7 +295,10 @@
       "own": 0.0,
       "irr": 29.07,
       "acc": 75.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "21 Jul 2026",
+      "sm": "17 Aug 2026"
     },
     {
       "t": "LEXIBOOK LINGUISTIC ELECTRONIC SYSTEM SA",
@@ -270,7 +315,10 @@
       "own": 78.84,
       "irr": 8.89,
       "acc": 0.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "BANCA MONTE DEI PASCHI DI SIENA",
@@ -287,7 +335,10 @@
       "own": 0.07,
       "irr": 17.6,
       "acc": 66.67,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "29 Oct 2026"
     },
     {
       "t": "SPOTLIGHT GROUP AB",
@@ -304,7 +355,10 @@
       "own": 0.0,
       "irr": 69.0,
       "acc": 90.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "24 Jun 2026",
+      "sm": ""
     },
     {
       "t": "EAGLE FOOTBALL GROUP",
@@ -321,7 +375,10 @@
       "own": 0.0,
       "irr": 87.78,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "OCI NV",
@@ -338,7 +395,10 @@
       "own": 58.28,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "14 Sep 2026",
+      "sm": "30 Oct 2026"
     },
     {
       "t": "VALTECNE SPA",
@@ -355,7 +415,10 @@
       "own": 0.0,
       "irr": 82.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "NAGARRO SE",
@@ -372,7 +435,10 @@
       "own": 0.0,
       "irr": 21.0,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "6 Aug 2026",
+      "sm": ""
     },
     {
       "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
@@ -389,7 +455,10 @@
       "own": 0.0,
       "irr": 0,
       "acc": 55.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "1 Sep 2026",
+      "sm": ""
     },
     {
       "t": "NEXT GEOSOLUTIONS SPA",
@@ -406,7 +475,10 @@
       "own": 0.0,
       "irr": 52.6,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "EXAIL TECHNOLOGIES SA",
@@ -423,7 +495,10 @@
       "own": 0.0,
       "irr": 35.51,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "VOYAGEURS DU MONDE",
@@ -440,7 +515,10 @@
       "own": 62.24,
       "irr": 24.2,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "BAHNHOF AB",
@@ -457,7 +535,10 @@
       "own": 0.0,
       "irr": 57.5,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "14 Dec 2026",
+      "od": "6 Nov 2026",
+      "sm": ""
     },
     {
       "t": "DELIVERY HERO SE",
@@ -474,24 +555,10 @@
       "own": 36.51,
       "irr": 16.68,
       "acc": 50.0,
-      "xb": false
-    },
-    {
-      "t": "AKER BIOMARINE ASA",
-      "co": "Norway",
-      "c": "NO",
-      "b": "AKER ASA",
-      "v": 835.0,
-      "p": 11.58,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "16 July 2026",
-      "ec": "31 December 2026",
-      "reg": "No Referral",
-      "own": 77.6,
-      "irr": 2.3,
-      "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "27 Aug 2026",
+      "sm": ""
     },
     {
       "t": "POLYPEPTIDE GROUP AG",
@@ -508,7 +575,10 @@
       "own": 97.99,
       "irr": 87.59,
       "acc": 66.67,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "31 Aug 2026",
+      "sm": "26 Oct 2026"
     },
     {
       "t": "PIERRE ET VACANCES-CENTER PARCS",
@@ -525,7 +595,10 @@
       "own": 0.0,
       "irr": 80.13,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "BLUENORD ASA",
@@ -542,7 +615,10 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 66.67,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "24 Aug 2026"
     },
     {
       "t": "ARGAN SA",
@@ -559,7 +635,10 @@
       "own": 0.0,
       "irr": 52.0,
       "acc": 66.67,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "20 Nov 2026"
     },
     {
       "t": "AZKOYEN SA",
@@ -576,7 +655,10 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "TRADELAB SPA",
@@ -593,7 +675,10 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 51.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "1 Oct 2026",
+      "sm": "2 Sep 2026"
     },
     {
       "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
@@ -610,7 +695,10 @@
       "own": 18.91,
       "irr": 0.0,
       "acc": 66.7,
-      "xb": false
+      "xb": false,
+      "sd": "27 Nov 2026",
+      "od": "18 Sep 2026",
+      "sm": ""
     },
     {
       "t": "ZABKA GROUP SA",
@@ -627,7 +715,10 @@
       "own": 0.0,
       "irr": 57.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "10 Dec 2026",
+      "od": "26 Aug 2026",
+      "sm": ""
     },
     {
       "t": "HAIKI+ SPA",
@@ -644,7 +735,10 @@
       "own": 72.36,
       "irr": 14.19,
       "acc": 90.0,
-      "xb": false
+      "xb": false,
+      "sd": "13 Nov 2026",
+      "od": "25 Sep 2026",
+      "sm": ""
     },
     {
       "t": "SOCIETE FRANCAISE DE CASINOS SA",
@@ -661,7 +755,10 @@
       "own": 0.0,
       "irr": 77.15,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "CIRSA ENTERPRISES SA",
@@ -678,7 +775,10 @@
       "own": 0.0,
       "irr": 74.23,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "30 Nov 2026"
     },
     {
       "t": "MULTICONSULT ASA",
@@ -695,7 +795,10 @@
       "own": 0.0,
       "irr": 37.0,
       "acc": 66.7,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "19 Oct 2026"
     },
     {
       "t": "ROBOT SA",
@@ -712,7 +815,10 @@
       "own": 0.0,
       "irr": 77.69,
       "acc": 100.0,
-      "xb": false
+      "xb": false,
+      "sd": "1 Dec 2026",
+      "od": "",
+      "sm": "16 Oct 2026"
     },
     {
       "t": "PININFARINA SPA",
@@ -729,7 +835,10 @@
       "own": 82.6,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "23 Oct 2026",
+      "sm": ""
     },
     {
       "t": "BERENTZEN-GRUPPE AG",
@@ -746,7 +855,10 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "23 Oct 2026",
+      "sm": ""
     },
     {
       "t": "HSBC BANK MALTA PLC",
@@ -763,7 +875,10 @@
       "own": 0.0,
       "irr": 70.03,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "PRESERVIUM PROPERTY AB",
@@ -780,7 +895,10 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "8 Jan 2027",
+      "od": "5 Nov 2026",
+      "sm": "2 Dec 2026"
     },
     {
       "t": "TRIONA AB",
@@ -797,7 +915,10 @@
       "own": 0.0,
       "irr": 17.2,
       "acc": 90.0,
-      "xb": false
+      "xb": false,
+      "sd": "23 Nov 2026",
+      "od": "1 Oct 2026",
+      "sm": ""
     },
     {
       "t": "AKVA GROUP ASA",
@@ -814,7 +935,10 @@
       "own": 0.0,
       "irr": 92.0,
       "acc": 90.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "SCANA ASA",
@@ -831,7 +955,10 @@
       "own": 33.54,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "30 Oct 2026",
+      "sm": ""
     },
     {
       "t": "SLEEP CYCLE AB",
@@ -848,7 +975,10 @@
       "own": 82.0,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": "11 Nov 2026"
     },
     {
       "t": "CHARWOOD ENERGY SA",
@@ -865,7 +995,10 @@
       "own": 89.64,
       "irr": 0.0,
       "acc": 0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "STEYR MOTORS AG",
@@ -882,7 +1015,10 @@
       "own": 0.0,
       "irr": 15.0,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "22 Oct 2026",
+      "sm": ""
     },
     {
       "t": "QIAGEN NV",
@@ -899,7 +1035,10 @@
       "own": 0.0,
       "irr": 0.0,
       "acc": 50.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "ATOM HOTELES SOCIMI SA",
@@ -916,7 +1055,10 @@
       "own": 5.35,
       "irr": 0.0,
       "acc": 0.0,
-      "xb": false
+      "xb": false,
+      "sd": "18 Dec 2026",
+      "od": "",
+      "sm": "30 Nov 2026"
     },
     {
       "t": "MEIER TOBLER GROUP AG",
@@ -933,7 +1075,10 @@
       "own": 0.0,
       "irr": 58.55,
       "acc": 80.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "4 Nov 2026",
+      "sm": "16 Dec 2026"
     },
     {
       "t": "INNOVATIVE-RFK SPA",
@@ -950,7 +1095,10 @@
       "own": 0.0,
       "irr": 45.52,
       "acc": 0.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "EGETIS THERAPEUTICS AB",
@@ -967,13 +1115,16 @@
       "own": 0.0,
       "irr": 42.0,
       "acc": 90.0,
-      "xb": false
+      "xb": false,
+      "sd": "29 Dec 2026",
+      "od": "",
+      "sm": ""
     },
     {
       "t": "QLIRO AB",
       "co": "Sweden",
       "c": "SE",
-      "b": "SVEA BANK AN",
+      "b": "SVEA BANK AB",
       "v": 73.0,
       "p": 85.04,
       "tp": "Public Offer",
@@ -984,7 +1135,10 @@
       "own": 3.48,
       "irr": 38.82,
       "acc": 0.0,
-      "xb": false
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     }
   ],
   "multiples": {
@@ -1175,13 +1329,6 @@
       "sector": "Internet",
       "ev_ebitda": 16.8,
       "ev_sales": 1.08,
-      "pe": null
-    },
-    "AKER BIOMARINE ASA": {
-      "consid": "Cash",
-      "sector": "Food",
-      "ev_ebitda": 24.71,
-      "ev_sales": 5.23,
       "pe": null
     },
     "POLYPEPTIDE GROUP AG": {
