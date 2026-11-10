@@ -968,6 +968,23 @@
       "irr": 42.0,
       "acc": 90.0,
       "xb": false
+    },
+    {
+      "t": "QLIRO AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "SVEA BANK AN",
+      "v": 73.0,
+      "p": 85.04,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "9 November 2026",
+      "ec": "25 February 2027",
+      "reg": "No Referral",
+      "own": 3.48,
+      "irr": 38.82,
+      "acc": 0.0,
+      "xb": false
     }
   ],
   "multiples": {
@@ -1352,6 +1369,13 @@
     "EGETIS THERAPEUTICS AB": {
       "consid": "Cash",
       "sector": "Pharmaceuticals",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "QLIRO AB": {
+      "consid": "Cash",
+      "sector": "Financial Services",
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
