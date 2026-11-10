@@ -858,6 +858,137 @@ tbody tr:last-child td { border-bottom:0; }
   .rumours-section { padding: 0 24px 30px; }
 }
 
+/* === KEY DATES: event colours (shared by the Coming up strip and the calendar) === */
+.kd-t-meeting { --c: var(--a); --cb: var(--al); }
+.kd-t-settle { --c: var(--g); --cb: var(--gb); }
+.kd-t-completion { --c: var(--am); --cb: var(--ab); }
+.kd-t-docs { --c: var(--p); --cb: var(--pb); }
+.kd-t-offer { --c: var(--t2); --cb: rgba(0,0,0,0.04); }
+
+/* === COMING UP STRIP (top of page) === */
+.cu-w { max-width:1520px; margin:14px auto 0; padding:0 40px; position:relative; z-index:1; }
+.cu {
+  display:flex; align-items:stretch; gap:14px; padding:10px 12px 10px 16px;
+  background: var(--glass); border:1px solid var(--b); border-radius:10px;
+  box-shadow:var(--ss); backdrop-filter: blur(12px);
+}
+.cu-hd { flex:0 0 auto; display:flex; flex-direction:column; justify-content:center; padding-right:14px; border-right:1px solid var(--b); }
+.cu-title { font-size:16px; font-weight:800; letter-spacing:-.03em; line-height:1.1; color:var(--t); }
+.cu-meta { font-size:9.5px; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:.06em; margin-top:4px; white-space:nowrap; }
+.cu-list { flex:1; min-width:0; display:flex; gap:8px; overflow-x:auto; scrollbar-width:thin; align-items:stretch; padding:2px 0; }
+.cu-list .loading { padding:8px 0; text-align:left; }
+.cu-ev {
+  flex:1 1 0; display:flex; flex-direction:column; justify-content:center;
+  min-width:128px; max-width:230px; padding:6px 11px 7px 9px;
+  border-left:3px solid var(--c); border-radius:0 6px 6px 0; background:var(--cb);
+  text-decoration:none; color:var(--t); transition: box-shadow .15s;
+}
+.cu-ev:hover { box-shadow:0 2px 10px rgba(15,23,41,.1); }
+.cu-ev:focus-visible { outline:2px solid var(--a); outline-offset:2px; }
+.cu-when { font-size:9.5px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; color:var(--t3); white-space:nowrap; }
+.cu-when.cu-today { color:var(--a); }
+.cu-what { font-size:9.5px; font-weight:800; letter-spacing:.035em; text-transform:uppercase; color:var(--c); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.cu-name { display:flex; align-items:center; gap:5px; font-size:12.5px; font-weight:700; line-height:1.25; margin-top:2px; min-width:0; }
+.cu-name span:last-child { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.cu-more { flex:0 0 auto; display:flex; align-items:center; padding:0 12px; border-radius:6px; background:rgba(0,0,0,0.04); color:var(--a); font-size:12px; font-weight:700; text-decoration:none; white-space:nowrap; }
+.cu-more:hover { background:var(--al); }
+.cu-links { flex:0 0 auto; display:flex; flex-direction:column; justify-content:center; gap:5px; padding-left:14px; border-left:1px solid var(--b); }
+.cu-links a { font-size:12px; font-weight:600; color:var(--a); text-decoration:none; white-space:nowrap; }
+.cu-links a:hover { text-decoration:underline; }
+.cu-empty { display:flex; align-items:center; font-size:12.5px; color:var(--t3); }
+
+/* === KEY DATES CALENDAR (bottom of page) === */
+.kd-section { max-width:1520px; margin:0 auto; padding:0 40px 30px; position:relative; z-index:1; scroll-margin-top:72px; }
+.kd-eyebrow { font-size:10.5px; font-weight:700; letter-spacing:1.6px; text-transform:uppercase; color:var(--a); margin-bottom:6px; }
+.kd-chip {
+  display:inline-flex; align-items:center; height:28px; padding:0 11px; border-radius:7px;
+  background:var(--al); color:var(--a); border:1px solid rgba(79,110,247,0.14);
+  font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap;
+}
+.kd-sub {
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:12px; padding:10px 14px;
+  background:var(--glass2); border:1px solid var(--b); border-radius:10px; box-shadow:var(--ss);
+  position:relative; z-index:5;
+}
+.kd-sub p { font-size:12.5px; color:var(--t2); flex:1; min-width:220px; line-height:1.5; }
+.kd-link {
+  height:30px; min-width:250px; flex:0 1 300px; padding:0 10px; border:1px solid var(--b); border-radius:8px;
+  background:var(--bg); color:var(--t); font:inherit; font-size:12px; font-weight:600; outline:0;
+}
+.kd-link:focus { border-color:rgba(108,138,255,0.4); box-shadow:0 0 0 3px rgba(79,110,247,0.08); }
+.kd-menu { position:relative; }
+.kd-menu summary {
+  list-style:none; cursor:pointer; display:inline-flex; align-items:center; height:30px; padding:0 14px;
+  border-radius:8px; background:var(--a); color:#fff; font-size:12px; font-weight:600; user-select:none;
+  box-shadow:0 2px 12px rgba(79,110,247,0.25); transition:background .2s;
+}
+.kd-menu summary:hover { background:var(--ah); }
+.kd-menu summary::-webkit-details-marker { display:none; }
+.kd-menu summary:focus-visible { outline:2px solid var(--a); outline-offset:2px; }
+.kd-menu-list { position:absolute; right:0; top:36px; z-index:20; width:280px; background:#fff; border:1px solid var(--b); border-radius:10px; box-shadow:var(--sm); padding:6px; }
+.kd-menu-list a { display:block; padding:8px 10px; border-radius:6px; text-decoration:none; color:var(--t); }
+.kd-menu-list a:hover, .kd-menu-list a:focus-visible { background:var(--al); outline:0; }
+.kd-menu-list b { display:block; font-size:12.5px; font-weight:700; }
+.kd-menu-list span { display:block; font-size:11px; color:var(--t3); margin-top:1px; }
+.kd-sub a.kd-btn { display:inline-flex; align-items:center; text-decoration:none; }
+.kd-copied { font-size:11.5px; color:var(--g); font-weight:700; }
+@media(max-width:768px) { .kd-menu-list { left:0; right:auto; } }
+.kd-card { background:var(--glass); border:1px solid var(--b); border-radius:12px; box-shadow:var(--ss); overflow:hidden; backdrop-filter: blur(12px); }
+.kd-card-hd { padding:10px 16px; border-bottom:1px solid var(--b); background:rgba(0,0,0,0.02); display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+.kd-month { font-size:14px; font-weight:800; letter-spacing:-.01em; min-width:140px; color:var(--t); }
+.kd-nav { display:flex; align-items:center; gap:6px; }
+.kd-btn {
+  height:30px; padding:0 12px; border:1px solid var(--b); border-radius:8px;
+  background:var(--glass2); color:var(--t2); font:inherit; font-size:11.5px; font-weight:600;
+  cursor:pointer; transition:all .2s;
+}
+.kd-btn:hover { border-color:rgba(108,138,255,0.35); color:var(--a); }
+.kd-btn:focus-visible { outline:2px solid var(--a); outline-offset:2px; }
+.kd-grid { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); background:rgba(255,255,255,0.55); }
+.kd-dow { padding:8px 10px; font-size:9.5px; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:.07em; border-bottom:1px solid var(--b); }
+.kd-day { min-height:112px; padding:7px 7px 9px; border-right:1px solid var(--b2); border-bottom:1px solid var(--b2); min-width:0; }
+.kd-day:nth-child(7n) { border-right:0; }
+.kd-day.kd-wkend { background:rgba(0,0,0,0.015); }
+.kd-day.kd-out .kd-num { color:#C3CAD8; }
+.kd-day.kd-out .kd-ev { opacity:.45; }
+.kd-num { font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700; color:var(--t3); margin-bottom:5px; font-variant-numeric:tabular-nums; }
+.kd-day.kd-today { background:var(--al); }
+.kd-day.kd-today .kd-num { display:inline-grid; place-items:center; min-width:22px; height:22px; padding:0 6px; border-radius:11px; background:var(--a); color:#fff; }
+.kd-ev { display:block; margin-top:4px; padding:4px 6px 5px 7px; border-left:3px solid var(--c); border-radius:0 5px 5px 0; background:var(--cb); font-size:11px; font-weight:600; line-height:1.25; color:var(--t); cursor:default; }
+.kd-ev b { display:block; font-size:9px; font-weight:800; letter-spacing:.035em; text-transform:uppercase; color:var(--c); margin-bottom:2px; }
+.kd-ev .kd-nm { display:flex; align-items:center; gap:5px; min-width:0; }
+.kd-ev .kd-nm span:last-child { min-width:0; overflow-wrap:anywhere; }
+.kd-ev .kd-exp { font-size:9.5px; font-weight:700; color:var(--t3); font-style:italic; text-transform:none; letter-spacing:0; }
+.kd-ev.kd-past { opacity:.5; }
+.kd-lbl { display:block; font-size:10px; font-weight:500; color:var(--t2); margin-top:2px; }
+.kd-grid .kd-lbl { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.kd-list { display:none; list-style:none; background:rgba(255,255,255,0.55); }
+.kd-list li { display:flex; gap:12px; align-items:flex-start; padding:10px 16px; border-bottom:1px solid var(--b2); }
+.kd-list li:last-child { border-bottom:0; }
+.kd-ldate { flex:0 0 58px; font-size:11px; font-weight:700; color:var(--t3); text-transform:uppercase; letter-spacing:.03em; padding-top:5px; }
+.kd-list .kd-ev { flex:1; margin-top:0; font-size:12.5px; }
+.kd-empty { padding:40px 16px; text-align:center; color:var(--t3); font-size:13px; }
+.kd-list li.kd-empty { display:block; }
+.kd-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:12px 16px; border-top:1px solid var(--b); background:rgba(0,0,0,0.015); }
+.kd-key { display:flex; gap:14px; flex-wrap:wrap; }
+.kd-key span { display:flex; align-items:center; gap:6px; font-size:11.5px; color:var(--t2); font-weight:600; }
+.kd-key i { width:9px; height:9px; border-radius:2px; display:inline-block; background:var(--c); }
+.kd-note { font-size:11px; color:var(--t3); font-weight:500; max-width:560px; line-height:1.45; }
+@media(max-width:1024px) {
+  .cu-w { padding-left:24px; padding-right:24px; }
+  .kd-section { padding:0 24px 30px; }
+}
+@media(max-width:768px) {
+  .cu { flex-wrap:wrap; padding:10px 12px; gap:10px; }
+  .cu-hd { flex-direction:row; align-items:baseline; gap:8px; border-right:0; padding-right:0; }
+  .cu-links { flex-direction:row; align-items:center; gap:12px; border-left:0; padding-left:0; margin-left:auto; }
+  .cu-list { order:3; flex-basis:100%; }
+  .cu-ev { flex:0 0 auto; max-width:200px; }
+  .kd-grid { display:none; }
+  .kd-list { display:block; }
+  .kd-card-hd, .kd-footer { align-items:flex-start; flex-direction:column; }
+}
+
 /* === LOADING === */
 .loading{text-align:center;padding:40px;color:var(--t3);font-size:14px}
 .loading-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--a);margin:0 3px;animation:ld .6s infinite alternate}
@@ -902,6 +1033,14 @@ tbody tr:last-child td { border-bottom:0; }
 <div class="tk-w ai d1">
   <div class="tk-h"><span class="tk-t">Recent Developments</span><div class="tk-l"></div></div>
   <div class="tk"><div class="fl"></div><div class="fr"></div><div class="tk-tr" id="ticker"><div class="loading" style="padding:12px 20px"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></div></div>
+</div>
+<!-- === COMING UP: key dates in the next five working days === -->
+<div class="cu-w ai d2">
+  <div class="cu" id="cu" role="region" aria-label="Key dates coming up">
+    <div class="cu-hd"><div class="cu-title">Coming up</div><div class="cu-meta" id="cu-meta">Next 5 working days</div></div>
+    <div class="cu-list" id="cu-list"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></div>
+    <div class="cu-links"><a href="#kd-section">Key dates calendar &darr;</a></div>
+  </div>
 </div>
 <div class="main">
   <div class="tc">
@@ -973,6 +1112,55 @@ tbody tr:last-child td { border-bottom:0; }
   </div>
   <p class="rumours-caveat">Includes unconfirmed speculation and preliminary approaches which may not lead to a formal offer. For information only.</p>
 </div>
+
+<!-- === KEY DATES CALENDAR === -->
+<section class="kd-section ai" id="kd-section" aria-label="Key dates calendar" style="animation-delay:.23s">
+  <div class="rumours-head">
+    <div>
+      <div class="kd-eyebrow">Offer Timetables</div>
+      <h2>Key Dates</h2>
+      <p class="rumours-sub">Offers announced and offer documents published, plus shareholder meetings, expected completion dates and settlement dates for the pending offers on this tracker.</p>
+    </div>
+    <span class="kd-chip" id="kd-window">Next 30 days</span>
+  </div>
+  <div class="kd-sub">
+    <p>Add these dates to your own calendar. Use the Subscribe button for Outlook or Google Calendar, or in Outlook go to <b>Add calendar &rarr; Subscribe from web</b> and paste this link. Subscribed dates stay up to date as they are announced or moved.</p>
+    <input type="text" class="kd-link" id="kd-link" readonly aria-label="Calendar subscription link">
+    <details class="kd-menu">
+      <summary>Subscribe &#x25BE;</summary>
+      <div class="kd-menu-list" role="menu">
+        <a role="menuitem" id="kd-sub-work" href="#" target="_blank" rel="noopener"><b>Work or school account</b><span>Outlook with Microsoft 365, e.g. at a bank</span></a>
+        <a role="menuitem" id="kd-sub-personal" href="#" target="_blank" rel="noopener"><b>Personal account</b><span>Outlook.com, Hotmail or Live</span></a>
+        <a role="menuitem" id="kd-sub-desktop" href="#"><b>Classic Outlook desktop app</b><span>Opens Outlook and asks to subscribe</span></a>
+        <a role="menuitem" id="kd-sub-google" href="#" target="_blank" rel="noopener"><b>Google Calendar</b><span>Updates less often than Outlook (up to a day)</span></a>
+      </div>
+    </details>
+    <button type="button" class="kd-btn" id="kd-sub-copy">Copy link</button>
+    <a class="kd-btn" id="kd-history" href="history.ics" download="European Past Events.ics" title="A one-off file of past events to upload into Outlook (Add calendar &rarr; Upload from file)">Past events (.ics)</a>
+    <span class="kd-copied" id="kd-copied" hidden>Link copied</span>
+  </div>
+  <div class="kd-card">
+    <div class="kd-card-hd">
+      <div class="kd-month" id="kd-month" aria-live="polite"></div>
+      <div class="kd-nav">
+        <button type="button" class="kd-btn" data-kd-step="-1">Previous</button>
+        <button type="button" class="kd-btn" data-kd-step="0">Today</button>
+        <button type="button" class="kd-btn" data-kd-step="1">Next</button>
+      </div>
+    </div>
+    <div id="kd-body"><div class="loading"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></div></div>
+    <div class="kd-footer">
+      <div class="kd-key">
+        <span class="kd-t-meeting"><i></i>Shareholder meeting</span>
+        <span class="kd-t-settle"><i></i>Settlement</span>
+        <span class="kd-t-completion"><i></i>Expected completion</span>
+        <span class="kd-t-docs"><i></i>Offer document published</span>
+        <span class="kd-t-offer"><i></i>Offer announced</span>
+      </div>
+      <div class="kd-note">&ldquo;Exp.&rdquo; marks a settlement date that is still to come. Expected completion dates that only mark the end of a quarter or year are not shown. Dates can change; check the latest announcement.</div>
+    </div>
+  </div>
+</section>
 
 <!-- === COVERAGE SECTION === -->
 <div class="coverage-section ai" style="animation-delay:.24s">
@@ -1278,7 +1466,9 @@ async function loadFromSheets() {
     parsedDeals.push({
       t: targetName, co: country, c: cc, b: bidder, v: ev, p: prem,
       tp: tp, at: attitude, d: dateAnn, ec: expComp, reg: reg,
-      own: own, irr: irr, acc: acc, xb: xb
+      own: own, irr: irr, acc: acc, xb: xb,
+      // key-date columns for the calendar
+      sd: getVal(row, 'Settlement date'), od: getVal(row, 'Offer document'), sm: getVal(row, 'Shareholder meeting')
     });
 
     // Build multiples lookup
@@ -1358,9 +1548,11 @@ async function loadData() {
 
     buildFilters();
     go();
+    initKeyDates().catch(function(e) { console.error('Key dates failed:', e); kdFail(); });
   } catch(err) {
     console.error('Error loading data:', err);
     document.getElementById('ticker').innerHTML = '<div class="ti"><span class="ti-x" style="color:var(--r)">Unable to load updates</span></div>';
+    kdFail();
     document.getElementById('tb').innerHTML = '<tr><td colspan="14"><div class="error-msg">Unable to load deal data. Please check that the Google Sheet is published to the web (File &rarr; Share &rarr; Publish to web). Error: ' + err.message + '</div></td></tr>';
   }
 }
@@ -1698,6 +1890,313 @@ function renderRumours(data) {
       + '</tr>';
   }).join('');
   document.getElementById('rumours-dc').innerHTML = '<b>' + data.length + '</b> situation' + (data.length===1?'':'s') + ' tracked';
+}
+
+// =====================================================================
+// KEY DATES CALENDAR
+// Built from the deals sheet: Date announced, Expected completion, Settlement date,
+// Offer document published and Shareholder meeting date.
+// =====================================================================
+var KD_TYPES = {
+  meeting:    'Shareholder meeting',
+  settle:     'Settlement',
+  completion: 'Exp. completion',
+  docs:       'Offer document',
+  offer:      'Offer announced'
+};
+// Things that have already happened are never greyed out; the rest fade once their date has passed
+var KD_HAPPENED = { offer: 1, docs: 1 };
+var kdEvents = [];
+var kdView = null;
+var KD_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+var KD_MON = { jan:0, feb:1, mar:2, apr:3, may:4, jun:5, jul:6, aug:7, sep:8, oct:9, nov:10, dec:11 };
+
+function kdEsc(s) {
+  // Sheet text has already had < > " made safe by neut(); undo that first so nothing is escaped twice
+  s = (s == null ? '' : s + '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"');
+  return s.replace(/[&<>"']/g, function(c) { return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]; });
+}
+
+// Reads the date styles used on the sheet and in deals.json: "30 Oct 2026", "8 April 2026", "28-May-2025",
+// "31-Dec-26", "2026-10-30", "30/10/2026" (day first) and Google's "Date(2026,9,30)".
+function kdParse(raw) {
+  if (!raw) return null;
+  var s = (raw + '').trim(), m, y, mo, d;
+  if ((m = /^Date\((\d{4}),\s*(\d{1,2}),\s*(\d{1,2})/.exec(s))) { y = +m[1]; mo = +m[2]; d = +m[3]; }
+  else if ((m = /^(\d{4})-(\d{1,2})-(\d{1,2})/.exec(s))) { y = +m[1]; mo = m[2] - 1; d = +m[3]; }
+  else if ((m = /^(\d{1,2})[\s\-\/]+([A-Za-z]{3,9})\.?,?[\s\-\/]+(\d{2,4})$/.exec(s))) {
+    mo = KD_MON[m[2].slice(0, 3).toLowerCase()];
+    if (mo === undefined) return null;
+    y = +m[3]; d = +m[1];
+  }
+  else if ((m = /^(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})$/.exec(s))) { y = +m[3]; mo = m[2] - 1; d = +m[1]; }
+  else return null;
+  if (y < 100) y += 2000;
+  var dt = new Date(y, mo, d);
+  if (isNaN(dt.getTime()) || dt.getFullYear() !== y || dt.getMonth() !== mo || dt.getDate() !== d) return null;
+  return dt;
+}
+
+// An expected completion of 31 Mar, 30 Jun, 30 Sep or 31 Dec stands for "Q1", "H1", "by year end" etc.,
+// not a real date, so it is left off the calendar.
+function kdIsPeriodEnd(dt) {
+  var m = dt.getMonth(), d = dt.getDate();
+  return (m === 2 && d === 31) || (m === 5 && d === 30) || (m === 8 && d === 30) || (m === 11 && d === 31);
+}
+
+// Target names are in capitals on the sheet; show them in ordinary case without the legal form.
+// Add a company to KD_NAME_FIX when its own styling differs (key = the name in capitals, legal form removed).
+var KD_NAME_FIX = {
+  'OCI': 'OCI', 'QIAGEN': 'QIAGEN', 'EVOKE': 'evoke', 'BLUENORD': 'BlueNord', 'TRADELAB': 'TradeLab',
+  'POLYPEPTIDE GROUP': 'PolyPeptide Group', 'AKVA GROUP': 'AKVA group', 'AKER BIOMARINE': 'Aker BioMarine',
+  'AUSTRIACARD HOLDINGS': 'AUSTRIACARD Holdings', 'CIRSA ENTERPRISES': 'CIRSA Enterprises'
+};
+var KD_SMALL = { de:1, du:1, des:1, la:1, le:1, les:1, di:1, dei:1, del:1, della:1, et:1, e:1, y:1, und:1, van:1, von:1, der:1, den:1 };
+function kdName(t) {
+  var n = (t == null ? '' : t + '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+  var legal = /[\s,]+(\(PUBL\)|S\.?P\.?A|S\.?A|N\.?V|A\/S|ASA|SOCIMI|OYJ|PLC|AG|AB|SE|AS)\.?$/i;
+  while (legal.test(n) && n.replace(legal, '').indexOf(' ') !== -1) n = n.replace(legal, '');
+  if (legal.test(n) && n.replace(legal, '').trim()) n = n.replace(legal, '');
+  n = n.trim();
+  if (KD_NAME_FIX[n.toUpperCase()]) return KD_NAME_FIX[n.toUpperCase()];
+  if (n !== n.toUpperCase()) return n;   // already in mixed case on the sheet
+  var first = true;
+  return n.replace(/[A-ZÀ-Þ]+/g, function(w) {
+    var isFirst = first; first = false;
+    if (w.length > 1 && !/[AEIOUYÀ-Þ]/.test(w)) return w;          // initials such as HSBC, PLC, RFK
+    var lw = w.toLowerCase();
+    if (!isFirst && KD_SMALL[lw]) return lw;
+    return w.charAt(0) + lw.slice(1);
+  });
+}
+
+function kdHasColumns(list) {
+  return list.some(function(d) { return 'sd' in d || 'od' in d || 'sm' in d; });
+}
+
+async function initKeyDates() {
+  var src = deals;
+  // The static JSON may not carry the three key-date columns yet; if so, read them from the sheet directly.
+  if (!kdHasColumns(src)) {
+    try { src = (await loadFromSheets()).deals.filter(notUKorIE); } catch (e) { console.log('Key dates: sheet not available, using static data', e); src = deals; }
+  }
+  kdEvents = buildKeyDates(src.concat(await loadClosedDeals()));
+  var t = new Date();
+  kdView = new Date(t.getFullYear(), t.getMonth(), 1);
+  document.querySelectorAll('[data-kd-step]').forEach(function(b) {
+    b.addEventListener('click', function() {
+      var step = +b.getAttribute('data-kd-step');
+      if (step === 0) { var n = new Date(); kdView = new Date(n.getFullYear(), n.getMonth(), 1); }
+      else kdView = new Date(kdView.getFullYear(), kdView.getMonth() + step, 1);
+      renderKeyDates();
+    });
+  });
+  renderKeyDates();
+  renderComingUp();
+}
+
+// Deals deleted from the sheet - the dates they had already reached are kept by the export script in data/closed_deals.json
+var STATIC_CLOSED_URL = 'data/closed_deals.json' + _cb;
+async function loadClosedDeals() {
+  try {
+    var r = await fetch(STATIC_CLOSED_URL);
+    if (!r.ok) return [];
+    var j = neut(await r.json());
+    return Array.isArray(j) ? j.filter(notUKorIE) : [];
+  } catch (e) { return []; }
+}
+
+function buildKeyDates(list) {
+  var out = [], seen = {}, rows = {};
+  list.forEach(function(d) { var n = kdName(d.t); rows[n] = (rows[n] || 0) + 1; });
+  list.forEach(function(d) {
+    var name = kdName(d.t), bidder = (d.b || '').replace(/\s+/g, ' ').trim();
+    // A target with more than one row (competing or linked offers) has the offeror shown on its dates
+    var multi = rows[name] > 1;
+    function add(type, raw, extra) {
+      var dt = kdParse(raw);
+      if (!dt) return;
+      var key = type + '|' + name + '|' + dt.getTime();
+      if (seen[key]) {
+        // Same date on two rows for one target (e.g. one meeting covering both offers): keep one, without an offeror
+        if (seen[key].bidder !== bidder) { seen[key].bidder = ''; if (type !== 'offer') seen[key].label = ''; }
+        return;
+      }
+      var e = { type: type, date: dt, name: name, c: d.c || '', bidder: bidder, label: multi && bidder ? 'Offeror: ' + bidder : '' };
+      for (var k in (extra || {})) e[k] = extra[k];
+      out.push(e); seen[key] = e;
+    }
+    add('offer', d.d, { label: bidder ? 'Offeror: ' + bidder : '' });
+    add('docs', d.od);
+    add('meeting', d.sm);
+    add('settle', d.sd);
+    var ec = kdParse(d.ec), sd = kdParse(d.sd);
+    if (ec && !kdIsPeriodEnd(ec) && !(sd && sd.getTime() === ec.getTime())) add('completion', d.ec);
+  });
+  var order = { meeting: 0, settle: 1, completion: 2, docs: 3, offer: 4 };
+  return out.sort(function(a, b) { return a.date - b.date || order[a.type] - order[b.type] || a.name.localeCompare(b.name); });
+}
+
+function kdIsExpected(e, today) { return e.type === 'settle' && e.date >= today; }
+
+function kdEvHtml(e, today) {
+  var what = KD_TYPES[e.type];
+  var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' – ' + (e.type === 'docs' ? 'Offer document published' : e.type === 'completion' ? 'Expected completion' : what) + (kdIsExpected(e, today) ? ' (expected)' : '');
+  return '<span class="kd-ev kd-t-' + e.type + (e.date < today && !KD_HAPPENED[e.type] ? ' kd-past' : '') + '" title="' + kdEsc(title) + '">'
+    + '<b>' + kdEsc(what) + (kdIsExpected(e, today) ? ' <span class="kd-exp">exp.</span>' : '') + '</b>'
+    + '<span class="kd-nm">' + fg(e.c, 'ti-f') + '<span>' + kdEsc(e.name) + '</span></span>'
+    + (e.label ? '<span class="kd-lbl">' + kdEsc(e.label) + '</span>' : '') + '</span>';
+}
+
+function renderKeyDates() {
+  var body = document.getElementById('kd-body');
+  if (!body || !kdView) return;
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var DAY = 864e5;
+  document.getElementById('kd-month').textContent = KD_MONTHS[kdView.getMonth()] + ' ' + kdView.getFullYear();
+
+  var next30 = kdEvents.filter(function(e) { var n = Math.round((e.date - today) / DAY); return !KD_HAPPENED[e.type] && n >= 0 && n <= 30; }).length;
+  var chip = document.getElementById('kd-window');
+  if (chip) chip.textContent = next30 + (next30 === 1 ? ' date' : ' dates') + ' in next 30 days';
+
+  var byDay = {};
+  kdEvents.forEach(function(e) { var k = e.date.getTime(); (byDay[k] = byDay[k] || []).push(e); });
+
+  var start = new Date(kdView); start.setDate(1 - ((kdView.getDay() + 6) % 7)); // weeks start on Monday
+  var html = '<div class="kd-grid" role="grid">';
+  ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].forEach(function(d) { html += '<div class="kd-dow" role="columnheader">' + d + '</div>'; });
+  for (var i = 0; i < 42; i++) {
+    var d = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+    if (i >= 35 && d.getMonth() !== kdView.getMonth()) break;
+    var cls = 'kd-day';
+    if (d.getMonth() !== kdView.getMonth()) cls += ' kd-out';
+    if (d.getDay() === 0 || d.getDay() === 6) cls += ' kd-wkend';
+    if (d.getTime() === today.getTime()) cls += ' kd-today';
+    html += '<div class="' + cls + '" role="gridcell"><div class="kd-num">' + d.getDate() + '</div>'
+      + (byDay[d.getTime()] || []).map(function(e) { return kdEvHtml(e, today); }).join('') + '</div>';
+  }
+  html += '</div>';
+
+  // Narrow screens get the month as a list instead of a grid
+  var inMonth = kdEvents.filter(function(e) { return e.date.getMonth() === kdView.getMonth() && e.date.getFullYear() === kdView.getFullYear(); });
+  html += '<ul class="kd-list">' + (inMonth.length
+    ? inMonth.map(function(e) {
+        return '<li><span class="kd-ldate">' + e.date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric' }) + '</span>' + kdEvHtml(e, today) + '</li>';
+      }).join('')
+    : '<li class="kd-empty">No key dates this month.</li>') + '</ul>';
+  body.innerHTML = html;
+}
+
+// =====================================================================
+// COMING UP STRIP - key dates in the next five working days, at the top of the page
+// =====================================================================
+var CU_WORKING_DAYS = 5, CU_MAX = 6;
+var CU_LABELS = { meeting: 'Shareholder meeting', settle: 'Settlement', completion: 'Expected completion', docs: 'Offer document' };
+
+function cuWindowEnd(today) {
+  var d = new Date(today), n = 0;
+  while (n < CU_WORKING_DAYS) { d.setDate(d.getDate() + 1); if (d.getDay() !== 0 && d.getDay() !== 6) n++; }
+  return d;
+}
+
+function cuWhen(dt, today) {
+  var diff = Math.round((dt - today) / 864e5);
+  if (diff === 0) return 'Today';
+  if (diff === 1) return 'Tomorrow';
+  return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dt.getDay()] + ' ' + dt.getDate() + ' ' + KD_MONTHS[dt.getMonth()].slice(0, 3);
+}
+
+function renderComingUp() {
+  var box = document.getElementById('cu-list');
+  if (!box) return;
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var end = cuWindowEnd(today);
+  var upcoming = kdEvents.filter(function(e) { return e.type !== 'offer' && e.date >= today; });
+  var list = upcoming.filter(function(e) { return e.date <= end; });
+  var fallback = false;
+  if (!list.length && upcoming.length) {
+    // Nothing in the window - show whatever falls on the next date that has something on it
+    var first = upcoming[0].date.getTime();
+    list = upcoming.filter(function(e) { return e.date.getTime() === first; });
+    fallback = true;
+  }
+  var meta = document.getElementById('cu-meta');
+  if (meta) meta.textContent = fallback ? 'Next key date' : 'Next 5 working days';
+  if (!list.length) { box.innerHTML = '<span class="cu-empty">No key dates scheduled.</span>'; return; }
+  var shown = list.slice(0, CU_MAX);
+  var html = shown.map(function(e) {
+    var what = CU_LABELS[e.type] || KD_TYPES[e.type];
+    var when = cuWhen(e.date, today);
+    var exp = kdIsExpected(e, today);
+    var title = e.name + (e.bidder ? ' / ' + e.bidder : '') + ' – ' + what + (exp ? ' (expected)' : '')
+      + ', ' + e.date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    return '<a class="cu-ev kd-t-' + e.type + '" href="#kd-section" title="' + kdEsc(title) + '">'
+      + '<span class="cu-when' + (when === 'Today' ? ' cu-today' : '') + '">' + kdEsc(when) + '</span>'
+      + '<span class="cu-what">' + kdEsc(what) + (exp ? ' (exp.)' : '') + '</span>'
+      + '<span class="cu-name">' + fg(e.c, 'ti-f') + '<span>' + kdEsc(e.name) + '</span></span></a>';
+  }).join('');
+  if (list.length > shown.length) html += '<a class="cu-more" href="#kd-section">+' + (list.length - shown.length) + ' more</a>';
+  box.innerHTML = html;
+}
+
+// Subscription link for the calendar.ics feed (written by export_tracker_data.py)
+var CAL_FEED_URL = 'https://europe.arbinsight.co.uk/calendar.ics';
+(function() {
+  var name = 'European Key Dates';
+  var box = document.getElementById('kd-link');
+  var copy = document.getElementById('kd-sub-copy');
+  if (box) {
+    box.value = CAL_FEED_URL;
+    box.addEventListener('focus', function() { box.select(); });
+  }
+  // Outlook's own "Subscribe from web" page, with the address and name filled in
+  var q = '?url=' + encodeURIComponent(CAL_FEED_URL) + '&name=' + encodeURIComponent(name);
+  var links = {
+    'kd-sub-work': 'https://outlook.office.com/calendar/0/addfromweb' + q,
+    'kd-sub-personal': 'https://outlook.live.com/calendar/0/addfromweb' + q,
+    'kd-sub-desktop': CAL_FEED_URL.replace(/^https?:/, 'webcal:'),
+    'kd-sub-google': 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(CAL_FEED_URL.replace(/^https?:/, 'webcal:'))
+  };
+  Object.keys(links).forEach(function(id) {
+    var a = document.getElementById(id);
+    if (a) a.href = links[id];
+  });
+  // Google Analytics: record which subscribe option is used (Reports > Engagement > Events)
+  var track = function(method) {
+    try { if (typeof gtag === 'function') gtag('event', 'calendar_subscribe', { method: method }); } catch (e) {}
+  };
+  var methods = { 'kd-sub-work': 'outlook_work', 'kd-sub-personal': 'outlook_personal', 'kd-sub-desktop': 'outlook_desktop', 'kd-sub-google': 'google' };
+  Object.keys(methods).forEach(function(id) {
+    var a = document.getElementById(id);
+    if (a) a.addEventListener('click', function() { track(methods[id]); });
+  });
+  if (copy) copy.addEventListener('click', function() { track('copy_link'); });
+  var hist = document.getElementById('kd-history');
+  if (hist) hist.addEventListener('click', function() { track('history_download'); });
+  if (box) box.addEventListener('copy', function() { track('copy_link_manual'); });
+  var menu = document.querySelector('.kd-menu');
+  var menuToggle = menu ? menu.querySelector('summary') : null;
+  if (menuToggle) menuToggle.addEventListener('click', function() {
+    if (!menu.open) track('menu_opened');
+  });
+  // Close the menu after a choice or a click elsewhere
+  if (menu) {
+    menu.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { menu.open = false; }); });
+    document.addEventListener('click', function(e) { if (!menu.contains(e.target)) menu.open = false; });
+  }
+  if (copy) copy.addEventListener('click', function() {
+    var done = function() { var c = document.getElementById('kd-copied'); c.hidden = false; setTimeout(function() { c.hidden = true; }, 2500); };
+    var fallback = function() { box.focus(); box.select(); try { document.execCommand('copy'); done(); } catch (e) {} };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(CAL_FEED_URL).then(done, fallback);
+    else fallback();
+  });
+})();
+
+function kdFail() {
+  var cu = document.getElementById('cu-list');
+  if (cu) cu.innerHTML = '<span class="cu-empty">Unable to load key dates.</span>';
+  var kb = document.getElementById('kd-body');
+  if (kb) kb.innerHTML = '<div class="kd-empty">Unable to load key dates.</div>';
 }
 
 // =====================================================================
