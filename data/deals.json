@@ -221,26 +221,6 @@
       "sm": ""
     },
     {
-      "t": "RECORDATI SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "CVC & GBL",
-      "v": 11084.0,
-      "p": 16.1,
-      "tp": "MBO/MBI",
-      "at": "Friendly",
-      "d": "22 May 2026",
-      "ec": "9 Nov 2026",
-      "reg": "No Referral",
-      "own": 46.82,
-      "irr": 0.0,
-      "acc": 66.67,
-      "xb": false,
-      "sd": "2 Nov 2026",
-      "od": "20 Jul 2026",
-      "sm": ""
-    },
-    {
       "t": "CECONOMY AG",
       "co": "Germany",
       "c": "DE",
@@ -1034,7 +1014,7 @@
       "reg": "No Referral",
       "own": 5.35,
       "irr": 0.0,
-      "acc": 0.0,
+      "acc": 0,
       "xb": false,
       "sd": "18 Dec 2026",
       "od": "",
@@ -1074,7 +1054,7 @@
       "reg": "No Referral",
       "own": 0.0,
       "irr": 45.52,
-      "acc": 0.0,
+      "acc": 0,
       "xb": false,
       "sd": "",
       "od": "",
@@ -1115,6 +1095,26 @@
       "own": 3.48,
       "irr": 38.82,
       "acc": 0.0,
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
+    },
+    {
+      "t": "PATRIZIA SE",
+      "co": "Germany",
+      "c": "DE",
+      "b": "FIRST CAPITAL PARTNER GMBH",
+      "v": 728.0,
+      "p": 30.16,
+      "tp": "Partial",
+      "at": "Friendly",
+      "d": "12 November 2026",
+      "ec": "31 December 2026",
+      "reg": "No Referral",
+      "own": 58.89,
+      "irr": 0.0,
+      "acc": 0,
       "xb": false,
       "sd": "",
       "od": "",
@@ -1198,13 +1198,6 @@
       "ev_ebitda": 9.11,
       "ev_sales": 1.32,
       "pe": 23.84
-    },
-    "RECORDATI SPA": {
-      "consid": "Cash",
-      "sector": "Pharmaceuticals",
-      "ev_ebitda": 12.53,
-      "ev_sales": 4.75,
-      "pe": 15.76
     },
     "CECONOMY AG": {
       "consid": "Cash",
@@ -1391,8 +1384,8 @@
     "PININFARINA SPA": {
       "consid": "Cash",
       "sector": "Support Services",
-      "ev_ebitda": 13.62,
-      "ev_sales": 0.49,
+      "ev_ebitda": 16.61,
+      "ev_sales": 0.59,
       "pe": null
     },
     "BERENTZEN-GRUPPE AG": {
@@ -1499,6 +1492,13 @@
       "ev_ebitda": null,
       "ev_sales": null,
       "pe": null
+    },
+    "PATRIZIA SE": {
+      "consid": "Cash",
+      "sector": "Financial Services",
+      "ev_ebitda": 9.83,
+      "ev_sales": 3.43,
+      "pe": 21.48
     }
   }
 }
