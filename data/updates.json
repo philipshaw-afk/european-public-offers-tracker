@@ -1,15 +1,57 @@
 [
   {
     "d": "12 November 2026",
+    "c": "FR",
+    "t": "Fnac Darty SA",
+    "x": "Offer reopened until 25 November 2026. EP Corporate Group AS already holds 69.3% of its shares"
+  },
+  {
+    "d": "12 November 2026",
+    "c": "FR",
+    "t": "Groupe Pizzorno Environnement SA",
+    "x": "Following completion Paprec Group and other parties acting in concert hold 76.86% of the shares and 83.58% of the votes in Groupe Pizzorno"
+  },
+  {
+    "d": "12 November 2026",
     "c": "DE",
     "t": "Patrizia SE",
     "x": "Cash offer of €8.20 per share for an additional 14% stake in Patrizia by First Capital Partner GmbH"
   },
   {
+    "d": "12 November 2026",
+    "c": "DE",
+    "t": "CECONOMY AG",
+    "x": "JD.com's offer successfully completes"
+  },
+  {
+    "d": "12 November 2026",
+    "c": "SE",
+    "t": "Triona AB",
+    "x": "Volaris BidCo's offer unconditional (99% acceptance)"
+  },
+  {
+    "d": "10 November 2026",
+    "c": "PL",
+    "t": "ZE PAK",
+    "x": "ZE PAK's Board considered Argumenol's offer fair and supported delisting"
+  },
+  {
+    "d": "10 November 2026",
+    "c": "DE",
+    "t": "Delivery Hero SE",
+    "x": "Offer period extended to 24 November 2026"
+  },
+  {
+    "d": "9 November 2026",
+    "c": "DE",
+    "t": "Netfonds AG",
+    "x": "Netfonds announces planned delisting as Warburg Pincus acquisition nears completion"
+  },
+  {
     "d": "9 November 2026",
     "c": "IT",
     "t": "Recordati SpA",
-    "x": "The reopened offer closed with Respighi holding 91.45% of Recordati. A joint squeeze-out and delisting were expected by the end of November."
+    "x": "The reopened offer closed with Respighi holding 91.45% of Recordati. A joint squeeze-out and delisting are expected by the end of November 2026"
   },
   {
     "d": "9 November 2026",
@@ -25,32 +67,14 @@
   },
   {
     "d": "6 November 2026",
-    "c": "AT",
-    "t": "Addiko Bank AG",
-    "x": "RBI holds 96.79% of Addiko Bank's shares following completion of the extended acceptance period on 3 November 2026. The offer remains subject to regulatory approvals with a long stop date of 14 May 2027"
-  },
-  {
-    "d": "6 November 2026",
     "c": "IT",
     "t": "PLC SpA",
-    "x": "The offer closed with the bidder holding 96.8% of PLC's share capital. The compulsory acquisition of the remaining shares and formal delisting were scheduled for 19 November 2026."
+    "x": "The offer closed with the bidder holding 96.8% of PLC's share capital. The compulsory acquisition of the remaining shares and formal delisting are scheduled for 19 November 2026"
   },
   {
     "d": "5 November 2026",
     "c": "IT",
     "t": "Haiki+ SpA",
     "x": "Offer increased from €0.90 to €1.11 per share. Acceptance period is extended until 13 November 2026"
-  },
-  {
-    "d": "5 November 2026",
-    "c": "CH",
-    "t": "PolyPeptide Group AG",
-    "x": "Following completion of acceptance period on 30 October 2026 Samsung Biologics holds 97.99% of its share capital. The offer remains subject to regulatory approvals and is expected to close by Q1 2027"
-  },
-  {
-    "d": "5 November 2026",
-    "c": "IT",
-    "t": "Pininfarina SpA",
-    "x": "Mahindra Group increases offer for the remaining 15.4% of the shares in Pininfarina from €1.00 to €1.20 per share"
   }
 ]
