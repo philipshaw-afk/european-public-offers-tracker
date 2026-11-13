@@ -34,5 +34,41 @@
     "sd": "2 Nov 2026",
     "ec": "9 Nov 2026",
     "closed": "2026-11-12"
+  },
+  {
+    "t": "GROUPE PIZZORNO ENVIRONNEMENT SA",
+    "co": "France",
+    "c": "FR",
+    "b": "PAPREC GROUP SA",
+    "d": "19-Jan-2026",
+    "od": "26 Oct 2026",
+    "sm": "",
+    "sd": "",
+    "ec": "9-Nov-2026",
+    "closed": "2026-11-13"
+  },
+  {
+    "t": "CECONOMY AG",
+    "co": "Germany",
+    "c": "DE",
+    "b": "JD.COM INC",
+    "d": "30 July 2025",
+    "od": "1 Sep 2025",
+    "sm": "",
+    "sd": "",
+    "ec": "12 Nov 2026",
+    "closed": "2026-11-13"
+  },
+  {
+    "t": "TRIONA AB",
+    "co": "Sweden",
+    "c": "SE",
+    "b": "CONSTELLATION SOFTWARE INC",
+    "d": "1 October 2026",
+    "od": "1 Oct 2026",
+    "sm": "",
+    "sd": "",
+    "ec": "12 Nov 2026",
+    "closed": "2026-11-13"
   }
 ]
