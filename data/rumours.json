@@ -24,14 +24,6 @@
     "latest": "Non-binding offers reported from KKR with RWE, Apollo, Equinor, and Brookfield with CPP Investments. The German Government would retain about 25% of Uniper (Finwire)"
   },
   {
-    "co": "Germany",
-    "c": "DE",
-    "name": "Hochtief AG",
-    "status": "Confirmed",
-    "first": "7 November 2026",
-    "latest": "ACS denies reports that it has considered launching an offer for the remaining 24% of shares in Hochtief"
-  },
-  {
     "co": "France",
     "c": "FR",
     "name": "Criteo SA",
@@ -277,6 +269,6 @@
     "name": "Seamless Distribution Systems AB",
     "status": "Confirmed",
     "first": "10 November 2026",
-    "latest": "The board has launched a review of strategic alternatives, which may include a sale of the company or 'structural transactions"
+    "latest": "The board has launched a review of strategic alternatives, which may include a sale of the company or 'structural transactions'"
   }
 ]
