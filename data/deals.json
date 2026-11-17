@@ -641,26 +641,6 @@
       "sm": ""
     },
     {
-      "t": "HAIKI+ SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "SOSTENYA GROUP",
-      "v": 143.3,
-      "p": 90.1,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "7 August 2026",
-      "ec": "13 Nov 2026",
-      "reg": "No Referral",
-      "own": 72.36,
-      "irr": 14.19,
-      "acc": 90.0,
-      "xb": false,
-      "sd": "13 Nov 2026",
-      "od": "25 Sep 2026",
-      "sm": ""
-    },
-    {
       "t": "SOCIETE FRANCAISE DE CASINOS SA",
       "co": "France",
       "c": "FR",
@@ -1059,6 +1039,66 @@
       "sd": "",
       "od": "",
       "sm": ""
+    },
+    {
+      "t": "IGD - IMMOBILIARE GRANDE DISTRIBUZIONE SIIQ SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "CARMILA SA",
+      "v": 520.0,
+      "p": 10.8,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "16 November 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 40.9,
+      "acc": 0,
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
+    },
+    {
+      "t": "AVIO SPA",
+      "co": "Italy",
+      "c": "IT",
+      "b": "ICEYE OY",
+      "v": 2035.0,
+      "p": 33.83,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "17 November 2026",
+      "ec": "30 June 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 0.0,
+      "acc": 66.67,
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
+    },
+    {
+      "t": "PRICER AB",
+      "co": "Sweden",
+      "c": "SE",
+      "b": "VUSIONGROUP SA",
+      "v": 88.0,
+      "p": 29.6,
+      "tp": "Public Offer",
+      "at": "Friendly",
+      "d": "17 November 2026",
+      "ec": "5 January 2027",
+      "reg": "No Referral",
+      "own": 0.0,
+      "irr": 14.15,
+      "acc": 90.0,
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     }
   ],
   "multiples": {
@@ -1272,13 +1312,6 @@
       "ev_sales": 1.4,
       "pe": 25.29
     },
-    "HAIKI+ SPA": {
-      "consid": "Cash",
-      "sector": "Support Services",
-      "ev_ebitda": 5.65,
-      "ev_sales": 0.98,
-      "pe": null
-    },
     "SOCIETE FRANCAISE DE CASINOS SA": {
       "consid": "Cash",
       "sector": "Leisure & Hotels",
@@ -1418,6 +1451,27 @@
       "ev_ebitda": 9.83,
       "ev_sales": 3.43,
       "pe": 21.48
+    },
+    "IGD - IMMOBILIARE GRANDE DISTRIBUZIONE SIIQ SPA": {
+      "consid": "Shares",
+      "sector": "Property",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
+    },
+    "AVIO SPA": {
+      "consid": "Cash",
+      "sector": "Aerospace",
+      "ev_ebitda": 39.92,
+      "ev_sales": 2.37,
+      "pe": 98.21
+    },
+    "PRICER AB": {
+      "consid": "Cash",
+      "sector": "Electronics",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
