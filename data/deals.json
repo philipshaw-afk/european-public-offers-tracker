@@ -750,7 +750,7 @@
       "tp": "Public Offer",
       "at": "Friendly",
       "d": "21 September 2026",
-      "ec": "31 Dec 2026",
+      "ec": "4 Dec 2026",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 0.0,
@@ -1016,7 +1016,7 @@
       "irr": 38.82,
       "acc": 0.0,
       "xb": false,
-      "sd": "",
+      "sd": "4 March 2027",
       "od": "",
       "sm": ""
     },
@@ -1050,7 +1050,7 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "16 November 2026",
-      "ec": "",
+      "ec": "30 June 20227",
       "reg": "No Referral",
       "own": 0.0,
       "irr": 40.9,
@@ -1455,9 +1455,9 @@
     "IGD - IMMOBILIARE GRANDE DISTRIBUZIONE SIIQ SPA": {
       "consid": "Shares",
       "sector": "Property",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 13.38,
+      "ev_sales": 10.0,
+      "pe": 12.06
     },
     "AVIO SPA": {
       "consid": "Cash",
