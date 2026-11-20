@@ -1,13 +1,5 @@
 [
   {
-    "co": "Italy",
-    "c": "IT",
-    "name": "Banca Generali SpA",
-    "status": "Speculation",
-    "first": "7 October 2026",
-    "latest": "Assicurazioni Generali S.p.A. reported to be weighing a tender offer for the remaining 49.83% it does not own in Banca Generali (Affaritaliani)"
-  },
-  {
     "co": "Germany",
     "c": "DE",
     "name": "Evonik Industries AG",
@@ -152,14 +144,6 @@
     "latest": "Thierry Dassault, Thales and Palo Alto Networks rumoured to be interested in takeover (Share Talk)"
   },
   {
-    "co": "Germany",
-    "c": "DE",
-    "name": "Evonik Industries AG",
-    "status": "Speculation",
-    "first": "23 October 2026",
-    "latest": "BASF has increased its offer for Evonik to €24 per share (Reuters)"
-  },
-  {
     "co": "Switzerland",
     "c": "CH",
     "name": "Verisure PLC",
@@ -206,14 +190,6 @@
     "status": "Speculation",
     "first": "18 September 2026",
     "latest": "CNP Assurances SA is considering a potential ​takeover of Coface (Reuters)"
-  },
-  {
-    "co": "Germany",
-    "c": "DE",
-    "name": "Evonik Industries AG",
-    "status": "Speculation",
-    "first": "17 November 2026",
-    "latest": "BASF outlines possible additional commitments regarding sites, jobs and training to the North Rhine-Westphalia state government and Evonik's major shareholder, the RAG Foundation (Reuters)"
   },
   {
     "co": "France",
