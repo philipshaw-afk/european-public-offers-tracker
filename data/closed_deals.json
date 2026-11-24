@@ -82,5 +82,29 @@
     "sd": "13 Nov 2026",
     "ec": "13 Nov 2026",
     "closed": "2026-11-17"
+  },
+  {
+    "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
+    "co": "Italy",
+    "c": "IT",
+    "b": "ICOP",
+    "d": "29 June 2026",
+    "od": "1 Sep 2026",
+    "sm": "",
+    "sd": "",
+    "ec": "",
+    "closed": "2026-11-24"
+  },
+  {
+    "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
+    "co": "Italy",
+    "c": "IT",
+    "b": "WEBUILD SPA",
+    "d": "29 July 2026",
+    "od": "18 Sep 2026",
+    "sm": "",
+    "sd": "",
+    "ec": "",
+    "closed": "2026-11-24"
   }
 ]
