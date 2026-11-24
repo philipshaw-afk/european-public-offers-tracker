@@ -361,26 +361,6 @@
       "sm": ""
     },
     {
-      "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "ICOP",
-      "v": 339.0,
-      "p": 48.0,
-      "tp": "Public Offer",
-      "at": "Hostile",
-      "d": "29 June 2026",
-      "ec": "31 Dec 2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 0,
-      "acc": 55.0,
-      "xb": false,
-      "sd": "",
-      "od": "1 Sep 2026",
-      "sm": ""
-    },
-    {
       "t": "NEXT GEOSOLUTIONS SPA",
       "co": "Italy",
       "c": "IT",
@@ -599,26 +579,6 @@
       "sd": "",
       "od": "1 Oct 2026",
       "sm": "2 Sep 2026"
-    },
-    {
-      "t": "TREVI FINANZIARIA INDUSTRIALE SPA",
-      "co": "Italy",
-      "c": "IT",
-      "b": "WEBUILD SPA",
-      "v": 338.7,
-      "p": 45.9,
-      "tp": "Public Offer",
-      "at": "Friendly",
-      "d": "29 July 2026",
-      "ec": "31 Dec 2026",
-      "reg": "No Referral",
-      "own": 44.41,
-      "irr": 0.0,
-      "acc": 66.7,
-      "xb": false,
-      "sd": "27 Nov 2026",
-      "od": "18 Sep 2026",
-      "sm": ""
     },
     {
       "t": "ZABKA GROUP SA",
@@ -1220,13 +1180,6 @@
       "ev_ebitda": 9.45,
       "ev_sales": 1.31,
       "pe": 22.07
-    },
-    "TREVI FINANZIARIA INDUSTRIALE SPA": {
-      "consid": "Cash",
-      "sector": "Building & Construction",
-      "ev_ebitda": 5.55,
-      "ev_sales": 0.75,
-      "pe": null
     },
     "NEXT GEOSOLUTIONS SPA": {
       "consid": "Cash",
