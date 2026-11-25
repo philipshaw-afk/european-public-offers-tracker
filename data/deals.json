@@ -1059,6 +1059,26 @@
       "sd": "12 January 2027",
       "od": "",
       "sm": ""
+    },
+    {
+      "t": "CLARIANE SE",
+      "co": "France",
+      "c": "FR",
+      "b": "HLD EUROPE SCA/CREDIT AGRICOLE ASSURANCES SA",
+      "v": 1645.0,
+      "p": 38.3,
+      "tp": "Mandatory",
+      "at": "Friendly",
+      "d": "24 November 2026",
+      "ec": "",
+      "reg": "No Referral",
+      "own": 53.0,
+      "irr": 0.0,
+      "acc": 0,
+      "xb": false,
+      "sd": "",
+      "od": "",
+      "sm": ""
     }
   ],
   "multiples": {
@@ -1425,6 +1445,13 @@
       "ev_ebitda": 4.74,
       "ev_sales": 0.51,
       "pe": 12.12
+    },
+    "CLARIANE SE": {
+      "consid": "Cash",
+      "sector": "Healthcare",
+      "ev_ebitda": null,
+      "ev_sales": null,
+      "pe": null
     }
   }
 }
