@@ -21,26 +21,6 @@
       "sm": ""
     },
     {
-      "t": "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA",
-      "co": "France",
-      "c": "FR",
-      "b": "SOCIETE DE PARTICIPATION DEAUVILLAISE SAS",
-      "v": 299.089,
-      "p": 27.32,
-      "tp": "Minority Bid",
-      "at": "Friendly",
-      "d": "8-Dec-2025",
-      "ec": "20-Nov-2026",
-      "reg": "No Referral",
-      "own": 92.18,
-      "irr": 25.94,
-      "acc": 0,
-      "xb": false,
-      "sd": "",
-      "od": "",
-      "sm": ""
-    },
-    {
       "t": "COMMERZBANK AG",
       "co": "Germany",
       "c": "DE",
@@ -119,26 +99,6 @@
       "sd": "",
       "od": "",
       "sm": "25 Sep 2025"
-    },
-    {
-      "t": "OCI NV",
-      "co": "Netherlands",
-      "c": "NL",
-      "b": "ORASCOM CONSTRUCTION PLC",
-      "v": 872.274,
-      "p": -14.06,
-      "tp": "Merger",
-      "at": "Friendly",
-      "d": "9-Dec-2025",
-      "ec": "31-Dec-2026",
-      "reg": "No Referral",
-      "own": 0.0,
-      "irr": 50.9,
-      "acc": 50.0,
-      "xb": false,
-      "sd": "",
-      "od": "",
-      "sm": "30 Oct 2026"
     },
     {
       "t": "NETFONDS AG",
@@ -1070,7 +1030,7 @@
       "tp": "Mandatory",
       "at": "Friendly",
       "d": "24 November 2026",
-      "ec": "",
+      "ec": "30 June 2027",
       "reg": "No Referral",
       "own": 53.0,
       "irr": 0.0,
@@ -1088,13 +1048,6 @@
       "ev_ebitda": 5.73,
       "ev_sales": 0.02,
       "pe": 4.17
-    },
-    "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA": {
-      "consid": "Cash",
-      "sector": "Leisure & Hotels",
-      "ev_ebitda": 5.51,
-      "ev_sales": 1.62,
-      "pe": 12.06
     },
     "COMMERZBANK AG": {
       "consid": "Shares",
@@ -1123,13 +1076,6 @@
       "ev_ebitda": 6.03,
       "ev_sales": 0.93,
       "pe": 32.4
-    },
-    "OCI NV": {
-      "consid": "Cash",
-      "sector": "Chemicals",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
     },
     "NETFONDS AG": {
       "consid": "Cash",
@@ -1185,6 +1131,13 @@
       "sector": "Leisure & Hotels",
       "ev_ebitda": null,
       "ev_sales": 4.03,
+      "pe": null
+    },
+    "OCI NV": {
+      "consid": "Cash",
+      "sector": "Chemicals",
+      "ev_ebitda": null,
+      "ev_sales": null,
       "pe": null
     },
     "VALTECNE SPA": {
@@ -1449,9 +1402,9 @@
     "CLARIANE SE": {
       "consid": "Cash",
       "sector": "Healthcare",
-      "ev_ebitda": null,
-      "ev_sales": null,
-      "pe": null
+      "ev_ebitda": 8.56,
+      "ev_sales": 1.74,
+      "pe": 140.22
     }
   }
 }
