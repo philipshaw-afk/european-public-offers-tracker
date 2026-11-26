@@ -106,5 +106,29 @@
     "sd": "",
     "ec": "",
     "closed": "2026-11-24"
+  },
+  {
+    "t": "SOCIETE FERMIERE DU CASINO MUNICIPAL DE CANNES SA",
+    "co": "France",
+    "c": "FR",
+    "b": "SOCIETE DE PARTICIPATION DEAUVILLAISE SAS",
+    "d": "8-Dec-2025",
+    "od": "",
+    "sm": "",
+    "sd": "",
+    "ec": "20-Nov-2026",
+    "closed": "2026-11-26"
+  },
+  {
+    "t": "OCI NV",
+    "co": "Netherlands",
+    "c": "NL",
+    "b": "ORASCOM CONSTRUCTION PLC",
+    "d": "9-Dec-2025",
+    "od": "",
+    "sm": "30 Oct 2026",
+    "sd": "",
+    "ec": "",
+    "closed": "2026-11-26"
   }
 ]
